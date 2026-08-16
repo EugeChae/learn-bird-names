@@ -1,0 +1,79 @@
+[
+  {
+    "id": "pica-serica",
+    "name_korean": "까치",
+    "name_latin": "Pica serica",
+    "name_english": "Oriental Magpie",
+    "order": "Passeriformes",
+    "family": "Corvidae",
+    "habitat": ["도시·마을", "농경지"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/454562754/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) 이상윤/Sangyoon Lee, some rights reserved (CC BY-NC), via iNaturalist (obs. 253827966)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 45cm로 검은색과 흰색이 뚜렷하게 대비되며, 등과 꼬리에 빛을 받으면 파랑·초록빛 광택이 돈다. 어깨의 흰 반점이 식별 포인트다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Oriental magpie\" (en), 2026-08 확인"
+      },
+      {
+        "content": "2018년 DNA 분석 결과 유라시아까치(Pica pica)에서 별도 종(Pica serica)으로 분리되었다. 한반도 전역에 흔한 텃새로, 예로부터 길조로 여겨져 왔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Oriental magpie\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "hirundo-rustica",
+    "name_korean": "제비",
+    "name_latin": "Hirundo rustica",
+    "name_english": "Barn Swallow",
+    "order": "Passeriformes",
+    "family": "Hirundinidae",
+    "habitat": ["도시·마을", "농경지"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["SV"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/122469139/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Ad Konings, some rights reserved (CC BY-NC), via iNaturalist",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "깊게 갈라진 '제비꼬리'와 강청색(steel blue) 윗면, 붉은 이마·턱이 특징이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Barn swallow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "진흙 알갱이를 뭉쳐 처마 밑 등 사람이 만든 구조물에 컵 모양 둥지를 짓는다. 인간의 생활 공간 확장과 함께 서식지를 넓혀 왔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Barn swallow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "북반구 전역에서 번식하고 겨울에는 아프리카·아라비아·인도 등 남쪽으로 이동하는 장거리 철새로, 한국에는 여름철새로 찾아온다.",
+        "type": "seasonal",
+        "trivia_source": "Wikipedia, \"Barn swallow\" (en), 2026-08 확인"
+      }
+    ]
+  }
+]
