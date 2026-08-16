@@ -1,0 +1,19 @@
+project_name: "learn-bird-names"
+project_type: "web-game"
+project_platform: ["web", "mobile-responsive"]
+project_level: 2
+output_folder: "docs"
+
+bmm:
+  workflow_status_file: "docs/bmm-workflow-status.yaml"
+  sprint_status_file: "docs/sprint-status.yaml"
+
+paths:
+  docs: "docs"
+  stories: "docs/stories"
+  brainstorm: "brainstorm"
+
+domain:
+  subject: "Korean bird name learning game"
+  target_users: "Beginner birdwatchers (KR)"
+  stack_hints: ["Next.js", "Tailwind", "PostgreSQL", "iNaturalist API", "NIBR API"]

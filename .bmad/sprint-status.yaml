@@ -1,0 +1,118 @@
+version: "6.0.0"
+project_name: "learn-bird-names"
+project_level: 2
+current_sprint: 1
+sprint_plan_path: "docs/sprint-plan-learn-bird-names-2026-08-16.md"
+
+team:
+  size: 1
+  sprint_length_weeks: 2
+  capacity_per_sprint: 8
+  hours_per_week: 8
+  level: "senior"
+
+sprints:
+  - sprint_number: 1
+    start_date: "2026-08-16"
+    end_date: "2026-08-31"
+    capacity_points: 8
+    committed_points: 8
+    completed_points: 1
+    status: "active"
+    goal: "동작하는 프로토타입 — 사진→이름 퀴즈 서비스 레이어 완성 + Vercel 배포"
+    stories:
+      - story_id: "STORY-001"
+        title: "프로젝트 세팅 (Next.js+Tailwind+Vitest)"
+        points: 1
+        status: "completed"
+        completion_date: "2026-08-16"
+      - story_id: "STORY-002"
+        title: "Species 타입 정의 + JSON 스키마"
+        points: 1
+        status: "not_started"
+      - story_id: "STORY-003"
+        title: "SpeciesService 구현 + 단위 테스트"
+        points: 2
+        status: "not_started"
+      - story_id: "STORY-007"
+        title: "SRSEngine TDD — SM-2 경량 구현"
+        points: 2
+        status: "not_started"
+      - story_id: "STORY-009"
+        title: "QuizService 코어"
+        points: 2
+        status: "not_started"
+
+  - sprint_number: 2
+    start_date: "2026-09-01"
+    end_date: "2026-09-21"
+    capacity_points: 12
+    committed_points: 12
+    completed_points: 0
+    status: "not_started"
+    goal: "학습 경험 완성 — 퀴즈 UI + SRS 통합 + 홈화면 + 대시보드"
+    stories:
+      - story_id: "STORY-010"
+        title: "사진→이름 퀴즈 UI (QuizCard)"
+        points: 2
+        status: "not_started"
+      - story_id: "STORY-008"
+        title: "ProgressService + LocalStorageAdapter"
+        points: 2
+        status: "not_started"
+      - story_id: "STORY-005"
+        title: "오늘의 새 홈 화면 + BirdCard"
+        points: 2
+        status: "not_started"
+      - story_id: "STORY-006"
+        title: "TriviaCard 컴포넌트"
+        points: 1
+        status: "not_started"
+      - story_id: "STORY-011"
+        title: "이름→사진 퀴즈 UI (PhotoGrid)"
+        points: 2
+        status: "not_started"
+      - story_id: "STORY-012"
+        title: "힌트 + 재시도 + 스트릭 보완"
+        points: 1
+        status: "not_started"
+      - story_id: "STORY-015"
+        title: "진도 대시보드 (ProgressBoard)"
+        points: 2
+        status: "not_started"
+
+  - sprint_number: 3
+    start_date: "2026-09-22"
+    end_date: "2026-10-12"
+    capacity_points: 12
+    committed_points: 12
+    completed_points: 0
+    status: "not_started"
+    goal: "완성 + 배포 — Taxonomy + 짝짓기 + CI + 소규모 공개"
+    stories:
+      - story_id: "STORY-013"
+        title: "세션 마무리 짝짓기 (MatchingGame)"
+        points: 3
+        status: "not_started"
+      - story_id: "STORY-016"
+        title: "퀴즈 범위 필터 선택"
+        points: 1
+        status: "not_started"
+      - story_id: "STORY-014"
+        title: "Taxonomy 퀴즈 (3가지 유형)"
+        points: 5
+        status: "not_started"
+      - story_id: "STORY-004"
+        title: "validate-data.js + GitHub Actions CI"
+        points: 1
+        status: "not_started"
+      - story_id: "QA-BUFFER"
+        title: "반응형 QA + 버그 수정 + 데이터 확장"
+        points: 2
+        status: "not_started"
+
+velocity:
+  sprint_1: null
+  sprint_2: null
+  sprint_3: null
+  rolling_average: null

@@ -1,0 +1,49 @@
+project_name: "learn-bird-names"
+project_type: "web-game"
+project_level: 2
+initialized_at: "2026-08-08"
+
+workflows:
+  product_brief:
+    status: "completed"
+    completed: true
+    file: "docs/product-brief-learn-bird-names-2026-08-09.md"
+    completed_at: "2026-08-09"
+
+  prd:
+    status: "completed"
+    completed: true
+    file: "docs/prd-learn-bird-names-2026-08-15.md"
+    completed_at: "2026-08-15"
+
+  architecture:
+    status: "completed"
+    completed: true
+    file: "docs/architecture-learn-bird-names-2026-08-16.md"
+    completed_at: "2026-08-16"
+
+  tech_spec:
+    status: "optional"
+    completed: false
+    file: null
+
+  ux_design:
+    status: "optional"
+    completed: false
+    file: null
+
+  sprint_planning:
+    status: "completed"
+    completed: true
+    file: "docs/sprint-plan-learn-bird-names-2026-08-16.md"
+    completed_at: "2026-08-16"
+
+brainstorming:
+  sessions_completed: 1
+  last_session_topic: "난이도 설계 및 한국 새 데이터 소스"
+  last_session_date: "2026-08-08"
+  ideas_generated: 38
+  key_insights: 7
+
+last_workflow: "sprint-planning"
+last_workflow_date: "2026-08-16"
