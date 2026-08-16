@@ -1,9 +1,10 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import QuizPage from "@/app/quiz/page";
+import QuizPage, { createQuizSession } from "@/app/quiz/page";
 import { PROGRESS_STORAGE_KEY } from "@/lib/localStorage.adapter";
 import { getAllProgress } from "@/services/progress.service";
+import { getAll } from "@/services/species.service";
 
 describe("QuizPage · 진도 손상 안내", () => {
   beforeEach(() => {
@@ -29,5 +30,20 @@ describe("QuizPage · 진도 손상 안내", () => {
     expect(
       await screen.findByLabelText("사진 이름 맞히기 퀴즈")
     ).toBeInTheDocument();
+  });
+});
+
+describe("createQuizSession", () => {
+  it("include id가 있으면 그 종이 세션에 들어간다", () => {
+    const ids = getAll().map((s) => s.id);
+    expect(ids.length).toBeGreaterThan(0);
+    const focus = ids[ids.length - 1];
+    const session = createQuizSession(focus);
+    expect(session.questions.map((q) => q.species.id)).toContain(focus);
+  });
+
+  it("없는 id면 전체 풀로 만든다", () => {
+    const session = createQuizSession("not-a-bird");
+    expect(session.questions.length).toBeGreaterThan(0);
   });
 });

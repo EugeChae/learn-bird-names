@@ -1,18 +1,45 @@
-import Link from "next/link";
+"use client";
 
+import { useEffect, useState } from "react";
+import type { Species, SpeciesTrivia } from "@/types";
+import { getRandom } from "@/services/species.service";
+import BirdCard from "@/components/BirdCard";
+import TriviaCard, { pickTrivia } from "@/components/TriviaCard";
+import QuizModePicker from "@/components/QuizModePicker";
+
+/**
+ * 오늘의 새 홈 (STORY-005). 방문마다 getRandom()으로 종을 새로 고른다.
+ * 정적 export hydration 불일치를 피하려고 클라이언트에서만 고른다.
+ */
 export default function Home() {
+  const [species, setSpecies] = useState<Species | undefined>();
+  const [trivia, setTrivia] = useState<SpeciesTrivia | undefined>();
+
+  useEffect(() => {
+    const bird = getRandom();
+    setSpecies(bird);
+    setTrivia(bird ? pickTrivia(bird.trivia) : undefined);
+  }, []);
+
   return (
-    <main className="flex min-h-screen flex-col items-center justify-center gap-6 p-8">
-      <h1 className="text-3xl font-bold text-center">한국 새 이름 배우기</h1>
-      <p className="text-gray-600 text-center">
-        사진 퀴즈로 한국 새 이름을 자연스럽게 외워보세요
-      </p>
-      <Link
-        href="/quiz"
-        className="rounded-lg bg-green-600 px-6 py-3 text-lg font-semibold text-white hover:bg-green-700"
-      >
-        퀴즈 시작
-      </Link>
+    <main className="min-h-screen py-6">
+      <div className="mx-auto flex w-full max-w-md flex-col gap-5 p-4">
+        <header className="text-center">
+          <p className="text-sm text-gray-500">한국 새 이름 배우기</p>
+          <h1 className="mt-1 text-3xl font-bold text-gray-900">오늘의 새</h1>
+        </header>
+
+        {!species ? (
+          <p className="p-8 text-center text-gray-500">오늘의 새를 고르는 중…</p>
+        ) : (
+          <>
+            <BirdCard species={species} />
+            {trivia && <TriviaCard trivia={trivia} />}
+            <QuizModePicker includeId={species.id} />
+          </>
+        )}
+      </div>
     </main>
   );
 }
+
