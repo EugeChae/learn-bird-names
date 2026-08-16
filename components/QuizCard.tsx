@@ -7,6 +7,7 @@ import {
   submitAnswer,
   getMatchingRound,
 } from "@/services/quiz.service";
+import { updateProgress } from "@/services/progress.service";
 import PhotoModal from "@/components/PhotoModal";
 
 type Status = "answering" | "correct" | "revealed";
@@ -41,6 +42,10 @@ export default function QuizCard({ session }: QuizCardProps) {
         choiceId,
         hintText !== null
       );
+      // 재시도 중(quality 미확정)에는 SRS에 쓰지 않는다.
+      if (!result.isRetry) {
+        updateProgress(result.correctSpecies.id, result.quality);
+      }
       if (result.correct) {
         setStatus("correct");
         if (session.streak === 5 || session.streak === 10) {

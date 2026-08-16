@@ -1,8 +1,9 @@
-import { describe, it, expect } from "vitest";
+import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen, fireEvent, within } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
 import QuizCard from "@/components/QuizCard";
 import { createSession } from "@/services/quiz.service";
+import { getProgress } from "@/services/progress.service";
 import type { Species, DifficultyTier, QuizSession } from "@/types";
 
 // ─── 픽스처 ─────────────────────────────────────────────────────────────────────
@@ -70,6 +71,10 @@ const nameRe = (s: string) => new RegExp(s);
 // ─── 테스트 ─────────────────────────────────────────────────────────────────────
 
 describe("QuizCard", () => {
+  beforeEach(() => {
+    window.localStorage.clear();
+  });
+
   it("사진, 4지선다 보기, 스트릭을 렌더한다", () => {
     const s = makeSession(1);
     render(<QuizCard session={s} />);
@@ -149,6 +154,23 @@ describe("QuizCard", () => {
     expect(dialog).toBeInTheDocument();
     await user.click(within(dialog).getByRole("button", { name: "닫기" }));
     expect(screen.queryByRole("dialog")).toBeNull();
+  });
+
+  it("확정된 답만 진도에 저장하고, 재시도 중에는 쓰지 않는다", async () => {
+    const user = userEvent.setup();
+    const s = makeSession(1);
+    render(<QuizCard session={s} />);
+    const q = s.questions[0];
+    const wrong = q.choices.find((c) => c.id !== q.correctId)!;
+    await user.click(screen.getByRole("button", { name: nameRe(wrong.name_korean) }));
+    expect(getProgress(q.correctId)).toBeNull();
+    await user.click(
+      screen.getByRole("button", { name: nameRe(q.species.name_korean) })
+    );
+    const saved = getProgress(q.correctId);
+    expect(saved).not.toBeNull();
+    expect(saved?.last_quality).toBe(1);
+    expect(saved?.correct_count).toBe(1);
   });
 
   it("모든 문제를 풀면 짝짓기 복습 화면으로 전환한다", async () => {

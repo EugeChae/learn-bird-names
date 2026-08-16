@@ -214,11 +214,11 @@ I want 브라우저를 닫았다 열어도 학습 진도가 유지,
 So that 매번 처음부터 다시 시작하지 않아도 된다.
 
 **Acceptance Criteria:**
-- [ ] `getProgress(id)`, `getAllProgress()`, `updateProgress(id, quality)`, `getDueForReview()`, `getWeakSpecies(limit)`, `resetAll()` 구현
-- [ ] localStorage 키: `learn-bird-names:progress`
-- [ ] 파싱 실패 시 `ProgressCorruptedError` → 상위 UI에서 "초기화 안내 모달" 표시
-- [ ] **TDD:** localStorage mock 환경에서 단위 테스트 작성 후 구현
-- [ ] `updateProgress` 내부에서 SRSEngine.calculate() 호출해 next_review 갱신
+- [x] `getProgress(id)`, `getAllProgress()`, `updateProgress(id, quality)`, `getDueForReview()`, `getWeakSpecies(limit)`, `resetAll()` 구현
+- [x] localStorage 키: `learn-bird-names:progress`
+- [x] 파싱 실패 시 `ProgressCorruptedError` → 상위 UI에서 "초기화 안내 모달" 표시
+- [x] **TDD:** localStorage mock 환경에서 단위 테스트 작성 후 구현
+- [x] `updateProgress` 내부에서 SRSEngine.calculate() 호출해 next_review 갱신
 
 **Dependencies:** STORY-007
 
