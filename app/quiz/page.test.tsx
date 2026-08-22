@@ -1,7 +1,8 @@
 import { describe, it, expect, beforeEach } from "vitest";
 import { render, screen } from "@testing-library/react";
 import userEvent from "@testing-library/user-event";
-import QuizPage, { createQuizSession } from "@/app/quiz/page";
+import QuizPage from "@/app/quiz/page";
+import { createQuizSession } from "@/lib/quiz-session";
 import { PROGRESS_STORAGE_KEY } from "@/lib/localStorage.adapter";
 import { getAllProgress } from "@/services/progress.service";
 import { getAll } from "@/services/species.service";
