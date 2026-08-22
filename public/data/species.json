@@ -75,5 +75,200 @@
         "trivia_source": "Wikipedia, \"Barn swallow\" (en), 2026-08 확인"
       }
     ]
+  },
+  {
+    "id": "passer-montanus",
+    "name_korean": "참새",
+    "name_latin": "Passer montanus",
+    "name_english": "Eurasian Tree Sparrow",
+    "order": "Passeriformes",
+    "family": "Passeridae",
+    "habitat": ["도시·마을", "농경지"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/559455892/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) hajima, some rights reserved (CC BY-NC), via iNaturalist (obs. 310008968)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 12.5~14cm. 머리 꼭대기가 진한 밤색이고, 순백색 뺨에 콩팥 모양의 검은 반점이 뚜렷하다. 암수의 깃털 차이가 없다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian tree sparrow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "주로 씨앗과 곡물을 먹지만 번식기에는 곤충 같은 무척추동물도 잡아먹는다. 나무 구멍이나 건물 틈에 둥지를 틀고 한 배에 5~6개의 알을 낳는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian tree sparrow\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "hypsipetes-amaurotis",
+    "name_korean": "직박구리",
+    "name_latin": "Hypsipetes amaurotis",
+    "name_english": "Brown-eared Bulbul",
+    "order": "Passeriformes",
+    "family": "Pycnonotidae",
+    "habitat": ["도시·마을", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/213741848/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) emskakoon, some rights reserved (CC BY-NC), via iNaturalist (obs. 126002166)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 28cm. 전체적으로 회갈색이며 뺨에 밤색 반점이 있어 영어 이름이 '갈색 귀(brown-eared)'다. 꼬리가 길다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-08 확인"
+      },
+      {
+        "content": "여름에는 주로 곤충을, 가을·겨울에는 열매와 씨앗을 먹는다. 동백(Camellia) 꽃의 꿀을 먹다가 노란 꽃가루를 뒤집어써, 곤충 화분매개자가 적은 시기에 수분을 돕는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-08 확인"
+      },
+      {
+        "content": "예전에는 겨울에 남쪽으로 이동하는 성향이 강했으나, 농경 환경 변화로 점점 더 북쪽에서 겨울을 나는 개체가 늘고 있다.",
+        "type": "seasonal",
+        "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "corvus-macrorhynchos",
+    "name_korean": "큰부리까마귀",
+    "name_latin": "Corvus macrorhynchos",
+    "name_english": "Large-billed Crow",
+    "order": "Passeriformes",
+    "family": "Corvidae",
+    "habitat": ["도시·마을", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/460683259/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Seokin Yang, some rights reserved (CC BY-NC), via iNaturalist (obs. 256883864)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 46~59cm의 대형 까마귀. 이름처럼 부리가 굵고 크며 윗부리 능선이 활처럼 휘어, 부리가 가는 까마귀류와 구별된다. 온몸이 광택 있는 검은색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "먹이가 매우 다양해 살아있든 죽었든 먹을 만한 것은 거의 다 시도한다. 일본에서는 쓰레기봉투를 찢거나 둥지 재료로 철사 옷걸이를 물어가는 것으로 알려져 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "parus-minor",
+    "name_korean": "박새",
+    "name_latin": "Parus minor",
+    "name_english": "Japanese Tit",
+    "order": "Passeriformes",
+    "family": "Paridae",
+    "habitat": ["도시·마을", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/354174434/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Rob Macfie, some rights reserved (CC BY-NC), via iNaturalist (obs. 200713659)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "검은 머리에 흰 뺨이 뚜렷하고, 가슴 한가운데로 굵은 검은 세로줄이 배까지 내려온다. 등은 회색이며, 암컷은 이 검은 세로줄이 더 좁고 색도 다소 흐리다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
+      },
+      {
+        "content": "주로 잎을 뒤지며 애벌레·노린재·딱정벌레 같은 곤충과 새싹·열매를 먹는다. 나무 구멍이나 벽 틈에 둥지를 틀고 한 배에 4~6개의 알을 낳는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
+      },
+      {
+        "content": "박새(Parus minor)의 울음소리는 '주위를 살펴라' '가까이 오라' 같은 뜻을 담고, 소리를 배열하는 순서에 사람 언어에 견줄 만한 '문법'이 있다는 연구로 유명하다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "streptopelia-orientalis",
+    "name_korean": "멧비둘기",
+    "name_latin": "Streptopelia orientalis",
+    "name_english": "Oriental Turtle Dove",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "habitat": ["도시·마을", "농경지", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/714929305/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Damiano, some rights reserved (CC BY-NC), via iNaturalist (obs. 390248098)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "목 옆에 은색 끝을 가진 깃털이 모여 흑백 줄무늬 반점을 이루고, 날개깃은 가운데가 짙어 비늘 같은 무늬가 두드러진다. 몸집은 염주비둘기와 비슷하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-08 확인"
+      },
+      {
+        "content": "땅에서 먹이를 찾는 씨앗 위주의 새로 대마·해바라기·밀·기장 등의 씨앗을 먹는다. 둥지에 흰 알 2개를 낳아 15~16일 품으며, '흐-흐-우-우' 네 음절로 운다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-08 확인"
+      },
+      {
+        "content": "고위도 지역 개체는 겨울에 남쪽으로 이동하고, 열대에 가까운 지역 개체는 이동하지 않고 정주한다.",
+        "type": "seasonal",
+        "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-08 확인"
+      }
+    ]
   }
 ]
