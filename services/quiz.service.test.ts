@@ -118,6 +118,51 @@ describe("quiz.service · createSession", () => {
     expect(s.questions.map((q) => q.species.id).sort()).toEqual(["w1", "w2"]);
     expect(s.options.scope).toBe("weak");
   });
+
+  // ── mustInclude: 종 수가 size를 넘어도 필수 종(오늘의 새)이 셔플에 밀려나지 않음 ──
+  it("종이 size보다 많아도 mustInclude 종은 어떤 시드에서도 반드시 포함된다", () => {
+    const focus = POOL[POOL.length - 1]; // "hawk" — pool 8종 중 마지막
+    for (let seed = 1; seed <= 25; seed++) {
+      const s = createSession(opts(3), {
+        rng: seededRng(seed),
+        pool: POOL,
+        decoyPool: POOL,
+        mustInclude: [focus],
+      });
+      const ids = s.questions.map((q) => q.species.id);
+      expect(s.questions).toHaveLength(3);
+      expect(ids).toContain(focus.id);
+      expect(new Set(ids).size).toBe(ids.length); // 중복 없음
+    }
+  });
+
+  it("mustInclude 종이 pool에 없어도 강제로 넣고 나머지는 pool로 채운다", () => {
+    const focus = sp("today-special", "Gruiformes", "Rallidae", 1);
+    const s = createSession(opts(3), {
+      rng: seededRng(3),
+      pool: POOL,
+      decoyPool: POOL,
+      mustInclude: [focus],
+    });
+    const ids = s.questions.map((q) => q.species.id);
+    expect(ids).toContain("today-special");
+    expect(ids).toHaveLength(3);
+    expect(new Set(ids).size).toBe(3);
+  });
+
+  it("mustInclude가 size보다 많으면 size개(모두 forced에서)로 자른다", () => {
+    const forced = [sp("a"), sp("b"), sp("c"), sp("d")];
+    const s = createSession(opts(2), {
+      rng: seededRng(1),
+      pool: POOL,
+      decoyPool: POOL,
+      mustInclude: forced,
+    });
+    const ids = s.questions.map((q) => q.species.id);
+    expect(ids).toHaveLength(2);
+    expect(ids.every((id) => ["a", "b", "c", "d"].includes(id))).toBe(true);
+    expect(new Set(ids).size).toBe(2);
+  });
 });
 
 // ─── nextQuestion ───────────────────────────────────────────────────────────────

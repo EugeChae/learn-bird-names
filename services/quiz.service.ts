@@ -29,6 +29,11 @@ export interface CreateSessionDeps {
   pool?: Species[];
   /** 오답 보기 후보. 기본: 전체 종. */
   decoyPool?: Species[];
+  /**
+   * 반드시 세션에 포함할 종(예: 오늘의 새). pool 셔플에 밀려나지 않음을 보장한다.
+   * pool에 없어도 강제로 넣는다. id 기준 dedupe 후 size개까지만 반영. 나머지는 pool로 채움.
+   */
+  mustInclude?: Species[];
 }
 
 /** Fisher-Yates 셔플 (rng 주입 결정론). 원본 불변. */
@@ -65,8 +70,25 @@ export function createSession(
   const rng = deps.rng ?? Math.random;
   const pool = deps.pool ?? getAll();
   const decoyPool = deps.decoyPool ?? getAll();
+  const size = Math.max(0, options.size);
 
-  const targets = shuffle(pool, rng).slice(0, Math.max(0, options.size));
+  // mustInclude 종을 먼저 확정(id dedupe, size 상한)한 뒤, 남은 자리를 pool 셔플로 채운다.
+  // 그래야 종 수가 size를 넘어도 오늘의 새 등 필수 종이 셔플에 밀려나지 않는다.
+  const forced: Species[] = [];
+  const forcedIds = new Set<string>();
+  for (const s of deps.mustInclude ?? []) {
+    if (forced.length >= size) break;
+    if (!forcedIds.has(s.id)) {
+      forcedIds.add(s.id);
+      forced.push(s);
+    }
+  }
+  const fill = shuffle(
+    forcedIds.size ? pool.filter((s) => !forcedIds.has(s.id)) : pool,
+    rng
+  ).slice(0, size - forced.length);
+  // forced가 없으면 기존 동작(pool 셔플 slice)과 동일 — rng 소비 순서까지 보존.
+  const targets = forced.length ? shuffle([...forced, ...fill], rng) : fill;
   const questions: QuizQuestion[] = targets.map((species) => {
     const decoys = selectDecoys(species, decoyPool, DECOYS_PER_QUESTION, rng);
     return {
