@@ -9,6 +9,7 @@ import {
 } from "@/services/quiz.service";
 import { updateProgress } from "@/services/progress.service";
 import PhotoModal from "@/components/PhotoModal";
+import FlagPhotoButton from "@/components/FlagPhotoButton";
 
 type Status = "answering" | "correct" | "revealed";
 
@@ -142,9 +143,16 @@ export default function QuizCard({ session }: QuizCardProps) {
               className="aspect-square w-full object-cover"
             />
           </button>
-          <figcaption className="text-right text-[10px] text-gray-400">
-            {photo.attribution}
-          </figcaption>
+          <div className="flex items-center justify-between gap-2">
+            <FlagPhotoButton
+              speciesId={question.species.id}
+              nameKorean={question.species.name_korean}
+              photoUrl={photo.url}
+            />
+            <figcaption className="text-right text-[10px] text-gray-400">
+              {photo.attribution}
+            </figcaption>
+          </div>
         </figure>
       ) : (
         <div className="flex aspect-square w-full items-center justify-center rounded-xl border border-dashed border-gray-300 text-gray-400">
@@ -214,6 +222,15 @@ export default function QuizCard({ session }: QuizCardProps) {
           다음
         </button>
       )}
+
+      <div className="text-center">
+        <a
+          href="/flags"
+          className="text-xs text-gray-400 underline underline-offset-2 hover:text-gray-600"
+        >
+          🚩 사진 변경요청 목록
+        </a>
+      </div>
 
       {photoOpen && photo && (
         <PhotoModal
