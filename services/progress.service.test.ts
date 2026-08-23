@@ -5,6 +5,7 @@ import {
   updateProgress,
   getDueForReview,
   getWeakSpecies,
+  getProgressSummary,
   resetAll,
   type ProgressDeps,
 } from "@/services/progress.service";
@@ -43,6 +44,7 @@ function deps(): ProgressDeps {
     store: createLocalStorageAdapter(createFakeStorage()),
     now: NOW,
     getById: (id) => CATALOG.find((s) => s.id === id),
+    getAll: () => CATALOG,
   };
 }
 
@@ -187,6 +189,68 @@ describe("progress.service · getWeakSpecies", () => {
 
   it("시도 기록이 없으면 빈 배열", () => {
     expect(getWeakSpecies(5, deps())).toEqual([]);
+  });
+});
+
+describe("progress.service · consecutive_correct", () => {
+  it("정답이면 연속을 올리고 오답이면 0으로 리셋한다", () => {
+    const d = deps();
+    updateProgress("magpie", 5, d);
+    expect(getProgress("magpie", d)?.consecutive_correct).toBe(1);
+    updateProgress("magpie", 3, d);
+    expect(getProgress("magpie", d)?.consecutive_correct).toBe(2);
+    updateProgress("magpie", 0, d); // 오답 → 리셋
+    expect(getProgress("magpie", d)?.consecutive_correct).toBe(0);
+    updateProgress("magpie", 2, d); // 힌트 정답도 정답으로 카운트
+    expect(getProgress("magpie", d)?.consecutive_correct).toBe(1);
+  });
+});
+
+describe("progress.service · getProgressSummary", () => {
+  it("학습 종 수·전체 종 수·취약 목록을 계산한다", () => {
+    const d = deps();
+    updateProgress("magpie", 0, d); // 오답률 100%
+    updateProgress("crow", 5, d); // 오답률 0%
+    const summary = getProgressSummary(d);
+    expect(summary.learned).toBe(2);
+    expect(summary.total).toBe(CATALOG.length); // 3
+    expect(summary.weak[0].species.id).toBe("magpie");
+    expect(summary.weak[0].missRate).toBe(1);
+    expect(summary.weak[0].incorrect).toBe(1);
+    expect(summary.weak[0].attempts).toBe(1);
+  });
+
+  it("마스터 = 연속 3회 이상 정답인 종 수", () => {
+    const d = deps();
+    updateProgress("magpie", 5, d);
+    updateProgress("magpie", 5, d);
+    updateProgress("magpie", 5, d); // 3연속 → 마스터
+    updateProgress("crow", 5, d);
+    updateProgress("crow", 5, d); // 2연속 → 아직 아님
+    updateProgress("sparrow", 5, d);
+    updateProgress("sparrow", 0, d); // 리셋됨
+    expect(getProgressSummary(d).mastered).toBe(1);
+  });
+
+  it("취약 목록은 최대 10개(WEAK_LIMIT)로 제한한다", () => {
+    const many = Array.from({ length: 12 }, (_, i) => sp("s" + i));
+    const d: ProgressDeps = {
+      store: createLocalStorageAdapter(createFakeStorage()),
+      now: NOW,
+      getById: (id) => many.find((s) => s.id === id),
+      getAll: () => many,
+    };
+    for (const s of many) updateProgress(s.id, 0, d); // 전부 오답
+    expect(getProgressSummary(d).weak).toHaveLength(10);
+    expect(getProgressSummary(d).learned).toBe(12);
+  });
+
+  it("진도가 없으면 learned 0, mastered 0, weak []", () => {
+    const summary = getProgressSummary(deps());
+    expect(summary.learned).toBe(0);
+    expect(summary.mastered).toBe(0);
+    expect(summary.weak).toEqual([]);
+    expect(summary.total).toBe(CATALOG.length);
   });
 });
 

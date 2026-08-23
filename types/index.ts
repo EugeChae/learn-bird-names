@@ -68,6 +68,11 @@ export interface SpeciesProgress {
   easiness_factor: number;
   interval_days: number;
   last_quality: SRSQuality;
+  /**
+   * 연속 정답 횟수(오답 시 0으로 리셋). 마스터 판정용(STORY-015).
+   * STORY-008 이전 저장 데이터엔 없을 수 있어 optional — 읽는 쪽에서 `?? 0`.
+   */
+  consecutive_correct?: number;
 }
 
 export type UserProgress = Record<string, SpeciesProgress>;

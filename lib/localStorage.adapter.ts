@@ -48,7 +48,11 @@ function isSpeciesProgress(value: unknown): value is SpeciesProgress {
     isNonEmptyString(rec.next_review) &&
     isFiniteNumber(rec.easiness_factor) &&
     isFiniteNumber(rec.interval_days) &&
-    QUALITIES.has(rec.last_quality as SRSQuality)
+    QUALITIES.has(rec.last_quality as SRSQuality) &&
+    // consecutive_correct는 STORY-015에서 추가된 optional 필드.
+    // 없으면(레거시 데이터) 통과, 있으면 음수 아닌 유한수여야 한다.
+    (rec.consecutive_correct === undefined ||
+      (isFiniteNumber(rec.consecutive_correct) && rec.consecutive_correct >= 0))
   );
 }
 

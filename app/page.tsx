@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import Link from "next/link";
 import type { Species, SpeciesTrivia } from "@/types";
 import { getRandom } from "@/services/species.service";
 import BirdCard from "@/components/BirdCard";
@@ -36,6 +37,12 @@ export default function Home() {
             <BirdCard species={species} />
             {trivia && <TriviaCard trivia={trivia} />}
             <QuizModePicker includeId={species.id} />
+            <Link
+              href="/progress"
+              className="text-center text-sm font-medium text-gray-500 underline underline-offset-2"
+            >
+              학습 진도 보기
+            </Link>
           </>
         )}
       </div>
