@@ -5,6 +5,7 @@ import type { QuizSession } from "@/types";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
 import PhotoModal from "@/components/PhotoModal";
 import SessionComplete from "@/components/SessionComplete";
+import MilestoneBanner from "@/components/MilestoneBanner";
 
 interface PhotoGridQuizCardProps {
   session: QuizSession;
@@ -149,11 +150,7 @@ export default function PhotoGridQuizCard({
             정답 사진을 초록색으로 표시했어요.
           </p>
         )}
-        {milestone !== null && (
-          <p className="mt-1 font-bold text-orange-600">
-            {milestone}연속 정답 달성! 대단해요 🔥
-          </p>
-        )}
+        {milestone !== null && <MilestoneBanner streak={milestone} />}
       </div>
 
       {resolved && (

@@ -5,6 +5,7 @@ import type { QuizSession } from "@/types";
 import { useQuizProgress } from "@/hooks/useQuizProgress";
 import PhotoModal from "@/components/PhotoModal";
 import SessionComplete from "@/components/SessionComplete";
+import MilestoneBanner from "@/components/MilestoneBanner";
 
 interface QuizCardProps {
   session: QuizSession;
@@ -134,11 +135,7 @@ export default function QuizCard({ session }: QuizCardProps) {
             정답은 <strong>{question.species.name_korean}</strong> 이에요.
           </p>
         )}
-        {milestone !== null && (
-          <p className="mt-1 font-bold text-orange-600">
-            {milestone}연속 정답 달성! 대단해요 🔥
-          </p>
-        )}
+        {milestone !== null && <MilestoneBanner streak={milestone} />}
       </div>
 
       {resolved && (

@@ -265,6 +265,27 @@ describe("quiz.service · submitAnswer", () => {
     expect(s.maxStreak).toBe(3);
   });
 
+  it("quality 단조성: 재시도(1) < 힌트(2) < 1번에 정답(3~5) (STORY-012)", () => {
+    // 재시도 정답
+    const s1 = createSession(opts(1), { ...D(6), pool: [sp("x")] });
+    const q1 = nextQuestion(s1)!;
+    submitAnswer(s1, wrongIdFor(q1.choices, q1.correctId), false);
+    const retry = submitAnswer(s1, q1.correctId, false).quality;
+    // 힌트 정답
+    const s2 = createSession(opts(1), { ...D(5), pool: [sp("h")] });
+    const hinted = submitAnswer(s2, nextQuestion(s2)!.correctId, true).quality;
+    // 1번에 스스로 정답 (tier1 → 5)
+    const s3 = createSession(opts(1), {
+      rng: seededRng(3),
+      pool: [sp("c", "O", "F", 1)],
+      decoyPool: POOL,
+    });
+    const clean = submitAnswer(s3, nextQuestion(s3)!.correctId, false).quality;
+
+    expect(retry).toBeLessThan(hinted);
+    expect(hinted).toBeLessThan(clean);
+  });
+
   it("종료된 세션에 제출하면 에러", () => {
     const s = createSession(opts(1), { ...D(5), pool: [sp("only")] });
     submitAnswer(s, "only", false);

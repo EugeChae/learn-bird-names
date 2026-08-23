@@ -173,6 +173,35 @@ describe("QuizCard", () => {
     expect(saved?.correct_count).toBe(1);
   });
 
+  it("5연속 정답을 달성하면 마일스톤 배너가 뜬다 (STORY-012)", async () => {
+    const user = userEvent.setup();
+    const s = makeSession(5, 1); // POOL 5종 → 5문제
+    render(<QuizCard session={s} />);
+    for (let i = 0; i < 5; i++) {
+      await user.click(
+        screen.getByRole("button", {
+          name: nameRe(s.questions[i].species.name_korean),
+        })
+      );
+      if (i < 4) {
+        await user.click(screen.getByRole("button", { name: "다음" }));
+      }
+    }
+    expect(screen.getByText(/5연속 정답/)).toBeInTheDocument();
+  });
+
+  it("힌트를 쓰고 맞히면 진도 quality가 힌트값(2)으로 저장된다 (STORY-012)", async () => {
+    const user = userEvent.setup();
+    const s = makeSession(1);
+    render(<QuizCard session={s} />);
+    await user.click(screen.getByRole("button", { name: /힌트 보기/ }));
+    const q = s.questions[0];
+    await user.click(
+      screen.getByRole("button", { name: nameRe(q.species.name_korean) })
+    );
+    expect(getProgress(q.correctId)?.last_quality).toBe(2);
+  });
+
   it("모든 문제를 풀면 짝짓기 복습 화면으로 전환한다", async () => {
     const user = userEvent.setup();
     const s = makeSession(1);
