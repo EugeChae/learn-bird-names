@@ -10,7 +10,7 @@ describe("QuizModePicker", () => {
     expect(screen.queryByLabelText("퀴즈 모드 선택")).toBeNull();
   });
 
-  it("시작을 누르면 모드를 고르고, 사진→이름은 오늘의 새를 넘긴다", async () => {
+  it("시작을 누르면 모드를 고르고, 두 모드 모두 오늘의 새를 넘긴다", async () => {
     const user = userEvent.setup();
     render(<QuizModePicker includeId="pica-serica" />);
     await user.click(screen.getByRole("button", { name: "퀴즈 시작" }));
@@ -18,7 +18,11 @@ describe("QuizModePicker", () => {
     expect(group).toBeInTheDocument();
     const photoToName = screen.getByRole("link", { name: /사진 보고 이름 맞히기/ });
     expect(photoToName).toHaveAttribute("href", "/quiz?include=pica-serica");
-    expect(screen.getByRole("button", { name: /이름 보고 사진 맞히기/ })).toBeDisabled();
+    const nameToPhoto = screen.getByRole("link", { name: /이름 보고 사진 맞히기/ });
+    expect(nameToPhoto).toHaveAttribute(
+      "href",
+      "/quiz?mode=name-to-photo&include=pica-serica"
+    );
     expect(screen.getByRole("button", { name: /분류 맞히기/ })).toBeDisabled();
   });
 });

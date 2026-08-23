@@ -7,13 +7,18 @@ import {
   resetAll,
   ProgressCorruptedError,
 } from "@/services/progress.service";
-import { createQuizSession, includeFromLocation } from "@/lib/quiz-session";
+import {
+  createQuizSession,
+  includeFromLocation,
+  modeFromLocation,
+} from "@/lib/quiz-session";
 import QuizCard from "@/components/QuizCard";
+import PhotoGridQuizCard from "@/components/PhotoGridQuizCard";
 import ProgressResetModal from "@/components/ProgressResetModal";
 
 /**
- * 사진→이름 퀴즈 페이지. 세션을 마운트 이후(클라이언트)에 생성해
- * 정적 export 프리렌더와 hydration 불일치를 피한다.
+ * 퀴즈 페이지. `?mode=`로 사진→이름 / 이름→사진을 고르고, 세션을 마운트
+ * 이후(클라이언트)에 생성해 정적 export 프리렌더와 hydration 불일치를 피한다.
  * 진도 JSON이 손상되면 초기화 안내 모달을 먼저 보여 준다 (NFR-003).
  */
 export default function QuizPage() {
@@ -30,20 +35,24 @@ export default function QuizPage() {
       }
       throw err;
     }
-    setSession(createQuizSession(includeFromLocation()));
+    setSession(createQuizSession(includeFromLocation(), modeFromLocation()));
   }, []);
 
   const handleReset = () => {
     resetAll();
     setCorrupted(false);
-    setSession(createQuizSession(includeFromLocation()));
+    setSession(createQuizSession(includeFromLocation(), modeFromLocation()));
   };
 
   return (
     <main className="min-h-screen py-6">
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted && session ? (
-        <QuizCard session={session} />
+        session.options.mode === "name-to-photo" ? (
+          <PhotoGridQuizCard session={session} />
+        ) : (
+          <QuizCard session={session} />
+        )
       ) : (
         !corrupted && (
           <p className="p-8 text-center text-gray-500">퀴즈 준비 중…</p>
