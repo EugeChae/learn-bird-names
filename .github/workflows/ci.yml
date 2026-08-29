@@ -1,0 +1,37 @@
+name: CI
+
+# main push + main 대상 PR에서 실행. PR에서도 돌려 Blocker가 main에 닿기 전에 잡는다
+# (STORY-004: next build만 잡는 라우트 export 오류 등이 그대로 배포되던 문제 재발방지).
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: npm
+
+      - name: Install dependencies
+        run: npm ci
+
+      # 순서 고정: lint → validate-data → vitest → next build (스프린트 플랜 AC)
+      - name: Lint
+        run: npm run lint
+
+      - name: Validate data (license/attribution/trivia source)
+        run: npm run validate-data
+
+      - name: Unit tests
+        run: npx vitest run
+
+      - name: Next build (type-check + static export)
+        run: npm run build
