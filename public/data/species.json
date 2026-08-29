@@ -12,14 +12,14 @@
     "status": ["Res"],
     "media": [
       {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/454562754/medium.jpg",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/455591259/medium.jpeg",
         "sex": "unknown",
         "age": "adult",
         "plumage": "unknown",
-        "angle": "unknown",
+        "angle": "perched",
         "license": "CC-BY-NC",
-        "attribution": "(c) 이상윤/Sangyoon Lee, some rights reserved (CC BY-NC), via iNaturalist (obs. 253827966)",
-        "quality_score": 2
+        "attribution": "(c) Chanwoo Kim, some rights reserved (CC BY-NC), via iNaturalist (obs. 254360902)",
+        "quality_score": 3
       }
     ],
     "trivia": [
@@ -73,6 +73,406 @@
         "content": "북반구 전역에서 번식하고 겨울에는 아프리카·아라비아·인도 등 남쪽으로 이동하는 장거리 철새로, 한국에는 여름철새로 찾아온다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Barn swallow\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "passer-montanus",
+    "name_korean": "참새",
+    "name_latin": "Passer montanus",
+    "name_english": "Eurasian Tree Sparrow",
+    "order": "Passeriformes",
+    "family": "Passeridae",
+    "habitat": ["도시·마을", "농경지"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/559455892/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) hajima, some rights reserved (CC BY-NC), via iNaturalist (obs. 310008968)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 12.5~14cm. 머리 꼭대기가 진한 밤색이고, 순백색 뺨에 콩팥 모양의 검은 반점이 뚜렷하다. 암수의 깃털 차이가 없다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian tree sparrow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "주로 씨앗과 곡물을 먹지만 번식기에는 곤충 같은 무척추동물도 잡아먹는다. 나무 구멍이나 건물 틈에 둥지를 틀고 한 배에 5~6개의 알을 낳는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian tree sparrow\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "hypsipetes-amaurotis",
+    "name_korean": "직박구리",
+    "name_latin": "Hypsipetes amaurotis",
+    "name_english": "Brown-eared Bulbul",
+    "order": "Passeriformes",
+    "family": "Pycnonotidae",
+    "habitat": ["도시·마을", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/213741848/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) emskakoon, some rights reserved (CC BY-NC), via iNaturalist (obs. 126002166)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 28cm. 전체적으로 회갈색이며 뺨에 밤색 반점이 있어 영어 이름이 '갈색 귀(brown-eared)'다. 꼬리가 길다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-08 확인"
+      },
+      {
+        "content": "여름에는 주로 곤충을, 가을·겨울에는 열매와 씨앗을 먹는다. 동백(Camellia) 꽃의 꿀을 먹다가 노란 꽃가루를 뒤집어써, 곤충 화분매개자가 적은 시기에 수분을 돕는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-08 확인"
+      },
+      {
+        "content": "예전에는 겨울에 남쪽으로 이동하는 성향이 강했으나, 농경 환경 변화로 점점 더 북쪽에서 겨울을 나는 개체가 늘고 있다.",
+        "type": "seasonal",
+        "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "corvus-macrorhynchos",
+    "name_korean": "큰부리까마귀",
+    "name_latin": "Corvus macrorhynchos",
+    "name_english": "Large-billed Crow",
+    "order": "Passeriformes",
+    "family": "Corvidae",
+    "habitat": ["도시·마을", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/460683259/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Seokin Yang, some rights reserved (CC BY-NC), via iNaturalist (obs. 256883864)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 46~59cm의 대형 까마귀. 이름처럼 부리가 굵고 크며 윗부리 능선이 활처럼 휘어, 부리가 가는 까마귀류와 구별된다. 온몸이 광택 있는 검은색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "먹이가 매우 다양해 살아있든 죽었든 먹을 만한 것은 거의 다 시도한다. 일본에서는 쓰레기봉투를 찢거나 둥지 재료로 철사 옷걸이를 물어가는 것으로 알려져 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "parus-minor",
+    "name_korean": "박새",
+    "name_latin": "Parus minor",
+    "name_english": "Japanese Tit",
+    "order": "Passeriformes",
+    "family": "Paridae",
+    "habitat": ["도시·마을", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/354174434/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Rob Macfie, some rights reserved (CC BY-NC), via iNaturalist (obs. 200713659)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "검은 머리에 흰 뺨이 뚜렷하고, 가슴 한가운데로 굵은 검은 세로줄이 배까지 내려온다. 등은 회색이며, 암컷은 이 검은 세로줄이 더 좁고 색도 다소 흐리다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
+      },
+      {
+        "content": "주로 잎을 뒤지며 애벌레·노린재·딱정벌레 같은 곤충과 새싹·열매를 먹는다. 나무 구멍이나 벽 틈에 둥지를 틀고 한 배에 4~6개의 알을 낳는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
+      },
+      {
+        "content": "박새(Parus minor)의 울음소리는 '주위를 살펴라' '가까이 오라' 같은 뜻을 담고, 소리를 배열하는 순서에 사람 언어에 견줄 만한 '문법'이 있다는 연구로 유명하다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "streptopelia-orientalis",
+    "name_korean": "멧비둘기",
+    "name_latin": "Streptopelia orientalis",
+    "name_english": "Oriental Turtle Dove",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "habitat": ["도시·마을", "농경지", "산·숲"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/714929305/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Damiano, some rights reserved (CC BY-NC), via iNaturalist (obs. 390248098)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "목 옆에 은색 끝을 가진 깃털이 모여 흑백 줄무늬 반점을 이루고, 날개깃은 가운데가 짙어 비늘 같은 무늬가 두드러진다. 몸집은 염주비둘기와 비슷하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-08 확인"
+      },
+      {
+        "content": "땅에서 먹이를 찾는 씨앗 위주의 새로 대마·해바라기·밀·기장 등의 씨앗을 먹는다. 둥지에 흰 알 2개를 낳아 15~16일 품으며, '흐-흐-우-우' 네 음절로 운다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-08 확인"
+      },
+      {
+        "content": "고위도 지역 개체는 겨울에 남쪽으로 이동하고, 열대에 가까운 지역 개체는 이동하지 않고 정주한다.",
+        "type": "seasonal",
+        "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "anas-platyrhynchos",
+    "name_korean": "청둥오리",
+    "name_latin": "Anas platyrhynchos",
+    "name_english": "Mallard",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": ["하천·호수", "습지·논"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["WV", "Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/168459177/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Trevor Marshall, some rights reserved (CC BY-NC), via iNaturalist (obs. 100903074)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 50~65cm. 번식기 수컷은 광택 나는 청록색 머리에 흰 목테, 노란 부리가 뚜렷하고, 암컷은 전체가 얼룩진 갈색이다. 암수 모두 날개에 흰 테를 두른 보랏빛 파란 익경(speculum)이 있다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Mallard\" (en), 2026-08 확인"
+      },
+      {
+        "content": "습지에서 무리 지어 지내며, 물풀·씨앗부터 곤충·달팽이·갑각류까지 먹는 잡식성이다. 물에 머리를 담그고 꽁무니를 드는 '거꾸로 서기(dabbling)'로 먹이를 찾는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Mallard\" (en), 2026-08 확인"
+      },
+      {
+        "content": "집오리 품종 대부분이 이 청둥오리에서 유래했다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Mallard\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "anas-zonorhyncha",
+    "name_korean": "흰뺨검둥오리",
+    "name_latin": "Anas zonorhyncha",
+    "name_english": "Eastern Spot-billed Duck",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": ["하천·호수", "습지·논"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/19239796/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) bio96, some rights reserved (CC BY-NC), via iNaturalist (obs. 13171641)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 55~63cm. 몸 전체가 비늘 무늬의 짙은 갈색이며, 검은 부리 끝의 선명한 노란 반점이 가장 큰 식별 포인트다. 암수 생김새가 비슷하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eastern spot-billed duck\" (en), 2026-08 확인"
+      },
+      {
+        "content": "탁 트인 곳의 민물 호수·습지에 살며, 주로 저녁이나 밤에 물 위에서 머리를 담가 물풀을 먹는다. 물가 풀숲 바닥에 둥지를 틀고 보통 7~9개의 알을 낳는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eastern spot-billed duck\" (en), 2026-08 확인"
+      },
+      {
+        "content": "동아시아·동남아시아에서 번식하며, 일본과 러시아 극동 개체군은 20세기 초 이후 번식 범위를 북쪽으로 500km 넘게 넓혔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eastern spot-billed duck\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "ardea-cinerea",
+    "name_korean": "왜가리",
+    "name_latin": "Ardea cinerea",
+    "name_english": "Grey Heron",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "habitat": ["하천·호수", "습지·논"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["Res"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/503934548/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Igor Kim, some rights reserved (CC BY-NC), via iNaturalist (obs. 280577410)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 84~102cm, 날개를 편 길이 155~195cm에 이르는 대형 새. 윗면은 잿빛 회색이고 흰 머리에 눈에서 검은 댕기까지 이어지는 굵은 검은 줄이 있으며, 길고 억센 부리를 가졌다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-08 확인"
+      },
+      {
+        "content": "얕은 물에 꼼짝 않고 서 있거나 천천히 살금살금 다가가 물고기·양서류·갑각류를 사냥한다. 1cm 작은 물고기부터 57cm 뱀장어까지 잡아먹는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-08 확인"
+      },
+      {
+        "content": "습지 가까운 높은 나무 위에 여러 쌍이 모여 집단 번식지(heronry)를 이룬다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "ardea-alba",
+    "name_korean": "중대백로",
+    "name_latin": "Ardea alba",
+    "name_english": "Great Egret",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "habitat": ["하천·호수", "습지·논"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["SV"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2805351/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) misooksun, some rights reserved (CC BY-NC), via iNaturalist (obs. 2498286)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "온몸이 순백색인 대형 백로로 몸길이 80~104cm, 키가 1m에 이른다. 부리는 노란색(번식기엔 어두워짐), 다리는 검다. 날 때 긴 목을 S자로 굽힌다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Great egret\" (en), 2026-08 확인"
+      },
+      {
+        "content": "얕은 물에서 물고기·개구리·쥐·뱀·가재·곤충까지 다양하게 잡아먹으며, 큰 호수나 습지 가까운 나무 위에 집단으로 둥지를 튼다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Great egret\" (en), 2026-08 확인"
+      },
+      {
+        "content": "19세기 말 모자 장식용 번식깃(aigrette)을 얻으려 대량으로 희생되었고, 이 사건이 계기가 되어 미국 오듀본협회의 상징이 되었다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Great egret\" (en), 2026-08 확인"
+      }
+    ]
+  },
+  {
+    "id": "fulica-atra",
+    "name_korean": "물닭",
+    "name_latin": "Fulica atra",
+    "name_english": "Eurasian Coot",
+    "order": "Gruiformes",
+    "family": "Rallidae",
+    "habitat": ["하천·호수", "저수지"],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": ["WV"],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/82833848/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "unknown",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jonghwan Choi, some rights reserved (CC BY-NC), via iNaturalist (obs. 52118693)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 36~38cm. 온몸이 검은 잿빛이고, 이마의 흰 판(frontal shield)과 흰 부리가 가장 뚜렷한 특징이다. 발가락에는 오리 같은 물갈퀴 대신 잎사귀 모양의 판막(lobe)이 달려 있다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-08 확인"
+      },
+      {
+        "content": "민물 호수·연못에서 물풀·씨앗은 물론 다른 물새의 알 같은 작은 먹이까지 먹는 잡식성이다. 청둥오리처럼 물구나무를 서거나 잠수해 먹이를 찾는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-08 확인"
+      },
+      {
+        "content": "번식기에는 매우 공격적이고 텃세가 강해, 긴 다리로 상대에게 돌진해 발길질로 싸운다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-08 확인"
       }
     ]
   }

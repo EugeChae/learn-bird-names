@@ -35,3 +35,4 @@ next-env.d.ts
 
 # BMAD planning docs (not part of app)
 # (keep docs/, bmad/, brainstorm/ tracked in git)
+.gstack/
