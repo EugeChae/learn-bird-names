@@ -279,14 +279,14 @@
     ],
     "media": [
       {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/714929305/medium.jpg",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/337305668/medium.jpg",
         "sex": "unknown",
         "age": "adult",
         "plumage": "unknown",
-        "angle": "unknown",
+        "angle": "standing",
         "license": "CC-BY-NC",
-        "attribution": "(c) Damiano, some rights reserved (CC BY-NC), via iNaturalist (obs. 390248098)",
-        "quality_score": 2
+        "attribution": "(c) budak, some rights reserved (CC BY-NC), via iNaturalist (obs. 192175229)",
+        "quality_score": 3
       }
     ],
     "trivia": [
@@ -924,14 +924,14 @@
     ],
     "media": [
       {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/170995013/medium.jpg",
-        "sex": "unknown",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/388208723/medium.jpg",
+        "sex": "male",
         "age": "adult",
-        "plumage": "unknown",
-        "angle": "unknown",
-        "license": "CC-BY",
-        "attribution": "(c) Blake Ross, some rights reserved (CC BY), via iNaturalist (obs. 102309745)",
-        "quality_score": 2
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 219333466)",
+        "quality_score": 3
       }
     ],
     "trivia": [
@@ -1016,14 +1016,14 @@
     ],
     "media": [
       {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/1816025/medium.jpg",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/169541987/medium.jpeg",
         "sex": "unknown",
         "age": "adult",
         "plumage": "unknown",
-        "angle": "unknown",
+        "angle": "perched",
         "license": "CC-BY-NC",
-        "attribution": "(c) Dr Caesar Sengupta, some rights reserved (CC BY-NC), via iNaturalist (obs. 1464592)",
-        "quality_score": 2
+        "attribution": "(c) Jonghwan Choi, some rights reserved (CC BY-NC), via iNaturalist (obs. 101510456)",
+        "quality_score": 3
       }
     ],
     "trivia": [
@@ -1291,14 +1291,14 @@
     ],
     "media": [
       {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/235748761/medium.jpeg",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/353266901/medium.jpeg",
         "sex": "unknown",
         "age": "adult",
         "plumage": "unknown",
-        "angle": "unknown",
+        "angle": "climbing",
         "license": "CC-BY-NC",
-        "attribution": "(c) Дмитрий Ерохин ( Dmitri Erokhin), some rights reserved (CC BY-NC), via iNaturalist (obs. 137979249)",
-        "quality_score": 2
+        "attribution": "(c) Hyongchan Kim, some rights reserved (CC BY-NC), via iNaturalist (obs. 200248705)",
+        "quality_score": 3
       }
     ],
     "trivia": [
