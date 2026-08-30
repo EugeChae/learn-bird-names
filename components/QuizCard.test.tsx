@@ -202,7 +202,7 @@ describe("QuizCard", () => {
     expect(getProgress(q.correctId)?.last_quality).toBe(2);
   });
 
-  it("모든 문제를 풀면 짝짓기 복습 화면으로 전환한다", async () => {
+  it("모든 문제를 1번에 맞히면 세션 결과 화면으로 전환한다", async () => {
     const user = userEvent.setup();
     const s = makeSession(1);
     render(<QuizCard session={s} />);
@@ -210,7 +210,8 @@ describe("QuizCard", () => {
     const correctIdx = q.choices.findIndex((c) => c.id === q.correctId);
     fireEvent.keyDown(window, { key: String(correctIdx + 1) });
     await user.click(screen.getByRole("button", { name: "다음" }));
-    expect(screen.getByText(/퀴즈 완료/)).toBeInTheDocument();
-    expect(screen.getByText(/짝짓기 복습/)).toBeInTheDocument();
+    // 전부 1번에 정답 → 짝지을 종이 없어 결과 화면으로 직행 (STORY-013)
+    expect(screen.getByText("퀴즈 완료!")).toBeInTheDocument();
+    expect(screen.getByRole("region", { name: "세션 결과" })).toBeInTheDocument();
   });
 });

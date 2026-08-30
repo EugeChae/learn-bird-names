@@ -4,6 +4,7 @@ import {
   nextQuestion,
   submitAnswer,
   getMatchingRound,
+  getSessionSummary,
 } from "@/services/quiz.service";
 import type { Species, DifficultyTier, QuizSessionOptions } from "@/types";
 
@@ -324,5 +325,70 @@ describe("quiz.service · getMatchingRound", () => {
     });
     expect(s.questions).toHaveLength(15);
     expect(getMatchingRound(s)).toHaveLength(10);
+  });
+});
+
+// ─── resolvedCorrect / getSessionSummary (STORY-013) ─────────────────────────────
+
+describe("quiz.service · resolvedCorrect", () => {
+  it("1번에 정답이면 resolvedCorrect=true", () => {
+    const s = createSession(opts(1), D(3));
+    const q = nextQuestion(s)!;
+    submitAnswer(s, q.correctId, false);
+    expect(q.resolvedCorrect).toBe(true);
+  });
+
+  it("재시도 후 정답도 resolvedCorrect=true", () => {
+    const s = createSession(opts(1), D(3));
+    const q = nextQuestion(s)!;
+    submitAnswer(s, wrongIdFor(q.choices, q.correctId), false);
+    submitAnswer(s, q.correctId, false);
+    expect(q.resolvedCorrect).toBe(true);
+  });
+
+  it("두 번 틀려 공개되면 resolvedCorrect=false", () => {
+    const s = createSession(opts(1), D(3));
+    const q = nextQuestion(s)!;
+    const wrong = wrongIdFor(q.choices, q.correctId);
+    submitAnswer(s, wrong, false);
+    submitAnswer(s, wrong, false);
+    expect(q.resolvedCorrect).toBe(false);
+  });
+
+  it("첫 오답(재시도 중)에는 아직 미확정(undefined)", () => {
+    const s = createSession(opts(1), D(3));
+    const q = nextQuestion(s)!;
+    submitAnswer(s, wrongIdFor(q.choices, q.correctId), false);
+    expect(q.resolvedCorrect).toBeUndefined();
+  });
+});
+
+describe("quiz.service · getSessionSummary", () => {
+  it("정답/오답/최고 스트릭/총계를 집계한다", () => {
+    const s = createSession(opts(3), D(3));
+    // q0: 1번에 정답 (streak 1)
+    submitAnswer(s, nextQuestion(s)!.correctId, false);
+    // q1: 두 번 틀려 공개 (오답)
+    const q1 = nextQuestion(s)!;
+    const wrong1 = wrongIdFor(q1.choices, q1.correctId);
+    submitAnswer(s, wrong1, false);
+    submitAnswer(s, wrong1, false);
+    // q2: 1번에 정답
+    submitAnswer(s, nextQuestion(s)!.correctId, false);
+
+    const summary = getSessionSummary(s);
+    expect(summary.correct).toBe(2);
+    expect(summary.incorrect).toBe(1);
+    expect(summary.total).toBe(3);
+    expect(summary.maxStreak).toBe(s.maxStreak);
+  });
+
+  it("미응답 문제는 어느 쪽에도 세지 않는다", () => {
+    const s = createSession(opts(3), D(3));
+    submitAnswer(s, nextQuestion(s)!.correctId, false); // q0만 정답
+    const summary = getSessionSummary(s);
+    expect(summary.correct).toBe(1);
+    expect(summary.incorrect).toBe(0);
+    expect(summary.total).toBe(3);
   });
 });

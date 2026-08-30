@@ -94,6 +94,12 @@ export interface QuizQuestion {
   correctId: string;
   usedHint: boolean;
   attemptCount: number;
+  /**
+   * 문제가 마감될 때 확정되는 최종 정답 여부(세션 결과 카운트용, STORY-013).
+   * 재시도 중(첫 오답, 미확정)에는 undefined. attemptCount만으로는
+   * "재시도 후 정답"과 "두 번 틀려 공개"를 구분할 수 없어 별도로 기록한다.
+   */
+  resolvedCorrect?: boolean;
 }
 
 export interface AnswerResult {
