@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import {
   type ProgressSummary,
   MASTERY_THRESHOLD,
@@ -29,11 +28,8 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       className="mx-auto flex w-full max-w-md flex-col gap-5 p-4"
       aria-label="학습 진도 대시보드"
     >
-      <header className="flex items-center justify-between">
+      <header>
         <h1 className="text-2xl font-bold text-gray-900">학습 진도</h1>
-        <Link href="/" className="text-sm text-gray-500 underline underline-offset-2">
-          홈으로
-        </Link>
       </header>
 
       {/* 학습 종 수 / 전체 종 수 (AC1) */}

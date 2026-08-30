@@ -2,16 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+/*
+ * 이 앱의 모든 컴포넌트는 라이트 전용 색(bg-white, text-gray-900 등)을 쓴다.
+ * 브라우저/OS가 다크모드면 body 배경만 어두워지고 흰 카드 밖 텍스트가
+ * 검정→검정으로 안 보이던 버그가 있어, color-scheme를 light로 고정한다.
+ */
 :root {
+  color-scheme: light;
   --background: #ffffff;
   --foreground: #171717;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
 }
 
 body {

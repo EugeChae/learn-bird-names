@@ -9,6 +9,7 @@ import {
 } from "@/services/progress.service";
 import ProgressBoard from "@/components/ProgressBoard";
 import ProgressResetModal from "@/components/ProgressResetModal";
+import TopNav from "@/components/TopNav";
 
 /**
  * 진도 대시보드 페이지 (STORY-015).
@@ -43,6 +44,7 @@ export default function ProgressPage() {
 
   return (
     <main className="min-h-screen py-6">
+      <TopNav />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted && summary ? (
         <ProgressBoard summary={summary} onReset={handleReset} />

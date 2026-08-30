@@ -7,6 +7,7 @@ import {
   clearFlags,
   type PhotoFlag,
 } from "@/lib/photoFlags.store";
+import TopNav from "@/components/TopNav";
 
 /**
  * 사진 변경요청 모아보기 (큐레이터용). localStorage에 쌓인 플래그를 목록으로 보여주고,
@@ -60,19 +61,25 @@ export default function FlagsPage() {
   };
 
   return (
-    <main className="mx-auto flex w-full max-w-2xl flex-col gap-4 p-4">
-      <header className="flex flex-col gap-1">
-        <a
-          href="/quiz"
-          className="text-sm text-gray-400 underline underline-offset-2 hover:text-gray-600"
-        >
-          ← 퀴즈로
-        </a>
-        <h1 className="text-2xl font-bold">🚩 사진 변경요청</h1>
-        <p className="text-sm text-gray-600">
-          퀴즈를 풀다 별로였던 사진들이에요. 이 목록을 배치로 교체합니다.
-        </p>
-      </header>
+    <>
+      <TopNav
+        containerClass="max-w-2xl"
+        right={
+          <a
+            href="/quiz"
+            className="rounded-md px-2 py-1.5 text-sm font-medium text-gray-500 hover:bg-gray-100"
+          >
+            퀴즈로 →
+          </a>
+        }
+      />
+      <main className="mx-auto flex w-full max-w-2xl flex-col gap-4 p-4">
+        <header className="flex flex-col gap-1">
+          <h1 className="text-2xl font-bold">🚩 사진 변경요청</h1>
+          <p className="text-sm text-gray-600">
+            퀴즈를 풀다 별로였던 사진들이에요. 이 목록을 배치로 교체합니다.
+          </p>
+        </header>
 
       {!mounted ? (
         <p className="text-gray-400">불러오는 중…</p>
@@ -144,6 +151,7 @@ export default function FlagsPage() {
           </ul>
         </>
       )}
-    </main>
+      </main>
+    </>
   );
 }

@@ -15,6 +15,7 @@ import {
 import QuizCard from "@/components/QuizCard";
 import PhotoGridQuizCard from "@/components/PhotoGridQuizCard";
 import ProgressResetModal from "@/components/ProgressResetModal";
+import TopNav from "@/components/TopNav";
 
 /**
  * 퀴즈 페이지. `?mode=`로 사진→이름 / 이름→사진을 고르고, 세션을 마운트
@@ -46,6 +47,7 @@ export default function QuizPage() {
 
   return (
     <main className="min-h-screen py-6">
+      <TopNav />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted && session ? (
         session.options.mode === "name-to-photo" ? (
