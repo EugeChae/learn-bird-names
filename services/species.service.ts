@@ -63,6 +63,22 @@ export function getByDifficulty(tier: DifficultyTier): Species[] {
   return ALL_SPECIES.filter((s) => s.difficulty_tier === tier);
 }
 
+/**
+ * 데이터에 등장하는 서식지 태그를 빈도 내림차순(같으면 이름순)으로 반환한다.
+ * 서식지별 퀴즈 범위(STORY-016)의 선택지·"5종 미만" 경고 카운트에 쓰인다.
+ */
+export function getHabitats(): { habitat: string; count: number }[] {
+  const counts = new Map<string, number>();
+  for (const s of ALL_SPECIES) {
+    for (const h of s.habitat) {
+      counts.set(h, (counts.get(h) ?? 0) + 1);
+    }
+  }
+  return Array.from(counts, ([habitat, count]) => ({ habitat, count })).sort(
+    (a, b) => b.count - a.count || a.habitat.localeCompare(b.habitat, "ko")
+  );
+}
+
 /** 지정한 id들을 제외한 무작위 1종. 후보가 없으면 undefined. */
 export function getRandom(
   excludeIds: string[] = [],
