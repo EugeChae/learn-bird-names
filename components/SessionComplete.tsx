@@ -12,7 +12,7 @@ export default function SessionComplete({ session }: { session: QuizSession }) {
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4"
+      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-4xl"
       aria-label="세션 완료 · 짝짓기 복습"
     >
       <h2 className="text-2xl font-bold">퀴즈 완료!</h2>
@@ -28,7 +28,7 @@ export default function SessionComplete({ session }: { session: QuizSession }) {
         이번 세션에서 만난 새들이에요. 흐린 항목은 1번에 맞힌 새입니다. (짝짓기
         게임은 준비 중 — STORY-013)
       </p>
-      <ul className="flex flex-col gap-2">
+      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
         {pairs.map((p) => (
           <li
             key={p.species.id}

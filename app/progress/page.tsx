@@ -44,7 +44,7 @@ export default function ProgressPage() {
 
   return (
     <main className="min-h-screen py-6">
-      <TopNav />
+      <TopNav containerClass="max-w-md lg:max-w-4xl" />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted && summary ? (
         <ProgressBoard summary={summary} onReset={handleReset} />

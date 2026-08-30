@@ -58,7 +58,7 @@ export default function PhotoGridQuizCard({
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4"
+      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-4xl"
       aria-label="이름 보고 사진 맞히기 퀴즈"
     >
       <header className="flex items-center justify-between text-sm text-gray-600">
@@ -95,7 +95,7 @@ export default function PhotoGridQuizCard({
         )}
       </div>
 
-      <ul className="grid grid-cols-2 gap-2">
+      <ul className="grid grid-cols-2 gap-2 lg:grid-cols-4 lg:gap-4">
         {question.choices.map((choice, i) => {
           const photo = choice.media[0];
           return (

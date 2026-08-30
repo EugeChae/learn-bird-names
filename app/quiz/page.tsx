@@ -47,7 +47,7 @@ export default function QuizPage() {
 
   return (
     <main className="min-h-screen py-6">
-      <TopNav />
+      <TopNav containerClass="max-w-md lg:max-w-4xl" />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted && session ? (
         session.options.mode === "name-to-photo" ? (
