@@ -1,12 +1,13 @@
 "use client";
 
 import { useEffect, useState } from "react";
-import type { QuizSession } from "@/types";
+import type { QuizSession, TaxonomySession } from "@/types";
 import {
   getAllProgress,
   resetAll,
   ProgressCorruptedError,
 } from "@/services/progress.service";
+import { createTaxonomySession } from "@/services/taxonomy.service";
 import Link from "next/link";
 import {
   createQuizSession,
@@ -17,6 +18,7 @@ import {
 } from "@/lib/quiz-session";
 import QuizCard from "@/components/QuizCard";
 import PhotoGridQuizCard from "@/components/PhotoGridQuizCard";
+import TaxonomyCard from "@/components/TaxonomyCard";
 import ProgressResetModal from "@/components/ProgressResetModal";
 import TopNav from "@/components/TopNav";
 
@@ -37,6 +39,7 @@ function sessionFromLocation(): QuizSession {
  */
 export default function QuizPage() {
   const [session, setSession] = useState<QuizSession | null>(null);
+  const [taxonomy, setTaxonomy] = useState<TaxonomySession | null>(null);
   const [corrupted, setCorrupted] = useState(false);
 
   useEffect(() => {
@@ -49,13 +52,15 @@ export default function QuizPage() {
       }
       throw err;
     }
-    setSession(sessionFromLocation());
+    if (modeFromLocation() === "taxonomy") setTaxonomy(createTaxonomySession());
+    else setSession(sessionFromLocation());
   }, []);
 
   const handleReset = () => {
     resetAll();
     setCorrupted(false);
-    setSession(sessionFromLocation());
+    if (modeFromLocation() === "taxonomy") setTaxonomy(createTaxonomySession());
+    else setSession(sessionFromLocation());
   };
 
   // 좁힌 범위(취약종·복습·서식지)에 종이 없어 문제가 하나도 없으면 빈 세션 대신 안내.
@@ -69,7 +74,9 @@ export default function QuizPage() {
       <TopNav containerClass="max-w-md lg:max-w-4xl" />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted &&
-        (isEmptyScope ? (
+        (taxonomy ? (
+          <TaxonomyCard session={taxonomy} />
+        ) : isEmptyScope ? (
           <div className="mx-auto flex w-full max-w-md flex-col gap-4 p-8 text-center">
             <p className="text-gray-600">이 범위에는 아직 학습할 새가 없어요.</p>
             <Link

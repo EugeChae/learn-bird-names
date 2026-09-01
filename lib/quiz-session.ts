@@ -7,8 +7,12 @@ import {
   ProgressCorruptedError,
 } from "@/services/progress.service";
 
-/** UI에서 진입 가능한 퀴즈 모드(taxonomy는 STORY-014). */
-const ENTERABLE_MODES: readonly QuizMode[] = ["photo-to-name", "name-to-photo"];
+/** UI에서 진입 가능한 퀴즈 모드. */
+const ENTERABLE_MODES: readonly QuizMode[] = [
+  "photo-to-name",
+  "name-to-photo",
+  "taxonomy",
+];
 
 /** URL·선택지로 진입 가능한 퀴즈 범위(STORY-016). */
 const SCOPES: readonly QuizScope[] = ["all", "weak", "review", "habitat"];

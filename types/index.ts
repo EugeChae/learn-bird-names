@@ -124,3 +124,51 @@ export interface MatchingPair {
   matched: boolean;
   wasEasy: boolean;
 }
+
+// ─── Taxonomy Quiz Types (STORY-014 / FR-015) ─────────────────────────────────
+
+export type TaxonomyQuestionType =
+  | "photo-to-taxon" // 유형1: 사진 보고 목/과 맞히기
+  | "odd-one-out" // 유형2: 같은 과 3 + 다른 과 1 중 이상한 종
+  | "family-membership"; // 유형3: 과 이름 → 소속/비소속 종 판별
+
+export interface TaxonomyChoice {
+  /** 보기 식별자. taxon 라벨(목/과) 또는 종 id. */
+  id: string;
+  /** 화면에 보일 한국어 라벨(taxon 한국어명 또는 종 한국명). */
+  label: string;
+  /** 있으면 사진·한국명 렌더용(유형2·3). 유형1의 taxon 보기엔 없음. */
+  species?: Species;
+}
+
+export interface TaxonomyQuestion {
+  id: string;
+  type: TaxonomyQuestionType;
+  /** 유형1: 사진 볼 종. */
+  promptSpecies?: Species;
+  /** 유형1에서 目/科 중 무엇을 묻는지. */
+  taxonLevel?: "order" | "family";
+  /** 유형3: 제시하는 과(科)의 한국어명. */
+  familyLabel?: string;
+  /** 유형3: 소속(true)/비소속(false) 종 고르기. */
+  askBelongs?: boolean;
+  choices: TaxonomyChoice[];
+  correctId: string;
+  usedHint: boolean;
+  attemptCount: number;
+  resolvedCorrect?: boolean;
+}
+
+export interface TaxonomySession {
+  id: string;
+  questions: TaxonomyQuestion[];
+  currentIndex: number;
+  streak: number;
+  maxStreak: number;
+}
+
+export interface TaxonomyAnswerResult {
+  correct: boolean;
+  isRetry: boolean;
+  correctId: string;
+}

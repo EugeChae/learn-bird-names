@@ -5,6 +5,11 @@ import Link from "next/link";
 import type { Species, SpeciesTrivia } from "@/types";
 import { getRandom } from "@/services/species.service";
 import {
+  countCorrectSpecies,
+  TAXONOMY_UNLOCK_THRESHOLD,
+  ProgressCorruptedError,
+} from "@/services/progress.service";
+import {
   loadScopeAvailability,
   type ScopeAvailability,
 } from "@/lib/quiz-session";
@@ -22,12 +27,24 @@ export default function Home() {
   const [species, setSpecies] = useState<Species | undefined>();
   const [trivia, setTrivia] = useState<SpeciesTrivia | undefined>();
   const [scopes, setScopes] = useState<ScopeAvailability | null>(null);
+  const [taxo, setTaxo] = useState<
+    { unlocked: boolean; correct: number } | undefined
+  >();
 
   useEffect(() => {
     const bird = getRandom();
     setSpecies(bird);
     setTrivia(bird ? pickTrivia(bird.trivia) : undefined);
     setScopes(loadScopeAvailability());
+    // 분류 모드 잠금 상태(누적 정답 종 수). 진도 손상 시 잠금으로 폴백.
+    try {
+      const correct = countCorrectSpecies();
+      setTaxo({ unlocked: correct >= TAXONOMY_UNLOCK_THRESHOLD, correct });
+    } catch (err) {
+      if (err instanceof ProgressCorruptedError) {
+        setTaxo({ unlocked: false, correct: 0 });
+      } else throw err;
+    }
   }, []);
 
   return (
@@ -46,7 +63,7 @@ export default function Home() {
             <BirdCard species={species} />
             <div className="flex flex-col gap-5">
               {trivia && <TriviaCard trivia={trivia} />}
-              <QuizModePicker includeId={species.id} />
+              <QuizModePicker includeId={species.id} taxonomy={taxo} />
               {scopes && <QuizScopePicker availability={scopes} />}
               <Link
                 href="/progress"
