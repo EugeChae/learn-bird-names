@@ -1,7 +1,6 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
 import {
   type ProgressSummary,
   MASTERY_THRESHOLD,
@@ -26,16 +25,16 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-5 p-4"
+      className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl"
       aria-label="학습 진도 대시보드"
     >
-      <header className="flex items-center justify-between">
+      <header>
         <h1 className="text-2xl font-bold text-gray-900">학습 진도</h1>
-        <Link href="/" className="text-sm text-gray-500 underline underline-offset-2">
-          홈으로
-        </Link>
       </header>
 
+      {/* 데스크톱(lg+): 통계 왼쪽 · 취약종 목록 오른쪽 2단. 모바일 세로 1열. */}
+      <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+      <div className="flex flex-col gap-5">
       {/* 학습 종 수 / 전체 종 수 (AC1) */}
       <div className="rounded-xl border border-gray-200 p-4">
         <div className="flex items-baseline justify-between">
@@ -68,6 +67,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
         </span>
         <strong className="text-2xl text-amber-600">{mastered}</strong>
       </div>
+      </div>
 
       {/* 취약종 목록 (AC3) */}
       <div className="flex flex-col gap-2">
@@ -96,6 +96,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
             ))}
           </ol>
         )}
+      </div>
       </div>
 
       {/* 진도 초기화 (AC4) */}

@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     <main className="min-h-screen py-6">
-      <div className="mx-auto flex w-full max-w-md flex-col gap-5 p-4">
+      <div className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl">
         <header className="text-center">
           <p className="text-sm text-gray-500">한국 새 이름 배우기</p>
           <h1 className="mt-1 text-3xl font-bold text-gray-900">오늘의 새</h1>
@@ -41,18 +41,21 @@ export default function Home() {
         {!species ? (
           <p className="p-8 text-center text-gray-500">오늘의 새를 고르는 중…</p>
         ) : (
-          <>
+          /* 데스크톱(lg+): 새 카드 왼쪽 · 트리비아/퀴즈 시작 오른쪽. 모바일 세로 1열. */
+          <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
             <BirdCard species={species} />
-            {trivia && <TriviaCard trivia={trivia} />}
-            <QuizModePicker includeId={species.id} />
-            {scopes && <QuizScopePicker availability={scopes} />}
-            <Link
-              href="/progress"
-              className="text-center text-sm font-medium text-gray-500 underline underline-offset-2"
-            >
-              학습 진도 보기
-            </Link>
-          </>
+            <div className="flex flex-col gap-5">
+              {trivia && <TriviaCard trivia={trivia} />}
+              <QuizModePicker includeId={species.id} />
+              {scopes && <QuizScopePicker availability={scopes} />}
+              <Link
+                href="/progress"
+                className="text-center text-sm font-medium text-gray-500 underline underline-offset-2"
+              >
+                학습 진도 보기
+              </Link>
+            </div>
+          </div>
         )}
       </div>
     </main>

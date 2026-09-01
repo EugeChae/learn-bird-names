@@ -26,7 +26,7 @@ export default function SessionComplete({ session }: { session: QuizSession }) {
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-5 p-4"
+      className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl"
       aria-label="세션 결과"
     >
       <h2 className="text-2xl font-bold">퀴즈 완료!</h2>

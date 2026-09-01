@@ -18,6 +18,7 @@ import {
 import QuizCard from "@/components/QuizCard";
 import PhotoGridQuizCard from "@/components/PhotoGridQuizCard";
 import ProgressResetModal from "@/components/ProgressResetModal";
+import TopNav from "@/components/TopNav";
 
 /** 현재 URL(범위·모드·include)에 맞는 세션을 만든다. */
 function sessionFromLocation(): QuizSession {
@@ -65,6 +66,7 @@ export default function QuizPage() {
 
   return (
     <main className="min-h-screen py-6">
+      <TopNav containerClass="max-w-md lg:max-w-4xl" />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted &&
         (isEmptyScope ? (

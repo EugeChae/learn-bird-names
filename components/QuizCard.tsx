@@ -53,7 +53,7 @@ export default function QuizCard({ session }: QuizCardProps) {
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4"
+      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-4xl"
       aria-label="사진 이름 맞히기 퀴즈"
     >
       <header className="flex items-center justify-between text-sm text-gray-600">
@@ -65,6 +65,8 @@ export default function QuizCard({ session }: QuizCardProps) {
         </span>
       </header>
 
+      {/* 데스크톱(lg+)에서 사진 왼쪽 · 문제/보기 오른쪽 2단. 모바일은 세로 1열. */}
+      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
       {photo ? (
         <figure className="flex flex-col gap-1">
           <button
@@ -97,6 +99,8 @@ export default function QuizCard({ session }: QuizCardProps) {
         </div>
       )}
 
+      {/* 오른쪽 컨트롤 패널: 힌트 · 4지선다 · 상태 · 다음 */}
+      <div className="flex flex-col gap-4">
       <div className="min-h-[2rem]">
         {hintText ? (
           <p className="rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-800">
@@ -155,6 +159,8 @@ export default function QuizCard({ session }: QuizCardProps) {
           다음
         </button>
       )}
+      </div>
+      </div>
 
       <div className="text-center">
         <a
