@@ -2190,5 +2190,836 @@
         "trivia_source": "위키백과, \"말똥가리\", 2026-08 확인"
       }
     ]
+  },
+  {
+    "id": "turdus-eunomus",
+    "name_korean": "개똥지빠귀",
+    "name_latin": "Turdus eunomus",
+    "name_english": "Dusky Thrush",
+    "order": "Passeriformes",
+    "family": "Turdidae",
+    "habitat": [
+      "도시·마을",
+      "농경지",
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/462328448/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 257701521)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "통통한 중형 지빠귀로, 얼굴·가슴·옆구리에 검은 점(비늘무늬)이 촘촘하고 뚜렷한 흰 눈썹선이 있으며 날개에 붉은 기가 돈다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Dusky thrush\" (en), 2026-09 확인"
+      },
+      {
+        "content": "시베리아 중부에서 캄차카까지 번식하고 한국·일본·중국 남부·미얀마에서 겨울을 나는 겨울철새다. 곤충(특히 모기)·지렁이·열매를 두루 먹는 잡식성이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Dusky thrush\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "turdus-pallidus",
+    "name_korean": "흰배지빠귀",
+    "name_latin": "Turdus pallidus",
+    "name_english": "Pale Thrush",
+    "order": "Passeriformes",
+    "family": "Turdidae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV",
+      "PM"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2740961/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "standing",
+        "license": "CC-BY",
+        "attribution": "(c) Kim, Hyun-tae, some rights reserved (CC BY), via iNaturalist (obs. 2452846)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 23cm. 수컷은 머리와 멱이 청회색이고 등은 갈색, 아랫면은 옅다. 암컷은 더 칙칙하고 머리가 갈색을 띤다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Pale thrush\" (en), 2026-09 확인"
+      },
+      {
+        "content": "숲·덤불·정원·공원에 살며 몸을 잘 숨기는 수줍은 새다. 시베리아 남동부·중국 동북부·한국에서 번식하고 남쪽에서 겨울을 나며, 이동 시기엔 열매 있는 곳에 큰 무리로 나타나기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Pale thrush\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "turdus-hortulorum",
+    "name_korean": "되지빠귀",
+    "name_latin": "Turdus hortulorum",
+    "name_english": "Grey-backed Thrush",
+    "order": "Passeriformes",
+    "family": "Turdidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/10992714/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Alexander Ganse, some rights reserved (CC BY-NC), via iNaturalist (obs. 8286370)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 20~23cm. 수컷은 등·가슴이 슬레이트 회색이고 턱·배가 희며 옆구리가 밤색이다. 암컷은 등이 회갈색이고 가슴에 검은 점이 있다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Grey-backed thrush\" (en), 2026-09 확인"
+      },
+      {
+        "content": "대개 해발 1100m 이하의 낙엽수·상록수림에 살며 열매와 곤충을 먹는다. 중국 동북부·러시아 극동에서 번식하고 중국 남부·베트남 북부에서 겨울을 난다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Grey-backed thrush\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "zoothera-aurea",
+    "name_korean": "호랑지빠귀",
+    "name_latin": "Zoothera aurea",
+    "name_english": "White's Thrush",
+    "order": "Passeriformes",
+    "family": "Turdidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "u",
+    "status": [
+      "SV",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/230365192/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Alexander Ganse, some rights reserved (CC BY-NC), via iNaturalist (obs. 135089465)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 27~31cm의 대형 지빠귀로, 온몸이 옅은 흰~노란 바탕에 검은 초승달 모양 비늘무늬로 덮여 이름값을 한다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"White's thrush\" (en), 2026-09 확인"
+      },
+      {
+        "content": "습한 침엽수림 바닥에서 지낸다. 시베리아~만주·한국·일본에 분포하며 북방 개체는 겨울에 동남아로 남하한다. 수컷은 사이사이 긴 정적을 두는, 멀리 퍼지는 기계음 같은 휘파람 소리를 낸다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"White's thrush\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "chloris-sinica",
+    "name_korean": "방울새",
+    "name_latin": "Chloris sinica",
+    "name_english": "Oriental Greenfinch",
+    "order": "Passeriformes",
+    "family": "Fringillidae",
+    "habitat": [
+      "도시·마을",
+      "산·숲",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2653217/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY",
+        "attribution": "(c) Kim, Hyun-tae, some rights reserved (CC BY), via iNaturalist (obs. 2381090)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 12.5~14cm. 굵은 부리와 살짝 갈라진 짧은 꼬리를 지닌 올리브빛 갈색 되새류로, 날개의 선명한 노란 반점이 식별 포인트다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Oriental greenfinch\" (en), 2026-09 확인"
+      },
+      {
+        "content": "활엽수·침엽수림에서 번식하며 씨앗을 먹는다. 만주 동부·한국·일본·중국 서부 등 동아시아에 분포하고, 아종에 따라 텃새이거나 겨울에 남하한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Oriental greenfinch\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "eophona-migratoria",
+    "name_korean": "밀화부리",
+    "name_latin": "Eophona migratoria",
+    "name_english": "Chinese Grosbeak",
+    "order": "Passeriformes",
+    "family": "Fringillidae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/34629603/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) jachanoh, some rights reserved (CC BY-NC), via iNaturalist (obs. 22358602)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 18~20cm. 크고 굵은 노란 부리(끝은 검정)에 큰 머리를 지녔고, 수컷은 검은 두건 같은 머리에 회색 몸·흰 반점 있는 검은 날개를, 암컷은 검은 머리무늬가 없어 더 수수하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Chinese grosbeak\" (en), 2026-09 확인"
+      },
+      {
+        "content": "언덕·산지의 숲·대나무숲에 살며 정원·과수원에도 잘 든다. 강한 부리로 씨앗을 까 먹는 곡식성으로, 한국 등에서 번식하고 겨울엔 남쪽으로 이동한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Chinese grosbeak\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "coccothraustes-coccothraustes",
+    "name_korean": "콩새",
+    "name_latin": "Coccothraustes coccothraustes",
+    "name_english": "Hawfinch",
+    "order": "Passeriformes",
+    "family": "Fringillidae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/624831646/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 343057882)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 16.5~18cm. 큰 머리에 어마어마하게 굵은 원추형 부리가 특징으로, 턱 근육 힘이 약 30~48kg에 달해 버찌·자두 씨앗도 깨뜨린다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Hawfinch\" (en), 2026-09 확인"
+      },
+      {
+        "content": "큰 나무가 있는 활엽·혼합림과 공원·정원에 살며 단단한 씨앗과 열매 속을 먹는다. 유럽에선 텃새지만 아시아 개체 상당수는 겨울에 남하한다(한국에선 겨울철새).",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Hawfinch\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "fringilla-montifringilla",
+    "name_korean": "되새",
+    "name_latin": "Fringilla montifringilla",
+    "name_english": "Brambling",
+    "order": "Passeriformes",
+    "family": "Fringillidae",
+    "habitat": [
+      "산·숲",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2714687/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "perched",
+        "license": "CC-BY",
+        "attribution": "(c) Kim, Hyun-tae, some rights reserved (CC BY), via iNaturalist (obs. 2435329)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 16cm. 번식기 수컷은 검은 머리·어두운 윗면·주황빛 가슴·흰 배를 지니며, 흰 허리가 비슷한 되새류와 구별된다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Brambling\" (en), 2026-09 확인"
+      },
+      {
+        "content": "침엽수·자작나무 숲에서 번식하고 겨울엔 유럽 남부·중국·일본 등지로 이동한다. 겨울엔 수천에서 수백만 마리에 이르는 거대한 무리를 이루기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Brambling\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "emberiza-cioides",
+    "name_korean": "멧새",
+    "name_latin": "Emberiza cioides",
+    "name_english": "Meadow Bunting",
+    "order": "Passeriformes",
+    "family": "Emberizidae",
+    "habitat": [
+      "산·숲",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2691496/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY",
+        "attribution": "(c) Kim, Hyun-tae, some rights reserved (CC BY), via iNaturalist (obs. 2411074)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 15~16.5cm. 수컷은 밤색 기가 강한 갈색에 등엔 검은 줄무늬, 흰 눈썹선·수염선·멱과 회색 뺨의 뚜렷한 얼굴 무늬, 흰 바깥꼬리를 지닌다. 암컷은 더 수수하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Meadow bunting\" (en), 2026-09 확인"
+      },
+      {
+        "content": "덤불·농경지·풀밭·성긴 숲 같은 건조하고 트인 곳에 산다. 대체로 텃새로, 같은 번식지를 여러 해 반복해 쓰는 강한 자리 애착을 보인다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Meadow bunting\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "emberiza-spodocephala",
+    "name_korean": "촉새",
+    "name_latin": "Emberiza spodocephala",
+    "name_english": "Black-faced Bunting",
+    "order": "Passeriformes",
+    "family": "Emberizidae",
+    "habitat": [
+      "습지·논",
+      "산·숲",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV",
+      "PM"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/179936977/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jean-Jacques Strydom, some rights reserved (CC BY-NC), via iNaturalist (obs. 107033454)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 16cm. 수컷은 부리~눈 사이가 어두운 회색 머리에 노란 기가 섞이고, 등은 갈색에 굵은 검은 줄무늬, 아랫면은 노란빛 흰색이다. 암컷은 무늬가 약하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Black-faced bunting\" (en), 2026-09 확인"
+      },
+      {
+        "content": "타이가의 하천가 빽빽한 덤불에서 번식하고, 겨울엔 물가의 농경지·덤불에서 지낸다. 씨앗을 주로 먹고 새끼를 키울 땐 곤충도 먹는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Black-faced bunting\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "emberiza-rustica",
+    "name_korean": "쑥새",
+    "name_latin": "Emberiza rustica",
+    "name_english": "Rustic Bunting",
+    "order": "Passeriformes",
+    "family": "Emberizidae",
+    "habitat": [
+      "산·숲",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/116379293/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Amaël Borzée, some rights reserved (CC BY-NC), via iNaturalist (obs. 71477105)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "작은 댕기(관)가 있고, 흰 아랫면에 붉은 밤색 가슴띠와 옆구리 줄무늬, 분홍빛 다리·아랫부리를 지닌다. 여름 수컷은 검은 머리에 흰 멱·눈썹선이 뚜렷하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Rustic bunting\" (en), 2026-09 확인"
+      },
+      {
+        "content": "습한 침엽수림(타이가)에서 번식하고 한국·일본·중국 동부에서 겨울을 나는 겨울철새다. 씨앗을 먹고 새끼를 키울 땐 곤충을 먹는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Rustic bunting\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "anas-acuta",
+    "name_korean": "고방오리",
+    "name_latin": "Anas acuta",
+    "name_english": "Northern Pintail",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "하천·호수",
+      "습지·논",
+      "저수지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/26297743/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY",
+        "attribution": "(c) Owen Strickland, some rights reserved (CC BY), via iNaturalist (obs. 17323945)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "수컷은 몸길이 59~76cm(길게 뻗은 중앙 꽁지깃 약 10cm 포함). 초콜릿색 머리에서 목 옆으로 흰 줄이 올라오고 가슴이 희며, 회색 몸에 길고 뾰족한 검은 꽁지가 특징이다. 암컷은 옅은 갈색 얼룩이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Northern pintail\" (en), 2026-09 확인"
+      },
+      {
+        "content": "탁 트인 습지·호숫가·툰드라에서 번식하고 겨울엔 하구·염습지·석호로 이동하는 겨울철새다. 겨울엔 물풀의 씨앗·뿌리줄기를, 번식기엔 수서 곤충·연체동물을 먹는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Northern pintail\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "spatula-clypeata",
+    "name_korean": "넓적부리",
+    "name_latin": "Spatula clypeata",
+    "name_english": "Northern Shoveler",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "하천·호수",
+      "습지·논",
+      "저수지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/331378426/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Leslie Hurteau, some rights reserved (CC BY-NC), via iNaturalist (obs. 189204252)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 44~52cm. 삽처럼 넓은 부리가 가장 큰 특징으로, 부리 가장자리의 빗살(래멜라)로 물을 걸러 먹는다. 수컷은 광택 나는 초록 머리·흰 가슴·밤색 옆구리, 암컷은 칙칙한 갈색 얼룩이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Northern shoveler\" (en), 2026-09 확인"
+      },
+      {
+        "content": "수생 무척추동물·플랑크톤을 부리를 좌우로 저어 걸러 먹는다. 탁 트인 습지에 살며, 유럽·유라시아·북미에서 번식하고 겨울엔 남쪽으로 이동한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Northern shoveler\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "aythya-ferina",
+    "name_korean": "흰죽지",
+    "name_latin": "Aythya ferina",
+    "name_english": "Common Pochard",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "하천·호수",
+      "저수지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/348074179/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Rob Macfie, some rights reserved (CC BY-NC), via iNaturalist (obs. 197600706)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 42~49cm의 잠수성 오리. 수컷은 밤색 머리·목, 검은 가슴·꽁지, 옅은 회색 몸에 붉은 눈을 지닌다. 암컷은 갈색 눈에 전체가 더 칙칙하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common pochard\" (en), 2026-09 확인"
+      },
+      {
+        "content": "수심 1m 이상의 못·호수에서 물속으로 잠수해 물풀·씨앗·연체동물·수서 무척추동물을 먹는다. 스칸디나비아·시베리아 스텝에서 번식하고 겨울엔 남·서쪽으로 이동한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common pochard\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "anser-fabalis",
+    "name_korean": "큰기러기",
+    "name_latin": "Anser fabalis",
+    "name_english": "Taiga Bean Goose",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "습지·논",
+      "농경지",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/464309352/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "standing",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 258746847)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 68~90cm의 갈색 기러기. 머리·목이 어둡고, 검은 부리 가운데에 주황 띠가 있으며 다리·발도 선명한 주황색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Taiga bean goose\" (en), 2026-09 확인"
+      },
+      {
+        "content": "북유럽·아시아 타이가에서 번식하고 이동·월동기엔 트인 습지·풀밭에서 지낸다. 풀을 뜯어 먹으며, 겨울에 콩밭 그루터기에서 먹이를 찾던 데서 영어 이름(bean goose)이 왔다. 동부 개체는 중국 동부·한국·일본에서 겨울을 난다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Taiga bean goose\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "otus-sunia",
+    "name_korean": "소쩍새",
+    "name_latin": "Otus sunia",
+    "name_english": "Oriental Scops Owl",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "u",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/293142878/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) taek-guen-im, some rights reserved (CC BY-NC), via iNaturalist (obs. 169102970)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "작은 귀깃(우각)과 노란 눈을 가진 소형 올빼미로, 회색형·붉은형 두 색깔형이 있고 나무껍질 같은 위장 무늬가 촘촘하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Oriental scops owl\" (en), 2026-09 확인"
+      },
+      {
+        "content": "러시아에서 타이까지 건조한 낙엽수림에 살며 나무 구멍에 둥지를 튼다. '뚝 또 또록' 하는 되풀이되는 울음소리를 내고, 방해받으면 눈을 반쯤 감고 나뭇가지처럼 몸을 굳힌다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Oriental scops owl\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "ninox-japonica",
+    "name_korean": "솔부엉이",
+    "name_latin": "Ninox japonica",
+    "name_english": "Northern Boobook",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "u",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/159615288/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jean-Jacques Strydom, some rights reserved (CC BY-NC), via iNaturalist (obs. 96103111)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 29~33cm. 귀깃이 없는 매처럼 생긴 올빼미로, 갈색 윗면에 흰 배엔 갈색 세로 방울무늬가 흩뿌려져 있고 눈은 샛노랗다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Northern boobook\" (en), 2026-09 확인"
+      },
+      {
+        "content": "저지대 낙엽수림·공원·정원에 살며 밤에 횃대에서 먹이를 노려 덮친다. 주로 곤충을 먹고 작은 새·도마뱀·박쥐도 잡는다. 동아시아에서 번식하는 개체는 겨울에 동남아로 남하한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Northern boobook\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "poecile-palustris",
+    "name_korean": "쇠박새",
+    "name_latin": "Poecile palustris",
+    "name_english": "Marsh Tit",
+    "order": "Passeriformes",
+    "family": "Paridae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/368109637/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) pitturpattur, some rights reserved (CC BY-NC), via iNaturalist (obs. 208071864)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 11.5~12cm. 광택 나는 검은 머리(청색 기)와 작은 검은 턱받이, 흰 뺨, 회갈색 등·꽁지를 지닌다. 비슷한 버들박새와는 광택 검은 머리와 작은 턱받이로 구별된다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Marsh tit\" (en), 2026-09 확인"
+      },
+      {
+        "content": "이름과 달리 습지가 아니라 참나무·너도밤나무가 많은 촉촉한 활엽수림·공원·정원에 산다. 씨앗을 숨겨 저장하는 습성이 강해 뇌의 해마가 박새보다 31% 크다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Marsh tit\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "accipiter-nisus",
+    "name_korean": "새매",
+    "name_latin": "Accipiter nisus",
+    "name_english": "Eurasian Sparrowhawk",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "habitat": [
+      "산·숲",
+      "도시·마을",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV",
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/252922359/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Нина Штейнбреннер, some rights reserved (CC BY-NC), via iNaturalist (obs. 147029093)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "수컷 29~34cm, 암컷 35~41cm로 암컷이 최대 25% 크고 몸무게는 두 배 — 새 중 암수 크기 차가 가장 큰 편이다. 짧고 둥근 날개와 긴 꼬리, 가로줄무늬 아랫면, 노란 눈을 지닌다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian sparrowhawk\" (en), 2026-09 확인"
+      },
+      {
+        "content": "숲·정원·도시까지 살며, 산울타리 뒤에서 기습해 작은 새를 사냥한다(성공률 약 10%). 수컷은 박새·되새류를, 암컷은 지빠귀·찌르레기까지 잡는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian sparrowhawk\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "accipiter-gentilis",
+    "name_korean": "참매",
+    "name_latin": "Accipiter gentilis",
+    "name_english": "Northern Goshawk",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "habitat": [
+      "산·숲",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "u",
+    "status": [
+      "WV",
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/25498621/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Alexander Ganse, some rights reserved (CC BY-NC), via iNaturalist (obs. 16880997)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "수컷 46~63cm, 암컷 58~69cm로 암컷이 두 배 이상 무겁다. 청회색 윗면에 흰 바탕 고운 가로줄 아랫면, 뚜렷한 흰 눈썹선과 매서운 노란~주황 눈을 지닌 대형 매다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian goshawk\" (en), 2026-09 확인"
+      },
+      {
+        "content": "숲에 살며 횃대에서 기습하는 강력한 사냥꾼으로, 먹이의 76.5%가 새(까마귀·비둘기·꿩 등)이고 다람쥐·토끼 같은 포유류도 잡는다. 중세엔 귀족만 다룰 수 있어 학명 gentilis('고귀한')가 붙었다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian goshawk\" (en), 2026-09 확인"
+      }
+    ]
   }
 ]
