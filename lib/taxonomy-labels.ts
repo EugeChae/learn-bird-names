@@ -6,6 +6,11 @@
 // 출처: 국립생물자원관 국가생물종목록 · Birds Korea 2024 체크리스트의 표준 국명.
 // (분류학 명칭은 도감·학술 표준 사실이며 AI 생성 콘텐츠가 아니다 — 트리비아 금지 원칙과 무관.)
 // 현재 데이터(50종)에 등장하는 15목·35과를 모두 포함한다. 누락 시 Latin으로 폴백.
+//
+// 검수(2026-09): 15목·35과 전부 한국어 위키백과(특히 '참새목' 문서의 과 목록)·NIBR과 대조 완료.
+// 이중 통용명이 있는 항목(둘 다 표준):
+//   - Muscicapidae: 딱새과(채택, '참새목' 문서 표기·친숙도) ↔ 솔딱새과(별도 문서 표제어)
+//   - Cuculidae/Cuculiformes: 뻐꾸기과/뻐꾸기목(채택, 친숙도 우선) ↔ 두견과/두견목(위키 표제어)
 
 const ORDER_KO: Record<string, string> = {
   Accipitriformes: "수리목",
@@ -14,7 +19,7 @@ const ORDER_KO: Record<string, string> = {
   Charadriiformes: "도요목",
   Columbiformes: "비둘기목",
   Coraciiformes: "파랑새목",
-  Cuculiformes: "두견목",
+  Cuculiformes: "뻐꾸기목",
   Falconiformes: "매목",
   Galliformes: "닭목",
   Gruiformes: "두루미목",
@@ -36,7 +41,7 @@ const FAMILY_KO: Record<string, string> = {
   Columbidae: "비둘기과",
   Coraciidae: "파랑새과",
   Corvidae: "까마귀과",
-  Cuculidae: "두견과",
+  Cuculidae: "뻐꾸기과",
   Emberizidae: "멧새과",
   Falconidae: "매과",
   Gruidae: "두루미과",
