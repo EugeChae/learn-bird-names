@@ -194,6 +194,23 @@ export function getProgressSummary(deps: ProgressDeps = {}): ProgressSummary {
   };
 }
 
+/** Taxonomy 모드 잠금 해제 기준: 누적 정답 종 수(STORY-014 / FR-015). */
+export const TAXONOMY_UNLOCK_THRESHOLD = 20;
+
+/** 한 번이라도 정답을 맞힌 서로 다른 종의 수(correct_count > 0). */
+export function countCorrectSpecies(deps: ProgressDeps = {}): number {
+  let n = 0;
+  for (const p of Object.values(storeOf(deps).load())) {
+    if (p.correct_count > 0) n += 1;
+  }
+  return n;
+}
+
+/** Taxonomy 모드 잠금 해제 여부(누적 정답 ≥ THRESHOLD). */
+export function isTaxonomyUnlocked(deps: ProgressDeps = {}): boolean {
+  return countCorrectSpecies(deps) >= TAXONOMY_UNLOCK_THRESHOLD;
+}
+
 /** 저장된 진도를 모두 지운다. */
 export function resetAll(deps: ProgressDeps = {}): void {
   storeOf(deps).clear();

@@ -6,6 +6,8 @@ import {
   getDueForReview,
   getWeakSpecies,
   getProgressSummary,
+  countCorrectSpecies,
+  isTaxonomyUnlocked,
   resetAll,
   type ProgressDeps,
 } from "@/services/progress.service";
@@ -263,5 +265,26 @@ describe("progress.service · resetAll", () => {
     expect(getAllProgress(d)).toEqual({});
     expect(getProgress("magpie", d)).toBeNull();
     expect(getDueForReview(d)).toEqual([]);
+  });
+});
+
+// ─── Taxonomy 잠금 게이트 (STORY-014 / FR-015) ────────────────────────────────
+
+describe("progress.service · countCorrectSpecies / isTaxonomyUnlocked", () => {
+  it("정답(correct_count>0)인 종만 센다 — 오답만 있는 종은 제외", () => {
+    const d = deps();
+    updateProgress("a", 3, d); // 1번에 정답
+    updateProgress("b", 2, d); // 힌트 정답(quality>0)
+    updateProgress("c", 0, d); // 오답 → correct_count 0
+    expect(countCorrectSpecies(d)).toBe(2);
+  });
+
+  it("누적 정답 20종에서 잠금이 해제된다", () => {
+    const d = deps();
+    for (let i = 0; i < 19; i++) updateProgress("s" + i, 3, d);
+    expect(isTaxonomyUnlocked(d)).toBe(false);
+    updateProgress("s19", 3, d);
+    expect(countCorrectSpecies(d)).toBe(20);
+    expect(isTaxonomyUnlocked(d)).toBe(true);
   });
 });

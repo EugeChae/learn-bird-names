@@ -8,6 +8,7 @@ import {
   getRandom,
   selectDecoys,
   getDecoys,
+  getHabitats,
 } from "./species.service";
 
 // ─── Test helpers ──────────────────────────────────────────────────────────────
@@ -240,5 +241,25 @@ describe("getDecoys (실데이터)", () => {
     const decoys = getDecoys(magpie, 3);
     expect(decoys.some((d) => d.id === magpie.id)).toBe(false);
     expect(decoys.length).toBeLessThanOrEqual(3);
+  });
+});
+
+// ─── getHabitats (서식지별 범위 · STORY-016) ─────────────────────────────────────
+
+describe("getHabitats (실데이터)", () => {
+  it("서식지 태그를 빈도 내림차순으로 반환한다", () => {
+    const habitats = getHabitats();
+    expect(habitats.length).toBeGreaterThan(0);
+    for (let i = 1; i < habitats.length; i++) {
+      expect(habitats[i - 1].count).toBeGreaterThanOrEqual(habitats[i].count);
+    }
+  });
+
+  it("각 count는 해당 서식지를 가진 실제 종 수와 일치한다", () => {
+    for (const { habitat, count } of getHabitats()) {
+      const actual = getAll().filter((s) => s.habitat.includes(habitat)).length;
+      expect(count).toBe(actual);
+      expect(count).toBeGreaterThan(0);
+    }
   });
 });

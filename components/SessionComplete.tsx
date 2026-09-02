@@ -1,45 +1,65 @@
+"use client";
+
+import { useMemo, useState } from "react";
+import Link from "next/link";
 import type { QuizSession } from "@/types";
-import { getMatchingRound } from "@/services/quiz.service";
+import { getMatchingRound, getSessionSummary } from "@/services/quiz.service";
+import MatchingGame from "@/components/MatchingGame";
 
 /**
- * 세션 종료 → 짝짓기 복습 화면(전환). 두 퀴즈 모드가 공유한다.
- * 인터랙티브 짝짓기 게임 자체는 STORY-013.
+ * 세션 종료 화면 (STORY-013 / FR-014). 두 퀴즈 모드가 공유한다.
+ * 흐름: 짝짓기 복습(MatchingGame) → 모두 매치되면 결과 화면(정답/오답/최고 스트릭).
+ * 짝지을 종이 없으면(전부 1번에 정답) 곧장 결과 화면으로 시작한다.
  */
 export default function SessionComplete({ session }: { session: QuizSession }) {
-  const pairs = getMatchingRound(session);
-  const total = session.questions.length;
-  const cleanCount = pairs.filter((p) => p.wasEasy).length;
+  const pairs = useMemo(() => getMatchingRound(session), [session]);
+  const needsMatching = pairs.some((p) => !p.wasEasy);
+  const [phase, setPhase] = useState<"matching" | "results">(
+    needsMatching ? "matching" : "results"
+  );
+
+  if (phase === "matching") {
+    return <MatchingGame pairs={pairs} onComplete={() => setPhase("results")} />;
+  }
+
+  const { correct, incorrect, maxStreak } = getSessionSummary(session);
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-4xl"
-      aria-label="세션 완료 · 짝짓기 복습"
+      className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl"
+      aria-label="세션 결과"
     >
       <h2 className="text-2xl font-bold">퀴즈 완료!</h2>
-      <p className="text-gray-700">
-        최고 연속 정답 <strong>{session.maxStreak}</strong> · 1번에 맞힌 새{" "}
-        <strong>
-          {cleanCount} / {total}
-        </strong>
-      </p>
 
-      <h3 className="mt-2 text-lg font-semibold">짝짓기 복습</h3>
-      <p className="text-sm text-gray-500">
-        이번 세션에서 만난 새들이에요. 흐린 항목은 1번에 맞힌 새입니다. (짝짓기
-        게임은 준비 중 — STORY-013)
-      </p>
-      <ul className="grid grid-cols-1 gap-2 sm:grid-cols-2 lg:grid-cols-3">
-        {pairs.map((p) => (
-          <li
-            key={p.species.id}
-            className={`rounded-md border border-gray-200 px-3 py-2 ${
-              p.wasEasy ? "opacity-40" : ""
-            }`}
-          >
-            {p.species.name_korean}
-          </li>
-        ))}
-      </ul>
+      <dl className="grid grid-cols-3 gap-3 text-center">
+        <div className="rounded-lg border border-gray-200 py-3">
+          <dt className="text-xs text-gray-500">정답</dt>
+          <dd className="text-2xl font-bold text-green-700">{correct}</dd>
+        </div>
+        <div className="rounded-lg border border-gray-200 py-3">
+          <dt className="text-xs text-gray-500">오답</dt>
+          <dd className="text-2xl font-bold text-red-600">{incorrect}</dd>
+        </div>
+        <div className="rounded-lg border border-gray-200 py-3">
+          <dt className="text-xs text-gray-500">최고 연속</dt>
+          <dd className="text-2xl font-bold text-gray-900">🔥 {maxStreak}</dd>
+        </div>
+      </dl>
+
+      <div className="flex flex-col gap-2">
+        <Link
+          href="/quiz"
+          className="rounded-lg bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
+        >
+          새 퀴즈 시작
+        </Link>
+        <Link
+          href="/"
+          className="text-center text-sm font-medium text-gray-500 underline underline-offset-2"
+        >
+          홈으로
+        </Link>
+      </div>
     </section>
   );
 }

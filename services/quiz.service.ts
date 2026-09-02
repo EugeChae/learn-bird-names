@@ -149,6 +149,7 @@ export function submitAnswer(
       };
     }
     // 두 번째 오답 → 정답 공개하고 진행.
+    question.resolvedCorrect = false;
     resolveAndAdvance(session, question);
     return {
       correct: false,
@@ -170,12 +171,41 @@ export function submitAnswer(
     if (session.streak > session.maxStreak) session.maxStreak = session.streak;
   }
 
+  question.resolvedCorrect = true;
   resolveAndAdvance(session, question);
   return {
     correct: true,
     isRetry: false,
     quality,
     correctSpecies: question.species,
+  };
+}
+
+/** 세션 결과 요약(STORY-013 결과 화면 · AC5). */
+export interface SessionSummary {
+  correct: number;
+  incorrect: number;
+  maxStreak: number;
+  total: number;
+}
+
+/**
+ * 세션의 문제별 최종 결과(resolvedCorrect)를 집계한다.
+ * 정답=재시도/힌트 포함 최종 정답, 오답=두 번 틀려 공개된 문제.
+ * 아직 미확정(undefined)인 문제는 어느 쪽에도 넣지 않는다.
+ */
+export function getSessionSummary(session: QuizSession): SessionSummary {
+  let correct = 0;
+  let incorrect = 0;
+  for (const q of session.questions) {
+    if (q.resolvedCorrect === true) correct += 1;
+    else if (q.resolvedCorrect === false) incorrect += 1;
+  }
+  return {
+    correct,
+    incorrect,
+    maxStreak: session.maxStreak,
+    total: session.questions.length,
   };
 }
 
