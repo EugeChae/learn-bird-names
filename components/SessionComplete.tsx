@@ -5,6 +5,7 @@ import Link from "next/link";
 import type { QuizSession } from "@/types";
 import { getMatchingRound, getSessionSummary } from "@/services/quiz.service";
 import MatchingGame from "@/components/MatchingGame";
+import Button from "@/components/ui/Button";
 
 /**
  * 세션 종료 화면 (STORY-013 / FR-014). 두 퀴즈 모드가 공유한다.
@@ -47,12 +48,9 @@ export default function SessionComplete({ session }: { session: QuizSession }) {
       </dl>
 
       <div className="flex flex-col gap-2">
-        <Link
-          href="/quiz"
-          className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
-        >
+        <Button href="/quiz" fullWidth>
           새 퀴즈 시작
-        </Link>
+        </Button>
         <Link
           href="/"
           className="text-center text-sm font-medium text-gray-500 underline underline-offset-2"

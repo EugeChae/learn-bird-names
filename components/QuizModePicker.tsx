@@ -1,7 +1,7 @@
 "use client";
 
 import { useState } from "react";
-import Link from "next/link";
+import Button from "@/components/ui/Button";
 import { TAXONOMY_UNLOCK_THRESHOLD } from "@/services/progress.service";
 
 interface QuizModePickerProps {
@@ -26,49 +26,32 @@ export default function QuizModePicker({
 
   if (!open) {
     return (
-      <button
-        type="button"
-        onClick={() => setOpen(true)}
-        className="w-full rounded-full bg-green-600 px-6 py-3 text-lg font-semibold text-white hover:bg-green-700"
-      >
+      <Button size="lg" fullWidth onClick={() => setOpen(true)}>
         퀴즈 시작
-      </button>
+      </Button>
     );
   }
 
   return (
     <div role="group" aria-label="퀴즈 모드 선택" className="flex flex-col gap-2">
       <p className="text-sm font-medium text-gray-700">어떤 퀴즈를 할까요?</p>
-      <Link
-        href={photoToNameHref}
-        className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
-      >
+      <Button href={photoToNameHref} fullWidth>
         사진 보고 이름 맞히기
-      </Link>
-      <Link
-        href={nameToPhotoHref}
-        className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
-      >
+      </Button>
+      <Button href={nameToPhotoHref} fullWidth>
         이름 보고 사진 맞히기
-      </Link>
+      </Button>
 
       {taxonomy?.unlocked ? (
-        <Link
-          href="/quiz?mode=taxonomy"
-          className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
-        >
+        <Button href="/quiz?mode=taxonomy" fullWidth>
           분류 맞히기 🎉
-        </Link>
+        </Button>
       ) : (
-        <button
-          type="button"
-          disabled
-          className="rounded-full border border-gray-200 px-4 py-3 text-base text-gray-400"
-        >
+        <Button variant="soft" fullWidth disabled>
           {taxonomy
             ? `분류 맞히기 (정답 ${taxonomy.correct}/${TAXONOMY_UNLOCK_THRESHOLD} 잠금)`
             : "분류 맞히기 (준비 중)"}
-        </button>
+        </Button>
       )}
 
       {taxonomy?.unlocked && (

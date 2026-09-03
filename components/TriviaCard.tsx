@@ -2,11 +2,19 @@
 
 import { useState } from "react";
 import type { SpeciesTrivia, TriviaType } from "@/types";
+import Chip from "@/components/ui/Chip";
 
 export const TRIVIA_TYPE_LABEL: Record<TriviaType, string> = {
   ecology: "생태",
   identification: "식별",
   seasonal: "계절",
+};
+
+/** 유형별 뱃지 톤(Chip). 생태=초록 · 식별=하늘 · 계절=꽃가루노랑. */
+const TRIVIA_TONE: Record<TriviaType, "leaf" | "sky" | "pollen"> = {
+  ecology: "leaf",
+  identification: "sky",
+  seasonal: "pollen",
 };
 
 /** 목록에서 트리비아 1개를 고른다. rng 주입 시 결정론적. */
@@ -35,9 +43,7 @@ export default function TriviaCard({ trivia }: TriviaCardProps) {
       className="rounded-2xl border border-gray-200 bg-white p-4 shadow-soft"
       aria-label="오늘의 트리비아"
     >
-      <span className="inline-block rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-800">
-        {label}
-      </span>
+      <Chip tone={TRIVIA_TONE[trivia.type]}>{label}</Chip>
       <p className="mt-2 text-lg leading-relaxed text-gray-800">
         {trivia.content}
       </p>

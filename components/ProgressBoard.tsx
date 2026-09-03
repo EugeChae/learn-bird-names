@@ -6,6 +6,8 @@ import {
   MASTERY_THRESHOLD,
 } from "@/services/progress.service";
 import ResetConfirmModal from "@/components/ResetConfirmModal";
+import LeafDecor from "@/components/LeafDecor";
+import Button from "@/components/ui/Button";
 
 interface ProgressBoardProps {
   summary: ProgressSummary;
@@ -28,8 +30,9 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl"
       aria-label="학습 진도 대시보드"
     >
-      <header>
-        <h1 className="text-2xl font-bold text-gray-900">학습 진도</h1>
+      <header className="relative">
+        <LeafDecor className="pointer-events-none absolute -top-4 right-0 h-12 w-12 rotate-[20deg] opacity-80" />
+        <h1 className="text-3xl font-bold text-gray-900">학습 진도</h1>
       </header>
 
       {/* 데스크톱(lg+): 통계 왼쪽 · 취약종 목록 오른쪽 2단. 모바일 세로 1열. */}
@@ -65,7 +68,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
             (연속 {MASTERY_THRESHOLD}회 이상 정답)
           </span>
         </span>
-        <strong className="text-2xl text-amber-600">{mastered}</strong>
+        <strong className="text-2xl text-pollen">{mastered}</strong>
       </div>
       </div>
 
@@ -100,13 +103,14 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       </div>
 
       {/* 진도 초기화 (AC4) */}
-      <button
-        type="button"
+      <Button
+        variant="danger"
+        fullWidth
         onClick={() => setConfirming(true)}
-        className="mt-2 rounded-full border border-red-300 px-4 py-3 text-base font-medium text-red-700 hover:bg-red-50"
+        className="mt-2"
       >
         진도 초기화
-      </button>
+      </Button>
 
       {confirming && (
         <ResetConfirmModal
