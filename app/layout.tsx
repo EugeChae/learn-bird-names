@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
-import { Jua } from "next/font/google";
+import { Gaegu, Gamja_Flower } from "next/font/google";
 import "./globals.css";
 
-// 둥글둥글한 한글 디스플레이 폰트 — 제목에만 써서 귀여운 느낌을 주되 본문 가독성은 유지.
-const jua = Jua({
+// 제목: Gaegu(통통한 손글씨, 굵게). 본문: Gamja Flower(부드러운 손글씨).
+// 한글 글리프가 포함된 폰트라 subsets는 latin만 지정해도 된다(자동 포함).
+const gaegu = Gaegu({
+  weight: ["400", "700"],
+  subsets: ["latin"],
+  variable: "--font-heading",
+  display: "swap",
+});
+const gamja = Gamja_Flower({
   weight: "400",
   subsets: ["latin"],
-  variable: "--font-jua",
+  variable: "--font-body",
   display: "swap",
 });
 
@@ -21,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={jua.variable}>
+    <html lang="ko" className={`${gaegu.variable} ${gamja.variable}`}>
       <body className="min-h-screen bg-background text-foreground">
         {children}
       </body>

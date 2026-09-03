@@ -13,8 +13,9 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
       fontFamily: {
-        // 둥근 한글 디스플레이 폰트(제목용). layout.tsx의 next/font 변수와 연결.
-        display: ["var(--font-jua)", "Arial", "sans-serif"],
+        // layout.tsx의 next/font 변수와 연결. display=제목(Gaegu), body=본문(Gamja Flower).
+        display: ["var(--font-heading)", "sans-serif"],
+        body: ["var(--font-body)", "sans-serif"],
       },
       boxShadow: {
         // 카드용 부드럽고 은은한 그림자(크림 배경 위에서 카드가 살짝 떠 보이게).

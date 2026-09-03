@@ -46,7 +46,7 @@ export default function BirdCard({ species }: BirdCardProps) {
         </div>
       )}
 
-      <h2 className="text-center text-3xl font-bold text-gray-900">
+      <h2 className="text-center text-4xl font-bold text-gray-900">
         {species.name_korean}
       </h2>
 

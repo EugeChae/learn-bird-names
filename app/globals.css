@@ -17,12 +17,14 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  /* 본문: Gamja Flower(부드러운 손글씨). 얇은 편이라 줄간격을 넉넉히 줘 가독성 보정. */
+  font-family: var(--font-body), "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
+  line-height: 1.7;
 }
 
-/* 제목만 둥근 한글 폰트(Jua). 본문·버튼 텍스트는 기본 산세리프 유지. */
+/* 제목: Gaegu(통통한 손글씨). */
 h1,
 h2 {
-  font-family: var(--font-jua), Arial, Helvetica, sans-serif;
+  font-family: var(--font-heading), "Apple SD Gothic Neo", sans-serif;
   letter-spacing: 0.01em;
 }

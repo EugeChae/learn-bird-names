@@ -38,7 +38,7 @@ export default function TriviaCard({ trivia }: TriviaCardProps) {
       <span className="inline-block rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-800">
         {label}
       </span>
-      <p className="mt-2 text-base leading-relaxed text-gray-800">
+      <p className="mt-2 text-lg leading-relaxed text-gray-800">
         {trivia.content}
       </p>
       <button
