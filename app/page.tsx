@@ -52,7 +52,7 @@ export default function Home() {
       <div className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl">
         <header className="text-center">
           <p className="text-sm text-gray-500">한국 새 이름 배우기</p>
-          <h1 className="mt-1 text-3xl font-bold text-gray-900">오늘의 새</h1>
+          <h1 className="mt-1 text-4xl font-bold text-gray-900">오늘의 새</h1>
         </header>
 
         {!species ? (
