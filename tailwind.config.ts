@@ -11,6 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        // 레퍼런스 팔레트(Olga Davydova) — 귀여운 보태니컬 톤. soft=칩·배지 배경용 연한 틴트.
+        leaf: { DEFAULT: "#5d7b3d", soft: "#eaf1e0" },
+        pollen: { DEFAULT: "#e0a80f", soft: "#fbf0cf" },
+        sky: { DEFAULT: "#5b8fc0", soft: "#e7f0f9" },
+        blush: { DEFAULT: "#d76a92", soft: "#fce4ec" },
+        petal: { DEFAULT: "#e4568b" },
       },
       fontFamily: {
         // layout.tsx의 next/font 변수와 연결. display=제목(Gaegu), body=본문(Gamja Flower).

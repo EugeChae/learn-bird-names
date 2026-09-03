@@ -17,6 +17,7 @@ import BirdCard from "@/components/BirdCard";
 import TriviaCard, { pickTrivia } from "@/components/TriviaCard";
 import QuizModePicker from "@/components/QuizModePicker";
 import QuizScopePicker from "@/components/QuizScopePicker";
+import LeafDecor from "@/components/LeafDecor";
 
 /**
  * 오늘의 새 홈 (STORY-005). 방문마다 getRandom()으로 종을 새로 고른다.
@@ -50,9 +51,13 @@ export default function Home() {
   return (
     <main className="min-h-screen py-6">
       <div className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl">
-        <header className="text-center">
-          <p className="text-sm text-gray-500">한국 새 이름 배우기</p>
-          <h1 className="mt-1 text-4xl font-bold text-gray-900">오늘의 새</h1>
+        <header className="relative text-center">
+          <LeafDecor className="pointer-events-none absolute -top-3 left-4 h-12 w-12 -rotate-[28deg] opacity-80 lg:left-24" />
+          <LeafDecor className="pointer-events-none absolute -top-3 right-4 h-12 w-12 rotate-[28deg] -scale-x-100 opacity-80 lg:right-24" />
+          <p className="text-sm font-semibold text-leaf">한국 새 이름 배우기</p>
+          <h1 className="mt-1 text-4xl font-bold text-gray-900">
+            <span aria-hidden="true">🐦 </span>오늘의 새
+          </h1>
         </header>
 
         {!species ? (

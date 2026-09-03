@@ -23,6 +23,8 @@ import PhotoGridQuizCard from "@/components/PhotoGridQuizCard";
 import TaxonomyCard from "@/components/TaxonomyCard";
 import ProgressResetModal from "@/components/ProgressResetModal";
 import TopNav from "@/components/TopNav";
+import Banner from "@/components/ui/Banner";
+import Button from "@/components/ui/Button";
 
 /** 현재 URL(범위·모드·include)에 맞는 세션을 만든다. */
 function sessionFromLocation(): QuizSession {
@@ -92,26 +94,25 @@ export default function QuizPage() {
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted &&
         (taxoLocked ? (
-          <div className="mx-auto flex w-full max-w-md flex-col gap-4 p-8 text-center">
-            <p className="text-gray-700">
-              분류 퀴즈는 누적 정답 <strong>{TAXONOMY_UNLOCK_THRESHOLD}종</strong>을
-              모으면 열려요.
-            </p>
-            <p className="text-sm text-gray-500">
-              현재 {taxoLocked.correct} / {TAXONOMY_UNLOCK_THRESHOLD}
-            </p>
-            <Link
-              href="/quiz"
-              className="rounded-lg bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
-            >
-              일반 퀴즈로 정답 모으기
-            </Link>
-            <Link
-              href="/"
-              className="text-sm font-medium text-gray-500 underline underline-offset-2"
-            >
-              홈으로 돌아가기
-            </Link>
+          <div className="mx-auto w-full max-w-md p-4">
+            <Banner tone="pollen" icon="🔒">
+              <p>
+                분류 퀴즈는 누적 정답{" "}
+                <strong>{TAXONOMY_UNLOCK_THRESHOLD}종</strong>을 모으면 열려요.
+              </p>
+              <p className="mt-1 text-sm text-gray-500">
+                현재 {taxoLocked.correct} / {TAXONOMY_UNLOCK_THRESHOLD}
+              </p>
+              <div className="mt-4 flex flex-col items-center gap-2">
+                <Button href="/quiz">일반 퀴즈로 정답 모으기</Button>
+                <Link
+                  href="/"
+                  className="text-sm font-medium text-gray-500 underline underline-offset-2"
+                >
+                  홈으로 돌아가기
+                </Link>
+              </div>
+            </Banner>
           </div>
         ) : taxonomy ? (
           <TaxonomyCard session={taxonomy} />

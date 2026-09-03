@@ -6,6 +6,7 @@ import { useQuizProgress } from "@/hooks/useQuizProgress";
 import PhotoModal from "@/components/PhotoModal";
 import SessionComplete from "@/components/SessionComplete";
 import MilestoneBanner from "@/components/MilestoneBanner";
+import Button from "@/components/ui/Button";
 
 interface PhotoGridQuizCardProps {
   session: QuizSession;
@@ -66,7 +67,7 @@ export default function PhotoGridQuizCard({
           문제 {position} / {session.questions.length}
         </span>
         <span aria-label={`연속 정답 ${session.streak}`}>
-          🔥 연속 <strong className="text-gray-900">{session.streak}</strong>
+          🔥 연속 <strong className="text-petal">{session.streak}</strong>
         </span>
       </header>
 
@@ -154,13 +155,9 @@ export default function PhotoGridQuizCard({
       </div>
 
       {resolved && (
-        <button
-          type="button"
-          onClick={next}
-          className="rounded-full bg-green-600 px-4 py-3 text-base font-semibold text-white hover:bg-green-700"
-        >
+        <Button onClick={next} fullWidth>
           다음
-        </button>
+        </Button>
       )}
 
       {zoomPhoto && (
