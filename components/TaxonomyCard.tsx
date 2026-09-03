@@ -5,6 +5,7 @@ import type { TaxonomySession, TaxonomyChoice } from "@/types";
 import { useTaxonomyProgress } from "@/hooks/useTaxonomyProgress";
 import { familyKo } from "@/lib/taxonomy-labels";
 import MilestoneBanner from "@/components/MilestoneBanner";
+import Button from "@/components/ui/Button";
 
 /**
  * Taxonomy 퀴즈 카드 (STORY-014 / FR-015). 한 세션에 3가지 유형을 섞어 낸다.
@@ -41,28 +42,25 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
       >
         <h2 className="text-2xl font-bold">분류 퀴즈 완료!</h2>
         <dl className="grid grid-cols-3 gap-3 text-center">
-          <div className="rounded-lg border border-gray-200 py-3">
+          <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
             <dt className="text-xs text-gray-500">정답</dt>
             <dd className="text-2xl font-bold text-green-700">{correct}</dd>
           </div>
-          <div className="rounded-lg border border-gray-200 py-3">
+          <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
             <dt className="text-xs text-gray-500">오답</dt>
             <dd className="text-2xl font-bold text-red-600">{incorrect}</dd>
           </div>
-          <div className="rounded-lg border border-gray-200 py-3">
+          <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
             <dt className="text-xs text-gray-500">최고 연속</dt>
             <dd className="text-2xl font-bold text-gray-900">
               🔥 {session.maxStreak}
             </dd>
           </div>
         </dl>
-        <div className="flex flex-col gap-2">
-          <Link
-            href="/quiz?mode=taxonomy"
-            className="rounded-lg bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
-          >
+        <div className="flex flex-col items-center gap-2">
+          <Button href="/quiz?mode=taxonomy" fullWidth>
             새 분류 퀴즈
-          </Link>
+          </Button>
           <Link
             href="/"
             className="text-center text-sm font-medium text-gray-500 underline underline-offset-2"
@@ -107,18 +105,19 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
           문제 {position} / {session.questions.length}
         </span>
         <span aria-label={`연속 정답 ${session.streak}`}>
-          🔥 연속 <strong className="text-gray-900">{session.streak}</strong>
+          🔥 연속 <strong className="text-petal">{session.streak}</strong>
         </span>
       </header>
 
       {question.type === "photo-to-taxon" && promptPhoto && (
-        <figure className="flex flex-col gap-1">
-          <div className="overflow-hidden rounded-xl border border-gray-200">
+        <figure className="mx-auto flex w-full max-w-xs flex-col gap-1">
+          {/* 분류 퀴즈는 사진+질문+4보기가 한 화면에 들어와야 하므로 높이를 제한한다. */}
+          <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-soft">
             {/* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export */}
             <img
               src={promptPhoto.url}
               alt="분류를 맞혀야 할 새 사진"
-              className="aspect-square w-full object-cover"
+              className="h-52 w-full object-cover sm:h-60"
             />
           </div>
           <figcaption className="text-right text-[10px] text-gray-400">
@@ -157,7 +156,7 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
                 revealed={resolved}
                 className={stateClass(
                   c.id,
-                  "flex w-full flex-col gap-1 rounded-lg border p-2 text-left transition disabled:cursor-not-allowed"
+                  "flex w-full flex-col gap-1 rounded-2xl border p-2 text-left transition disabled:cursor-not-allowed"
                 )}
                 disabled={resolved || wrongIds.includes(c.id)}
                 onSelect={() => select(c.id)}
@@ -175,7 +174,7 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
                 disabled={resolved || wrongIds.includes(c.id)}
                 className={stateClass(
                   c.id,
-                  "w-full rounded-lg border px-4 py-3 text-left text-base font-medium transition disabled:cursor-not-allowed"
+                  "w-full rounded-2xl border px-4 py-3 text-left text-base font-medium transition disabled:cursor-not-allowed"
                 )}
               >
                 <span className="mr-2 text-gray-400">{i + 1}</span>
@@ -206,13 +205,9 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
       </div>
 
       {resolved && (
-        <button
-          type="button"
-          onClick={next}
-          className="rounded-lg bg-green-600 px-4 py-3 text-base font-semibold text-white hover:bg-green-700"
-        >
+        <Button onClick={next} fullWidth>
           다음
-        </button>
+        </Button>
       )}
     </section>
   );

@@ -1,16 +1,16 @@
 import type { Metadata } from "next";
-import { Gaegu, Gamja_Flower } from "next/font/google";
+import { Jua, Gowun_Dodum } from "next/font/google";
 import "./globals.css";
 
-// 제목: Gaegu(통통한 손글씨, 굵게). 본문: Gamja Flower(부드러운 손글씨).
+// 제목: Jua(둥글둥글 정돈된 디스플레이). 본문: Gowun Dodum(부드럽고 예쁜 고딕, 가독성↑).
 // 한글 글리프가 포함된 폰트라 subsets는 latin만 지정해도 된다(자동 포함).
-const gaegu = Gaegu({
-  weight: ["400", "700"],
+const heading = Jua({
+  weight: "400",
   subsets: ["latin"],
   variable: "--font-heading",
   display: "swap",
 });
-const gamja = Gamja_Flower({
+const body = Gowun_Dodum({
   weight: "400",
   subsets: ["latin"],
   variable: "--font-body",
@@ -28,7 +28,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="ko" className={`${gaegu.variable} ${gamja.variable}`}>
+    <html lang="ko" className={`${heading.variable} ${body.variable}`}>
       <body className="min-h-screen bg-background text-foreground">
         {children}
       </body>
