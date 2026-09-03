@@ -17,12 +17,12 @@
 body {
   color: var(--foreground);
   background: var(--background);
-  /* 본문: Gamja Flower(부드러운 손글씨). 얇은 편이라 줄간격을 넉넉히 줘 가독성 보정. */
+  /* 본문: Gowun Dodum(부드럽고 예쁜 고딕). */
   font-family: var(--font-body), "Apple SD Gothic Neo", "Malgun Gothic", sans-serif;
-  line-height: 1.7;
+  line-height: 1.65;
 }
 
-/* 제목: Gaegu(통통한 손글씨). */
+/* 제목: Jua(둥근 디스플레이). */
 h1,
 h2 {
   font-family: var(--font-heading), "Apple SD Gothic Neo", sans-serif;

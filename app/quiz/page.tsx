@@ -25,6 +25,7 @@ import ProgressResetModal from "@/components/ProgressResetModal";
 import TopNav from "@/components/TopNav";
 import Banner from "@/components/ui/Banner";
 import Button from "@/components/ui/Button";
+import BirdMascot from "@/components/BirdMascot";
 
 /** 현재 URL(범위·모드·include)에 맞는 세션을 만든다. */
 function sessionFromLocation(): QuizSession {
@@ -117,7 +118,8 @@ export default function QuizPage() {
         ) : taxonomy ? (
           <TaxonomyCard session={taxonomy} />
         ) : isEmptyScope ? (
-          <div className="mx-auto flex w-full max-w-md flex-col gap-4 p-8 text-center">
+          <div className="mx-auto flex w-full max-w-md flex-col items-center gap-4 p-8 text-center">
+            <BirdMascot className="h-16 w-16" />
             <p className="text-gray-600">이 범위에는 아직 학습할 새가 없어요.</p>
             <Link
               href="/"
@@ -133,7 +135,10 @@ export default function QuizPage() {
             <QuizCard session={session} />
           )
         ) : (
-          <p className="p-8 text-center text-gray-500">퀴즈 준비 중…</p>
+          <div className="flex flex-col items-center gap-3 p-8 text-center text-gray-500">
+            <BirdMascot className="h-14 w-14 animate-bounce" />
+            <p>퀴즈 준비 중…</p>
+          </div>
         ))}
     </main>
   );

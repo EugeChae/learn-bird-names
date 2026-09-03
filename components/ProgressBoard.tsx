@@ -8,6 +8,7 @@ import {
 import ResetConfirmModal from "@/components/ResetConfirmModal";
 import LeafDecor from "@/components/LeafDecor";
 import Button from "@/components/ui/Button";
+import BirdMascot from "@/components/BirdMascot";
 
 interface ProgressBoardProps {
   summary: ProgressSummary;
@@ -76,9 +77,10 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       <div className="flex flex-col gap-2">
         <h2 className="text-lg font-semibold text-gray-900">취약한 새</h2>
         {weak.length === 0 ? (
-          <p className="rounded-2xl bg-gray-50 px-4 py-6 text-center text-sm text-gray-500">
-            아직 취약한 새가 없어요. 퀴즈를 풀면 자주 틀리는 새가 여기에 모여요.
-          </p>
+          <div className="flex flex-col items-center gap-2 rounded-2xl bg-gray-50 px-4 py-6 text-center text-sm text-gray-500">
+            <BirdMascot className="h-12 w-12 opacity-80" />
+            <p>아직 취약한 새가 없어요. 퀴즈를 풀면 자주 틀리는 새가 여기에 모여요.</p>
+          </div>
         ) : (
           <ol className="flex flex-col gap-2">
             {weak.map((w) => (

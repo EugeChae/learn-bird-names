@@ -18,6 +18,7 @@ import TriviaCard, { pickTrivia } from "@/components/TriviaCard";
 import QuizModePicker from "@/components/QuizModePicker";
 import QuizScopePicker from "@/components/QuizScopePicker";
 import LeafDecor from "@/components/LeafDecor";
+import BirdMascot from "@/components/BirdMascot";
 
 /**
  * 오늘의 새 홈 (STORY-005). 방문마다 getRandom()으로 종을 새로 고른다.
@@ -54,14 +55,16 @@ export default function Home() {
         <header className="relative text-center">
           <LeafDecor className="pointer-events-none absolute -top-3 left-4 h-12 w-12 -rotate-[28deg] opacity-80 lg:left-24" />
           <LeafDecor className="pointer-events-none absolute -top-3 right-4 h-12 w-12 rotate-[28deg] -scale-x-100 opacity-80 lg:right-24" />
-          <p className="text-sm font-semibold text-leaf">한국 새 이름 배우기</p>
-          <h1 className="mt-1 text-4xl font-bold text-gray-900">
-            <span aria-hidden="true">🐦 </span>오늘의 새
-          </h1>
+          <BirdMascot className="mx-auto h-16 w-16" />
+          <p className="mt-1 text-sm font-semibold text-leaf">한국 새 이름 배우기</p>
+          <h1 className="text-4xl font-bold text-gray-900">오늘의 새</h1>
         </header>
 
         {!species ? (
-          <p className="p-8 text-center text-gray-500">오늘의 새를 고르는 중…</p>
+          <div className="flex flex-col items-center gap-3 p-8 text-center text-gray-500">
+            <BirdMascot className="h-14 w-14 animate-bounce" />
+            <p>오늘의 새를 고르는 중…</p>
+          </div>
         ) : (
           /* 데스크톱(lg+): 새 카드 왼쪽 · 트리비아/퀴즈 시작 오른쪽. 모바일 세로 1열. */
           <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
