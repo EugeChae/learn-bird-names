@@ -36,7 +36,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
       <div className="flex flex-col gap-5">
       {/* 학습 종 수 / 전체 종 수 (AC1) */}
-      <div className="rounded-xl border border-gray-200 p-4">
+      <div className="rounded-2xl border border-gray-200 p-4 shadow-soft">
         <div className="flex items-baseline justify-between">
           <span className="text-sm text-gray-600">학습한 새</span>
           <span className="text-lg font-semibold text-gray-900">
@@ -58,7 +58,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       </div>
 
       {/* 마스터 종 수 (AC2) */}
-      <div className="flex items-baseline justify-between rounded-xl border border-gray-200 p-4">
+      <div className="flex items-baseline justify-between rounded-2xl border border-gray-200 p-4 shadow-soft">
         <span className="text-sm text-gray-600">
           마스터한 새{" "}
           <span className="text-xs text-gray-400">
@@ -73,7 +73,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       <div className="flex flex-col gap-2">
         <h2 className="text-lg font-semibold text-gray-900">취약한 새</h2>
         {weak.length === 0 ? (
-          <p className="rounded-lg bg-gray-50 px-4 py-6 text-center text-sm text-gray-500">
+          <p className="rounded-2xl bg-gray-50 px-4 py-6 text-center text-sm text-gray-500">
             아직 취약한 새가 없어요. 퀴즈를 풀면 자주 틀리는 새가 여기에 모여요.
           </p>
         ) : (
@@ -81,7 +81,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
             {weak.map((w) => (
               <li
                 key={w.species.id}
-                className="flex items-center justify-between rounded-lg border border-gray-200 px-4 py-2"
+                className="flex items-center justify-between rounded-2xl border border-gray-200 px-4 py-2"
               >
                 <span className="font-medium text-gray-900">
                   {w.species.name_korean}
@@ -103,7 +103,7 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
       <button
         type="button"
         onClick={() => setConfirming(true)}
-        className="mt-2 rounded-lg border border-red-300 px-4 py-3 text-base font-medium text-red-700 hover:bg-red-50"
+        className="mt-2 rounded-full border border-red-300 px-4 py-3 text-base font-medium text-red-700 hover:bg-red-50"
       >
         진도 초기화
       </button>

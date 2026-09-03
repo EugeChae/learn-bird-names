@@ -29,7 +29,7 @@ export default function QuizModePicker({
       <button
         type="button"
         onClick={() => setOpen(true)}
-        className="w-full rounded-lg bg-green-600 px-6 py-3 text-lg font-semibold text-white hover:bg-green-700"
+        className="w-full rounded-full bg-green-600 px-6 py-3 text-lg font-semibold text-white hover:bg-green-700"
       >
         퀴즈 시작
       </button>
@@ -41,13 +41,13 @@ export default function QuizModePicker({
       <p className="text-sm font-medium text-gray-700">어떤 퀴즈를 할까요?</p>
       <Link
         href={photoToNameHref}
-        className="rounded-lg bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
+        className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
       >
         사진 보고 이름 맞히기
       </Link>
       <Link
         href={nameToPhotoHref}
-        className="rounded-lg bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
+        className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
       >
         이름 보고 사진 맞히기
       </Link>
@@ -55,7 +55,7 @@ export default function QuizModePicker({
       {taxonomy?.unlocked ? (
         <Link
           href="/quiz?mode=taxonomy"
-          className="rounded-lg bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
+          className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
         >
           분류 맞히기 🎉
         </Link>
@@ -63,7 +63,7 @@ export default function QuizModePicker({
         <button
           type="button"
           disabled
-          className="rounded-lg border border-gray-200 px-4 py-3 text-base text-gray-400"
+          className="rounded-full border border-gray-200 px-4 py-3 text-base text-gray-400"
         >
           {taxonomy
             ? `분류 맞히기 (정답 ${taxonomy.correct}/${TAXONOMY_UNLOCK_THRESHOLD} 잠금)`

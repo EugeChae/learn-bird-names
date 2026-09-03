@@ -46,7 +46,7 @@ export default function PhotoGridQuizCard({
 
   const tileClass = (choiceId: string) => {
     const base =
-      "relative block w-full overflow-hidden rounded-xl border-4 transition disabled:cursor-not-allowed";
+      "relative block w-full overflow-hidden rounded-2xl border-4 transition disabled:cursor-not-allowed";
     if (resolved && choiceId === question.correctId) {
       return `${base} border-green-500`;
     }
@@ -70,9 +70,9 @@ export default function PhotoGridQuizCard({
         </span>
       </header>
 
-      <div className="rounded-xl bg-gray-50 px-4 py-6 text-center">
+      <div className="rounded-2xl bg-gray-50 px-4 py-6 text-center shadow-soft">
         <p className="text-sm text-gray-500">이 새의 사진을 고르세요</p>
-        <p className="mt-1 text-3xl font-bold text-gray-900">
+        <p className="mt-1 font-display text-3xl text-gray-900">
           {question.species.name_korean}
         </p>
       </div>
@@ -157,7 +157,7 @@ export default function PhotoGridQuizCard({
         <button
           type="button"
           onClick={next}
-          className="rounded-lg bg-green-600 px-4 py-3 text-base font-semibold text-white hover:bg-green-700"
+          className="rounded-full bg-green-600 px-4 py-3 text-base font-semibold text-white hover:bg-green-700"
         >
           다음
         </button>
