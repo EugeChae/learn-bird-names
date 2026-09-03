@@ -32,15 +32,15 @@ export default function SessionComplete({ session }: { session: QuizSession }) {
       <h2 className="text-2xl font-bold">퀴즈 완료!</h2>
 
       <dl className="grid grid-cols-3 gap-3 text-center">
-        <div className="rounded-lg border border-gray-200 py-3">
+        <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
           <dt className="text-xs text-gray-500">정답</dt>
           <dd className="text-2xl font-bold text-green-700">{correct}</dd>
         </div>
-        <div className="rounded-lg border border-gray-200 py-3">
+        <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
           <dt className="text-xs text-gray-500">오답</dt>
           <dd className="text-2xl font-bold text-red-600">{incorrect}</dd>
         </div>
-        <div className="rounded-lg border border-gray-200 py-3">
+        <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
           <dt className="text-xs text-gray-500">최고 연속</dt>
           <dd className="text-2xl font-bold text-gray-900">🔥 {maxStreak}</dd>
         </div>
@@ -49,7 +49,7 @@ export default function SessionComplete({ session }: { session: QuizSession }) {
       <div className="flex flex-col gap-2">
         <Link
           href="/quiz"
-          className="rounded-lg bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
+          className="rounded-full bg-green-600 px-4 py-3 text-center text-base font-semibold text-white hover:bg-green-700"
         >
           새 퀴즈 시작
         </Link>

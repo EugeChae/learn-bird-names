@@ -65,7 +65,7 @@ function ScopeOption({
     return (
       <div
         aria-disabled="true"
-        className="flex items-center justify-between rounded-lg border border-gray-200 px-4 py-3 text-base text-gray-400"
+        className="flex items-center justify-between rounded-2xl border border-gray-200 px-4 py-3 text-base text-gray-400"
       >
         <span>{label}</span>
         <span className="text-xs">학습할 새가 없어요</span>
@@ -76,7 +76,7 @@ function ScopeOption({
   return (
     <Link
       href={href}
-      className="flex items-center justify-between rounded-lg border border-green-200 bg-green-50 px-4 py-3 text-base font-medium text-green-800 hover:bg-green-100"
+      className="flex items-center justify-between rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-base font-medium text-green-800 hover:bg-green-100"
     >
       <span>{label}</span>
       <span

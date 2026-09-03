@@ -27,7 +27,7 @@ export default function BirdCard({ species }: BirdCardProps) {
             type="button"
             onClick={() => setPhotoOpen(true)}
             aria-label="새 사진 확대"
-            className="overflow-hidden rounded-xl border border-gray-200"
+            className="overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
           >
             {/* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export; next/image adds no value here */}
             <img
@@ -41,12 +41,12 @@ export default function BirdCard({ species }: BirdCardProps) {
           </figcaption>
         </figure>
       ) : (
-        <div className="flex aspect-square w-full items-center justify-center rounded-xl border border-dashed border-gray-300 text-gray-400">
+        <div className="flex aspect-square w-full items-center justify-center rounded-2xl border border-dashed border-gray-300 text-gray-400">
           사진 없음
         </div>
       )}
 
-      <h2 className="text-center text-2xl font-bold text-gray-900">
+      <h2 className="text-center text-3xl font-bold text-gray-900">
         {species.name_korean}
       </h2>
 

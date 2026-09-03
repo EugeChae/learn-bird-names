@@ -12,6 +12,14 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
       },
+      fontFamily: {
+        // 둥근 한글 디스플레이 폰트(제목용). layout.tsx의 next/font 변수와 연결.
+        display: ["var(--font-jua)", "Arial", "sans-serif"],
+      },
+      boxShadow: {
+        // 카드용 부드럽고 은은한 그림자(크림 배경 위에서 카드가 살짝 떠 보이게).
+        soft: "0 6px 22px -12px rgba(74, 103, 65, 0.28)",
+      },
       keyframes: {
         // 마일스톤 배너 등장(STORY-012): 살짝 커졌다 제자리 — 텍스트 우선, 과하지 않게.
         "milestone-pop": {

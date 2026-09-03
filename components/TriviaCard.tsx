@@ -32,7 +32,7 @@ export default function TriviaCard({ trivia }: TriviaCardProps) {
 
   return (
     <article
-      className="rounded-xl border border-gray-200 bg-white p-4"
+      className="rounded-2xl border border-gray-200 bg-white p-4 shadow-soft"
       aria-label="오늘의 트리비아"
     >
       <span className="inline-block rounded-full bg-amber-100 px-2.5 py-0.5 text-xs font-semibold text-amber-800">

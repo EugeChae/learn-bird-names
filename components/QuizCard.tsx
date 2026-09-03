@@ -41,7 +41,7 @@ export default function QuizCard({ session }: QuizCardProps) {
 
   const choiceClass = (choiceId: string) => {
     const base =
-      "w-full rounded-lg border px-4 py-3 text-left text-base font-medium transition disabled:cursor-not-allowed";
+      "w-full rounded-2xl border px-4 py-3 text-left text-base font-medium transition disabled:cursor-not-allowed";
     if (resolved && choiceId === question.correctId) {
       return `${base} border-green-500 bg-green-50 text-green-800`;
     }
@@ -73,7 +73,7 @@ export default function QuizCard({ session }: QuizCardProps) {
             type="button"
             onClick={() => setPhotoOpen(true)}
             aria-label="새 사진 확대"
-            className="overflow-hidden rounded-xl border border-gray-200"
+            className="overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
           >
             {/* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export; next/image adds no value here */}
             <img
@@ -94,7 +94,7 @@ export default function QuizCard({ session }: QuizCardProps) {
           </div>
         </figure>
       ) : (
-        <div className="flex aspect-square w-full items-center justify-center rounded-xl border border-dashed border-gray-300 text-gray-400">
+        <div className="flex aspect-square w-full items-center justify-center rounded-2xl border border-dashed border-gray-300 text-gray-400">
           사진 없음
         </div>
       )}
@@ -154,7 +154,7 @@ export default function QuizCard({ session }: QuizCardProps) {
         <button
           type="button"
           onClick={next}
-          className="rounded-lg bg-green-600 px-4 py-3 text-base font-semibold text-white hover:bg-green-700"
+          className="rounded-full bg-green-600 px-4 py-3 text-base font-semibold text-white hover:bg-green-700"
         >
           다음
         </button>
