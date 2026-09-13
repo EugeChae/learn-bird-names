@@ -70,12 +70,25 @@ export default function Home() {
           <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
             <BirdCard species={species} />
             <div className="flex flex-col gap-5">
-              {trivia && <TriviaCard trivia={trivia} />}
-              <QuizModePicker includeId={species.id} taxonomy={taxo} />
-              {scopes && <QuizScopePicker availability={scopes} />}
+              {/* 모바일에선 "퀴즈 시작"을 히어로 바로 아래로 올려 첫 화면에서 시작
+                  가능하게 하고, 트리비아는 그 아래로 내린다. 데스크톱(2단)은 원래
+                  순서(트리비아 → 퀴즈 시작)를 유지한다. */}
+              <div className="order-1 lg:order-2">
+                <QuizModePicker includeId={species.id} taxonomy={taxo} />
+              </div>
+              {trivia && (
+                <div className="order-2 lg:order-1">
+                  <TriviaCard trivia={trivia} />
+                </div>
+              )}
+              {scopes && (
+                <div className="order-3">
+                  <QuizScopePicker availability={scopes} />
+                </div>
+              )}
               <Link
                 href="/progress"
-                className="text-center text-sm font-medium text-gray-500 underline underline-offset-2"
+                className="order-4 text-center text-sm font-medium text-gray-500 underline underline-offset-2"
               >
                 학습 진도 보기
               </Link>
