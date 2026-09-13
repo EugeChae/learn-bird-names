@@ -7,6 +7,7 @@ import PhotoModal from "@/components/PhotoModal";
 import SessionComplete from "@/components/SessionComplete";
 import MilestoneBanner from "@/components/MilestoneBanner";
 import Button from "@/components/ui/Button";
+import MobileActionBar from "@/components/ui/MobileActionBar";
 
 interface PhotoGridQuizCardProps {
   session: QuizSession;
@@ -59,7 +60,7 @@ export default function PhotoGridQuizCard({
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-4xl"
+      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 pb-24 lg:max-w-4xl lg:pb-4"
       aria-label="이름 보고 사진 맞히기 퀴즈"
     >
       <header className="flex items-center justify-between text-sm text-gray-600">
@@ -71,7 +72,7 @@ export default function PhotoGridQuizCard({
         </span>
       </header>
 
-      <div className="rounded-2xl bg-gray-50 px-4 py-6 text-center shadow-soft">
+      <div className="rounded-2xl bg-gray-50 px-4 py-4 text-center shadow-soft">
         <p className="text-sm text-gray-500">이 새의 사진을 고르세요</p>
         <p className="mt-1 font-display text-3xl text-gray-900">
           {question.species.name_korean}
@@ -155,9 +156,11 @@ export default function PhotoGridQuizCard({
       </div>
 
       {resolved && (
-        <Button onClick={next} fullWidth>
-          다음
-        </Button>
+        <MobileActionBar>
+          <Button onClick={next} fullWidth>
+            다음
+          </Button>
+        </MobileActionBar>
       )}
 
       {zoomPhoto && (

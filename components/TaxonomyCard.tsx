@@ -6,6 +6,7 @@ import { useTaxonomyProgress } from "@/hooks/useTaxonomyProgress";
 import { familyKo } from "@/lib/taxonomy-labels";
 import MilestoneBanner from "@/components/MilestoneBanner";
 import Button from "@/components/ui/Button";
+import MobileActionBar from "@/components/ui/MobileActionBar";
 
 /**
  * Taxonomy 퀴즈 카드 (STORY-014 / FR-015). 한 세션에 3가지 유형을 섞어 낸다.
@@ -97,7 +98,7 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-4xl"
+      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 pb-24 lg:max-w-4xl lg:pb-4"
       aria-label="분류 퀴즈"
     >
       <header className="flex items-center justify-between text-sm text-gray-600">
@@ -205,9 +206,11 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
       </div>
 
       {resolved && (
-        <Button onClick={next} fullWidth>
-          다음
-        </Button>
+        <MobileActionBar>
+          <Button onClick={next} fullWidth>
+            다음
+          </Button>
+        </MobileActionBar>
       )}
     </section>
   );

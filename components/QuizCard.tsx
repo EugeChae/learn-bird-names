@@ -8,6 +8,7 @@ import SessionComplete from "@/components/SessionComplete";
 import MilestoneBanner from "@/components/MilestoneBanner";
 import FlagPhotoButton from "@/components/FlagPhotoButton";
 import Button from "@/components/ui/Button";
+import MobileActionBar from "@/components/ui/MobileActionBar";
 
 interface QuizCardProps {
   session: QuizSession;
@@ -54,7 +55,7 @@ export default function QuizCard({ session }: QuizCardProps) {
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-4xl"
+      className="mx-auto flex w-full max-w-md flex-col gap-3 p-4 pb-24 lg:max-w-4xl lg:gap-4 lg:pb-4"
       aria-label="사진 이름 맞히기 퀴즈"
     >
       <header className="flex items-center justify-between text-sm text-gray-600">
@@ -80,7 +81,7 @@ export default function QuizCard({ session }: QuizCardProps) {
             <img
               src={photo.url}
               alt="맞혀야 할 새 사진"
-              className="aspect-square w-full object-cover"
+              className="h-[30vh] w-full object-cover lg:aspect-square lg:h-auto"
             />
           </button>
           <div className="flex items-center justify-between gap-2">
@@ -152,9 +153,11 @@ export default function QuizCard({ session }: QuizCardProps) {
       </div>
 
       {resolved && (
-        <Button onClick={next} fullWidth>
-          다음
-        </Button>
+        <MobileActionBar>
+          <Button onClick={next} fullWidth>
+            다음
+          </Button>
+        </MobileActionBar>
       )}
       </div>
       </div>

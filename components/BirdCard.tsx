@@ -41,7 +41,7 @@ export default function BirdCard({ species }: BirdCardProps) {
             <img
               src={photo.url}
               alt={species.name_korean}
-              className="aspect-square w-full object-cover"
+              className="h-[34vh] w-full object-cover lg:aspect-square lg:h-auto"
             />
           </button>
           <figcaption className="text-right text-[10px] text-gray-400">
