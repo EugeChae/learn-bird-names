@@ -460,7 +460,8 @@
     "difficulty_tier": 1,
     "abundance": "c",
     "status": [
-      "SV"
+      "SV",
+      "WV"
     ],
     "media": [
       {
@@ -817,7 +818,7 @@
   {
     "id": "bubulcus-coromandus",
     "name_korean": "황로",
-    "name_latin": "Bubulcus coromandus",
+    "name_latin": "Ardea coromanda",
     "name_english": "Eastern Cattle Egret",
     "order": "Pelecaniformes",
     "family": "Ardeidae",
@@ -826,7 +827,7 @@
       "습지·논"
     ],
     "difficulty_tier": 2,
-    "abundance": "uc",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -1093,7 +1094,7 @@
   {
     "id": "sinosuthora-webbiana",
     "name_korean": "붉은머리오목눈이",
-    "name_latin": "Sinosuthora webbiana",
+    "name_latin": "Suthora webbiana",
     "name_english": "Vinous-throated Parrotbill",
     "order": "Passeriformes",
     "family": "Paradoxornithidae",
@@ -1788,7 +1789,7 @@
       "산·숲"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "WV",
       "Res"
@@ -1870,7 +1871,7 @@
       "산·숲"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -2079,7 +2080,7 @@
       "하천·호수"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "SV"
     ],
@@ -2120,7 +2121,7 @@
       "농경지"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "WV"
     ],
@@ -2326,7 +2327,7 @@
       "산·숲"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "SV",
       "WV"
@@ -2360,7 +2361,7 @@
     "id": "chloris-sinica",
     "name_korean": "방울새",
     "name_latin": "Chloris sinica",
-    "name_english": "Oriental Greenfinch",
+    "name_english": "Grey-capped Greenfinch",
     "order": "Passeriformes",
     "family": "Fringillidae",
     "habitat": [
@@ -2578,8 +2579,8 @@
     "difficulty_tier": 2,
     "abundance": "c",
     "status": [
-      "SV",
-      "PM"
+      "PM",
+      "WV"
     ],
     "media": [
       {
@@ -2773,10 +2774,10 @@
     ]
   },
   {
-    "id": "anser-fabalis",
+    "id": "anser-serrirostris",
     "name_korean": "큰기러기",
-    "name_latin": "Anser fabalis",
-    "name_english": "Taiga Bean Goose",
+    "name_latin": "Anser serrirostris",
+    "name_english": "Tundra Bean Goose",
     "order": "Anseriformes",
     "family": "Anatidae",
     "habitat": [
@@ -2791,26 +2792,26 @@
     ],
     "media": [
       {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/464309352/medium.jpg",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/257410422/medium.png",
         "sex": "unknown",
         "age": "adult",
         "plumage": "unknown",
-        "angle": "standing",
+        "angle": "perched",
         "license": "CC-BY-NC",
-        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 258746847)",
+        "attribution": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), via iNaturalist (obs. 149387255)",
         "quality_score": 3
       }
     ],
     "trivia": [
       {
-        "content": "몸길이 68~90cm의 갈색 기러기. 머리·목이 어둡고, 검은 부리 가운데에 주황 띠가 있으며 다리·발도 선명한 주황색이다.",
+        "content": "몸길이 68~90cm, 날개폭 140~174cm의 갈색 기러기. 검은 부리 가운데를 가로지르는 주황 띠와 선명한 주황색 다리·발이 특징이며, 쇠기러기와 달리 날개덮깃에 가는 흰 테두리가 있다. 울음은 크고 높은 '끼룩' 소리다.",
         "type": "identification",
-        "trivia_source": "Wikipedia, \"Taiga bean goose\" (en), 2026-09 확인"
+        "trivia_source": "Wikipedia, \"Tundra bean goose\" (en), 2026-09 확인"
       },
       {
-        "content": "북유럽·아시아 타이가에서 번식하고 이동·월동기엔 트인 습지·풀밭에서 지낸다. 풀을 뜯어 먹으며, 겨울에 콩밭 그루터기에서 먹이를 찾던 데서 영어 이름(bean goose)이 왔다. 동부 개체는 중국 동부·한국·일본에서 겨울을 난다.",
+        "content": "시베리아 북부 툰드라에서 번식하고 아시아 남쪽으로 내려와 월동한다. 국제조류학연맹(IOC)과 미국조류학회는 타이가에서 번식하는 큰부리큰기러기(Anser fabalis)와 별개 종으로 다루며, 두 종은 약 250만 년 전 갈라진 뒤 6만 년 전쯤 다시 만나 유전자 교류가 활발했다. 한국에서 겨울 논에 무리 짓는 '큰기러기'는 이 툰드라형이다.",
         "type": "ecology",
-        "trivia_source": "Wikipedia, \"Taiga bean goose\" (en), 2026-09 확인"
+        "trivia_source": "Wikipedia, \"Tundra bean goose\" (en), 2026-09 확인"
       }
     ]
   },
@@ -2826,7 +2827,7 @@
       "도시·마을"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -2867,7 +2868,7 @@
       "도시·마을"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -2983,8 +2984,8 @@
   {
     "id": "accipiter-gentilis",
     "name_korean": "참매",
-    "name_latin": "Accipiter gentilis",
-    "name_english": "Northern Goshawk",
+    "name_latin": "Astur gentilis",
+    "name_english": "Eurasian Goshawk",
     "order": "Accipitriformes",
     "family": "Accipitridae",
     "habitat": [
@@ -2992,7 +2993,7 @@
       "농경지"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "WV",
       "Res"
@@ -3689,7 +3690,7 @@
     "id": "cecropis-daurica",
     "name_korean": "귀제비",
     "name_latin": "Cecropis daurica",
-    "name_english": "Red-rumped Swallow",
+    "name_english": "Eastern Red-rumped Swallow",
     "order": "Passeriformes",
     "family": "Hirundinidae",
     "habitat": [
@@ -4104,8 +4105,8 @@
   {
     "id": "butorides-striata",
     "name_korean": "검은댕기해오라기",
-    "name_latin": "Butorides striata",
-    "name_english": "Striated Heron",
+    "name_latin": "Butorides atricapilla",
+    "name_english": "Little Heron",
     "order": "Pelecaniformes",
     "family": "Ardeidae",
     "habitat": [
@@ -4131,21 +4132,21 @@
     ],
     "trivia": [
       {
-        "content": "몸길이 35~48cm의 작은 해오라기. 성조는 청회색 등과 날개, 검은 정수리, 부리에서 눈 밑으로 이어지는 검은 선, 짧은 노란 다리를 가졌다. 어린 새는 갈색이고 배에 줄무늬가 많다.",
+        "content": "몸길이 약 44cm의 작은 해오라기. 성조는 청회색 등과 날개, 검은 정수리, 부리에서 눈 밑으로 이어지는 검은 선, 짧은 노란 다리를 가졌다. 어린 새는 갈색이고 배에 줄무늬가 많다.",
         "type": "identification",
-        "trivia_source": "Wikipedia, \"Striated heron\" (en), 2026-09 확인"
+        "trivia_source": "Wikipedia, \"Little heron\" (en), 2026-09 확인; Wikipedia, \"Striated heron\" (en), 2026-09 확인"
       },
       {
-        "content": "물가에 꼼짝 않고 서서 먹이를 기다리며, 깃털이나 나뭇잎을 수면에 살짝 떨어뜨려 다가온 물고기를 잡는 '미끼 낚시'를 하기도 한다. 위협을 느낀 어린 새는 목을 쭉 뻗고 부리를 하늘로 향하는 자세를 취한다.",
+        "content": "오랫동안 검은댕기해오라기(Butorides striata)와 같은 종으로 취급됐으나, 2025년 IOC가 구대륙 20개 아종을 별개 종 '작은해오라기(Little Heron)'로 분리하고 striata는 남미 종으로 남겼다. 한국·일본·중국 동북부에 사는 것은 아종 amurensis다. 물가에 꼼짝 않고 서서 먹이를 기다리며, 깃털이나 나뭇잎을 수면에 떨어뜨려 물고기를 유인하는 '미끼 낚시'가 관찰된다.",
         "type": "ecology",
-        "trivia_source": "Wikipedia, \"Striated heron\" (en), 2026-09 확인"
+        "trivia_source": "Wikipedia, \"Little heron\" (en), 2026-09 확인; Wikipedia, \"Striated heron\" (en), 2026-09 확인"
       }
     ]
   },
   {
     "id": "grus-vipio",
     "name_korean": "재두루미",
-    "name_latin": "Grus vipio",
+    "name_latin": "Antigone vipio",
     "name_english": "White-naped Crane",
     "order": "Gruiformes",
     "family": "Gruidae",
@@ -5265,7 +5266,7 @@
   {
     "id": "corvus-dauuricus",
     "name_korean": "갈까마귀",
-    "name_latin": "Corvus dauuricus",
+    "name_latin": "Coloeus dauuricus",
     "name_english": "Daurian Jackdaw",
     "order": "Passeriformes",
     "family": "Corvidae",
@@ -5386,7 +5387,7 @@
   },
   {
     "id": "pyrrhula-pyrrhula",
-    "name_korean": "멋쟁이",
+    "name_korean": "멋쟁이새",
     "name_latin": "Pyrrhula pyrrhula",
     "name_english": "Eurasian Bullfinch",
     "order": "Passeriformes",

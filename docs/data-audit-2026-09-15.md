@@ -1,5 +1,9 @@
 # 종 데이터 정합성 점검 (2026-09-15, 130종, 사진 제외)
 
+> **적용 상태(2026-09-15):** A~F 전 항목 적용 완료. 표기 원칙 = 한국조류학회 『한국조류목록 개정판 v2.1』(2025) 우선.
+> 박새·딱다구리·솔딱새과·두견이과 → `f4d2096`, 나머지(큰기러기 학명·사진·트리비아, 학명 6·영명 2·멋쟁이새·코드/상태, validate-data 코드 검증) → 다음 커밋.
+> 종 id는 진도(localStorage) 호환을 위해 옛 슬러그 유지(`parus-minor`, `bubulcus-coromandus`, `grus-vipio`, `corvus-dauuricus`, `sinosuthora-webbiana`, `butorides-striata`). 예외: 큰기러기는 종 자체가 바뀌어 `anser-fabalis` → `anser-serrirostris`로 교체(해당 종 진도만 초기화됨).
+
 ## 대조 기준
 - **한국조류학회 『한국조류목록 개정판 v2.1』(2025-06)** — 국명·학명·과의 국내 표준(KOS 2025).
 - **Birds Korea Checklist 2024** — IOC World Bird List 14.1 기준 국명·영명(BK 2024).
