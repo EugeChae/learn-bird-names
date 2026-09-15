@@ -11,9 +11,9 @@
 // Pandionidae/Apodidae/Cinclidae/Bombycillidae/Monarchidae(+Ciconiiformes/Apodiformes) 추가.
 //
 // 검수(2026-09): 15목·35과 전부 한국어 위키백과(특히 '참새목' 문서의 과 목록)·NIBR과 대조 완료.
-// 이중 통용명이 있는 항목(둘 다 표준):
-//   - Muscicapidae: 딱새과(채택, '참새목' 문서 표기·친숙도) ↔ 솔딱새과(별도 문서 표제어)
-//   - Cuculidae/Cuculiformes: 뻐꾸기과/뻐꾸기목(채택, 친숙도 우선) ↔ 두견과/두견목(위키 표제어)
+// 2026-09-15 표기 원칙 확정(사용자 결정): 한국조류학회 『한국조류목록 개정판 v2.1』(2025)의
+// 공식 표기를 따른다 — 솔딱새과(딱새과 아님), 두견이과/두견이목(뻐꾸기과/목 아님),
+// 딱다구리과/딱다구리목(국어사전 표기 '딱따구리' 아님). 상세: docs/data-audit-2026-09-15.md
 
 const ORDER_KO: Record<string, string> = {
   Accipitriformes: "수리목",
@@ -24,13 +24,13 @@ const ORDER_KO: Record<string, string> = {
   Ciconiiformes: "황새목",
   Columbiformes: "비둘기목",
   Coraciiformes: "파랑새목",
-  Cuculiformes: "뻐꾸기목",
+  Cuculiformes: "두견이목",
   Falconiformes: "매목",
   Galliformes: "닭목",
   Gruiformes: "두루미목",
   Passeriformes: "참새목",
   Pelecaniformes: "사다새목",
-  Piciformes: "딱따구리목",
+  Piciformes: "딱다구리목",
   Podicipediformes: "논병아리목",
   Strigiformes: "올빼미목",
   Suliformes: "가다랭이잡이목",
@@ -52,7 +52,7 @@ const FAMILY_KO: Record<string, string> = {
   Columbidae: "비둘기과",
   Coraciidae: "파랑새과",
   Corvidae: "까마귀과",
-  Cuculidae: "뻐꾸기과",
+  Cuculidae: "두견이과",
   Emberizidae: "멧새과",
   Falconidae: "매과",
   Fringillidae: "되새과",
@@ -63,7 +63,7 @@ const FAMILY_KO: Record<string, string> = {
   Laridae: "갈매기과",
   Monarchidae: "긴꼬리딱새과",
   Motacillidae: "할미새과",
-  Muscicapidae: "딱새과",
+  Muscicapidae: "솔딱새과",
   Oriolidae: "꾀꼬리과",
   Pandionidae: "물수리과",
   Paradoxornithidae: "붉은머리오목눈이과",
@@ -71,7 +71,7 @@ const FAMILY_KO: Record<string, string> = {
   Passeridae: "참새과",
   Phalacrocoracidae: "가마우지과",
   Phasianidae: "꿩과",
-  Picidae: "딱따구리과",
+  Picidae: "딱다구리과",
   Podicipedidae: "논병아리과",
   Pycnonotidae: "직박구리과",
   Rallidae: "뜸부기과",

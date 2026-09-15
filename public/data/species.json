@@ -217,8 +217,8 @@
   {
     "id": "parus-minor",
     "name_korean": "박새",
-    "name_latin": "Parus minor",
-    "name_english": "Japanese Tit",
+    "name_latin": "Parus cinereus",
+    "name_english": "Cinereous Tit",
     "order": "Passeriformes",
     "family": "Paridae",
     "habitat": [
@@ -254,7 +254,7 @@
         "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
       },
       {
-        "content": "박새(Parus minor)의 울음소리는 '주위를 살펴라' '가까이 오라' 같은 뜻을 담고, 소리를 배열하는 순서에 사람 언어에 견줄 만한 '문법'이 있다는 연구로 유명하다.",
+        "content": "박새(Parus cinereus)의 울음소리는 '주위를 살펴라' '가까이 오라' 같은 뜻을 담고, 소리를 배열하는 순서에 사람 언어에 견줄 만한 '문법'이 있다는 연구로 유명하다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
       }
@@ -1275,7 +1275,7 @@
   },
   {
     "id": "dendrocopos-major",
-    "name_korean": "오색딱따구리",
+    "name_korean": "오색딱다구리",
     "name_latin": "Dendrocopos major",
     "name_english": "Great Spotted Woodpecker",
     "order": "Piciformes",
@@ -1303,12 +1303,12 @@
     ],
     "trivia": [
       {
-        "content": "몸길이 약 20~24cm의 흑백 얼룩 딱따구리로, 아랫배가 붉고 어깨에 큰 흰색 무늬가 있으며 수컷은 뒷목에 진홍색 반점이 있어 암컷과 구별된다.",
+        "content": "몸길이 약 20~24cm의 흑백 얼룩 딱다구리로, 아랫배가 붉고 어깨에 큰 흰색 무늬가 있으며 수컷은 뒷목에 진홍색 반점이 있어 암컷과 구별된다.",
         "type": "identification",
         "trivia_source": "Wikipedia, \"Great spotted woodpecker\" (en), 2026-08 확인"
       },
       {
-        "content": "나무를 두드리는 드러밍이 초당 약 10~16회로 같은 지역 딱따구리 중 가장 빠르며, 보통 1초 남짓 짧게 이어진다.",
+        "content": "나무를 두드리는 드러밍이 초당 약 10~16회로 같은 지역 딱다구리 중 가장 빠르며, 보통 1초 남짓 짧게 이어진다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Great spotted woodpecker\" (en), 2026-08 확인"
       },
@@ -1608,7 +1608,7 @@
         "trivia_source": "Wikipedia, \"Eurasian nuthatch\" (en), 2026-08 확인"
       },
       {
-        "content": "새 중 드물게 나무를 머리부터 아래로 거꾸로 내려올 수 있다. 큰 고목이 있는 숲에 살며 단단한 견과는 나무껍질 틈에 끼우고 부리로 쪼아 깬다. 낡은 딱따구리 구멍에 둥지를 틀고 입구를 진흙으로 발라 좁힌다.",
+        "content": "새 중 드물게 나무를 머리부터 아래로 거꾸로 내려올 수 있다. 큰 고목이 있는 숲에 살며 단단한 견과는 나무껍질 틈에 끼우고 부리로 쪼아 깬다. 낡은 딱다구리 구멍에 둥지를 틀고 입구를 진흙으로 발라 좁힌다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian nuthatch\" (en), 2026-08 확인"
       }
@@ -1656,7 +1656,7 @@
   },
   {
     "id": "yungipicus-kizuki",
-    "name_korean": "쇠딱따구리",
+    "name_korean": "쇠딱다구리",
     "name_latin": "Yungipicus kizuki",
     "name_english": "Japanese Pygmy Woodpecker",
     "order": "Piciformes",
@@ -1684,7 +1684,7 @@
     ],
     "trivia": [
       {
-        "content": "몸길이 13~15cm로 한국에서 가장 작은 딱따구리 무리에 든다. 갈색 등에 흰 가로줄무늬, 줄무늬 진 아랫면을 지니며 수컷은 목덜미 옆에 작은 붉은 반점이 있다(암컷은 없음).",
+        "content": "몸길이 13~15cm로 한국에서 가장 작은 딱다구리 무리에 든다. 갈색 등에 흰 가로줄무늬, 줄무늬 진 아랫면을 지니며 수컷은 목덜미 옆에 작은 붉은 반점이 있다(암컷은 없음).",
         "type": "identification",
         "trivia_source": "Wikipedia, \"Japanese pygmy woodpecker\" (en), 2026-08 확인"
       },
@@ -1697,7 +1697,7 @@
   },
   {
     "id": "picus-canus",
-    "name_korean": "청딱따구리",
+    "name_korean": "청딱다구리",
     "name_latin": "Picus canus",
     "name_english": "Grey-headed Woodpecker",
     "order": "Piciformes",
@@ -3771,7 +3771,7 @@
   },
   {
     "id": "dendrocopos-leucotos",
-    "name_korean": "큰오색딱따구리",
+    "name_korean": "큰오색딱다구리",
     "name_latin": "Dendrocopos leucotos",
     "name_english": "White-backed Woodpecker",
     "order": "Piciformes",
@@ -3798,12 +3798,12 @@
     ],
     "trivia": [
       {
-        "content": "몸길이 24~26cm로 서구대륙의 얼룩딱따구리 중 가장 크다. 오색딱따구리와 닮았지만 날개에 점 대신 흰 가로줄이 있고 아랫등이 희다. 수컷은 정수리가 붉고 암컷은 검다.",
+        "content": "몸길이 24~26cm로 서구대륙의 얼룩딱다구리 중 가장 크다. 오색딱다구리와 닮았지만 날개에 점 대신 흰 가로줄이 있고 아랫등이 희다. 수컷은 정수리가 붉고 암컷은 검다.",
         "type": "identification",
         "trivia_source": "Wikipedia, \"White-backed woodpecker\" (en), 2026-09 확인"
       },
       {
-        "content": "12개 아종이 있으며 울릉도의 울도큰오색딱따구리(takahashii)와 제주도의 제주큰오색딱따구리(quelpartensis)는 한국 섬의 고유 아종이다. 수컷의 드러밍은 매우 크게 울린다.",
+        "content": "12개 아종이 있으며 울릉도의 울도큰오색딱다구리(takahashii)와 제주도의 제주큰오색딱다구리(quelpartensis)는 한국 섬의 고유 아종이다. 수컷의 드러밍은 매우 크게 울린다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"White-backed woodpecker\" (en), 2026-09 확인; 위키백과, \"큰오색딱따구리\" (ko), 2026-09 확인"
       }
@@ -4011,7 +4011,7 @@
         "trivia_source": "Wikipedia, \"Smew\" (en), 2026-09 확인"
       },
       {
-        "content": "Mergellus속의 유일한 현생종으로 비오리속(Mergus)의 자매군이다. 딱따구리가 파 놓은 옛 나무 구멍 같은 곳에 둥지를 틀며, 흰뺨오리와 잡종을 만든 기록이 있다. 겁이 많아 사람이 다가가면 쉽게 날아오른다.",
+        "content": "Mergellus속의 유일한 현생종으로 비오리속(Mergus)의 자매군이다. 딱다구리가 파 놓은 옛 나무 구멍 같은 곳에 둥지를 틀며, 흰뺨오리와 잡종을 만든 기록이 있다. 겁이 많아 사람이 다가가면 쉽게 날아오른다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Smew\" (en), 2026-09 확인"
       }
@@ -4053,7 +4053,7 @@
         "trivia_source": "Wikipedia, \"Common goldeneye\" (en), 2026-09 확인"
       },
       {
-        "content": "타이가의 호수·강에서 번식하며, 까막딱따구리 등이 판 큰 나무 구멍에 둥지를 틀고 해마다 같은 구멍으로 돌아온다. 영역성이 강하고 정교한 구애 과시를 한다. 잠수해서 갑각류·수서곤충·조개를 먹는다.",
+        "content": "타이가의 호수·강에서 번식하며, 까막딱다구리 등이 판 큰 나무 구멍에 둥지를 틀고 해마다 같은 구멍으로 돌아온다. 영역성이 강하고 정교한 구애 과시를 한다. 잠수해서 갑각류·수서곤충·조개를 먹는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Common goldeneye\" (en), 2026-09 확인"
       }
@@ -4894,7 +4894,7 @@
   },
   {
     "id": "dryocopus-martius",
-    "name_korean": "까막딱따구리",
+    "name_korean": "까막딱다구리",
     "name_latin": "Dryocopus martius",
     "name_english": "Black Woodpecker",
     "order": "Piciformes",
@@ -4921,12 +4921,12 @@
     ],
     "trivia": [
       {
-        "content": "몸길이 45~55cm, 날개폭 64~84cm로 유럽과 아시아 분포권에서 단연 가장 큰 딱따구리다. 온몸이 검고 수컷은 정수리 전체가, 암컷은 뒷머리만 붉다. 부리가 5~6.7cm로 매우 길다.",
+        "content": "몸길이 45~55cm, 날개폭 64~84cm로 유럽과 아시아 분포권에서 단연 가장 큰 딱다구리다. 온몸이 검고 수컷은 정수리 전체가, 암컷은 뒷머리만 붉다. 부리가 5~6.7cm로 매우 길다.",
         "type": "identification",
         "trivia_source": "Wikipedia, \"Black woodpecker\" (en), 2026-09 확인"
       },
       {
-        "content": "죽은 나무를 부리로 두드려 왕개미와 나무좀 유충을 파먹는다. 큰 몸과 힘 덕분에 다른 딱따구리가 닿지 못하는 깊은 곳까지 파고, 이 새가 판 구멍은 흰뺨오리 등 다른 새의 둥지가 된다. 살아 있는 포플러나 소나무에 둥지 구멍을 파고 암수가 교대로 알을 품는다.",
+        "content": "죽은 나무를 부리로 두드려 왕개미와 나무좀 유충을 파먹는다. 큰 몸과 힘 덕분에 다른 딱다구리가 닿지 못하는 깊은 곳까지 파고, 이 새가 판 구멍은 흰뺨오리 등 다른 새의 둥지가 된다. 살아 있는 포플러나 소나무에 둥지 구멍을 파고 암수가 교대로 알을 품는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Black woodpecker\" (en), 2026-09 확인"
       }
@@ -5008,7 +5008,7 @@
         "trivia_source": "Wikipedia, \"Blue rock thrush\" (en), 2026-09 확인"
       },
       {
-        "content": "지빠귀과로 분류되다가 지금은 딱새과(솔딱새과)로 옮겨진 종이다. 바위 절벽과 담벼락 구멍에 둥지를 틀며, 한국 홍도 조사에서는 노출된 바위 절벽을 강하게 선호하고 봄에 왔다 가을에 떠나는 이동성 개체군으로 확인됐다. 몰타의 국조다.",
+        "content": "지빠귀과로 분류되다가 지금은 솔딱새과로 옮겨진 종이다. 바위 절벽과 담벼락 구멍에 둥지를 틀며, 한국 홍도 조사에서는 노출된 바위 절벽을 강하게 선호하고 봄에 왔다 가을에 떠나는 이동성 개체군으로 확인됐다. 몰타의 국조다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Blue rock thrush\" (en), 2026-09 확인"
       }
