@@ -5,28 +5,34 @@
 //
 // 출처: 국립생물자원관 국가생물종목록 · Birds Korea 2024 체크리스트의 표준 국명.
 // (분류학 명칭은 도감·학술 표준 사실이며 AI 생성 콘텐츠가 아니다 — 트리비아 금지 원칙과 무관.)
-// 현재 데이터(50종)에 등장하는 15목·35과를 모두 포함한다. 누락 시 Latin으로 폴백.
+// 현재 데이터(130종)에 등장하는 18목·48과를 모두 포함한다. 누락 시 Latin으로 폴백.
+// 2026-09 보강: 70종 확장 때 빠졌던 Turdidae/Fringillidae/Strigidae(+Strigiformes)와
+// 90종 확장의 Scolopacidae/Troglodytidae/Alaudidae, 130종 확장의 Ciconiidae/Haematopodidae/
+// Pandionidae/Apodidae/Cinclidae/Bombycillidae/Monarchidae(+Ciconiiformes/Apodiformes) 추가.
 //
 // 검수(2026-09): 15목·35과 전부 한국어 위키백과(특히 '참새목' 문서의 과 목록)·NIBR과 대조 완료.
-// 이중 통용명이 있는 항목(둘 다 표준):
-//   - Muscicapidae: 딱새과(채택, '참새목' 문서 표기·친숙도) ↔ 솔딱새과(별도 문서 표제어)
-//   - Cuculidae/Cuculiformes: 뻐꾸기과/뻐꾸기목(채택, 친숙도 우선) ↔ 두견과/두견목(위키 표제어)
+// 2026-09-15 표기 원칙 확정(사용자 결정): 한국조류학회 『한국조류목록 개정판 v2.1』(2025)의
+// 공식 표기를 따른다 — 솔딱새과(딱새과 아님), 두견이과/두견이목(뻐꾸기과/목 아님),
+// 딱다구리과/딱다구리목(국어사전 표기 '딱따구리' 아님). 상세: docs/data-audit-2026-09-15.md
 
 const ORDER_KO: Record<string, string> = {
   Accipitriformes: "수리목",
   Anseriformes: "기러기목",
+  Apodiformes: "칼새목",
   Bucerotiformes: "코뿔새목",
   Charadriiformes: "도요목",
+  Ciconiiformes: "황새목",
   Columbiformes: "비둘기목",
   Coraciiformes: "파랑새목",
-  Cuculiformes: "뻐꾸기목",
+  Cuculiformes: "두견이목",
   Falconiformes: "매목",
   Galliformes: "닭목",
   Gruiformes: "두루미목",
   Passeriformes: "참새목",
   Pelecaniformes: "사다새목",
-  Piciformes: "딱따구리목",
+  Piciformes: "딱다구리목",
   Podicipediformes: "논병아리목",
+  Strigiformes: "올빼미목",
   Suliformes: "가다랭이잡이목",
 };
 
@@ -34,36 +40,49 @@ const FAMILY_KO: Record<string, string> = {
   Accipitridae: "수리과",
   Acrocephalidae: "개개비과",
   Aegithalidae: "오목눈이과",
+  Alaudidae: "종다리과",
   Alcedinidae: "물총새과",
   Anatidae: "오리과",
+  Apodidae: "칼새과",
   Ardeidae: "백로과",
+  Bombycillidae: "여새과",
   Charadriidae: "물떼새과",
+  Ciconiidae: "황새과",
+  Cinclidae: "물까마귀과",
   Columbidae: "비둘기과",
   Coraciidae: "파랑새과",
   Corvidae: "까마귀과",
-  Cuculidae: "뻐꾸기과",
+  Cuculidae: "두견이과",
   Emberizidae: "멧새과",
   Falconidae: "매과",
+  Fringillidae: "되새과",
   Gruidae: "두루미과",
+  Haematopodidae: "검은머리물떼새과",
   Hirundinidae: "제비과",
   Laniidae: "때까치과",
   Laridae: "갈매기과",
+  Monarchidae: "긴꼬리딱새과",
   Motacillidae: "할미새과",
-  Muscicapidae: "딱새과",
+  Muscicapidae: "솔딱새과",
   Oriolidae: "꾀꼬리과",
+  Pandionidae: "물수리과",
   Paradoxornithidae: "붉은머리오목눈이과",
   Paridae: "박새과",
   Passeridae: "참새과",
   Phalacrocoracidae: "가마우지과",
   Phasianidae: "꿩과",
-  Picidae: "딱따구리과",
+  Picidae: "딱다구리과",
   Podicipedidae: "논병아리과",
   Pycnonotidae: "직박구리과",
   Rallidae: "뜸부기과",
   Regulidae: "상모솔새과",
+  Scolopacidae: "도요과",
   Sittidae: "동고비과",
+  Strigidae: "올빼미과",
   Sturnidae: "찌르레기과",
   Threskiornithidae: "저어새과",
+  Troglodytidae: "굴뚝새과",
+  Turdidae: "지빠귀과",
   Upupidae: "후투티과",
   Zosteropidae: "동박새과",
 };

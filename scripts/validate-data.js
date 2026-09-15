@@ -13,9 +13,15 @@ function isBlank(value) {
   return typeof value !== "string" || value.trim() === "";
 }
 
+// types/index.ts의 Abundance·Status와 동일해야 한다(JSON 임포트는 리터럴 타입을 못 잡는다 —
+// 2026-09 감사에서 "u" 같은 무효 코드 8건이 빌드를 통과한 이유).
+const ABUNDANCE_CODES = ["ab", "c", "uc", "sc", "r"];
+const STATUS_CODES = ["Res", "SV", "WV", "PM", "Vag", "Probably extinct"];
+
 /**
  * 종 배열을 검증하고 사람이 읽을 오류 메시지 배열을 반환한다(빈 배열 = 통과).
- * 규칙: 각 사진의 license·attribution, 각 트리비아의 trivia_source가 비면 안 된다.
+ * 규칙: 각 사진의 license·attribution, 각 트리비아의 trivia_source가 비면 안 되고,
+ * abundance·status는 허용 코드만 쓴다.
  */
 function validateSpecies(speciesList) {
   if (!Array.isArray(speciesList)) {
@@ -31,6 +37,15 @@ function validateSpecies(speciesList) {
       }
       if (isBlank(m && m.attribution)) {
         errors.push(`[${label}] media[${mi}].attribution 이 비어 있습니다.`);
+      }
+    });
+    if (species && !ABUNDANCE_CODES.includes(species.abundance)) {
+      errors.push(`[${label}] abundance 코드가 무효합니다: ${JSON.stringify(species.abundance)}`);
+    }
+    const status = Array.isArray(species && species.status) ? species.status : [];
+    status.forEach((code) => {
+      if (!STATUS_CODES.includes(code)) {
+        errors.push(`[${label}] status 코드가 무효합니다: ${JSON.stringify(code)}`);
       }
     });
     const trivia = Array.isArray(species && species.trivia)

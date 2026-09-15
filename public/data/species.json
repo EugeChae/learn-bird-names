@@ -217,8 +217,8 @@
   {
     "id": "parus-minor",
     "name_korean": "박새",
-    "name_latin": "Parus minor",
-    "name_english": "Japanese Tit",
+    "name_latin": "Parus cinereus",
+    "name_english": "Cinereous Tit",
     "order": "Passeriformes",
     "family": "Paridae",
     "habitat": [
@@ -254,7 +254,7 @@
         "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
       },
       {
-        "content": "박새(Parus minor)의 울음소리는 '주위를 살펴라' '가까이 오라' 같은 뜻을 담고, 소리를 배열하는 순서에 사람 언어에 견줄 만한 '문법'이 있다는 연구로 유명하다.",
+        "content": "박새(Parus cinereus)의 울음소리는 '주위를 살펴라' '가까이 오라' 같은 뜻을 담고, 소리를 배열하는 순서에 사람 언어에 견줄 만한 '문법'이 있다는 연구로 유명하다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
       }
@@ -460,7 +460,8 @@
     "difficulty_tier": 1,
     "abundance": "c",
     "status": [
-      "SV"
+      "SV",
+      "WV"
     ],
     "media": [
       {
@@ -817,7 +818,7 @@
   {
     "id": "bubulcus-coromandus",
     "name_korean": "황로",
-    "name_latin": "Bubulcus coromandus",
+    "name_latin": "Ardea coromanda",
     "name_english": "Eastern Cattle Egret",
     "order": "Pelecaniformes",
     "family": "Ardeidae",
@@ -826,7 +827,7 @@
       "습지·논"
     ],
     "difficulty_tier": 2,
-    "abundance": "uc",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -1093,7 +1094,7 @@
   {
     "id": "sinosuthora-webbiana",
     "name_korean": "붉은머리오목눈이",
-    "name_latin": "Sinosuthora webbiana",
+    "name_latin": "Suthora webbiana",
     "name_english": "Vinous-throated Parrotbill",
     "order": "Passeriformes",
     "family": "Paradoxornithidae",
@@ -1275,7 +1276,7 @@
   },
   {
     "id": "dendrocopos-major",
-    "name_korean": "오색딱따구리",
+    "name_korean": "오색딱다구리",
     "name_latin": "Dendrocopos major",
     "name_english": "Great Spotted Woodpecker",
     "order": "Piciformes",
@@ -1303,12 +1304,12 @@
     ],
     "trivia": [
       {
-        "content": "몸길이 약 20~24cm의 흑백 얼룩 딱따구리로, 아랫배가 붉고 어깨에 큰 흰색 무늬가 있으며 수컷은 뒷목에 진홍색 반점이 있어 암컷과 구별된다.",
+        "content": "몸길이 약 20~24cm의 흑백 얼룩 딱다구리로, 아랫배가 붉고 어깨에 큰 흰색 무늬가 있으며 수컷은 뒷목에 진홍색 반점이 있어 암컷과 구별된다.",
         "type": "identification",
         "trivia_source": "Wikipedia, \"Great spotted woodpecker\" (en), 2026-08 확인"
       },
       {
-        "content": "나무를 두드리는 드러밍이 초당 약 10~16회로 같은 지역 딱따구리 중 가장 빠르며, 보통 1초 남짓 짧게 이어진다.",
+        "content": "나무를 두드리는 드러밍이 초당 약 10~16회로 같은 지역 딱다구리 중 가장 빠르며, 보통 1초 남짓 짧게 이어진다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Great spotted woodpecker\" (en), 2026-08 확인"
       },
@@ -1608,7 +1609,7 @@
         "trivia_source": "Wikipedia, \"Eurasian nuthatch\" (en), 2026-08 확인"
       },
       {
-        "content": "새 중 드물게 나무를 머리부터 아래로 거꾸로 내려올 수 있다. 큰 고목이 있는 숲에 살며 단단한 견과는 나무껍질 틈에 끼우고 부리로 쪼아 깬다. 낡은 딱따구리 구멍에 둥지를 틀고 입구를 진흙으로 발라 좁힌다.",
+        "content": "새 중 드물게 나무를 머리부터 아래로 거꾸로 내려올 수 있다. 큰 고목이 있는 숲에 살며 단단한 견과는 나무껍질 틈에 끼우고 부리로 쪼아 깬다. 낡은 딱다구리 구멍에 둥지를 틀고 입구를 진흙으로 발라 좁힌다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian nuthatch\" (en), 2026-08 확인"
       }
@@ -1656,7 +1657,7 @@
   },
   {
     "id": "yungipicus-kizuki",
-    "name_korean": "쇠딱따구리",
+    "name_korean": "쇠딱다구리",
     "name_latin": "Yungipicus kizuki",
     "name_english": "Japanese Pygmy Woodpecker",
     "order": "Piciformes",
@@ -1684,7 +1685,7 @@
     ],
     "trivia": [
       {
-        "content": "몸길이 13~15cm로 한국에서 가장 작은 딱따구리 무리에 든다. 갈색 등에 흰 가로줄무늬, 줄무늬 진 아랫면을 지니며 수컷은 목덜미 옆에 작은 붉은 반점이 있다(암컷은 없음).",
+        "content": "몸길이 13~15cm로 한국에서 가장 작은 딱다구리 무리에 든다. 갈색 등에 흰 가로줄무늬, 줄무늬 진 아랫면을 지니며 수컷은 목덜미 옆에 작은 붉은 반점이 있다(암컷은 없음).",
         "type": "identification",
         "trivia_source": "Wikipedia, \"Japanese pygmy woodpecker\" (en), 2026-08 확인"
       },
@@ -1697,7 +1698,7 @@
   },
   {
     "id": "picus-canus",
-    "name_korean": "청딱따구리",
+    "name_korean": "청딱다구리",
     "name_latin": "Picus canus",
     "name_english": "Grey-headed Woodpecker",
     "order": "Piciformes",
@@ -1788,7 +1789,7 @@
       "산·숲"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "WV",
       "Res"
@@ -1870,7 +1871,7 @@
       "산·숲"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -2079,7 +2080,7 @@
       "하천·호수"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "SV"
     ],
@@ -2120,7 +2121,7 @@
       "농경지"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "WV"
     ],
@@ -2326,7 +2327,7 @@
       "산·숲"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "SV",
       "WV"
@@ -2360,7 +2361,7 @@
     "id": "chloris-sinica",
     "name_korean": "방울새",
     "name_latin": "Chloris sinica",
-    "name_english": "Oriental Greenfinch",
+    "name_english": "Grey-capped Greenfinch",
     "order": "Passeriformes",
     "family": "Fringillidae",
     "habitat": [
@@ -2578,8 +2579,8 @@
     "difficulty_tier": 2,
     "abundance": "c",
     "status": [
-      "SV",
-      "PM"
+      "PM",
+      "WV"
     ],
     "media": [
       {
@@ -2773,10 +2774,10 @@
     ]
   },
   {
-    "id": "anser-fabalis",
+    "id": "anser-serrirostris",
     "name_korean": "큰기러기",
-    "name_latin": "Anser fabalis",
-    "name_english": "Taiga Bean Goose",
+    "name_latin": "Anser serrirostris",
+    "name_english": "Tundra Bean Goose",
     "order": "Anseriformes",
     "family": "Anatidae",
     "habitat": [
@@ -2791,26 +2792,26 @@
     ],
     "media": [
       {
-        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/464309352/medium.jpg",
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/257410422/medium.png",
         "sex": "unknown",
         "age": "adult",
         "plumage": "unknown",
-        "angle": "standing",
+        "angle": "perched",
         "license": "CC-BY-NC",
-        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 258746847)",
+        "attribution": "(c) onidiras-iNaturalist, some rights reserved (CC BY-NC), via iNaturalist (obs. 149387255)",
         "quality_score": 3
       }
     ],
     "trivia": [
       {
-        "content": "몸길이 68~90cm의 갈색 기러기. 머리·목이 어둡고, 검은 부리 가운데에 주황 띠가 있으며 다리·발도 선명한 주황색이다.",
+        "content": "몸길이 68~90cm, 날개폭 140~174cm의 갈색 기러기. 검은 부리 가운데를 가로지르는 주황 띠와 선명한 주황색 다리·발이 특징이며, 쇠기러기와 달리 날개덮깃에 가는 흰 테두리가 있다. 울음은 크고 높은 '끼룩' 소리다.",
         "type": "identification",
-        "trivia_source": "Wikipedia, \"Taiga bean goose\" (en), 2026-09 확인"
+        "trivia_source": "Wikipedia, \"Tundra bean goose\" (en), 2026-09 확인"
       },
       {
-        "content": "북유럽·아시아 타이가에서 번식하고 이동·월동기엔 트인 습지·풀밭에서 지낸다. 풀을 뜯어 먹으며, 겨울에 콩밭 그루터기에서 먹이를 찾던 데서 영어 이름(bean goose)이 왔다. 동부 개체는 중국 동부·한국·일본에서 겨울을 난다.",
+        "content": "시베리아 북부 툰드라에서 번식하고 아시아 남쪽으로 내려와 월동한다. 국제조류학연맹(IOC)과 미국조류학회는 타이가에서 번식하는 큰부리큰기러기(Anser fabalis)와 별개 종으로 다루며, 두 종은 약 250만 년 전 갈라진 뒤 6만 년 전쯤 다시 만나 유전자 교류가 활발했다. 한국에서 겨울 논에 무리 짓는 '큰기러기'는 이 툰드라형이다.",
         "type": "ecology",
-        "trivia_source": "Wikipedia, \"Taiga bean goose\" (en), 2026-09 확인"
+        "trivia_source": "Wikipedia, \"Tundra bean goose\" (en), 2026-09 확인"
       }
     ]
   },
@@ -2826,7 +2827,7 @@
       "도시·마을"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -2867,7 +2868,7 @@
       "도시·마을"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "c",
     "status": [
       "SV"
     ],
@@ -2983,8 +2984,8 @@
   {
     "id": "accipiter-gentilis",
     "name_korean": "참매",
-    "name_latin": "Accipiter gentilis",
-    "name_english": "Northern Goshawk",
+    "name_latin": "Astur gentilis",
+    "name_english": "Eurasian Goshawk",
     "order": "Accipitriformes",
     "family": "Accipitridae",
     "habitat": [
@@ -2992,7 +2993,7 @@
       "농경지"
     ],
     "difficulty_tier": 2,
-    "abundance": "u",
+    "abundance": "uc",
     "status": [
       "WV",
       "Res"
@@ -3019,6 +3020,2489 @@
         "content": "숲에 살며 횃대에서 기습하는 강력한 사냥꾼으로, 먹이의 76.5%가 새(까마귀·비둘기·꿩 등)이고 다람쥐·토끼 같은 포유류도 잡는다. 중세엔 귀족만 다룰 수 있어 학명 gentilis('고귀한')가 붙었다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian goshawk\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "columba-livia",
+    "name_korean": "집비둘기",
+    "name_latin": "Columba livia",
+    "name_english": "Rock Dove",
+    "order": "Columbiformes",
+    "family": "Columbidae",
+    "habitat": [
+      "도시·마을",
+      "농경지"
+    ],
+    "difficulty_tier": 1,
+    "abundance": "ab",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/469244730/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) rjennion, some rights reserved (CC BY-NC), via iNaturalist (obs. 261215467)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "야생형은 옅은 회색 몸에 날개마다 검은 띠 두 줄, 목에는 녹색·자주색 광택이 돈다. 도시의 집비둘기는 야생 바위비둘기를 길들인 품종이 다시 야생화된 것이라 붉은색·갈색·얼룩 등 색과 무늬 변이가 매우 크다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Rock dove\" (en), 2026-09 확인"
+      },
+      {
+        "content": "야생에서는 절벽과 바위 턱에 둥지를 트는 습성이 도시의 건물 난간·다리로 옮겨왔다. 암수 모두 모이주머니에서 '피죤 밀크'를 만들어 새끼를 먹이기 때문에 계절에 관계없이 연중 번식할 수 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Rock dove\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "corvus-corone",
+    "name_korean": "까마귀",
+    "name_latin": "Corvus corone",
+    "name_english": "Carrion Crow",
+    "order": "Passeriformes",
+    "family": "Corvidae",
+    "habitat": [
+      "농경지",
+      "도시·마을",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/451700759/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Eidiu, some rights reserved (CC BY-NC), via iNaturalist (obs. 252339670)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 48~52cm로 녹색·자주빛 광택이 도는 검은 깃을 가졌고 부리·다리도 검다. 어린 새는 갈색빛 깃에 파란 눈을 가졌다가 자라면서 검은 깃과 갈색 눈으로 바뀐다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Carrion crow\" (en), 2026-09 확인"
+      },
+      {
+        "content": "굵고 거친 '크라' 소리를 3~4번 연달아 내며, 울 때마다 어깨를 올리고 머리를 숙이는 동작을 한다. 30까지의 수를 구별하고 사람과 까마귀의 얼굴을 알아보는 등 지능이 매우 높다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Carrion crow\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "corvus-frugilegus",
+    "name_korean": "떼까마귀",
+    "name_latin": "Corvus frugilegus",
+    "name_english": "Rook",
+    "order": "Passeriformes",
+    "family": "Corvidae",
+    "habitat": [
+      "농경지",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/176386403/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Małgorzata Śliż, some rights reserved (CC BY-NC), via iNaturalist (obs. 105166137)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "성조는 부리 기부와 눈 앞쪽이 깃털 없이 허옇게 드러나 다른 까마귀류와 바로 구별된다. 이 맨살 때문에 부리가 실제보다 길고 머리가 둥글게 보인다. 부리는 회흑색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Rook (bird)\" (en), 2026-09 확인"
+      },
+      {
+        "content": "이름처럼 큰 무리로 생활하며, 농경지에서 튼튼한 부리로 땅을 쑤셔 굼벵이·지렁이를 잡아먹는다. 큰 나무 꼭대기에 둥지를 모아 짓는 집단 번식지를 '루커리(rookery)'라 부르고, 가을에는 무리가 다이빙·공중제비 같은 곡예 비행을 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Rook (bird)\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "cygnus-cygnus",
+    "name_korean": "큰고니",
+    "name_latin": "Cygnus cygnus",
+    "name_english": "Whooper Swan",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "하천·호수",
+      "저수지",
+      "습지·논"
+    ],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/459437424/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Seokin Yang, some rights reserved (CC BY-NC), via iNaturalist (obs. 256270042)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 140~165cm, 날개폭 205~275cm에 이르는 대형 고니로, 기록된 최대 체중은 15.5kg에 달해 나는 새 가운데 가장 무거운 축에 든다. 기러기를 닮은 깊은 나팔 소리를 3~4번씩 묶어 낸다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Whooper swan\" (en), 2026-09 확인"
+      },
+      {
+        "content": "평생 한 짝과 산다. 무리가 날아오르기 전 머리를 까딱이거나 날개를 치는 신호로 서로 의사를 주고받으며, 신호를 가장 많이 보낸 개체가 대개 비행을 이끈다. 1967년 아이슬란드에서 아일랜드로 이동하던 무리가 고도 8,200m에서 레이더에 잡힌 기록이 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Whooper swan\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "mergus-merganser",
+    "name_korean": "비오리",
+    "name_latin": "Mergus merganser",
+    "name_english": "Common Merganser",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "하천·호수",
+      "저수지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/458016237/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Seokin Yang, some rights reserved (CC BY-NC), via iNaturalist (obs. 255567459)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "번식깃의 수컷은 몸이 흰색(연어빛 분홍 기미)이고 머리는 녹색 광택이 도는 검은색, 부리는 붉다. 부리 가장자리가 톱니처럼 되어 있어 미끄러운 물고기를 놓치지 않으며, 그래서 '톱부리(sawbill)'라고도 불린다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common merganser\" (en), 2026-09 확인"
+      },
+      {
+        "content": "주로 물고기를 먹으며, 여러 마리가 반원 대형을 이뤄 물고기를 얕은 곳으로 몰아 잡기도 한다. 나무 구멍에 둥지를 틀고, 새끼는 부화하자마자 어미 등에 업혀 강이나 호수로 옮겨진다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common merganser\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "aythya-fuligula",
+    "name_korean": "댕기흰죽지",
+    "name_latin": "Aythya fuligula",
+    "name_english": "Tufted Duck",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "저수지",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/184028199/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Leslie Hurteau, some rights reserved (CC BY-NC), via iNaturalist (obs. 109215872)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "수컷은 흰 옆구리를 뺀 온몸이 검고 청회색 부리, 황금빛 노란 눈, 뒷머리에 늘어진 가는 댕기가 특징이다. 암컷은 갈색이라 다른 잠수성 오리와 헷갈리기 쉽다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Tufted duck\" (en), 2026-09 확인"
+      },
+      {
+        "content": "주로 잠수해서 조개·수서곤충을 먹고, 겨울에는 넓은 수면에 큰 무리를 이룬다. 자갈 채취로 생긴 개방 수면과 즐겨 먹는 담수 홍합의 확산 덕에 분포를 넓힌 것으로 여겨진다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Tufted duck\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "nycticorax-nycticorax",
+    "name_korean": "해오라기",
+    "name_latin": "Nycticorax nycticorax",
+    "name_english": "Black-crowned Night Heron",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "habitat": [
+      "하천·호수",
+      "습지·논"
+    ],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/487373949/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Yunho Yang, some rights reserved (CC BY-NC), via iNaturalist (obs. 270969786)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "검은 정수리와 등, 회색 날개, 흰 배에 붉은 눈과 짧은 노란 다리를 가졌다. 백로류보다 부리·다리·목이 짧고 몸이 땅딸막해 평소엔 웅크린 자세다. 어린 새는 회갈색 몸에 흰 물방울 무늬가 가득하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Black-crowned night heron\" (en), 2026-09 확인"
+      },
+      {
+        "content": "이름처럼 주로 밤과 새벽·저녁에 물가에 가만히 서서 먹이를 기다린다. 물에 미끼를 던져 물고기를 유인하는 '미끼 낚시'가 관찰된 7종의 왜가리류 중 하나로, 새의 도구 사용으로는 드문 사례다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Black-crowned night heron\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "podiceps-cristatus",
+    "name_korean": "뿔논병아리",
+    "name_latin": "Podiceps cristatus",
+    "name_english": "Great Crested Grebe",
+    "order": "Podicipediformes",
+    "family": "Podicipedidae",
+    "habitat": [
+      "저수지",
+      "하천·호수",
+      "해안"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV",
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/108704084/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "nonbreeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) vpt0691, some rights reserved (CC BY-NC), via iNaturalist (obs. 67301882)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 46~51cm로 구대륙 논병아리 중 가장 크다. 여름에는 검정·주황갈색의 머리 장식이 화려하지만, 겨울에는 눈 위까지 흰 얼굴에 분홍 부리를 가진 수수한 모습이 된다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Great crested grebe\" (en), 2026-09 확인"
+      },
+      {
+        "content": "암수가 동시에 춤추듯 움직이는 정교한 구애 과시로 유명하다. 새끼는 머리에 흑백 줄무늬가 있어 영어권에서 줄무늬 사탕 '험버그'라 불리며, 부모는 새끼를 등에 업고 다니다 잠수해 헤엄을 가르친다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Great crested grebe\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "gallinula-chloropus",
+    "name_korean": "쇠물닭",
+    "name_latin": "Gallinula chloropus",
+    "name_english": "Common Moorhen",
+    "order": "Gruiformes",
+    "family": "Rallidae",
+    "habitat": [
+      "습지·논",
+      "저수지",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/192185962/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) bio96, some rights reserved (CC BY-NC), via iNaturalist (obs. 113769630)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "검은색·갈색 몸에 옆구리의 흰 줄과 꼬리 밑 흰색, 노란 다리, 그리고 노란 끝의 붉은 부리와 이어진 붉은 이마판이 특징이다. 어린 새는 갈색이고 붉은 이마판이 없다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common moorhen\" (en), 2026-09 확인"
+      },
+      {
+        "content": "풀이 우거진 습지·연못·수로는 물론 도시공원에서도 번식하는, 물닭과 함께 구대륙에서 가장 흔한 뜸부기과 새다. 다른 쇠물닭은 물론 물닭·청둥오리 둥지에 알을 맡기는 탁란도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common moorhen\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "chroicocephalus-ridibundus",
+    "name_korean": "붉은부리갈매기",
+    "name_latin": "Chroicocephalus ridibundus",
+    "name_english": "Black-headed Gull",
+    "order": "Charadriiformes",
+    "family": "Laridae",
+    "habitat": [
+      "해안",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/611833112/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "nonbreeding",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) arbarokampo, some rights reserved (CC BY-NC), via iNaturalist (obs. 336659964)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 34~39cm의 소형 갈매기. 여름에는 머리가 초콜릿색(멀리서는 검게 보임)이지만 겨울에는 눈 뒤 검은 점 두 개만 남는다. 부리와 다리는 붉고, 날 때 바깥 날개 앞쪽의 흰 띠가 좋은 식별 포인트다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Black-headed gull\" (en), 2026-09 확인"
+      },
+      {
+        "content": "갈대밭이나 호수의 섬에 수천 쌍까지 집단 번식하고 겨울에는 큰 무리를 짓는다. 부화 뒤 알껍데기를 둥지 밖으로 멀리 치워 포식자 눈에 띄지 않게 하며, 야생에서 32.9년 이상 산 기록이 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Black-headed gull\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "actitis-hypoleucos",
+    "name_korean": "깝작도요",
+    "name_latin": "Actitis hypoleucos",
+    "name_english": "Common Sandpiper",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "habitat": [
+      "하천·호수",
+      "습지·논",
+      "해안"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV",
+      "PM"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/726278045/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) corvuscorne, some rights reserved (CC BY-NC), via iNaturalist (obs. 396053737)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 18~20cm로 회갈색 등, 흰 배, 짧은 어두운 노란색 다리를 가졌고 부리는 기부가 옅고 끝이 어둡다. 물 위를 낮게 뻣뻣한 날갯짓으로 나는 모습이 독특하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common sandpiper\" (en), 2026-09 확인"
+      },
+      {
+        "content": "대개 혼자 다니며 다른 종 무리에 잘 끼지 않는다. 민물가 땅에 둥지를 틀고, 위협을 받으면 새끼가 부모 몸에 매달린 채 날아 피신하기도 한다. 한국의 하천·습지에서 흔히 볼 수 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common sandpiper\" (en), 2026-09 확인; 위키백과, \"깝작도요\" (ko), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "ficedula-zanthopygia",
+    "name_korean": "흰눈썹황금새",
+    "name_latin": "Ficedula zanthopygia",
+    "name_english": "Yellow-rumped Flycatcher",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/478638217/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jens Thalund, some rights reserved (CC BY-NC), via iNaturalist (obs. 266400268)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "수컷은 이름처럼 흰 눈썹선이 뚜렷하고 배가 황금빛 노란색이며, 머리와 날개는 검은데 날개에 흰 반점이 있다. 암컷은 눈썹선이 없고 배가 희며 등은 갈색이지만 날개의 흰 부분은 있다.",
+        "type": "identification",
+        "trivia_source": "위키백과, \"흰눈썹황금새\" (ko), 2026-09 확인"
+      },
+      {
+        "content": "몽골·중국·한국·일본 서부 등 동아시아에서 번식하고 말레이반도와 남아시아에서 월동한다. 영어로는 '한국딱새(Korean flycatcher)'라고도 불리며, 닮은 종은 황금새 정도뿐이라 식별이 쉬운 편이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Yellow-rumped flycatcher\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "motacilla-cinerea",
+    "name_korean": "노랑할미새",
+    "name_latin": "Motacilla cinerea",
+    "name_english": "Grey Wagtail",
+    "order": "Passeriformes",
+    "family": "Motacillidae",
+    "habitat": [
+      "하천·호수",
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/460641174/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jonghwan Choi, some rights reserved (CC BY-NC), via iNaturalist (obs. 256863437)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 18~19cm의 날씬한 할미새로 회색 등과 노란 배·꼬리 밑이 대비된다. 가는 흰 눈썹선이 있고 번식기 수컷은 목이 검다. 긴 꼬리를 쉴 새 없이 위아래로 흔든다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Grey wagtail\" (en), 2026-09 확인"
+      },
+      {
+        "content": "번식기에는 반드시 흐르는 물가에 머물며 급류 옆 돌과 뿌리 사이에 둥지를 튼다. 수컷은 짧게 날아올랐다가 지저귀며 팔랑팔랑 내려오는 구애 비행을 한다. 뻐꾸기의 탁란 대상이 되기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Grey wagtail\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "troglodytes-troglodytes",
+    "name_korean": "굴뚝새",
+    "name_latin": "Troglodytes troglodytes",
+    "name_english": "Eurasian Wren",
+    "order": "Passeriformes",
+    "family": "Troglodytidae",
+    "habitat": [
+      "산·숲",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/123587450/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY",
+        "attribution": "(c) William Stephens, some rights reserved (CC BY), via iNaturalist (obs. 75531686)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 9~10cm, 몸무게 약 10g의 아주 작은 새다. 적갈색 몸에 가는 가로줄무늬가 있고, 짧은 꼬리를 위로 치켜세우는 자세가 특징이다. 구대륙에 사는 유일한 굴뚝새과 새다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian wren\" (en), 2026-09 확인"
+      },
+      {
+        "content": "학명은 그리스어로 '굴에 사는 자'라는 뜻으로 틈새로 사라지는 습성에서 왔다. 몸무게 대비 수탉보다 10배 큰 소리로 노래하며, 수컷은 영역 안에 둥지를 여러 개 지어 두고 암컷이 그중 하나를 고르게 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian wren\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "bubo-bubo",
+    "name_korean": "수리부엉이",
+    "name_latin": "Bubo bubo",
+    "name_english": "Eurasian Eagle-Owl",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/615992711/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) 김대환, 이선미, some rights reserved (CC BY-NC), via iNaturalist (obs. 338695795)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "암컷은 몸길이 75cm, 날개폭 188cm까지 자라는 세계 최대급 올빼미다. 뚜렷한 귀깃, 주황색 눈, 검은 얼룩이 섞인 황갈색 깃이 특징이며 얼굴판은 뚜렷하지 않다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian eagle-owl\" (en), 2026-09 확인"
+      },
+      {
+        "content": "주로 바위 절벽 턱이나 계곡의 후미진 곳에 둥지 재료 없이 맨땅을 긁어 알을 낳는다. 야행성으로 설치류·토끼 등을 사냥하고, 늦가을부터 겨울에 걸쳐 멀리서도 들리는 낮은 '우-후' 소리로 영역을 알린다. 사람이 만든 전선에 감전되는 것이 주요 사망 원인이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian eagle-owl\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "haliaeetus-albicilla",
+    "name_korean": "흰꼬리수리",
+    "name_latin": "Haliaeetus albicilla",
+    "name_english": "White-tailed Eagle",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "habitat": [
+      "해안",
+      "하천·호수",
+      "저수지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/460883242/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "flying",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 256984103)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "유럽에서 가장 큰 수리로 날개폭이 평균 2.1~2.4m, 최대 2.6m 기록이 있다. 성조는 이름처럼 꼬리가 흰색이고 머리가 연한 색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"White-tailed eagle\" (en), 2026-09 확인"
+      },
+      {
+        "content": "한 해 대부분을 큰 물가 근처에서 지내며 물고기와 물새를 주로 먹는다. 하루의 90%까지 앉아서 보내기도 한다. 평생 짝을 이루고, 공중에서 발톱을 맞잡은 채 빙글빙글 떨어지는 구애 비행을 한다. 둥지는 지름 1m, 깊이 2m에 이른다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"White-tailed eagle\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "cecropis-daurica",
+    "name_korean": "귀제비",
+    "name_latin": "Cecropis daurica",
+    "name_english": "Eastern Red-rumped Swallow",
+    "order": "Passeriformes",
+    "family": "Hirundinidae",
+    "habitat": [
+      "도시·마을",
+      "농경지",
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/458640037/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jens Thalund, some rights reserved (CC BY-NC), via iNaturalist (obs. 255874400)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 19cm에 꼬리가 깊게 갈라졌다. 푸른 등에 붉은 목덜미 띠와 줄무늬가 있는 밤색 허리, 흰 바탕에 짙은 줄무늬가 있는 배로 제비와 구별된다. 한국·일본에 번식하는 아종은 japonica이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eastern red-rumped swallow\" (en), 2026-09 확인"
+      },
+      {
+        "content": "진흙을 물어와 터널 입구가 달린 병(retort) 모양의 둥지를 짓는다. 원래 절벽 처마 밑에 짓던 것을 다리·건물 아래로 옮겨왔다. 입구가 좁아 짝짓기가 둥지 안에서 이뤄지므로 다른 수컷의 경쟁이 줄어든다는 설명이 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"European red-rumped swallow\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "alauda-arvensis",
+    "name_korean": "종다리",
+    "name_latin": "Alauda arvensis",
+    "name_english": "Eurasian Skylark",
+    "order": "Passeriformes",
+    "family": "Alaudidae",
+    "habitat": [
+      "농경지",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "Res",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/637622582/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) 파랑, some rights reserved (CC BY-NC), via iNaturalist (obs. 349527773)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 18~19cm의 수수한 갈색 줄무늬 새로, 머리에 올렸다 내렸다 하는 짧은 댕기가 있다. 날 때 꼬리와 날개 뒷가장자리의 흰색이 보인다. 암수가 같다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian skylark\" (en), 2026-09 확인"
+      },
+      {
+        "content": "수컷이 50~100m 상공에서 정지비행하며 2~3분, 번식기 후반엔 20분 넘게 끊김 없이 노래하는 것으로 유명하다. 나무나 덤불에서 멀리 떨어진 맨땅의 오목한 곳에 둥지를 틀고, 새끼는 날 수 있기 훨씬 전인 8~10일째 둥지를 떠나 풀숲에 흩어져 숨는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian skylark\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "dendrocopos-leucotos",
+    "name_korean": "큰오색딱다구리",
+    "name_latin": "Dendrocopos leucotos",
+    "name_english": "White-backed Woodpecker",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/693178498/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) corvuscorne, some rights reserved (CC BY-NC), via iNaturalist (obs. 378976495)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 24~26cm로 서구대륙의 얼룩딱다구리 중 가장 크다. 오색딱다구리와 닮았지만 날개에 점 대신 흰 가로줄이 있고 아랫등이 희다. 수컷은 정수리가 붉고 암컷은 검다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"White-backed woodpecker\" (en), 2026-09 확인"
+      },
+      {
+        "content": "12개 아종이 있으며 울릉도의 울도큰오색딱다구리(takahashii)와 제주도의 제주큰오색딱다구리(quelpartensis)는 한국 섬의 고유 아종이다. 수컷의 드러밍은 매우 크게 울린다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"White-backed woodpecker\" (en), 2026-09 확인; 위키백과, \"큰오색딱따구리\" (ko), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "halcyon-pileata",
+    "name_korean": "청호반새",
+    "name_latin": "Halcyon pileata",
+    "name_english": "Black-capped Kingfisher",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "habitat": [
+      "하천·호수",
+      "해안",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/454562076/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) ­이상윤/Sangyoon Lee, some rights reserved (CC BY-NC), via iNaturalist (obs. 253827210)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 28cm. 검은 머리와 흰 목띠, 자줏빛 파란 날개와 등, 산호빛 붉은 큰 부리, 주황갈색 배가 대비된다. 날 때 날개 기부의 큰 흰 반점이 보인다. 암수가 같다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Black-capped kingfisher\" (en), 2026-09 확인"
+      },
+      {
+        "content": "나무물총새류 가운데 가장 북쪽까지 분포하며, 한국 등 북부 개체군은 스리랑카·태국·보르네오까지 내려가 월동한다. 해안·맹그로브와 강 하구를 좋아하고, 흙 벼랑에 터널을 파 흰 알 4~5개를 낳는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Black-capped kingfisher\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "anser-albifrons",
+    "name_korean": "쇠기러기",
+    "name_latin": "Anser albifrons",
+    "name_english": "Greater White-fronted Goose",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "농경지",
+      "습지·논",
+      "저수지"
+    ],
+    "difficulty_tier": 1,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/443905353/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 248445639)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 64~81cm의 회갈색 기러기로, 부리 기부를 둘러싼 흰 이마 반점이 이름의 유래다. 다리는 선명한 주황색, 부리는 분홍빛이며 회색 가슴에 짙은 갈색 가로 얼룩이 있다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Greater white-fronted goose\" (en), 2026-09 확인"
+      },
+      {
+        "content": "북극권에서 번식하기 때문에 둥지 짓기부터 새끼가 날기까지 석 달 남짓한 짧은 여름 안에 끝내야 한다. 눈이 늦게 녹거나 늦봄 폭풍이 오면 그 해 번식이 크게 줄어든다. 울음소리는 '헤-헤' 하는 높은 소리다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Greater white-fronted goose\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "mareca-penelope",
+    "name_korean": "홍머리오리",
+    "name_latin": "Mareca penelope",
+    "name_english": "Eurasian Wigeon",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "저수지",
+      "하천·호수",
+      "해안"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/351035291/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Grant Fisher, some rights reserved (CC BY-NC), via iNaturalist (obs. 199090246)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 42~52cm의 수면성 오리. 번식깃 수컷은 밤색 머리에 크림색 이마, 분홍 가슴, 회색 옆구리와 검은 꼬리 끝을 가졌고, 날개 위쪽의 흰 반점이 앉아 있을 때도 보인다. 비번식깃 수컷은 암컷과 비슷해진다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian wigeon\" (en), 2026-09 확인"
+      },
+      {
+        "content": "구북구 전역에 흔하고 널리 분포하는 3종의 홍머리오리류(Mareca) 중 하나로, 한국에서는 겨울에 저수지와 하구에서 무리를 볼 수 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian wigeon\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "mareca-falcata",
+    "name_korean": "청머리오리",
+    "name_latin": "Mareca falcata",
+    "name_english": "Falcated Duck",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "저수지",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/597550745/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) 박은희 초록별, some rights reserved (CC BY-NC), via iNaturalist (obs. 329628840)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "수컷은 녹색 광택이 도는 머리와 흰 목띠, 그리고 이름의 유래인 낫(falcate) 모양으로 길게 늘어진 셋째날개깃이 특징이다. 동시베리아·몽골·북일본에서 번식하고 인도까지 월동하는 동아시아 특산 오리다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Falcated duck\" (en), 2026-09 확인"
+      },
+      {
+        "content": "전 세계 개체수가 약 8만 9천 마리로 추정되며 IUCN 준위협(NT)종이다. 습지 배수로 인한 서식지 손실과 사냥이 주요 위협이다. 암컷이 혼자 24~25일간 알을 품고, 수컷은 포란 중에 암컷을 떠난다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Falcated duck\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "mergellus-albellus",
+    "name_korean": "흰비오리",
+    "name_latin": "Mergellus albellus",
+    "name_english": "Smew",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "저수지",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/351034429/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Grant Fisher, some rights reserved (CC BY-NC), via iNaturalist (obs. 199089620)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 38~44cm의 작은 비오리류. 수컷은 흰 몸에 검은 무늬가 '깨진 얼음' 또는 '판다'처럼 보여 혼동할 종이 없다. 암컷과 어린 수컷은 회색 몸에 밤색 정수리와 흰 뺨을 가져 'redhead'라 불린다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Smew\" (en), 2026-09 확인"
+      },
+      {
+        "content": "Mergellus속의 유일한 현생종으로 비오리속(Mergus)의 자매군이다. 딱다구리가 파 놓은 옛 나무 구멍 같은 곳에 둥지를 틀며, 흰뺨오리와 잡종을 만든 기록이 있다. 겁이 많아 사람이 다가가면 쉽게 날아오른다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Smew\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "bucephala-clangula",
+    "name_korean": "흰뺨오리",
+    "name_latin": "Bucephala clangula",
+    "name_english": "Common Goldeneye",
+    "order": "Anseriformes",
+    "family": "Anatidae",
+    "habitat": [
+      "저수지",
+      "하천·호수",
+      "해안"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/342331751/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "swimming",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Igor Kim, some rights reserved (CC BY-NC), via iNaturalist (obs. 194709189)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "이름 그대로 황금빛 노란 눈을 가진 중형 잠수성 오리. 수컷은 녹색 광택이 도는 검은 머리에 눈 아래 둥근 흰 반점, 흰 목과 배를 가졌다. 암컷은 갈색 머리에 회색 몸이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common goldeneye\" (en), 2026-09 확인"
+      },
+      {
+        "content": "타이가의 호수·강에서 번식하며, 까막딱다구리 등이 판 큰 나무 구멍에 둥지를 틀고 해마다 같은 구멍으로 돌아온다. 영역성이 강하고 정교한 구애 과시를 한다. 잠수해서 갑각류·수서곤충·조개를 먹는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common goldeneye\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "ardea-intermedia",
+    "name_korean": "중백로",
+    "name_latin": "Ardea intermedia",
+    "name_english": "Medium Egret",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "habitat": [
+      "습지·논",
+      "하천·호수",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/386340868/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) hermanviv, some rights reserved (CC BY-NC), via iNaturalist (obs. 218331855)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "이름처럼 중대백로와 쇠백로의 중간 크기(56~72cm)로 쇠백로에 더 가깝다. 온몸이 희고 다리는 검으며 부리는 두툼한 노란색. 중대백로보다 목이 짧고 머리가 약간 둥글며, 부리 밑 노란 선이 눈 뒤까지 이어지지 않는다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Medium egret\" (en), 2026-09 확인"
+      },
+      {
+        "content": "얕은 물이나 물 댄 논을 천천히 걸으며 물고기·개구리·갑각류·곤충을 사냥한다. 다른 백로류와 섞여 나무 위에 집단 둥지를 틀고, 보통 2~3개의 연녹색 알을 낳아 암수가 함께 품는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Medium egret\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "butorides-striata",
+    "name_korean": "검은댕기해오라기",
+    "name_latin": "Butorides atricapilla",
+    "name_english": "Little Heron",
+    "order": "Pelecaniformes",
+    "family": "Ardeidae",
+    "habitat": [
+      "하천·호수",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/260526442/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) eduardovieira17, some rights reserved (CC BY-NC), via iNaturalist (obs. 151028785)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 44cm의 작은 해오라기. 성조는 청회색 등과 날개, 검은 정수리, 부리에서 눈 밑으로 이어지는 검은 선, 짧은 노란 다리를 가졌다. 어린 새는 갈색이고 배에 줄무늬가 많다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Little heron\" (en), 2026-09 확인; Wikipedia, \"Striated heron\" (en), 2026-09 확인"
+      },
+      {
+        "content": "오랫동안 검은댕기해오라기(Butorides striata)와 같은 종으로 취급됐으나, 2025년 IOC가 구대륙 20개 아종을 별개 종 '작은해오라기(Little Heron)'로 분리하고 striata는 남미 종으로 남겼다. 한국·일본·중국 동북부에 사는 것은 아종 amurensis다. 물가에 꼼짝 않고 서서 먹이를 기다리며, 깃털이나 나뭇잎을 수면에 떨어뜨려 물고기를 유인하는 '미끼 낚시'가 관찰된다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Little heron\" (en), 2026-09 확인; Wikipedia, \"Striated heron\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "grus-vipio",
+    "name_korean": "재두루미",
+    "name_latin": "Antigone vipio",
+    "name_english": "White-naped Crane",
+    "order": "Gruiformes",
+    "family": "Gruidae",
+    "habitat": [
+      "농경지",
+      "습지·논",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/444147536/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 248607954)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "키 약 130cm, 몸무게 약 5.6kg의 대형 두루미. 회색 몸에 붉은 얼굴, 흰 목, 그리고 정수리 뒤에서 목덜미(nape)로 이어지는 흰 띠가 다른 두루미와 구별되는 포인트다. 다리는 분홍색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"White-naped crane\" (en), 2026-09 확인"
+      },
+      {
+        "content": "월동 개체군은 크게 둘로, 하나는 중국 양쯔강 유역이고 다른 하나는 한국 비무장지대(DMZ)와 일본 규슈다. 겨울 논에서 한자리에 서서 땅속 식물을 파먹는 습성이 있어, 표면을 쪼며 걸어 다니는 두루미와 먹이 경쟁을 피한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"White-naped crane\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "grus-monacha",
+    "name_korean": "흑두루미",
+    "name_latin": "Grus monacha",
+    "name_english": "Hooded Crane",
+    "order": "Gruiformes",
+    "family": "Gruidae",
+    "habitat": [
+      "농경지",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/641186721/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) 陈嘉伟, some rights reserved (CC BY-NC), via iNaturalist (obs. 351363926)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "회색 몸에 목 윗부분과 머리만 흰색이고, 눈 위에 붉은 맨살 반점이 있다. 두루미류 중 가장 작은 편이지만 몸길이 1m, 날개폭 1.87m의 큰 새다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Hooded crane\" (en), 2026-09 확인"
+      },
+      {
+        "content": "2025년 기준 성숙 개체 9,750~13,000마리로 추정되는 IUCN 취약(VU)종이다. 중국과 한국의 월동지 습지가 매립·댐 건설로 사라지는 것이 가장 큰 위협이며, 2008년부터 지역 대학·NGO·주민이 함께 보호 활동을 하고 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Hooded crane\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "ciconia-boyciana",
+    "name_korean": "황새",
+    "name_latin": "Ciconia boyciana",
+    "name_english": "Oriental Stork",
+    "order": "Ciconiiformes",
+    "family": "Ciconiidae",
+    "habitat": [
+      "습지·논",
+      "농경지",
+      "하천·호수"
+    ],
+    "difficulty_tier": 1,
+    "abundance": "r",
+    "status": [
+      "WV",
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/584791511/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Saehyeon Park, some rights reserved (CC BY-NC), via iNaturalist (obs. 323194850)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 100~129cm, 날개폭 2.2m의 대형 흰 새로 날개깃만 검다. 유럽 황새와 달리 눈 주위 피부가 붉고 홍채가 희며 부리는 검다. 어린 새는 부리가 주황색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Oriental stork\" (en), 2026-09 확인"
+      },
+      {
+        "content": "서식지 파괴와 남획으로 한반도와 일본에서 번식 개체군이 사라졌던 IUCN 위기(EN)종. 한국은 예산을 중심으로 복원 사업을 진행해 2016년 야생 번식에 성공했고, 이후 매년 야생 번식이 이어져 2026년 기준 약 130마리가 야생에 산다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Oriental stork\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "charadrius-placidus",
+    "name_korean": "흰목물떼새",
+    "name_latin": "Charadrius placidus",
+    "name_english": "Long-billed Plover",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "habitat": [
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/459035113/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Rob Macfie, some rights reserved (CC BY-NC), via iNaturalist (obs. 256073816)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 19~20cm로 꼬마물떼새와 자주 혼동되지만 더 크고, 이름처럼 부리가 더 길고 굵다. 회갈색 등에 흰 배와 목을 가졌다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Long-billed plover\" (en), 2026-09 확인"
+      },
+      {
+        "content": "자갈과 둥근 돌이 깔린 하천·호숫가를 좋아하며, 굽이치는 강 사이에 생긴 자갈섬에 둥지를 튼다. 번식기에는 영역 위를 날며 '피-피-피' 하고 울고, 경계할 때는 '퓨-' 하고 한 번 올려 운다. 한국·일본·중국이 주요 번식지다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Long-billed plover\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "vanellus-vanellus",
+    "name_korean": "댕기물떼새",
+    "name_latin": "Vanellus vanellus",
+    "name_english": "Northern Lapwing",
+    "order": "Charadriiformes",
+    "family": "Charadriidae",
+    "habitat": [
+      "농경지",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/249533568/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Javisa Hun, some rights reserved (CC BY-NC), via iNaturalist (obs. 145280656)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 28~33cm. 흑백 몸에 등은 녹색 광택이 돌고, 머리 뒤로 길게 뻗은 댕기가 특징이다. 수컷은 댕기가 더 길고 정수리·목·가슴이 검다. 날개는 둥글고 다리는 물떼새류 중 가장 짧다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Northern lapwing\" (en), 2026-09 확인"
+      },
+      {
+        "content": "겨울에는 경작지와 갯벌에 큰 무리를 이룬다. 한 발로 땅을 두드려 지렁이를 끌어내는 '지렁이 부르기' 기술을 쓰며, 둥지와 새끼를 말·소 같은 큰 동물에게도 맹렬히 방어한다. 영어 이름 peewit은 '피-윗' 울음소리에서 왔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Northern lapwing\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "tringa-glareola",
+    "name_korean": "알락도요",
+    "name_latin": "Tringa glareola",
+    "name_english": "Wood Sandpiper",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "habitat": [
+      "습지·논",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "PM"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/405795523/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Luigi Andena, some rights reserved (CC BY-NC), via iNaturalist (obs. 228662748)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "도요목 Tringa속(장다리도요류) 중 가장 작다. 삑삑도요를 더 다리가 길고 가냘프게 만든 모습으로, 부리가 짧고 가늘며 등이 갈색이고 다리는 노란빛이 돈다. 흰 허리 반점은 삑삑도요보다 작고 덜 뚜렷하다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Wood sandpiper\" (en), 2026-09 확인"
+      },
+      {
+        "content": "아북극 습지에서 번식하고 아프리카·남아시아·호주까지 이동하는 장거리 철새로, 한국은 봄·가을에 지나가는 나그네새다. 땅 위에 둥지를 틀거나 개똥지빠귀류가 버린 나무 둥지를 재사용한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Wood sandpiper\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "tringa-nebularia",
+    "name_korean": "청다리도요",
+    "name_latin": "Tringa nebularia",
+    "name_english": "Common Greenshank",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "habitat": [
+      "습지·논",
+      "해안",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "PM"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/693181573/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) corvuscorne, some rights reserved (CC BY-NC), via iNaturalist (obs. 378978402)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "이름처럼 긴 녹색 다리와 기부가 회색인 긴 부리를 가졌으며, 아랫부리 모양 때문에 부리가 살짝 위로 휘어 보인다. 번식깃은 갈색, 겨울깃은 회갈색이고 날 때 등의 흰 쐐기 무늬가 보인다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common greenshank\" (en), 2026-09 확인"
+      },
+      {
+        "content": "종소명 nebularia는 라틴어로 '안개'라는 뜻으로 축축한 습지 서식지를 가리킨다. 작은 무척추동물 외에 작은 물고기와 양서류도 먹는다. 2024년 호주에서는 멸종위기종으로 지정됐다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common greenshank\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "tringa-ochropus",
+    "name_korean": "삑삑도요",
+    "name_latin": "Tringa ochropus",
+    "name_english": "Green Sandpiper",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "habitat": [
+      "하천·호수",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV",
+      "PM"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/458620691/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Rob Macfie, some rights reserved (CC BY-NC), via iNaturalist (obs. 255863373)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "다소 통통한 도요로 어두운 녹갈색 등과 날개에 흰 점이 흩어져 있고, 회색 머리·가슴에 흰 배를 가졌다. 다리와 짧은 부리는 짙은 녹색. 날면 날개 위아래가 모두 어둡고 허리가 눈부시게 희다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Green sandpiper\" (en), 2026-09 확인"
+      },
+      {
+        "content": "Tringa속의 오래된 계통으로, 대부분의 도요와 달리 나무 위 다른 새의 옛 둥지에 알을 낳는다. 날 때 세 음절의 특징적인 휘파람 소리를 낸다. 깝작도요와의 잡종 의심 사례가 보고돼 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Green sandpiper\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "calidris-alpina",
+    "name_korean": "민물도요",
+    "name_latin": "Calidris alpina",
+    "name_english": "Dunlin",
+    "order": "Charadriiformes",
+    "family": "Scolopacidae",
+    "habitat": [
+      "해안",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV",
+      "PM"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/56584841/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "nonbreeding",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Дмитрий Ерохин ( Dmitri Erokhin), some rights reserved (CC BY-NC), via iNaturalist (obs. 35850784)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 16~20cm, 몸무게 34~77g의 작은 도요. 영어 이름 dunlin은 '칙칙한 갈색(dun)'에서 온 말로 겨울깃의 수수한 회갈색을 가리킨다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Dunlin\" (en), 2026-09 확인"
+      },
+      {
+        "content": "북극권을 빙 둘러 번식하는 종으로, 북유럽·아시아 북부 번식 개체군은 아프리카와 동남·서아시아까지 이동한다. 스웨덴·핀란드 개체군은 태어난 곳 바로 근처로 돌아오는 강한 귀소성을 보인다. 개체수가 줄어 IUCN 준위협(NT)이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Dunlin\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "haematopus-ostralegus",
+    "name_korean": "검은머리물떼새",
+    "name_latin": "Haematopus ostralegus",
+    "name_english": "Eurasian Oystercatcher",
+    "order": "Charadriiformes",
+    "family": "Haematopodidae",
+    "habitat": [
+      "해안"
+    ],
+    "difficulty_tier": 1,
+    "abundance": "uc",
+    "status": [
+      "Res",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/693181373/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) corvuscorne, some rights reserved (CC BY-NC), via iNaturalist (obs. 378978395)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 40~45cm의 큰 물떼새류로, 흑백 깃에 길고 곧은 주황빛 붉은 부리, 붉은 눈, 분홍 다리가 눈에 띈다. 암컷이 수컷보다 부리가 길다. 날면 날개와 꼬리의 흰 반점이 뚜렷하고 울음은 크고 날카로운 피리 소리다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian oystercatcher\" (en), 2026-09 확인"
+      },
+      {
+        "content": "4개 아종 중 하나가 한국 서해안에서 번식한다. 부리 끝이 넓은 개체는 홍합 같은 조개를 비틀거나 두드려 열고, 뾰족한 개체는 지렁이를 파는데, 이 기술은 부모에게서 배운다. 영국에서 1982년 가락지를 단 새가 2025년에 다시 잡혀 최소 46세로 확인됐다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian oystercatcher\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "larus-vegae",
+    "name_korean": "재갈매기",
+    "name_latin": "Larus vegae",
+    "name_english": "Vega Gull",
+    "order": "Charadriiformes",
+    "family": "Laridae",
+    "habitat": [
+      "해안",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/499416982/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "nonbreeding",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 278150230)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "재갈매기·줄무늬노랑발갈매기 복합군에 속하는 대형 갈매기로, 유럽 재갈매기보다 등이 약간 더 짙은 회색이다. 겨울에는 머리와 목 뒤·옆에 갈색 줄무늬가 짙게 들어가 목도리처럼 보이고 다리는 선명한 분홍색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Vega gull\" (en), 2026-09 확인"
+      },
+      {
+        "content": "시베리아 북동부에서 번식하고 일본·한국·중국 동부·대만에서 월동한다. 별개 종인지 재갈매기의 아종인지 분류가 아직 논쟁 중이다. 겨울에는 항구, 바위 해안, 강 하구에서 주로 보인다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Vega gull\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "larus-canus",
+    "name_korean": "갈매기",
+    "name_latin": "Larus canus",
+    "name_english": "Common Gull",
+    "order": "Charadriiformes",
+    "family": "Laridae",
+    "habitat": [
+      "해안",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/77430136/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Wolfgang Bettighofer, some rights reserved (CC BY-NC), via iNaturalist (obs. 48794046)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 40~46cm로 재갈매기보다 눈에 띄게 작다. 등은 회색, 배는 흰색이며 부리가 짧고 끝이 가늘고 녹색빛이 도는 노란색이다. 번식기에는 다리도 노란색이 된다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common gull\" (en), 2026-09 확인"
+      },
+      {
+        "content": "아이슬란드·스코틀랜드에서 캄차카까지 구북구의 서늘한 온대에서 번식하고 대부분 남쪽으로 이동해 중국·일본 주변 바다까지 온다. 전 세계 약 100만 쌍 중 절반 이상이 유럽에 산다. 잡식성으로 청소도 하고 작은 먹이도 사냥한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common gull\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "pandion-haliaetus",
+    "name_korean": "물수리",
+    "name_latin": "Pandion haliaetus",
+    "name_english": "Osprey",
+    "order": "Accipitriformes",
+    "family": "Pandionidae",
+    "habitat": [
+      "해안",
+      "하천·호수",
+      "저수지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "PM",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/91878521/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "flying",
+        "license": "CC-BY-NC",
+        "attribution": "(c) terrasantos, some rights reserved (CC BY-NC), via iNaturalist (obs. 57592508)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 50~66cm, 날개폭 최대 180cm. 등은 짙은 갈색, 배와 머리는 흰색이며 눈을 가로지르는 검은 띠가 있다. 바깥 발가락을 뒤로 돌릴 수 있어 미끄러운 물고기를 앞뒤 두 발가락씩 움켜쥔다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Osprey\" (en), 2026-09 확인"
+      },
+      {
+        "content": "먹이의 99%가 물고기다. 물 위 10~40m에서 먹이를 발견하면 잠시 정지비행한 뒤 발부터 물에 뛰어들며, 물의 굴절로 왜곡된 물고기 위치를 보정해 급강하 각도를 조정한다. 콧구멍을 닫을 수 있고 발바닥에 가시가 있으며 깃털에 기름기가 많아 물에 젖지 않는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Osprey\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "aegypius-monachus",
+    "name_korean": "독수리",
+    "name_latin": "Aegypius monachus",
+    "name_english": "Cinereous Vulture",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "habitat": [
+      "농경지",
+      "습지·논",
+      "산·숲"
+    ],
+    "difficulty_tier": 1,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/471359197/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) pajama_, some rights reserved (CC BY-NC), via iNaturalist (obs. 262370318)",
+        "quality_score": 2
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 최대 1.2m, 날개폭 3.1m, 몸무게 최대 12.5kg으로 구대륙 독수리류 중 가장 크고 수리과 전체에서도 최대다. 온몸이 검은 갈색이고 성조의 머리는 옅은 색 솜털로 덮여 있으며 부리는 청회색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Cinereous vulture\" (en), 2026-09 확인"
+      },
+      {
+        "content": "동물 사체를 먹어 질병 확산을 줄이는 생태계의 청소부다. 부패한 고기의 병원체에 늘 노출되므로 2015년 전체 유전체를 해독해 위와 면역 방어 유전자를 연구했다. 한국은 몽골·만주 번식 개체군의 월동지이며, 사체 급식소에 12~20마리씩 모이기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Cinereous vulture\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "milvus-migrans",
+    "name_korean": "솔개",
+    "name_latin": "Milvus migrans",
+    "name_english": "Black Kite",
+    "order": "Accipitriformes",
+    "family": "Accipitridae",
+    "habitat": [
+      "해안",
+      "하천·호수",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "sc",
+    "status": [
+      "Res",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/538862178/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "flying",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Dhruva Punde, some rights reserved (CC BY-NC), via iNaturalist (obs. 299113026)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "중형 맹금으로 갈색 몸에 머리와 목이 조금 옅다. 날 때 꺾인 날개와 살짝 갈라진 꼬리가 좋은 식별 포인트다. 몸무게는 평균 735g이며 암수가 비슷하다. 울음은 날카롭게 떨리는 말 울음 같은 소리다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Black kite\" (en), 2026-09 확인"
+      },
+      {
+        "content": "전 세계 최대 670만 마리로 수리과 중 가장 많은 종으로 추정된다. 다른 맹금과 달리 기회주의적으로 사냥하고 청소도 하며, 상승기류를 타고 오래 활공하다 다리를 내리고 급강하해 작은 먹이·물고기·음식 찌꺼기를 낚아챈다. 겨울에는 큰 공동 잠자리를 만든다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Black kite\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "falco-peregrinus",
+    "name_korean": "매",
+    "name_latin": "Falco peregrinus",
+    "name_english": "Peregrine Falcon",
+    "order": "Falconiformes",
+    "family": "Falconidae",
+    "habitat": [
+      "해안",
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2549982/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY",
+        "attribution": "(c) Kim, Hyun-tae, some rights reserved (CC BY), via iNaturalist (obs. 2236385)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "까마귀만 한 대형 매로 청회색 등, 가는 가로줄무늬가 있는 흰 배, 검은 머리와 눈 아래 '콧수염' 무늬를 가졌다. 암컷이 수컷보다 최대 30% 크다. 눈 아래 검은 무늬는 햇빛이 강한 지역일수록 커서 눈부심을 줄이는 기능으로 밝혀졌다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Peregrine falcon\" (en), 2026-09 확인"
+      },
+      {
+        "content": "뉴질랜드를 빼고 지구상 거의 모든 육지에 사는 가장 널리 분포한 맹금이다. 주로 중형 새를 사냥하며, 절벽 가장자리나 최근에는 높은 건물에 둥지를 튼다. DDT 등 농약으로 한때 멸종 위기였다. 영명과 학명 모두 '떠도는 매'라는 뜻이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Peregrine falcon\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "asio-flammeus",
+    "name_korean": "쇠부엉이",
+    "name_latin": "Asio flammeus",
+    "name_english": "Short-eared Owl",
+    "order": "Strigiformes",
+    "family": "Strigidae",
+    "habitat": [
+      "습지·논",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/342419567/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) nancylightfoot, some rights reserved (CC BY-NC), via iNaturalist (obs. 194752023)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 34~43cm의 중형 올빼미로 큰 눈, 큰 머리, 짧은 목, 넓은 날개를 가졌다. 황갈색 몸에 얼룩무늬가 있고 가슴 윗부분에 줄무늬가 뚜렷하다. 노랑주황색 눈을 검은 테가 둘러싸 마스카라를 한 것처럼 보인다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Short-eared owl\" (en), 2026-09 확인"
+      },
+      {
+        "content": "Asio속은 포유류 귀처럼 보이는 깃털 뭉치 때문에 '귀 있는 올빼미'라 불리지만, 쇠부엉이의 귀깃은 매우 짧아 방어 자세를 취할 때만 세운다. 탁 트인 초원과 습지에 살며, 불규칙한 날갯짓 때문에 나방이나 박쥐처럼 흐느적거리며 난다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Short-eared owl\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "apus-pacificus",
+    "name_korean": "칼새",
+    "name_latin": "Apus pacificus",
+    "name_english": "Pacific Swift",
+    "order": "Apodiformes",
+    "family": "Apodidae",
+    "habitat": [
+      "도시·마을",
+      "해안",
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/555265264/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "flying",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Алексей Сальников, some rights reserved (CC BY-NC), via iNaturalist (obs. 307818093)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 17~18cm로 Apus속 칼새 중 가장 크다. 검은 몸에 흰 허리띠와 뚜렷한 흰 목 반점, 깊게 갈라진 꼬리, 무늬가 있는 배가 특징이다. 암수가 같다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Pacific swift\" (en), 2026-09 확인"
+      },
+      {
+        "content": "모든 먹이를 날면서 잡고, 둥지 재료(마른 풀·깃털)도 날면서 모아 침으로 굳혀 절벽이나 처마 밑 수직면에 반컵 모양 둥지를 붙인다. 동남아·호주까지 이동하는 강력한 장거리 철새로, 새끼는 오래 굶어도 견디고 부모보다 무거워지기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Pacific swift\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "dryocopus-martius",
+    "name_korean": "까막딱다구리",
+    "name_latin": "Dryocopus martius",
+    "name_english": "Black Woodpecker",
+    "order": "Piciformes",
+    "family": "Picidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/366531585/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) jamesbot, some rights reserved (CC BY-NC), via iNaturalist (obs. 207230984)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 45~55cm, 날개폭 64~84cm로 유럽과 아시아 분포권에서 단연 가장 큰 딱다구리다. 온몸이 검고 수컷은 정수리 전체가, 암컷은 뒷머리만 붉다. 부리가 5~6.7cm로 매우 길다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Black woodpecker\" (en), 2026-09 확인"
+      },
+      {
+        "content": "죽은 나무를 부리로 두드려 왕개미와 나무좀 유충을 파먹는다. 큰 몸과 힘 덕분에 다른 딱다구리가 닿지 못하는 깊은 곳까지 파고, 이 새가 판 구멍은 흰뺨오리 등 다른 새의 둥지가 된다. 살아 있는 포플러나 소나무에 둥지 구멍을 파고 암수가 교대로 알을 품는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Black woodpecker\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "halcyon-coromanda",
+    "name_korean": "호반새",
+    "name_latin": "Halcyon coromanda",
+    "name_english": "Ruddy Kingfisher",
+    "order": "Coraciiformes",
+    "family": "Alcedinidae",
+    "habitat": [
+      "산·숲",
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/2802334/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) misooksun, some rights reserved (CC BY-NC), via iNaturalist (obs. 2495762)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 25cm. 매우 크고 밝은 붉은 부리와 붉은 다리, 꼬리 쪽으로 갈수록 자줏빛이 짙어지는 붉은 갈색 몸을 가졌다. 암수 차이는 거의 없다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Ruddy kingfisher\" (en), 2026-09 확인"
+      },
+      {
+        "content": "울창한 숲을 좋아해 모습보다 높고 내려가는 울음소리로 더 자주 확인된다. 한국·일본 등 북부 개체군은 겨울에 보르네오까지 내려간다. 물고기·갑각류·큰 곤충을 먹지만 흐르는 물이 적은 곳에서는 개구리 등 양서류도 먹는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Ruddy kingfisher\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "monticola-solitarius",
+    "name_korean": "바다직박구리",
+    "name_latin": "Monticola solitarius",
+    "name_english": "Blue Rock Thrush",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "habitat": [
+      "해안",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/518157215/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Tekko Koh, some rights reserved (CC BY-NC), via iNaturalist (obs. 288144818)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "찌르레기만 한 크기(21~23cm)에 길고 가는 부리를 가졌다. 수컷은 청회색 몸에 날개만 어둡고, 한국·일본의 아종(philippensis)은 가슴 아래부터 꼬리 밑까지 밤색이다. 암컷은 어두운 갈색에 비늘무늬 배를 가졌다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Blue rock thrush\" (en), 2026-09 확인"
+      },
+      {
+        "content": "지빠귀과로 분류되다가 지금은 솔딱새과로 옮겨진 종이다. 바위 절벽과 담벼락 구멍에 둥지를 틀며, 한국 홍도 조사에서는 노출된 바위 절벽을 강하게 선호하고 봄에 왔다 가을에 떠나는 이동성 개체군으로 확인됐다. 몰타의 국조다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Blue rock thrush\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "saxicola-stejnegeri",
+    "name_korean": "검은딱새",
+    "name_latin": "Saxicola stejnegeri",
+    "name_english": "Amur Stonechat",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "habitat": [
+      "농경지",
+      "습지·논"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/458640087/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jens Thalund, some rights reserved (CC BY-NC), via iNaturalist (obs. 255874407)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "번식깃 수컷은 갈색 기미 없는 검은 머리와 등, 뚜렷한 흰 목띠, 흰 어깨 반점과 허리, 목의 좁은 주황색 부분이 특징이다. 암컷은 옅은 갈색 머리와 등에 흰 목 반점을 가졌다. 유럽검은딱새보다 등이 어둡고 배가 희다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Siberian stonechat\" (en), 2026-09 확인"
+      },
+      {
+        "content": "수컷은 조약돌 두 개를 부딪치는 듯한 '딱딱' 소리를 낸다. 관목이 드문드문 있는 거친 풀밭에서 곤충을 잡아먹으며, 대륙성 여름에만 북쪽에 머물다 남일본·태국·인도까지 내려가 월동한다. 최근에야 별개 종으로 인정됐다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Siberian stonechat\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "tarsiger-cyanurus",
+    "name_korean": "유리딱새",
+    "name_latin": "Tarsiger cyanurus",
+    "name_english": "Red-flanked Bluetail",
+    "order": "Passeriformes",
+    "family": "Muscicapidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "PM",
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/458016445/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Seokin Yang, some rights reserved (CC BY-NC), via iNaturalist (obs. 255567462)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 13~14cm의 작은 딱새류. 이름처럼 암수 모두 파란 꼬리와 허리, 주황빛 붉은 옆구리를 가졌고 목은 희다. 성조 수컷은 등까지 짙은 파란색이지만 암컷과 어린 새는 올리브빛 갈색이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Red-flanked bluetail\" (en), 2026-09 확인"
+      },
+      {
+        "content": "북유럽에서 시베리아를 거쳐 캄차카·일본까지 덤불이 있는 혼합 침엽수림에서 번식하고, 동남아시아·인도아대륙·대만 등에서 월동한다. 번식지가 핀란드 쪽으로 서서히 넓어지고 있으며(현재 최대 500쌍), 서유럽에서는 드물지만 점점 늘어나는 미조다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Red-flanked bluetail\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "turdus-naumanni",
+    "name_korean": "노랑지빠귀",
+    "name_latin": "Turdus naumanni",
+    "name_english": "Naumann's Thrush",
+    "order": "Passeriformes",
+    "family": "Turdidae",
+    "habitat": [
+      "산·숲",
+      "농경지",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/361537164/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) mimsa, some rights reserved (CC BY-NC), via iNaturalist (obs. 204531634)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "중형이지만 다부진 지빠귀로 작은 회색머리지빠귀를 닮은 체형이다. 날개 밑이 적갈색이고 옅은 눈썹선이 있다. 개똥지빠귀와 매우 가까워 오랫동안 같은 종으로 취급됐다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Naumann's thrush\" (en), 2026-09 확인"
+      },
+      {
+        "content": "중앙시베리아에서 북만주·아무르·사할린까지 탁 트인 숲에서 번식하고 중국·한국 등에서 월동하는 강한 이동성 철새다. 이동·월동 중에는 작은 무리를 이루며, 곤충(특히 모기)·지렁이·열매를 두루 먹는 잡식성이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Naumann's thrush\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "cinclus-pallasii",
+    "name_korean": "물까마귀",
+    "name_latin": "Cinclus pallasii",
+    "name_english": "Brown Dipper",
+    "order": "Passeriformes",
+    "family": "Cinclidae",
+    "habitat": [
+      "하천·호수",
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/365835566/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) suchihfen, some rights reserved (CC BY-NC), via iNaturalist (obs. 206860288)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 22cm, 몸무게 87g으로 물까마귀류 중 가장 크다. 지빠귀를 닮은 체형에 꼬리를 치켜세우며, 초콜릿빛 갈색 깃에 등과 가슴이 약간 옅다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Brown dipper\" (en), 2026-09 확인"
+      },
+      {
+        "content": "동부 구북구 산악지대의 물가에 사는 수생 명금으로, 이름 그대로 물속에 잠수해 먹이를 찾는다. 사람 눈에 잘 띄지 않으며 중·저지대의 계류를 따라 산다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Brown dipper\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "pycnonotus-sinensis",
+    "name_korean": "검은이마직박구리",
+    "name_latin": "Pycnonotus sinensis",
+    "name_english": "Light-vented Bulbul",
+    "order": "Passeriformes",
+    "family": "Pycnonotidae",
+    "habitat": [
+      "도시·마을",
+      "산·숲",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/478639044/medium.jpeg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jens Thalund, some rights reserved (CC BY-NC), via iNaturalist (obs. 266400424)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 19cm. 검은 정수리와 뺨선 사이로 눈 뒤에서 뒷머리까지 흰 깃이 덮여 있어 직박구리와 바로 구별된다. 등은 올리브빛 회갈색, 배는 희고 가슴에 옅은 갈색 띠가 있다. 시끄럽고 밝게 변화무쌍하게 노래한다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Light-vented bulbul\" (en), 2026-09 확인"
+      },
+      {
+        "content": "중국 동남부·대만이 본거지인 흔한 명금으로 마을·교외·도시공원의 성긴 숲을 좋아한다. 상하이에서는 참새·멧비둘기 다음으로 흔한 새로 꼽힌다. 한국에는 근래 들어와 정착 중이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Light-vented bulbul\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "bombycilla-japonica",
+    "name_korean": "홍여새",
+    "name_latin": "Bombycilla japonica",
+    "name_english": "Japanese Waxwing",
+    "order": "Passeriformes",
+    "family": "Bombycillidae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/594636392/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) shikiiiiiiiii, some rights reserved (CC BY-NC), via iNaturalist (obs. 328180179)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 15~18cm의 분홍빛 갈색 새로 뾰족한 댕기, 검은 목, 눈을 가로지르는 검은 선, 회색 허리, 붉은 꼬리 밑, 그리고 검은 테두리가 있는 붉은 꼬리 끝이 특징이다. 황여새는 꼬리 끝이 노랗다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Japanese waxwing\" (en), 2026-09 확인"
+      },
+      {
+        "content": "러시아 극동과 중국 동북부의 침엽수림에서 번식하고 일본·한반도·중국 동부에서 월동한다. 주로 열매를 찾아 떠돌기 때문에 해마다 나타나는 곳이 달라진다. 황여새와 섞인 무리로 자주 나타나며, 날개의 붉은 '밀랍' 끝은 수컷에게만 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Japanese waxwing\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "corvus-dauuricus",
+    "name_korean": "갈까마귀",
+    "name_latin": "Coloeus dauuricus",
+    "name_english": "Daurian Jackdaw",
+    "order": "Passeriformes",
+    "family": "Corvidae",
+    "habitat": [
+      "농경지",
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/597467226/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Frank Zhu, some rights reserved (CC BY-NC), via iNaturalist (obs. 329587434)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 32cm로 까마귀류 중 작은 편이다. 많은 성조는 가슴·배와 목 둘레의 넓은 목띠가 크림빛 흰색이고 머리·목·날개·꼬리는 광택 있는 검정, 귀깃은 회색빛이 돈다. 어두운 개체와 어린 새는 온몸이 검다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Daurian jackdaw\" (en), 2026-09 확인"
+      },
+      {
+        "content": "동시베리아 남부·몽골·중국에 분포하며 북쪽 개체군은 겨울에 남하해 한국에는 드문 겨울철새로 온다. 사교적이어서 떼까마귀 무리에 자주 섞인다. 나무 구멍·바위 틈·폐건물에 둥지를 튼다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Daurian jackdaw\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "motacilla-grandis",
+    "name_korean": "검은등할미새",
+    "name_latin": "Motacilla grandis",
+    "name_english": "Japanese Wagtail",
+    "order": "Passeriformes",
+    "family": "Motacillidae",
+    "habitat": [
+      "하천·호수"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "Res"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/619363920/medium.jpg",
+        "sex": "unknown",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) dktaro, some rights reserved (CC BY-NC), via iNaturalist (obs. 340359301)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 약 20cm. 알락할미새와 달리 등과 목까지 검고 배는 희며 흰 눈썹선이 뚜렷하다. 부리는 검고 다리는 짙은 회색. 어린 새는 성조보다 회색빛이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Japanese wagtail\" (en), 2026-09 확인"
+      },
+      {
+        "content": "일본과 한국에만 사는 동아시아 고유종이다. 물가의 틈새에 둥지를 틀고 한배에 4~6개의 알을 낳아 암수가 함께 돌본다. 밤에는 큰 무리가 나무에 모여 잔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Japanese wagtail\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "spinus-spinus",
+    "name_korean": "검은머리방울새",
+    "name_latin": "Spinus spinus",
+    "name_english": "Eurasian Siskin",
+    "order": "Passeriformes",
+    "family": "Fringillidae",
+    "habitat": [
+      "산·숲",
+      "도시·마을"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/269033451/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Лиза Шмидт, some rights reserved (CC BY-NC), via iNaturalist (obs. 155625343)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 11~12.5cm의 작은 되새류. 회녹색 등에 줄무늬 있는 흰 배, 검은 날개의 선명한 노란 날개띠, 노란 옆이 있는 검은 꼬리를 가졌다. 수컷은 노란 얼굴·가슴에 검은 모자를 썼고 암컷은 회녹색 머리에 모자가 없다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian siskin\" (en), 2026-09 확인"
+      },
+      {
+        "content": "가늘지만 튼튼한 부리로 가문비나무 솔방울과 오리나무 열매 비늘 사이의 씨앗을 빼먹는다. 박새처럼 거꾸로 매달려 먹는 곡예사이며 사람을 잘 경계하지 않는다. 몇 년에 한 번씩 대규모로 남하하는 불규칙한 이동 습성이 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian siskin\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "pyrrhula-pyrrhula",
+    "name_korean": "멋쟁이새",
+    "name_latin": "Pyrrhula pyrrhula",
+    "name_english": "Eurasian Bullfinch",
+    "order": "Passeriformes",
+    "family": "Fringillidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/478986196/medium.jpeg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Jens Thalund, some rights reserved (CC BY-NC), via iNaturalist (obs. 266584581)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "머리가 크고 몸이 통통한 되새류. 등은 회색, 날개깃과 짧고 굵은 부리, 성조의 정수리와 얼굴은 검다. 날 때 흰 허리와 날개띠가 눈에 띈다. 수컷의 가슴은 붉지만 암컷과 어린 새는 회갈색이다. 한국에 오는 아종은 배가 회색이고 뺨만 분홍빛이다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Eurasian bullfinch\" (en), 2026-09 확인"
+      },
+      {
+        "content": "유럽과 온대 아시아에서 번식하고 북쪽 개체군은 겨울에 남하한다. 번식기 외에도 큰 무리를 짓지 않고 보통 짝이나 가족 단위로 다닌다. 참새목 중 특이하게 정자 머리가 둥글고 첨체가 뭉툭하다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian bullfinch\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "emberiza-schoeniclus",
+    "name_korean": "검은머리쑥새",
+    "name_latin": "Emberiza schoeniclus",
+    "name_english": "Common Reed Bunting",
+    "order": "Passeriformes",
+    "family": "Emberizidae",
+    "habitat": [
+      "습지·논",
+      "농경지"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "c",
+    "status": [
+      "WV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/518997128/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "breeding",
+        "angle": "perched",
+        "license": "CC-BY",
+        "attribution": "(c) Sophie Hale, some rights reserved (CC BY), via iNaturalist (obs. 288588815)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "몸길이 13.5~15.5cm에 작지만 힘센 씨앗용 부리를 가졌다. 수컷은 검은 머리와 목, 흰 목띠와 배, 짙은 줄무늬가 있는 갈색 등을 가졌고 암컷은 줄무늬 갈색 머리로 훨씬 수수하다. 수컷의 노래는 '스립'을 반복한다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Common reed bunting\" (en), 2026-09 확인"
+      },
+      {
+        "content": "이름처럼 갈대밭에서 흔히 보이지만 황무지와 경작지 같은 마른 열린 곳에서도 번식한다. 새끼를 키울 때는 곤충, 그 외에는 씨앗을 먹는다. 유럽에 최소 480만 쌍이 살지만 북유럽·독일에서는 감소가 보고됐다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Common reed bunting\" (en), 2026-09 확인"
+      }
+    ]
+  },
+  {
+    "id": "terpsiphone-atrocaudata",
+    "name_korean": "긴꼬리딱새",
+    "name_latin": "Terpsiphone atrocaudata",
+    "name_english": "Black Paradise Flycatcher",
+    "order": "Passeriformes",
+    "family": "Monarchidae",
+    "habitat": [
+      "산·숲"
+    ],
+    "difficulty_tier": 2,
+    "abundance": "uc",
+    "status": [
+      "SV"
+    ],
+    "media": [
+      {
+        "url": "https://inaturalist-open-data.s3.amazonaws.com/photos/511951240/medium.jpg",
+        "sex": "male",
+        "age": "adult",
+        "plumage": "unknown",
+        "angle": "perched",
+        "license": "CC-BY-NC",
+        "attribution": "(c) Paul Ha, some rights reserved (CC BY-NC), via iNaturalist (obs. 284849676)",
+        "quality_score": 3
+      }
+    ],
+    "trivia": [
+      {
+        "content": "성조 수컷은 자줏빛 파란 광택이 도는 검은 머리, 흰 배, 짙은 밤색 등과 날개, 그리고 극도로 긴 검은 가운데꼬리깃을 가졌다. 암컷은 더 수수하고 꼬리가 짧다. 눈 테와 부리는 파랗다.",
+        "type": "identification",
+        "trivia_source": "Wikipedia, \"Black paradise flycatcher\" (en), 2026-09 확인"
+      },
+      {
+        "content": "일본·한국·대만·필리핀 북부에서 번식하고 동남아시아에서 월동한다. 제주도의 곶자왈 숲은 이 종의 중요한 번식지다. 일본어 이름 '산코초(三光鳥)'는 노래가 '달·해·별'처럼 들린다는 데서 왔다. 월동지 산림 파괴로 일본 번식 개체군 일부가 급감했다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Black paradise flycatcher\" (en), 2026-09 확인"
       }
     ]
   }

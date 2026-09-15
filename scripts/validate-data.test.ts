@@ -21,6 +21,8 @@ function sp(over: Record<string, unknown> = {}) {
   return {
     id: "x",
     name_korean: "새",
+    abundance: "c",
+    status: ["Res"],
     media: [media()],
     trivia: [{ content: "c", type: "ecology", trivia_source: "출처" }],
     ...over,
@@ -63,6 +65,13 @@ describe("validate-data · validateSpecies", () => {
       sp({ id: "magpie", media: [media({ attribution: "" })] }),
     ]);
     expect(errs.some((e: string) => e.includes("magpie"))).toBe(true);
+  });
+
+  it("abundance·status 무효 코드를 잡는다", () => {
+    const bad = sp({ abundance: "u", status: ["Res", "Summer"] });
+    const errors = validateSpecies([bad]);
+    expect(errors.some((e) => e.includes("abundance"))).toBe(true);
+    expect(errors.some((e) => e.includes("status") && e.includes("Summer"))).toBe(true);
   });
 
   it("배열이 아니면 오류를 반환한다", () => {
