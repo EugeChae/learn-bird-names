@@ -5,9 +5,10 @@
 //
 // 출처: 국립생물자원관 국가생물종목록 · Birds Korea 2024 체크리스트의 표준 국명.
 // (분류학 명칭은 도감·학술 표준 사실이며 AI 생성 콘텐츠가 아니다 — 트리비아 금지 원칙과 무관.)
-// 현재 데이터(90종)에 등장하는 16목·41과를 모두 포함한다. 누락 시 Latin으로 폴백.
+// 현재 데이터(130종)에 등장하는 18목·48과를 모두 포함한다. 누락 시 Latin으로 폴백.
 // 2026-09 보강: 70종 확장 때 빠졌던 Turdidae/Fringillidae/Strigidae(+Strigiformes)와
-// 90종 확장의 Scolopacidae/Troglodytidae/Alaudidae 추가.
+// 90종 확장의 Scolopacidae/Troglodytidae/Alaudidae, 130종 확장의 Ciconiidae/Haematopodidae/
+// Pandionidae/Apodidae/Cinclidae/Bombycillidae/Monarchidae(+Ciconiiformes/Apodiformes) 추가.
 //
 // 검수(2026-09): 15목·35과 전부 한국어 위키백과(특히 '참새목' 문서의 과 목록)·NIBR과 대조 완료.
 // 이중 통용명이 있는 항목(둘 다 표준):
@@ -17,8 +18,10 @@
 const ORDER_KO: Record<string, string> = {
   Accipitriformes: "수리목",
   Anseriformes: "기러기목",
+  Apodiformes: "칼새목",
   Bucerotiformes: "코뿔새목",
   Charadriiformes: "도요목",
+  Ciconiiformes: "황새목",
   Columbiformes: "비둘기목",
   Coraciiformes: "파랑새목",
   Cuculiformes: "뻐꾸기목",
@@ -40,8 +43,12 @@ const FAMILY_KO: Record<string, string> = {
   Alaudidae: "종다리과",
   Alcedinidae: "물총새과",
   Anatidae: "오리과",
+  Apodidae: "칼새과",
   Ardeidae: "백로과",
+  Bombycillidae: "여새과",
   Charadriidae: "물떼새과",
+  Ciconiidae: "황새과",
+  Cinclidae: "물까마귀과",
   Columbidae: "비둘기과",
   Coraciidae: "파랑새과",
   Corvidae: "까마귀과",
@@ -50,12 +57,15 @@ const FAMILY_KO: Record<string, string> = {
   Falconidae: "매과",
   Fringillidae: "되새과",
   Gruidae: "두루미과",
+  Haematopodidae: "검은머리물떼새과",
   Hirundinidae: "제비과",
   Laniidae: "때까치과",
   Laridae: "갈매기과",
+  Monarchidae: "긴꼬리딱새과",
   Motacillidae: "할미새과",
   Muscicapidae: "딱새과",
   Oriolidae: "꾀꼬리과",
+  Pandionidae: "물수리과",
   Paradoxornithidae: "붉은머리오목눈이과",
   Paridae: "박새과",
   Passeridae: "참새과",

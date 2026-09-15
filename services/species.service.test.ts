@@ -107,8 +107,11 @@ describe("getAll (실데이터)", () => {
   });
 
   it("존재하지 않는 조합이면 빈 배열", () => {
-    expect(getAll({ status: ["Vag"] as Status[] })).toHaveLength(0);
-    expect(getAll({ abundance: ["r"] as Abundance[] })).toHaveLength(0);
+    // 130종 확장(2026-09)으로 abundance "r"(황새)이 실데이터에 생겨, 정말 없는 조합만 확인한다.
+    expect(getAll({ status: ["Probably extinct"] as Status[] })).toHaveLength(0);
+    expect(
+      getAll({ status: ["Vag"] as Status[], abundance: ["ab"] as Abundance[] })
+    ).toHaveLength(0);
   });
 
   it("모든 반환 종의 사진에 attribution이 채워져 있다 (NFR-004)", () => {
