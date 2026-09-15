@@ -5,7 +5,9 @@
 //
 // 출처: 국립생물자원관 국가생물종목록 · Birds Korea 2024 체크리스트의 표준 국명.
 // (분류학 명칭은 도감·학술 표준 사실이며 AI 생성 콘텐츠가 아니다 — 트리비아 금지 원칙과 무관.)
-// 현재 데이터(50종)에 등장하는 15목·35과를 모두 포함한다. 누락 시 Latin으로 폴백.
+// 현재 데이터(90종)에 등장하는 16목·41과를 모두 포함한다. 누락 시 Latin으로 폴백.
+// 2026-09 보강: 70종 확장 때 빠졌던 Turdidae/Fringillidae/Strigidae(+Strigiformes)와
+// 90종 확장의 Scolopacidae/Troglodytidae/Alaudidae 추가.
 //
 // 검수(2026-09): 15목·35과 전부 한국어 위키백과(특히 '참새목' 문서의 과 목록)·NIBR과 대조 완료.
 // 이중 통용명이 있는 항목(둘 다 표준):
@@ -27,6 +29,7 @@ const ORDER_KO: Record<string, string> = {
   Pelecaniformes: "사다새목",
   Piciformes: "딱따구리목",
   Podicipediformes: "논병아리목",
+  Strigiformes: "올빼미목",
   Suliformes: "가다랭이잡이목",
 };
 
@@ -34,6 +37,7 @@ const FAMILY_KO: Record<string, string> = {
   Accipitridae: "수리과",
   Acrocephalidae: "개개비과",
   Aegithalidae: "오목눈이과",
+  Alaudidae: "종다리과",
   Alcedinidae: "물총새과",
   Anatidae: "오리과",
   Ardeidae: "백로과",
@@ -44,6 +48,7 @@ const FAMILY_KO: Record<string, string> = {
   Cuculidae: "뻐꾸기과",
   Emberizidae: "멧새과",
   Falconidae: "매과",
+  Fringillidae: "되새과",
   Gruidae: "두루미과",
   Hirundinidae: "제비과",
   Laniidae: "때까치과",
@@ -61,9 +66,13 @@ const FAMILY_KO: Record<string, string> = {
   Pycnonotidae: "직박구리과",
   Rallidae: "뜸부기과",
   Regulidae: "상모솔새과",
+  Scolopacidae: "도요과",
   Sittidae: "동고비과",
+  Strigidae: "올빼미과",
   Sturnidae: "찌르레기과",
   Threskiornithidae: "저어새과",
+  Troglodytidae: "굴뚝새과",
+  Turdidae: "지빠귀과",
   Upupidae: "후투티과",
   Zosteropidae: "동박새과",
 };
