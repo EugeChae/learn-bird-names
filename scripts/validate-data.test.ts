@@ -21,6 +21,7 @@ function sp(over: Record<string, unknown> = {}) {
   return {
     id: "x",
     name_korean: "새",
+    difficulty_tier: 1,
     abundance: "c",
     status: ["Res"],
     media: [media()],
@@ -72,6 +73,31 @@ describe("validate-data · validateSpecies", () => {
     const errors = validateSpecies([bad]);
     expect(errors.some((e) => e.includes("abundance"))).toBe(true);
     expect(errors.some((e) => e.includes("status") && e.includes("Summer"))).toBe(true);
+  });
+
+  it("종 difficulty_tier 누락·무효를 잡는다", () => {
+    expect(validateSpecies([sp({ difficulty_tier: undefined })]).some((e) => e.includes("difficulty_tier"))).toBe(true);
+    expect(validateSpecies([sp({ difficulty_tier: 4 })]).some((e) => e.includes("difficulty_tier"))).toBe(true);
+  });
+
+  it("사진별 difficulty_tier: 종 tier 이상이면 통과", () => {
+    const ok = sp({ difficulty_tier: 1, media: [media(), media({ sex: "female", difficulty_tier: 3 })] });
+    expect(validateSpecies([ok])).toEqual([]);
+  });
+
+  it("사진별 difficulty_tier 가 종 tier 보다 낮으면 오류", () => {
+    const bad = sp({ difficulty_tier: 2, media: [media(), media({ difficulty_tier: 1 })] });
+    expect(validateSpecies([bad]).some((e) => e.includes("media[1].difficulty_tier"))).toBe(true);
+  });
+
+  it("대표 사진(media[0])에 difficulty_tier 를 두면 오류", () => {
+    const bad = sp({ media: [media({ difficulty_tier: 1 })] });
+    expect(validateSpecies([bad]).some((e) => e.includes("media[0]"))).toBe(true);
+  });
+
+  it("사진별 difficulty_tier 무효값을 잡는다", () => {
+    const bad = sp({ media: [media(), media({ difficulty_tier: "3" })] });
+    expect(validateSpecies([bad]).some((e) => e.includes("media[1].difficulty_tier"))).toBe(true);
   });
 
   it("배열이 아니면 오류를 반환한다", () => {

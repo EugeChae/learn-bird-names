@@ -290,7 +290,7 @@ interface Species {
   order: string                 // "참새목"
   family: string                // "까마귀과"
   habitat: string[]             // ["도심", "농경지"]
-  difficulty_tier: 1 | 2 | 3   // 1=쉬움, 3=어려움
+  difficulty_tier: 1 | 2 | 3   // 1=쉬움, 3=어려움 — "가장 알아보기 쉬운 형태" 기준 기본값
   abundance: "ab" | "c" | "uc" | "sc" | "r"
   // ab=많음 / c=흔함 / uc=흔하지않음 / sc=적음 / r=희귀함
   status: Status[]              // 복수 가능 (예: ["SV", "PM"])
@@ -307,6 +307,7 @@ interface SpeciesMedia {
   age: "adult" | "juvenile" | "unknown"
   plumage: "breeding" | "nonbreeding" | "unknown"
   angle: "perched" | "flying" | "swimming" | "unknown"
+  difficulty_tier?: 1 | 2 | 3   // 사진별 난이도 override(암컷·유조·겨울깃). 종 tier 이상, media[0]엔 금지
   license: string               // "CC BY-NC 4.0"
   attribution: string           // "© John Doe / iNaturalist"
   quality_score: 1 | 2 | 3

@@ -1,6 +1,7 @@
 import speciesData from "@/public/data/species.json";
 import type {
   Species,
+  SpeciesMedia,
   Status,
   Abundance,
   DifficultyTier,
@@ -58,9 +59,28 @@ export function getById(id: string): Species | undefined {
   return ALL_SPECIES.find((s) => s.id === id);
 }
 
-/** 난이도 tier로 필터링. */
+/** 난이도 tier로 필터링(종 기본 tier 기준). */
 export function getByDifficulty(tier: DifficultyTier): Species[] {
   return ALL_SPECIES.filter((s) => s.difficulty_tier === tier);
+}
+
+/**
+ * 특정 사진으로 출제할 때의 실효 난이도. 사진에 tier가 있으면 그것, 없으면 종 tier.
+ * 오답 거리감·SRS quality는 이 값을 써야 "원앙 암컷" 문제가 tier 3으로 취급된다.
+ */
+export function getEffectiveTier(
+  species: Species,
+  media?: SpeciesMedia
+): DifficultyTier {
+  return media?.difficulty_tier ?? species.difficulty_tier;
+}
+
+/** 실효 난이도가 maxTier 이하인 사진만 반환(초급 세션에서 암컷·유조 사진 제외용). */
+export function getMediaUpToTier(
+  species: Species,
+  maxTier: DifficultyTier
+): SpeciesMedia[] {
+  return species.media.filter((m) => getEffectiveTier(species, m) <= maxTier);
 }
 
 /**
@@ -115,7 +135,9 @@ export function selectDecoys(
   target: Species,
   pool: readonly Species[],
   count = 3,
-  rng: () => number = Math.random
+  rng: () => number = Math.random,
+  /** 실효 난이도(사진별 tier 반영 시 getEffectiveTier 결과를 넘긴다). 기본은 종 tier. */
+  tier: DifficultyTier = target.difficulty_tier
 ): Species[] {
   const others = pool.filter((s) => s.id !== target.id);
 
@@ -128,7 +150,7 @@ export function selectDecoys(
   );
 
   let priority: Species[][];
-  switch (target.difficulty_tier) {
+  switch (tier) {
     case 1:
       priority = [differentOrder, sameOrderDiffFamily, sameFamily];
       break;

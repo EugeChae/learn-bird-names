@@ -14,7 +14,9 @@ export type Status =
 // Res=텃새 / SV=여름철새 / WV=겨울철새 / PM=나그네새 / Vag=길잃은새
 
 export type DifficultyTier = 1 | 2 | 3;
-// 1=쉬움(친숙하고 고유한 외형) / 2=보통 / 3=어려움(유사종 혼동 가능)
+// 1=쉬움(친숙하고 고유한 외형) / 2=보통 / 3=어려움(같은 과 유사종과 혼동)
+// 종의 difficulty_tier는 "가장 알아보기 쉬운 형태(보통 수컷 번식깃)" 기준의 기본값이고,
+// 사진별로 더 어려운 형태(암컷·유조·겨울깃)는 SpeciesMedia.difficulty_tier로 올려 적는다.
 
 export type MediaAngle = "perched" | "flying" | "swimming" | "unknown";
 export type MediaSex = "male" | "female" | "unknown";
@@ -32,6 +34,12 @@ export interface SpeciesMedia {
   license: string;
   attribution: string;
   quality_score: 1 | 2 | 3;
+  /**
+   * 이 사진만의 난이도. 없으면 종의 difficulty_tier를 따른다.
+   * 예: 원앙 수컷 사진은 종 기본값 1, 암컷 사진은 3.
+   * 규칙(validate-data.js가 강제): 종 tier 이상이어야 하고, media[0](대표 사진)에는 쓰지 않는다.
+   */
+  difficulty_tier?: DifficultyTier;
 }
 
 export interface SpeciesTrivia {

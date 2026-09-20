@@ -5,6 +5,8 @@ import {
   getAll,
   getById,
   getByDifficulty,
+  getEffectiveTier,
+  getMediaUpToTier,
   getRandom,
   selectDecoys,
   getDecoys,
@@ -144,8 +146,48 @@ describe("getByDifficulty (실데이터)", () => {
     expect(t1.every((s) => s.difficulty_tier === 1)).toBe(true);
   });
 
-  it("해당 tier가 없으면 빈 배열", () => {
-    expect(getByDifficulty(3 as DifficultyTier)).toHaveLength(0);
+  it("tier 1·2·3 이 모두 존재하고 합이 전체 종 수와 같다", () => {
+    const counts = ([1, 2, 3] as DifficultyTier[]).map((t) => getByDifficulty(t).length);
+    expect(counts.every((c) => c > 0)).toBe(true);
+    expect(counts.reduce((a, b) => a + b, 0)).toBe(getAll().length);
+  });
+
+  it("tier 3 종은 같은 科 유사종이 실데이터에 1종 이상 있다(오답 거리감 규칙이 실제로 발동하도록)", () => {
+    const all = getAll();
+    for (const s of getByDifficulty(3)) {
+      const sameFamily = all.filter((o) => o.id !== s.id && o.family === s.family);
+      expect(sameFamily.length, `${s.name_korean}(${s.family})`).toBeGreaterThan(0);
+    }
+  });
+});
+
+// ─── 사진별 실효 난이도 ───────────────────────────────────────────────────────────
+
+describe("getEffectiveTier / getMediaUpToTier", () => {
+  const male = { ...makeSpecies().media[0], sex: "male" as const };
+  const female = { ...male, sex: "female" as const, difficulty_tier: 3 as const };
+  const duck = makeSpecies({ difficulty_tier: 1, media: [male, female] });
+
+  it("사진에 tier가 없으면 종 tier를 따른다", () => {
+    expect(getEffectiveTier(duck, male)).toBe(1);
+    expect(getEffectiveTier(duck)).toBe(1);
+  });
+
+  it("사진에 tier가 있으면 그 값을 쓴다", () => {
+    expect(getEffectiveTier(duck, female)).toBe(3);
+  });
+
+  it("maxTier 이하 사진만 남긴다", () => {
+    expect(getMediaUpToTier(duck, 1)).toEqual([male]);
+    expect(getMediaUpToTier(duck, 3)).toHaveLength(2);
+  });
+
+  it("selectDecoys 는 넘겨준 실효 tier 로 거리감을 정한다", () => {
+    const target = makeSpecies({ id: "t", family: "Anatidae", difficulty_tier: 1 });
+    const sf = makeSpecies({ id: "sf", family: "Anatidae" });
+    const dO = makeSpecies({ id: "do", order: "Charadriiformes", family: "Laridae" });
+    const decoys = selectDecoys(target, [target, sf, dO], 1, () => 0, 3);
+    expect(decoys[0].id).toBe("sf");
   });
 });
 

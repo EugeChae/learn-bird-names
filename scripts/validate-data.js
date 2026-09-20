@@ -17,11 +17,14 @@ function isBlank(value) {
 // 2026-09 감사에서 "u" 같은 무효 코드 8건이 빌드를 통과한 이유).
 const ABUNDANCE_CODES = ["ab", "c", "uc", "sc", "r"];
 const STATUS_CODES = ["Res", "SV", "WV", "PM", "Vag", "Probably extinct"];
+const DIFFICULTY_TIERS = [1, 2, 3];
 
 /**
  * 종 배열을 검증하고 사람이 읽을 오류 메시지 배열을 반환한다(빈 배열 = 통과).
  * 규칙: 각 사진의 license·attribution, 각 트리비아의 trivia_source가 비면 안 되고,
- * abundance·status는 허용 코드만 쓴다.
+ * abundance·status는 허용 코드만 쓴다. difficulty_tier는 종에 필수(1~3)이며,
+ * 사진별 difficulty_tier는 선택이되 종 tier 이상이어야 하고 대표 사진(media[0])에는 둘 수 없다
+ * (종 tier = 가장 쉬운 형태의 난이도라는 의미를 지키기 위해).
  */
 function validateSpecies(speciesList) {
   if (!Array.isArray(speciesList)) {
@@ -31,7 +34,21 @@ function validateSpecies(speciesList) {
   speciesList.forEach((species, i) => {
     const label = species && species.id ? species.id : `index ${i}`;
     const media = Array.isArray(species && species.media) ? species.media : [];
+    const speciesTier = species && species.difficulty_tier;
+    if (!DIFFICULTY_TIERS.includes(speciesTier)) {
+      errors.push(`[${label}] difficulty_tier 가 무효합니다: ${JSON.stringify(speciesTier)}`);
+    }
     media.forEach((m, mi) => {
+      const mediaTier = m && m.difficulty_tier;
+      if (mediaTier !== undefined) {
+        if (!DIFFICULTY_TIERS.includes(mediaTier)) {
+          errors.push(`[${label}] media[${mi}].difficulty_tier 가 무효합니다: ${JSON.stringify(mediaTier)}`);
+        } else if (mi === 0) {
+          errors.push(`[${label}] media[0](대표 사진)에는 difficulty_tier 를 쓸 수 없습니다 — 종 tier로 옮기세요.`);
+        } else if (DIFFICULTY_TIERS.includes(speciesTier) && mediaTier < speciesTier) {
+          errors.push(`[${label}] media[${mi}].difficulty_tier(${mediaTier}) 가 종 tier(${speciesTier})보다 낮습니다.`);
+        }
+      }
       if (isBlank(m && m.license)) {
         errors.push(`[${label}] media[${mi}].license 가 비어 있습니다.`);
       }
