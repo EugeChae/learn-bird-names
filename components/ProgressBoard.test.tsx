@@ -22,10 +22,21 @@ function sp(id: string, name: string): Species {
   };
 }
 
+const LEVEL: ProgressSummary["level"] = {
+  level: 1,
+  computed: 1,
+  tiers: [
+    { tier: 1, mastered: 3, total: 10, required: 7 },
+    { tier: 2, mastered: 0, total: 20, required: 14 },
+  ],
+  next: { level: 2, tier: 1, remaining: 4 },
+};
+
 const SUMMARY: ProgressSummary = {
   learned: 5,
   total: 12,
   mastered: 2,
+  level: LEVEL,
   weak: [
     { species: sp("magpie", "까치"), missRate: 0.75, incorrect: 3, attempts: 4 },
     { species: sp("crow", "큰부리까마귀"), missRate: 0.5, incorrect: 1, attempts: 2 },
@@ -49,10 +60,28 @@ describe("ProgressBoard", () => {
     expect(screen.getByText(/오답률 50%/)).toBeInTheDocument();
   });
 
+  it("오답 보기 레벨과 승급 조건을 보여 준다", () => {
+    render(<ProgressBoard summary={SUMMARY} onReset={() => {}} />);
+    expect(screen.getByText("Lv 1")).toBeInTheDocument();
+    expect(screen.getByText(/1단계\) 마스터 3\/10/)).toBeInTheDocument();
+    expect(screen.getByText(/Lv 2까지 1단계 새 4종 더/)).toBeInTheDocument();
+  });
+
+  it("최고 레벨이면 다음 조건 대신 안내를 보여 준다", () => {
+    render(
+      <ProgressBoard
+        summary={{ ...SUMMARY, level: { ...LEVEL, level: 3, computed: 3, next: null } }}
+        onReset={() => {}}
+      />
+    );
+    expect(screen.getByText("Lv 3")).toBeInTheDocument();
+    expect(screen.getByText(/최고 레벨이에요/)).toBeInTheDocument();
+  });
+
   it("취약종이 없으면 안내 문구를 보여 준다", () => {
     render(
       <ProgressBoard
-        summary={{ learned: 0, total: 12, mastered: 0, weak: [] }}
+        summary={{ learned: 0, total: 12, mastered: 0, weak: [], level: LEVEL }}
         onReset={() => {}}
       />
     );

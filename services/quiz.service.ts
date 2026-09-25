@@ -7,6 +7,7 @@ import type {
   QuizQuestion,
   AnswerResult,
   MatchingPair,
+  LearnerLevel,
 } from "@/types";
 import { getAll, selectDecoys } from "@/services/species.service";
 
@@ -34,6 +35,8 @@ export interface CreateSessionDeps {
    * pool에 없어도 강제로 넣는다. id 기준 dedupe 후 size개까지만 반영. 나머지는 pool로 채움.
    */
   mustInclude?: Species[];
+  /** 오답 보기 거리 레벨(progress.service.getLearnerLevel). 기본 1(먼 종만). */
+  level?: LearnerLevel;
 }
 
 /** Fisher-Yates 셔플 (rng 주입 결정론). 원본 불변. */
@@ -90,7 +93,13 @@ export function createSession(
   // forced가 없으면 기존 동작(pool 셔플 slice)과 동일 — rng 소비 순서까지 보존.
   const targets = forced.length ? shuffle([...forced, ...fill], rng) : fill;
   const questions: QuizQuestion[] = targets.map((species) => {
-    const decoys = selectDecoys(species, decoyPool, DECOYS_PER_QUESTION, rng);
+    const decoys = selectDecoys(
+      species,
+      decoyPool,
+      DECOYS_PER_QUESTION,
+      rng,
+      deps.level ?? 1
+    );
     return {
       species,
       choices: shuffle([species, ...decoys], rng),

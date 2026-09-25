@@ -1,4 +1,11 @@
-import type { Species, SpeciesProgress, SRSQuality, UserProgress } from "@/types";
+import type {
+  Species,
+  SpeciesProgress,
+  SRSQuality,
+  UserProgress,
+  LearnerLevel,
+  DifficultyTier,
+} from "@/types";
 import {
   calculate,
   DEFAULT_EASINESS_FACTOR,
@@ -7,6 +14,11 @@ import {
   createLocalStorageAdapter,
   type ProgressStore,
 } from "@/lib/localStorage.adapter";
+import {
+  createLearnerLevelStore,
+  createMemoryLearnerLevelStore,
+  type LearnerLevelStore,
+} from "@/lib/learnerLevel.store";
 import {
   getById as getSpeciesById,
   getAll as getAllSpecies,
@@ -27,6 +39,8 @@ export interface ProgressDeps {
   getById?: (id: string) => Species | undefined;
   /** 전체 카탈로그(대시보드 "전체 종 수"용). 기본: species.service.getAll. */
   getAll?: () => Species[];
+  /** 도달한 최고 레벨 저장소. 기본: localStorage(불가 환경이면 메모리). */
+  levelStore?: LearnerLevelStore;
 }
 
 /** 마스터 기준: 연속 정답 횟수(STORY-015 / PRD FR-017). */
@@ -37,6 +51,15 @@ export const WEAK_LIMIT = 10;
 
 function storeOf(deps: ProgressDeps): ProgressStore {
   return deps.store ?? createLocalStorageAdapter();
+}
+
+function levelStoreOf(deps: ProgressDeps): LearnerLevelStore {
+  if (deps.levelStore) return deps.levelStore;
+  try {
+    return createLearnerLevelStore();
+  } catch {
+    return createMemoryLearnerLevelStore();
+  }
 }
 
 function nowOf(deps: ProgressDeps): Date {
@@ -177,6 +200,8 @@ export interface ProgressSummary {
   mastered: number;
   /** 오답 비율 높은 순 최대 WEAK_LIMIT개. */
   weak: WeakEntry[];
+  /** 오답 보기 난이도 레벨과 그 근거(대시보드 표시용). */
+  level: LearnerLevelInfo;
 }
 
 export function getProgressSummary(deps: ProgressDeps = {}): ProgressSummary {
@@ -191,7 +216,85 @@ export function getProgressSummary(deps: ProgressDeps = {}): ProgressSummary {
     total,
     mastered,
     weak: scoreWeak(all, deps).slice(0, WEAK_LIMIT),
+    level: getLearnerLevel(deps),
   };
+}
+
+// ─── 학습자 레벨 (오답 보기 거리, 2026-09-20) ──────────────────────────────────
+//
+// 3단계 절대평가. 친숙도 tier별 숙지율로 자동 승급하고 한 번 오르면 내려가지 않는다.
+//   Lv1 입문 → Lv2: tier 1 새의 LEVEL_UP_RATIO 이상 숙지
+//   Lv2      → Lv3: tier 2 새의 LEVEL_UP_RATIO 이상 숙지
+// 승급 조건이 대시보드에 그대로 보여야 한다(블랙박스 금지). 수동 고정은 두지 않는다.
+// 사용자가 확보되면 상대평가로 전환 검토(docs/difficulty-tiers-2026-09-20.md).
+
+export const LEVEL_UP_RATIO = 0.7;
+
+export interface TierMastery {
+  tier: DifficultyTier;
+  mastered: number;
+  total: number;
+  /** 다음 레벨로 가기 위해 이 tier에서 숙지해야 하는 종 수(올림). */
+  required: number;
+}
+
+export interface LearnerLevelInfo {
+  level: LearnerLevel;
+  /** 진도만으로 계산한 레벨(저장된 최고치와 다를 수 있음). */
+  computed: LearnerLevel;
+  /** tier 1·2 숙지 현황(승급 근거). */
+  tiers: [TierMastery, TierMastery];
+  /** 다음 레벨 조건. 최고 레벨이면 null. */
+  next: { level: LearnerLevel; tier: DifficultyTier; remaining: number } | null;
+}
+
+function tierMastery(
+  tier: DifficultyTier,
+  species: Species[],
+  progress: UserProgress
+): TierMastery {
+  const inTier = species.filter((s) => s.difficulty_tier === tier);
+  const mastered = inTier.filter(
+    (s) => (progress[s.id]?.consecutive_correct ?? 0) >= MASTERY_THRESHOLD
+  ).length;
+  return {
+    tier,
+    mastered,
+    total: inTier.length,
+    required: Math.ceil(inTier.length * LEVEL_UP_RATIO),
+  };
+}
+
+/**
+ * 학습자 레벨. 진도로 계산한 값과 저장된 최고 레벨 중 큰 쪽을 쓰고,
+ * 올랐으면 저장한다(단조 증가).
+ */
+export function getLearnerLevel(deps: ProgressDeps = {}): LearnerLevelInfo {
+  const progress = storeOf(deps).load();
+  const species = (deps.getAll ?? getAllSpecies)();
+  const t1 = tierMastery(1, species, progress);
+  const t2 = tierMastery(2, species, progress);
+
+  let computed: LearnerLevel = 1;
+  if (t1.total > 0 && t1.mastered >= t1.required) computed = 2;
+  if (computed === 2 && t2.total > 0 && t2.mastered >= t2.required) computed = 3;
+
+  const levelStore = levelStoreOf(deps);
+  const saved = levelStore.load();
+  let level: LearnerLevel = saved ? saved.level : 1;
+  if (computed > level) {
+    level = computed;
+    levelStore.save({ level, reached_at: nowOf(deps).toISOString() });
+  }
+
+  let next: LearnerLevelInfo["next"] = null;
+  if (level === 1) {
+    next = { level: 2, tier: 1, remaining: Math.max(0, t1.required - t1.mastered) };
+  } else if (level === 2) {
+    next = { level: 3, tier: 2, remaining: Math.max(0, t2.required - t2.mastered) };
+  }
+
+  return { level, computed, tiers: [t1, t2], next };
 }
 
 /** Taxonomy 모드 잠금 해제 기준: 누적 정답 종 수(STORY-014 / FR-015). */
@@ -211,7 +314,8 @@ export function isTaxonomyUnlocked(deps: ProgressDeps = {}): boolean {
   return countCorrectSpecies(deps) >= TAXONOMY_UNLOCK_THRESHOLD;
 }
 
-/** 저장된 진도를 모두 지운다. */
+/** 저장된 진도와 도달 레벨을 모두 지운다. */
 export function resetAll(deps: ProgressDeps = {}): void {
   storeOf(deps).clear();
+  levelStoreOf(deps).clear();
 }

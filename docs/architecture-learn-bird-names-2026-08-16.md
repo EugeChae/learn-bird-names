@@ -290,7 +290,8 @@ interface Species {
   order: string                 // "참새목"
   family: string                // "까마귀과"
   habitat: string[]             // ["도심", "농경지"]
-  difficulty_tier: 1 | 2 | 3   // 1=쉬움, 3=어려움
+  difficulty_tier: 1 | 2 | 3   // 친숙도. 1=일상에서 보는 새, 3=탐조인만 아는 새 (docs/difficulty-tiers-2026-09-20.md)
+  confusable_with?: string[]   // 필드에서 혼동되는 종 id(대칭). 학습자 레벨 3에서 오답 보기 우선
   abundance: "ab" | "c" | "uc" | "sc" | "r"
   // ab=많음 / c=흔함 / uc=흔하지않음 / sc=적음 / r=희귀함
   status: Status[]              // 복수 가능 (예: ["SV", "PM"])
@@ -307,6 +308,7 @@ interface SpeciesMedia {
   age: "adult" | "juvenile" | "unknown"
   plumage: "breeding" | "nonbreeding" | "unknown"
   angle: "perched" | "flying" | "swimming" | "unknown"
+  difficulty_tier?: 1 | 2 | 3   // 사진별 난이도 override(암컷·유조·겨울깃). 종 tier 이상, media[0]엔 금지
   license: string               // "CC BY-NC 4.0"
   attribution: string           // "© John Doe / iNaturalist"
   quality_score: 1 | 2 | 3

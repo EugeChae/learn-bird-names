@@ -4,6 +4,7 @@ import { useState } from "react";
 import {
   type ProgressSummary,
   MASTERY_THRESHOLD,
+  LEVEL_UP_RATIO,
 } from "@/services/progress.service";
 import ResetConfirmModal from "@/components/ResetConfirmModal";
 import LeafDecor from "@/components/LeafDecor";
@@ -16,6 +17,13 @@ interface ProgressBoardProps {
   onReset: () => void;
 }
 
+/** 레벨별 오답 보기 설명(어디서 보기를 뽑는지). */
+const LEVEL_LABEL: Record<1 | 2 | 3, string> = {
+  1: "먼 새끼리",
+  2: "비슷한 무리끼리",
+  3: "헷갈리는 새끼리",
+};
+
 /**
  * 진도 대시보드 (STORY-015 / FR-017).
  * 데이터 로드·손상 처리는 app/progress/page가 하고, 여기서는 받은 요약을
@@ -23,8 +31,10 @@ interface ProgressBoardProps {
  */
 export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) {
   const [confirming, setConfirming] = useState(false);
-  const { learned, total, mastered, weak } = summary;
+  const { learned, total, mastered, weak, level } = summary;
   const pct = total > 0 ? Math.round((learned / total) * 100) : 0;
+  const [tier1, tier2] = level.tiers;
+  const ratioPct = Math.round(LEVEL_UP_RATIO * 100);
 
   return (
     <section
@@ -59,6 +69,38 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
             aria-label="학습 진행률"
           />
         </div>
+      </div>
+
+      {/* 오답 보기 레벨 — 승급 조건이 그대로 보여야 한다 */}
+      <div
+        className="rounded-2xl border border-gray-200 p-4 shadow-soft"
+        aria-label="오답 보기 레벨"
+      >
+        <div className="flex items-baseline justify-between">
+          <span className="text-sm text-gray-600">
+            오답 보기 레벨{" "}
+            <span className="text-xs text-gray-400">{LEVEL_LABEL[level.level]}</span>
+          </span>
+          <strong className="text-2xl text-green-700">Lv {level.level}</strong>
+        </div>
+        <ul className="mt-2 flex flex-col gap-1 text-xs text-gray-600">
+          <li>
+            친숙한 새(1단계) 마스터 {tier1.mastered}/{tier1.total}
+            <span className="ml-1 text-gray-400">(승급 기준 {tier1.required})</span>
+          </li>
+          <li>
+            탐조 입문 새(2단계) 마스터 {tier2.mastered}/{tier2.total}
+            <span className="ml-1 text-gray-400">(승급 기준 {tier2.required})</span>
+          </li>
+        </ul>
+        <p className="mt-2 text-sm text-gray-700">
+          {level.next
+            ? `Lv ${level.next.level}까지 ${level.next.tier}단계 새 ${level.next.remaining}종 더 마스터하면 돼요.`
+            : "최고 레벨이에요. 혼동하기 쉬운 새끼리 보기에 나와요."}
+        </p>
+        <p className="mt-1 text-xs text-gray-400">
+          각 단계 새의 {ratioPct}% 이상을 마스터하면 자동으로 올라가고, 내려가지 않아요.
+        </p>
       </div>
 
       {/* 마스터 종 수 (AC2) */}

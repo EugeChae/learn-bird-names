@@ -1,9 +1,16 @@
-import type { QuizSession, QuizMode, QuizScope, Species } from "@/types";
+import type {
+  QuizSession,
+  QuizMode,
+  QuizScope,
+  Species,
+  LearnerLevel,
+} from "@/types";
 import { createSession } from "@/services/quiz.service";
 import { getById, getAll, getHabitats } from "@/services/species.service";
 import {
   getWeakSpecies,
   getDueForReview,
+  getLearnerLevel,
   ProgressCorruptedError,
 } from "@/services/progress.service";
 
@@ -75,8 +82,11 @@ export function createQuizSession(
   includeId: string | null = null,
   mode: QuizMode = "photo-to-name",
   scope: QuizScope = "all",
-  habitat: string | null = null
+  habitat: string | null = null,
+  /** 오답 거리 레벨. 미지정이면 진도에서 읽는다(읽기 실패 시 1). */
+  level: LearnerLevel | null = null
 ): QuizSession {
+  const resolvedLevel = level ?? safeLearnerLevel();
   const focus =
     scope === "all" && includeId ? getById(includeId) : undefined;
   // "전체"는 pool 미주입 → createSession 기본(getAll) 동작·rng 소비를 그대로 보존.
@@ -88,8 +98,18 @@ export function createQuizSession(
     {
       ...(pool ? { pool } : {}),
       ...(focus ? { mustInclude: [focus] } : {}),
+      level: resolvedLevel,
     }
   );
+}
+
+/** 진도 저장소가 깨졌거나 없을 때도 세션은 만들어져야 하므로 실패 시 1. */
+function safeLearnerLevel(): LearnerLevel {
+  try {
+    return getLearnerLevel().level;
+  } catch {
+    return 1;
+  }
 }
 
 /** 브라우저 URL의 `?include=` 값을 읽는다 (SSR 안전). */

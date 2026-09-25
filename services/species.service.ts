@@ -1,9 +1,11 @@
 import speciesData from "@/public/data/species.json";
 import type {
   Species,
+  SpeciesMedia,
   Status,
   Abundance,
   DifficultyTier,
+  LearnerLevel,
 } from "@/types";
 
 // ─── Filters ──────────────────────────────────────────────────────────────────
@@ -58,9 +60,28 @@ export function getById(id: string): Species | undefined {
   return ALL_SPECIES.find((s) => s.id === id);
 }
 
-/** 난이도 tier로 필터링. */
+/** 난이도 tier로 필터링(종 기본 tier 기준). */
 export function getByDifficulty(tier: DifficultyTier): Species[] {
   return ALL_SPECIES.filter((s) => s.difficulty_tier === tier);
+}
+
+/**
+ * 특정 사진으로 출제할 때의 실효 난이도. 사진에 tier가 있으면 그것, 없으면 종 tier.
+ * 오답 거리감·SRS quality는 이 값을 써야 "원앙 암컷" 문제가 tier 3으로 취급된다.
+ */
+export function getEffectiveTier(
+  species: Species,
+  media?: SpeciesMedia
+): DifficultyTier {
+  return media?.difficulty_tier ?? species.difficulty_tier;
+}
+
+/** 실효 난이도가 maxTier 이하인 사진만 반환(초급 세션에서 암컷·유조 사진 제외용). */
+export function getMediaUpToTier(
+  species: Species,
+  maxTier: DifficultyTier
+): SpeciesMedia[] {
+  return species.media.filter((m) => getEffectiveTier(species, m) <= maxTier);
 }
 
 /**
@@ -102,41 +123,56 @@ function shuffle<T>(items: readonly T[], rng: () => number): T[] {
   return arr;
 }
 
+/** 대상의 혼동 상대(confusable_with) 중 pool에 있는 종. */
+export function getConfusables(
+  target: Species,
+  pool: readonly Species[]
+): Species[] {
+  const wanted = new Set(target.confusable_with ?? []);
+  if (wanted.size === 0) return [];
+  return pool.filter((s) => wanted.has(s.id));
+}
+
 /**
- * 오답 보기 선택 (순수 함수). tier에 따라 "거리감"을 조절한다:
- * - tier 1(쉬움): 먼 거리부터 — 다른 目 → 같은 目 다른 科 → 같은 科
- * - tier 2(보통): 같은 目 다른 科 → 같은 科 → 다른 目
- * - tier 3(어려움): 가까운 유사종부터 — 같은 科 → 같은 目 다른 科 → 다른 目
+ * 대상 종에 대한 오답 보기를 학습자 레벨에 따라 고른다.
+ * 거리는 종의 난이도가 아니라 학습자가 정한다(친숙도 tier와 분리, 2026-09-20).
+ * - level 1(입문): 먼 종에서만 — 다른 目 → 같은 目 다른 科 → 같은 科. 혼동 상대는 맨 뒤.
+ * - level 2: 같은 目 다른 科 → 같은 科(혼동 상대 포함) → 다른 目.
+ * - level 3: 혼동 상대(confusable_with) → 같은 科 → 같은 目 다른 科 → 다른 目.
  *
  * 우선순위 그룹을 순서대로 소진하며 count개까지 채운다. 후보가 부족하면
- * 가능한 만큼만 반환한다(데이터가 적은 초기 단계에서도 안전).
+ * 가능한 만큼만 반환한다(좁힌 범위에서도 안전).
  */
 export function selectDecoys(
   target: Species,
   pool: readonly Species[],
   count = 3,
-  rng: () => number = Math.random
+  rng: () => number = Math.random,
+  level: LearnerLevel = 1
 ): Species[] {
   const others = pool.filter((s) => s.id !== target.id);
+  const confusableIds = new Set(target.confusable_with ?? []);
 
-  const differentOrder = others.filter((s) => s.order !== target.order);
-  const sameOrderDiffFamily = others.filter(
+  const confusable = others.filter((s) => confusableIds.has(s.id));
+  const rest = others.filter((s) => !confusableIds.has(s.id));
+  const differentOrder = rest.filter((s) => s.order !== target.order);
+  const sameOrderDiffFamily = rest.filter(
     (s) => s.order === target.order && s.family !== target.family
   );
-  const sameFamily = others.filter(
+  const sameFamily = rest.filter(
     (s) => s.order === target.order && s.family === target.family
   );
 
   let priority: Species[][];
-  switch (target.difficulty_tier) {
+  switch (level) {
     case 1:
-      priority = [differentOrder, sameOrderDiffFamily, sameFamily];
+      priority = [differentOrder, sameOrderDiffFamily, sameFamily, confusable];
       break;
     case 2:
-      priority = [sameOrderDiffFamily, sameFamily, differentOrder];
+      priority = [sameOrderDiffFamily, [...sameFamily, ...confusable], differentOrder];
       break;
     case 3:
-      priority = [sameFamily, sameOrderDiffFamily, differentOrder];
+      priority = [confusable, sameFamily, sameOrderDiffFamily, differentOrder];
       break;
   }
 
@@ -160,7 +196,8 @@ export function selectDecoys(
 export function getDecoys(
   target: Species,
   count = 3,
-  rng: () => number = Math.random
+  rng: () => number = Math.random,
+  level: LearnerLevel = 1
 ): Species[] {
-  return selectDecoys(target, ALL_SPECIES, count, rng);
+  return selectDecoys(target, ALL_SPECIES, count, rng, level);
 }
