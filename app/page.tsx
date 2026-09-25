@@ -3,7 +3,23 @@
 import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Species, SpeciesTrivia } from "@/types";
-import { getRandom } from "@/services/species.service";
+import {
+  getById,
+  getBirdOfTheDay,
+  pickMomentTrivia,
+  hashSeed,
+  seededRng,
+} from "@/services/species.service";
+import {
+  getRecentSpeciesIds,
+  getTodayRecord,
+  recordBirdOfTheDay,
+  countMomentView,
+  localDateKey,
+} from "@/lib/birdOfTheDay.store";
+import { momentOf } from "@/lib/moment";
+import { seasonOf, primaryStatusFor } from "@/lib/season";
+import { statusInvite } from "@/lib/bird-labels";
 import {
   countCorrectSpecies,
   TAXONOMY_UNLOCK_THRESHOLD,
@@ -14,29 +30,47 @@ import {
   type ScopeAvailability,
 } from "@/lib/quiz-session";
 import BirdCard from "@/components/BirdCard";
-import TriviaCard, { pickTrivia } from "@/components/TriviaCard";
+import TriviaCard from "@/components/TriviaCard";
 import QuizModePicker from "@/components/QuizModePicker";
 import QuizScopePicker from "@/components/QuizScopePicker";
 import LeafDecor from "@/components/LeafDecor";
 import BirdMascot from "@/components/BirdMascot";
 
 /**
- * 오늘의 새 홈 (STORY-005). 방문마다 getRandom()으로 종을 새로 고른다.
+ * 오늘 만날 새 홈 (STORY-005 → STORY-017).
+ * 모두의 새: 날짜 시드 + 계절 풀 + 최근 30일 제외. 진도는 보지 않는다.
+ * 트리비아는 사용자 시계(새벽/한낮/해질녘)에 맞춰 하나만.
  * 정적 export hydration 불일치를 피하려고 클라이언트에서만 고른다.
  * 집중 학습(STORY-016) 범위별 가용 종 수도 클라이언트에서 계산한다(진도=localStorage).
  */
 export default function Home() {
   const [species, setSpecies] = useState<Species | undefined>();
   const [trivia, setTrivia] = useState<SpeciesTrivia | undefined>();
+  const [invite, setInvite] = useState<string | undefined>();
   const [scopes, setScopes] = useState<ScopeAvailability | null>(null);
   const [taxo, setTaxo] = useState<
     { unlocked: boolean; correct: number } | undefined
   >();
 
   useEffect(() => {
-    const bird = getRandom();
-    setSpecies(bird);
-    setTrivia(bird ? pickTrivia(bird.trivia) : undefined);
+    const now = new Date();
+    const moment = momentOf(now);
+    // 오늘 이미 정해진 새가 있으면 그것을 그대로(하루 안에 바뀌지 않는다).
+    const today = getTodayRecord();
+    const chosen =
+      (today && getById(today.speciesId)) ??
+      getBirdOfTheDay(now, { recentIds: getRecentSpeciesIds() });
+    setSpecies(chosen);
+    if (chosen) {
+      if (!today) recordBirdOfTheDay(chosen.id);
+      const rng = seededRng(hashSeed(localDateKey(now) + moment));
+      setTrivia(pickMomentTrivia(chosen, moment, rng));
+      setInvite(statusInvite(primaryStatusFor(chosen, seasonOf(now))));
+      countMomentView(moment);
+    } else {
+      setTrivia(undefined);
+      setInvite(undefined);
+    }
     setScopes(loadScopeAvailability());
     // 분류 모드 잠금 상태(누적 정답 종 수). 진도 손상 시 잠금으로 폴백.
     try {
@@ -57,7 +91,7 @@ export default function Home() {
           <LeafDecor className="pointer-events-none absolute -top-3 right-4 h-12 w-12 rotate-[28deg] -scale-x-100 opacity-80 lg:right-24" />
           <BirdMascot className="mx-auto h-16 w-16" />
           <p className="mt-1 text-sm font-semibold text-leaf">한국 새 이름 배우기</p>
-          <h1 className="text-4xl font-bold text-gray-900">오늘의 새</h1>
+          <h1 className="text-4xl font-bold text-gray-900">오늘 만날 새</h1>
         </header>
 
         {!species ? (
@@ -68,7 +102,14 @@ export default function Home() {
         ) : (
           /* 데스크톱(lg+): 새 카드 왼쪽 · 트리비아/퀴즈 시작 오른쪽. 모바일 세로 1열. */
           <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
-            <BirdCard species={species} />
+            <div className="flex flex-col gap-2">
+              <BirdCard species={species} />
+              {invite && (
+                <p className="text-center text-sm text-gray-500" aria-label="계절 안내">
+                  {invite}
+                </p>
+              )}
+            </div>
             <div className="flex flex-col gap-5">
               {/* 모바일에선 "퀴즈 시작"을 히어로 바로 아래로 올려 첫 화면에서 시작
                   가능하게 하고, 트리비아는 그 아래로 내린다. 데스크톱(2단)은 원래

@@ -2,11 +2,14 @@ import speciesData from "@/public/data/species.json";
 import type {
   Species,
   SpeciesMedia,
+  SpeciesTrivia,
   Status,
   Abundance,
   DifficultyTier,
   LearnerLevel,
 } from "@/types";
+import { seasonOf, isInSeason } from "@/lib/season";
+import type { Moment } from "@/lib/moment";
 
 // ─── Filters ──────────────────────────────────────────────────────────────────
 
@@ -109,6 +112,93 @@ export function getRandom(
   const pool = ALL_SPECIES.filter((s) => !exclude.has(s.id));
   if (pool.length === 0) return undefined;
   return pool[Math.floor(rng() * pool.length)];
+}
+
+// ─── 오늘 만날 새 (STORY-017) ──────────────────────────────────────────────────
+//
+// 홈은 모두의 새다: 날짜만으로 정해지고 진도·티어·마스터 여부를 보지 않는다.
+// 계절 풀(지금 한국에 있는 종)에서, 최근 RECENT_DAYS일에 나온 종을 빼고, 날짜 시드로 하나.
+// 시드가 날짜뿐이라 같은 날 같은 기기에서는 항상 같은 새이고 서버가 필요 없다.
+
+/** 문자열 → 32비트 해시(FNV-1a). 날짜 문자열을 시드로 쓴다. */
+export function hashSeed(text: string): number {
+  let h = 0x811c9dc5;
+  for (let i = 0; i < text.length; i++) {
+    h ^= text.charCodeAt(i);
+    h = Math.imul(h, 0x01000193) >>> 0;
+  }
+  return h >>> 0;
+}
+
+/** 시드에서 결정론적 rng(mulberry32). */
+export function seededRng(seed: number): () => number {
+  let a = seed >>> 0;
+  return () => {
+    a = (a + 0x6d2b79f5) >>> 0;
+    let t = a;
+    t = Math.imul(t ^ (t >>> 15), t | 1);
+    t ^= t + Math.imul(t ^ (t >>> 7), t | 61);
+    return ((t ^ (t >>> 14)) >>> 0) / 4294967296;
+  };
+}
+
+export interface BirdOfTheDayOptions {
+  /** 최근에 오늘의 새였던 종 id(제외). 기본 없음. */
+  recentIds?: readonly string[];
+  /** 후보 풀. 기본 전체 카탈로그. 테스트·범위 조정용. */
+  pool?: readonly Species[];
+  /** 시드 문자열. 기본은 로컬 날짜 YYYY-MM-DD. */
+  seed?: string;
+}
+
+/** 로컬 날짜 키. birdOfTheDay.store의 localDateKey와 같은 규칙(순환 import 회피용 복제). */
+function dateKey(date: Date): string {
+  const y = date.getFullYear();
+  const m = String(date.getMonth() + 1).padStart(2, "0");
+  const d = String(date.getDate()).padStart(2, "0");
+  return `${y}-${m}-${d}`;
+}
+
+/**
+ * 오늘 만날 새. 계절 풀 → 최근 제외 → 날짜 시드로 하나.
+ * 최근 제외로 풀이 비면 제외 없이 계절 풀에서, 그것도 비면(데이터 이상) 전체에서 고른다.
+ */
+export function getBirdOfTheDay(
+  date: Date,
+  options: BirdOfTheDayOptions = {}
+): Species | undefined {
+  const all = options.pool ?? ALL_SPECIES;
+  if (all.length === 0) return undefined;
+  const season = seasonOf(date);
+  const seasonal = all.filter((s) => isInSeason(s, season));
+  const base = seasonal.length > 0 ? seasonal : all;
+  const recent = new Set(options.recentIds ?? []);
+  const fresh = base.filter((s) => !recent.has(s.id));
+  const pool = fresh.length > 0 ? fresh : base;
+  const rng = seededRng(hashSeed(options.seed ?? dateKey(date)));
+  return pool[Math.floor(rng() * pool.length)];
+}
+
+/**
+ * 홈에 올릴 트리비아. 해당 순간(moment) 문장이 있으면 그것, 없으면 생태(ecology) 중 하나,
+ * 그것도 없으면 아무 트리비아. 식별(identification)은 도감 문장이라 홈에는 올리지 않는다
+ * (다른 게 전혀 없을 때만 마지막 폴백). rng는 같은 날 같은 문장을 위해 날짜 시드로.
+ */
+export function pickMomentTrivia(
+  species: Species,
+  moment: Moment,
+  rng: () => number = Math.random
+): SpeciesTrivia | undefined {
+  const items = species.trivia;
+  if (items.length === 0) return undefined;
+  const pick = (list: SpeciesTrivia[]) => list[Math.floor(rng() * list.length)];
+  const exact = items.filter((t) => t.moment === moment);
+  if (exact.length > 0) return pick(exact);
+  const ecology = items.filter((t) => t.type === "ecology" && !t.moment);
+  if (ecology.length > 0) return pick(ecology);
+  const nonId = items.filter((t) => t.type !== "identification");
+  if (nonId.length > 0) return pick(nonId);
+  return pick([...items]);
 }
 
 // ─── Decoy generation ────────────────────────────────────────────────────────

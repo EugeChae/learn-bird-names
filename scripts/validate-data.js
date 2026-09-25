@@ -18,6 +18,7 @@ function isBlank(value) {
 const ABUNDANCE_CODES = ["ab", "c", "uc", "sc", "r"];
 const STATUS_CODES = ["Res", "SV", "WV", "PM", "Vag", "Probably extinct"];
 const DIFFICULTY_TIERS = [1, 2, 3];
+const TRIVIA_MOMENTS = ["dawn", "day", "dusk"];
 
 /**
  * 종 배열을 검증하고 사람이 읽을 오류 메시지 배열을 반환한다(빈 배열 = 통과).
@@ -101,6 +102,10 @@ function validateSpecies(speciesList) {
     trivia.forEach((t, ti) => {
       if (isBlank(t && t.trivia_source)) {
         errors.push(`[${label}] trivia[${ti}].trivia_source 가 비어 있습니다.`);
+      }
+      const moment = t && t.moment;
+      if (moment !== undefined && !TRIVIA_MOMENTS.includes(moment)) {
+        errors.push(`[${label}] trivia[${ti}].moment 가 무효합니다: ${JSON.stringify(moment)}`);
       }
     });
   });

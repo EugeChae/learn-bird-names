@@ -8,6 +8,10 @@ import {
   getEffectiveTier,
   getMediaUpToTier,
   getConfusables,
+  getBirdOfTheDay,
+  pickMomentTrivia,
+  hashSeed,
+  seededRng as makeSeededRng,
   getRandom,
   selectDecoys,
   getDecoys,
@@ -319,5 +323,90 @@ describe("getHabitats (실데이터)", () => {
       expect(count).toBe(actual);
       expect(count).toBeGreaterThan(0);
     }
+  });
+});
+
+// ─── 오늘 만날 새 (STORY-017) ─────────────────────────────────────────────────────
+
+describe("getBirdOfTheDay", () => {
+  const res = makeSpecies({ id: "res", status: ["Res"] });
+  const sv = makeSpecies({ id: "sv", status: ["SV"] });
+  const wv = makeSpecies({ id: "wv", status: ["WV"] });
+  const pool = [res, sv, wv];
+  const summer = new Date(2026, 6, 10, 9); // 7월
+  const winter = new Date(2026, 0, 10, 9); // 1월
+
+  it("같은 날짜면 같은 새, 몇 번을 불러도 같다", () => {
+    const a = getBirdOfTheDay(summer, { pool });
+    const b = getBirdOfTheDay(summer, { pool });
+    expect(a?.id).toBe(b?.id);
+  });
+
+  it("계절 밖 종은 뽑히지 않는다 (여름엔 겨울철새 없음, 겨울엔 여름철새 없음)", () => {
+    for (let d = 1; d <= 28; d++) {
+      expect(getBirdOfTheDay(new Date(2026, 6, d), { pool })?.id).not.toBe("wv");
+      expect(getBirdOfTheDay(new Date(2026, 0, d), { pool })?.id).not.toBe("sv");
+    }
+  });
+
+  it("최근에 나온 종은 제외한다", () => {
+    for (let d = 1; d <= 28; d++) {
+      const pick = getBirdOfTheDay(new Date(2026, 6, d), { pool, recentIds: ["res"] });
+      expect(pick?.id).toBe("sv"); // 여름 풀 {res, sv}에서 res 제외
+    }
+  });
+
+  it("최근 제외로 풀이 비면 제외 없이 계절 풀에서 고른다", () => {
+    const pick = getBirdOfTheDay(winter, { pool, recentIds: ["res", "wv"] });
+    expect(["res", "wv"]).toContain(pick?.id);
+  });
+
+  it("빈 풀이면 undefined, 실데이터 기본 풀에서는 항상 하나가 나온다", () => {
+    expect(getBirdOfTheDay(summer, { pool: [] })).toBeUndefined();
+    expect(getBirdOfTheDay(new Date())).toBeDefined();
+  });
+
+  it("날짜가 다르면 (대체로) 다른 새 — 30일 중 최소 절반은 다르다", () => {
+    const all = getAll();
+    const ids = new Set<string>();
+    for (let d = 1; d <= 30; d++) ids.add(getBirdOfTheDay(new Date(2026, 8, d), { pool: all })!.id);
+    expect(ids.size).toBeGreaterThan(15);
+  });
+
+  it("hashSeed·seededRng는 결정론적이고 [0,1) 범위", () => {
+    expect(hashSeed("2026-09-25")).toBe(hashSeed("2026-09-25"));
+    expect(hashSeed("2026-09-25")).not.toBe(hashSeed("2026-09-26"));
+    const rng = makeSeededRng(42);
+    const v = rng();
+    expect(v).toBeGreaterThanOrEqual(0);
+    expect(v).toBeLessThan(1);
+    expect(makeSeededRng(42)()).toBe(v);
+  });
+});
+
+describe("pickMomentTrivia", () => {
+  const t = (over: Partial<Species["trivia"][number]>) => ({
+    content: "c",
+    type: "ecology" as const,
+    trivia_source: "s",
+    ...over,
+  });
+
+  it("해당 순간 문장이 있으면 그것", () => {
+    const sp = makeSpecies({ trivia: [t({ content: "eco" }), t({ content: "dusk!", moment: "dusk" })] });
+    expect(pickMomentTrivia(sp, "dusk", () => 0)?.content).toBe("dusk!");
+  });
+
+  it("해당 순간이 없으면 moment 없는 생태 문장으로 폴백 (다른 순간 문장은 안 씀)", () => {
+    const sp = makeSpecies({ trivia: [t({ content: "id", type: "identification" }), t({ content: "eco" }), t({ content: "dawn!", moment: "dawn" })] });
+    expect(pickMomentTrivia(sp, "dusk", () => 0)?.content).toBe("eco");
+  });
+
+  it("생태도 없으면 식별이 아닌 것, 그것도 없으면 식별", () => {
+    const sp1 = makeSpecies({ trivia: [t({ content: "id", type: "identification" }), t({ content: "season", type: "seasonal" })] });
+    expect(pickMomentTrivia(sp1, "day", () => 0)?.content).toBe("season");
+    const sp2 = makeSpecies({ trivia: [t({ content: "id", type: "identification" })] });
+    expect(pickMomentTrivia(sp2, "day", () => 0)?.content).toBe("id");
+    expect(pickMomentTrivia(makeSpecies({ trivia: [] }), "day")).toBeUndefined();
   });
 });
