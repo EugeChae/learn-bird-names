@@ -8,6 +8,7 @@
     "start": "next start",
     "lint": "next lint",
     "validate-data": "node scripts/validate-data.js",
+    "data-sheet": "node scripts/data-sheet.js",
     "test": "vitest",
     "test:ui": "vitest --ui",
     "test:coverage": "vitest run --coverage"

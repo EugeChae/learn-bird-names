@@ -56,6 +56,9 @@
 - 검증기: 종 tier 필수, 사진 tier ≥ 종 tier, `media[0]`에는 금지.
 - 헬퍼: `getEffectiveTier(species, media)`, `getMediaUpToTier(species, maxTier)`.
 
+## 데이터 확인 방법
+DB는 `public/data/species.json` 파일 하나다. `npm run data-sheet`를 실행하면 `out/species-sheet.html`이 생성되고 브라우저로 열린다(사진·tier·혼동 상대·서식지 표, tier 필터·검색). 편집은 JSON 직접 수정 후 `npm run validate-data`.
+
 ## 아직 안 한 것 (다음 스토리 후보)
 - 암컷·유조·겨울깃 사진 수집: 현재 130종 모두 사진 1장, 암컷 0장. 오리과 17종부터.
 - 퀴즈 런타임에서 출제 사진 선택: `QuizQuestion`에 사진 담기. 지금은 모든 컴포넌트가 `media[0]`만 렌더.
