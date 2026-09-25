@@ -100,6 +100,22 @@ describe("validate-data · validateSpecies", () => {
     expect(validateSpecies([bad]).some((e) => e.includes("media[1].difficulty_tier"))).toBe(true);
   });
 
+  it("confusable_with: 없는 id·자기 자신·중복·비대칭을 잡는다", () => {
+    const a = sp({ id: "a", confusable_with: ["b", "ghost", "a", "b"] });
+    const b = sp({ id: "b" }); // a를 가리키지 않음 → 비대칭
+    const errors = validateSpecies([a, b]);
+    expect(errors.some((e) => e.includes("없는 종 id") && e.includes("ghost"))).toBe(true);
+    expect(errors.some((e) => e.includes("자기 자신"))).toBe(true);
+    expect(errors.some((e) => e.includes("중복 id"))).toBe(true);
+    expect(errors.some((e) => e.includes("대칭이 아닙니다"))).toBe(true);
+  });
+
+  it("confusable_with: 대칭이면 통과", () => {
+    const a = sp({ id: "a", confusable_with: ["b"] });
+    const b = sp({ id: "b", confusable_with: ["a"] });
+    expect(validateSpecies([a, b])).toEqual([]);
+  });
+
   it("배열이 아니면 오류를 반환한다", () => {
     expect(validateSpecies({} as unknown as unknown[]).length).toBeGreaterThan(0);
   });

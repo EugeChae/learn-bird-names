@@ -25,12 +25,17 @@ const DIFFICULTY_TIERS = [1, 2, 3];
  * abundance·status는 허용 코드만 쓴다. difficulty_tier는 종에 필수(1~3)이며,
  * 사진별 difficulty_tier는 선택이되 종 tier 이상이어야 하고 대표 사진(media[0])에는 둘 수 없다
  * (종 tier = 가장 쉬운 형태의 난이도라는 의미를 지키기 위해).
+ * confusable_with는 존재하는 다른 종의 id만, 중복 없이, 그리고 반드시 대칭이어야 한다.
  */
 function validateSpecies(speciesList) {
   if (!Array.isArray(speciesList)) {
     return ["최상위 데이터가 배열이 아닙니다."];
   }
   const errors = [];
+  const ids = new Set(
+    speciesList.map((s) => s && s.id).filter((id) => typeof id === "string")
+  );
+  const byId = new Map(speciesList.filter((s) => s && s.id).map((s) => [s.id, s]));
   speciesList.forEach((species, i) => {
     const label = species && species.id ? species.id : `index ${i}`;
     const media = Array.isArray(species && species.media) ? species.media : [];
@@ -56,6 +61,31 @@ function validateSpecies(speciesList) {
         errors.push(`[${label}] media[${mi}].attribution 이 비어 있습니다.`);
       }
     });
+    const confusable = species && species.confusable_with;
+    if (confusable !== undefined) {
+      if (!Array.isArray(confusable)) {
+        errors.push(`[${label}] confusable_with 가 배열이 아닙니다.`);
+      } else {
+        const seen = new Set();
+        confusable.forEach((otherId) => {
+          if (otherId === species.id) {
+            errors.push(`[${label}] confusable_with 에 자기 자신이 있습니다.`);
+          } else if (!ids.has(otherId)) {
+            errors.push(`[${label}] confusable_with 에 없는 종 id: ${JSON.stringify(otherId)}`);
+          } else {
+            const other = byId.get(otherId);
+            const back = Array.isArray(other.confusable_with) ? other.confusable_with : [];
+            if (!back.includes(species.id)) {
+              errors.push(`[${label}] confusable_with 가 대칭이 아닙니다: ${otherId} 쪽에 ${species.id} 가 없습니다.`);
+            }
+          }
+          if (seen.has(otherId)) {
+            errors.push(`[${label}] confusable_with 에 중복 id: ${JSON.stringify(otherId)}`);
+          }
+          seen.add(otherId);
+        });
+      }
+    }
     if (species && !ABUNDANCE_CODES.includes(species.abundance)) {
       errors.push(`[${label}] abundance 코드가 무효합니다: ${JSON.stringify(species.abundance)}`);
     }

@@ -9,8 +9,11 @@ import {
   countCorrectSpecies,
   isTaxonomyUnlocked,
   resetAll,
+  getLearnerLevel,
+  MASTERY_THRESHOLD,
   type ProgressDeps,
 } from "@/services/progress.service";
+import { createMemoryLearnerLevelStore } from "@/lib/learnerLevel.store";
 import {
   ProgressCorruptedError,
   createFakeStorage,
@@ -286,5 +289,81 @@ describe("progress.service · countCorrectSpecies / isTaxonomyUnlocked", () => {
     updateProgress("s19", 3, d);
     expect(countCorrectSpecies(d)).toBe(20);
     expect(isTaxonomyUnlocked(d)).toBe(true);
+  });
+});
+
+// ─── getLearnerLevel (오답 보기 거리 레벨, 2026-09-20) ────────────────────────────
+
+describe("progress.service · getLearnerLevel", () => {
+  // tier 1 ×4(승급 기준 ceil(4×0.7)=3), tier 2 ×2(기준 2), tier 3 ×1
+  const LEVEL_CATALOG: Species[] = [
+    sp("t1a", 1), sp("t1b", 1), sp("t1c", 1), sp("t1d", 1),
+    sp("t2a", 2), sp("t2b", 2),
+    sp("t3a", 3),
+  ];
+
+  function levelDeps(): ProgressDeps {
+    return {
+      store: createLocalStorageAdapter(createFakeStorage()),
+      levelStore: createMemoryLearnerLevelStore(),
+      now: NOW,
+      getById: (id) => LEVEL_CATALOG.find((s) => s.id === id),
+      getAll: () => LEVEL_CATALOG,
+    };
+  }
+
+  function master(d: ProgressDeps, ...ids: string[]) {
+    for (const id of ids) {
+      for (let i = 0; i < MASTERY_THRESHOLD; i++) updateProgress(id, 5, d);
+    }
+  }
+
+  it("기록이 없으면 Lv1이고 다음 조건은 tier 1 기준치 전부", () => {
+    const info = getLearnerLevel(levelDeps());
+    expect(info.level).toBe(1);
+    expect(info.tiers[0]).toEqual({ tier: 1, mastered: 0, total: 4, required: 3 });
+    expect(info.next).toEqual({ level: 2, tier: 1, remaining: 3 });
+  });
+
+  it("tier 1의 70% 이상 마스터하면 Lv2", () => {
+    const d = levelDeps();
+    master(d, "t1a", "t1b");
+    expect(getLearnerLevel(d).level).toBe(1);
+    master(d, "t1c");
+    const info = getLearnerLevel(d);
+    expect(info.level).toBe(2);
+    expect(info.next).toEqual({ level: 3, tier: 2, remaining: 2 });
+  });
+
+  it("tier 2까지 70% 이상 마스터하면 Lv3, 다음 조건 없음", () => {
+    const d = levelDeps();
+    master(d, "t1a", "t1b", "t1c", "t2a", "t2b");
+    const info = getLearnerLevel(d);
+    expect(info.level).toBe(3);
+    expect(info.next).toBeNull();
+  });
+
+  it("tier 2만 다 마스터해도 tier 1 기준 미달이면 Lv1 (순서대로 승급)", () => {
+    const d = levelDeps();
+    master(d, "t2a", "t2b", "t3a");
+    expect(getLearnerLevel(d).level).toBe(1);
+  });
+
+  it("한 번 오른 레벨은 마스터가 리셋돼도 내려가지 않는다(단조 증가)", () => {
+    const d = levelDeps();
+    master(d, "t1a", "t1b", "t1c");
+    expect(getLearnerLevel(d).level).toBe(2);
+    updateProgress("t1a", 0, d); // 오답 → consecutive_correct 리셋
+    const info = getLearnerLevel(d);
+    expect(info.computed).toBe(1);
+    expect(info.level).toBe(2);
+  });
+
+  it("getProgressSummary에 level이 포함되고 resetAll이 레벨도 지운다", () => {
+    const d = levelDeps();
+    master(d, "t1a", "t1b", "t1c");
+    expect(getProgressSummary(d).level.level).toBe(2);
+    resetAll(d);
+    expect(getLearnerLevel(d).level).toBe(1);
   });
 });

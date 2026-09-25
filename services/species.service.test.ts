@@ -7,6 +7,7 @@ import {
   getByDifficulty,
   getEffectiveTier,
   getMediaUpToTier,
+  getConfusables,
   getRandom,
   selectDecoys,
   getDecoys,
@@ -152,13 +153,6 @@ describe("getByDifficulty (실데이터)", () => {
     expect(counts.reduce((a, b) => a + b, 0)).toBe(getAll().length);
   });
 
-  it("tier 3 종은 같은 科 유사종이 실데이터에 1종 이상 있다(오답 거리감 규칙이 실제로 발동하도록)", () => {
-    const all = getAll();
-    for (const s of getByDifficulty(3)) {
-      const sameFamily = all.filter((o) => o.id !== s.id && o.family === s.family);
-      expect(sameFamily.length, `${s.name_korean}(${s.family})`).toBeGreaterThan(0);
-    }
-  });
 });
 
 // ─── 사진별 실효 난이도 ───────────────────────────────────────────────────────────
@@ -182,12 +176,21 @@ describe("getEffectiveTier / getMediaUpToTier", () => {
     expect(getMediaUpToTier(duck, 3)).toHaveLength(2);
   });
 
-  it("selectDecoys 는 넘겨준 실효 tier 로 거리감을 정한다", () => {
-    const target = makeSpecies({ id: "t", family: "Anatidae", difficulty_tier: 1 });
-    const sf = makeSpecies({ id: "sf", family: "Anatidae" });
-    const dO = makeSpecies({ id: "do", order: "Charadriiformes", family: "Laridae" });
-    const decoys = selectDecoys(target, [target, sf, dO], 1, () => 0, 3);
-    expect(decoys[0].id).toBe("sf");
+  it("getConfusables: pool에 있는 혼동 상대만 돌려준다", () => {
+    const t = makeSpecies({ id: "t", confusable_with: ["a", "zzz"] });
+    const a = makeSpecies({ id: "a" });
+    expect(getConfusables(t, [t, a]).map((x) => x.id)).toEqual(["a"]);
+    expect(getConfusables(makeSpecies({ id: "n" }), [a])).toEqual([]);
+  });
+
+  it("실데이터: 혼동 상대가 있는 종은 그 상대가 카탈로그에 존재한다", () => {
+    const all = getAll();
+    const ids = new Set(all.map((s) => s.id));
+    for (const s of all) {
+      for (const other of s.confusable_with ?? []) {
+        expect(ids.has(other), `${s.name_korean} → ${other}`).toBe(true);
+      }
+    }
   });
 });
 
@@ -242,31 +245,41 @@ describe("selectDecoys", () => {
     expect(new Set(decoys.map((d) => d.id)).size).toBe(3);
   });
 
-  it("tier 1: 다른 目을 우선한다", () => {
-    const t1 = makeSpecies({ ...target, difficulty_tier: 1 });
-    const decoys = selectDecoys(t1, pool, 2, rng);
-    expect(decoys.every((d) => d.order !== t1.order)).toBe(true);
+  it("level 1(기본): 다른 目을 우선한다", () => {
+    const decoys = selectDecoys(target, pool, 2, rng);
+    expect(decoys.every((d) => d.order !== target.order)).toBe(true);
   });
 
-  it("tier 3: 같은 科 유사종을 우선한다", () => {
-    const t3 = makeSpecies({ ...target, difficulty_tier: 3 });
-    const decoys = selectDecoys(t3, pool, 2, rng);
+  it("level 3: 같은 科 유사종을 우선한다", () => {
+    const decoys = selectDecoys(target, pool, 2, rng, 3);
     expect(decoys.every((d) => d.family === "Corvidae" && d.id !== "target")).toBe(true);
   });
 
-  it("tier 2: 같은 目 다른 科를 우선한다", () => {
-    const t2 = makeSpecies({ ...target, difficulty_tier: 2 });
-    const decoys = selectDecoys(t2, pool, 2, rng);
+  it("level 2: 같은 目 다른 科를 우선한다", () => {
+    const decoys = selectDecoys(target, pool, 2, rng, 2);
     expect(
-      decoys.every((d) => d.order === t2.order && d.family !== t2.family)
+      decoys.every((d) => d.order === target.order && d.family !== target.family)
     ).toBe(true);
   });
 
+  it("level 3: 혼동 상대(confusable_with)가 같은 科보다 먼저 온다", () => {
+    const t = makeSpecies({ ...target, confusable_with: ["sf2"] });
+    const decoys = selectDecoys(t, pool, 1, rng, 3);
+    expect(decoys[0].id).toBe("sf2");
+  });
+
+  it("level 1: 혼동 상대는 다른 후보가 다 떨어져야 나온다", () => {
+    const t = makeSpecies({ ...target, confusable_with: ["sf2"] });
+    const decoys = selectDecoys(t, pool, 6, rng, 1); // 후보 6개 전부
+    expect(decoys).toHaveLength(6);
+    expect(decoys.map((d) => d.id).indexOf("sf2")).toBe(5);
+    expect(selectDecoys(t, pool, 3, rng, 1).some((d) => d.id === "sf2")).toBe(false);
+  });
+
   it("우선 그룹이 부족하면 다음 거리 그룹으로 넘어가 채운다", () => {
-    // tier 3인데 같은 科 후보가 1개뿐 → count 3을 채우려면 다른 그룹까지 확장
-    const t3 = makeSpecies({ ...target, difficulty_tier: 3 });
-    const smallPool = [t3, sameFamily1, sameOrder1, diffOrder1];
-    const decoys = selectDecoys(t3, smallPool, 3, rng);
+    // level 3인데 같은 科 후보가 1개뿐 → count 3을 채우려면 다른 그룹까지 확장
+    const smallPool = [target, sameFamily1, sameOrder1, diffOrder1];
+    const decoys = selectDecoys(target, smallPool, 3, rng, 3);
     expect(decoys).toHaveLength(3);
     expect(decoys[0].id).toBe("sf1"); // 같은 科가 먼저
   });
