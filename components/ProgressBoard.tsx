@@ -10,11 +10,15 @@ import ResetConfirmModal from "@/components/ResetConfirmModal";
 import LeafDecor from "@/components/LeafDecor";
 import Button from "@/components/ui/Button";
 import BirdMascot from "@/components/BirdMascot";
+import type { MomentViews } from "@/lib/birdOfTheDay.store";
+import { MOMENT_KO, MOMENTS } from "@/lib/moment";
 
 interface ProgressBoardProps {
   summary: ProgressSummary;
   /** 확인 다이얼로그에서 초기화를 확정했을 때. */
   onReset: () => void;
+  /** 오늘 만날 새를 어느 순간에 열어봤는지(로컬 계측, STORY-017). 없으면 표시 안 함. */
+  momentViews?: MomentViews;
 }
 
 /** 레벨별 오답 보기 설명(어디서 보기를 뽑는지). */
@@ -29,7 +33,11 @@ const LEVEL_LABEL: Record<1 | 2 | 3, string> = {
  * 데이터 로드·손상 처리는 app/progress/page가 하고, 여기서는 받은 요약을
  * 시각화만 한다(테스트 용이). 학습/마스터 카운트 + 취약종 목록 + 초기화.
  */
-export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) {
+export default function ProgressBoard({
+  summary,
+  onReset,
+  momentViews,
+}: ProgressBoardProps) {
   const [confirming, setConfirming] = useState(false);
   const { learned, total, mastered, weak, level } = summary;
   const pct = total > 0 ? Math.round((learned / total) * 100) : 0;
@@ -145,6 +153,13 @@ export default function ProgressBoard({ summary, onReset }: ProgressBoardProps) 
         )}
       </div>
       </div>
+
+      {momentViews && (
+        <p className="text-center text-xs text-gray-400" aria-label="오늘 만날 새 열람">
+          오늘 만날 새를 열어본 시간 ·{" "}
+          {MOMENTS.map((m) => `${MOMENT_KO[m]} ${momentViews[m]}`).join(" · ")}
+        </p>
+      )}
 
       {/* 진도 초기화 (AC4) */}
       <Button

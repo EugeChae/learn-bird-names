@@ -116,6 +116,16 @@ describe("validate-data · validateSpecies", () => {
     expect(validateSpecies([a, b])).toEqual([]);
   });
 
+  it("trivia.moment: 허용값(dawn/day/dusk)만, 없어도 됨", () => {
+    const ok = sp({ trivia: [
+      { content: "c", type: "ecology", trivia_source: "s", moment: "dawn" },
+      { content: "c", type: "ecology", trivia_source: "s" },
+    ] });
+    expect(validateSpecies([ok])).toEqual([]);
+    const bad = sp({ trivia: [{ content: "c", type: "ecology", trivia_source: "s", moment: "noon" }] });
+    expect(validateSpecies([bad]).some((e) => e.includes("trivia[0].moment"))).toBe(true);
+  });
+
   it("배열이 아니면 오류를 반환한다", () => {
     expect(validateSpecies({} as unknown as unknown[]).length).toBeGreaterThan(0);
   });

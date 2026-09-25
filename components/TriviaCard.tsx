@@ -3,6 +3,7 @@
 import { useState } from "react";
 import type { SpeciesTrivia, TriviaType } from "@/types";
 import Chip from "@/components/ui/Chip";
+import { MOMENT_KO } from "@/lib/moment";
 
 export const TRIVIA_TYPE_LABEL: Record<TriviaType, string> = {
   ecology: "생태",
@@ -31,8 +32,9 @@ interface TriviaCardProps {
 }
 
 /**
- * 오늘의 새 트리비아 (STORY-006).
- * 유형 뱃지 + 본문 + 출처(말줄임, 탭하면 전체).
+ * 오늘의 새 트리비아 (STORY-006 · STORY-017).
+ * (순간 뱃지) + 유형 뱃지 + 본문 + 출처(말줄임, 탭하면 전체).
+ * 순간 뱃지는 trivia.moment가 있을 때만 — 사용자 시계에 맞춰 고른 "새의 하루" 문장.
  */
 export default function TriviaCard({ trivia }: TriviaCardProps) {
   const [sourceOpen, setSourceOpen] = useState(false);
@@ -43,7 +45,10 @@ export default function TriviaCard({ trivia }: TriviaCardProps) {
       className="rounded-2xl border border-gray-200 bg-white p-4 shadow-soft"
       aria-label="오늘의 트리비아"
     >
-      <Chip tone={TRIVIA_TONE[trivia.type]}>{label}</Chip>
+      <div className="flex flex-wrap gap-1">
+        {trivia.moment && <Chip tone="pollen">{MOMENT_KO[trivia.moment]}</Chip>}
+        <Chip tone={TRIVIA_TONE[trivia.type]}>{label}</Chip>
+      </div>
       <p className="mt-2 text-lg leading-relaxed text-gray-800">
         {trivia.content}
       </p>

@@ -29,6 +29,9 @@ export type MediaAge = "adult" | "juvenile" | "unknown";
 export type MediaPlumage = "breeding" | "nonbreeding" | "unknown";
 
 export type TriviaType = "ecology" | "identification" | "seasonal";
+export type TriviaMoment = "dawn" | "day" | "dusk";
+// 새의 하루(STORY-017): 이 문장이 새벽/한낮/해질녘 중 어느 순간의 생활인가.
+// 사실·출처는 그대로, 동사 시제만 현재. 시각 근거가 없는 사실은 "지금쯤"으로만 쓴다.
 
 export interface SpeciesMedia {
   url: string;
@@ -51,6 +54,8 @@ export interface SpeciesTrivia {
   content: string;
   type: TriviaType;
   trivia_source: string;
+  /** 있으면 홈 "오늘 만날 새"가 사용자 시계에 맞춰 고른다. 없으면 생태 트리비아로 폴백. */
+  moment?: TriviaMoment;
 }
 
 export interface Species {

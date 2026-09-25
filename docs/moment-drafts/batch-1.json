@@ -1,0 +1,337 @@
+{
+  "batch": "1",
+  "note": "STORY-017 AC11 · tier 1 첫 12종. 사실·출처는 그대로, 동사 시제만 현재. time_tied=false는 시각 근거가 없어 '지금쯤'으로만 쓴 문장.",
+  "items": [
+    {
+      "species": "까치",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "해 뜨기 30분쯤 전, 어스름 속에서 까치들이 겨울 공동 잠자리를 빠져나와 저마다 자기 영역으로 흩어진다.",
+      "evidence": "Departure from the roost site started at an average 31 min before sunrise, continued for 23 min, and ended about 8 min before sunrise (Sofia, Sept 2007–Apr 2008).",
+      "trivia_source": "Milchev, \"Dynamics of the departure of Magpies Pica pica at a communal roost site in Sofia\", 2026-09 확인",
+      "url": "https://www.researchgate.net/publication/266150973_Dynamics_of_the_departure_of_Magpies_Pica_pica_at_a_communal_roost_site_in_Sofia_W_Bulgaria",
+      "note": "유라시아까치(Pica pica) 연구. 까치(P. serica)는 2018년 분리된 종으로 잠자리 습성이 같다고 보고 적용."
+    },
+    {
+      "species": "까치",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 벌레, 낟알, 음식 찌꺼기, 도토리까지 가리지 않고 찾아다니며, 남는 먹이는 여기저기 숨겨 둔다. 숨긴 자리를 계절이 바뀌어도 기억하는 새다. 거울 속 자기 모습을 알아보는 몇 안 되는 동물이기도 하다.",
+      "evidence": "The magpie is omnivorous… their ability to hide and store food across seasons… Mirror self-recognition has been demonstrated in European magpies.",
+      "trivia_source": "Wikipedia, \"Eurasian magpie\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_magpie",
+      "note": "유라시아까치 자료 적용."
+    },
+    {
+      "species": "까치",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "겨울 저녁이면 까치들이 무리 지어 빽빽한 나무숲의 공동 잠자리로 날아든다. 찌르레기, 지빠귀, 비둘기, 갈까마귀 옆에서 함께 자기도 한다.",
+      "evidence": "In winter, magpies mostly gather in groups in the evening and roost together. They may also roost alongside other bird species, such as starlings, thrushes, pigeons and western jackdaws.",
+      "trivia_source": "Wikipedia, \"Eurasian magpie\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_magpie",
+      "note": "유라시아까치 자료 적용."
+    },
+    {
+      "species": "제비",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "번식철 아침, 전깃줄 위나 둥지 근처 하늘에서 제비의 재잘거리는 노래가 들려온다. 하루 중 아침에 가장 잘 부른다.",
+      "evidence": "Singing is probably more likely in the morning… all calls and songs may be given both in flight and when perched.",
+      "trivia_source": "Cornell Birds of the World, \"Barn Swallow — Sounds and Vocal Behavior\", 2026-09 확인",
+      "url": "https://birdsoftheworld.org/bow/species/barswa/cur/sounds"
+    },
+    {
+      "species": "제비",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 물이나 들판 위를 낮게 스치며 날벌레를 낚아채고 있다. 잡은 먹이는 대부분 공중에서 그대로 삼킨다. 날씨가 궂으면 땅에 내려앉아 먹기도 한다.",
+      "evidence": "Food is mostly captured and eaten in the air. Often forages quite low over water or fields. In bad weather, may sometimes feed on the ground.",
+      "trivia_source": "Audubon Guide to North American Birds, \"Barn Swallow\", 2026-09 확인",
+      "url": "https://www.audubon.org/field-guide/bird/barn-swallow"
+    },
+    {
+      "species": "제비",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "번식이 끝난 6~10월, 해가 지면 평지의 배밭이나 갈대밭으로 수천, 때로는 수만 마리가 모여들어 함께 잠을 잔다.",
+      "evidence": "번식이 끝난 6-10월 사이에는 평지의 배밭이나 갈밭을 잠자리로 하며, 해가 진 후 수천 또는 수만 마리가 무리를 지어 모여든다.",
+      "trivia_source": "위키백과, \"제비\" (ko), 2026-09 확인",
+      "url": "https://ko.wikipedia.org/wiki/제비"
+    },
+    {
+      "species": "참새",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 참새 떼가 시끄럽게 지저귀며 아침 먹이터에 내려앉고 있다.",
+      "evidence": "At around 0645 hours the next morning their noisy chirping announces their arrival for the morning feed.",
+      "trivia_source": "Bird Ecology Study Group (Singapore), \"Eurasian Tree Sparrows feeding in the rain\", 2011, 2026-09 확인",
+      "url": "https://besgroup.org/2011/06/16/eurasian-tree-sparrows-feeding-in-the-rain/",
+      "note": "근거가 싱가포르 먹이대 관찰기 하나라 약함. 시각은 쓰지 않고 '지금쯤'으로. 더 나은 출처를 찾으면 교체."
+    },
+    {
+      "species": "참새",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 모래나 물에서 목욕하고 있을지 모른다. 부리로 물을 찍어 몸에 바르고 물구나무까지 서 가며 진드기, 먼지, 비듬을 털어 낸다.",
+      "evidence": "모래와 물을 이용해 목욕하는 것을 좋아한다. 부리로 물을 쪼아 몸에 바르기도 하고 물구나무서기를 하는 등 목욕을 통해 몸에 붙어 있는 진드기, 먼지, 비듬 등을 털어낸다.",
+      "trivia_source": "국립중앙과학관 과학학습콘텐츠, \"참새\", 2026-09 확인",
+      "url": "https://www.science.go.kr/mps/scienceSubject/bird/view.do?subjectSid=363"
+    },
+    {
+      "species": "참새",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "저녁이 되면 참새들이 미루나무 위나 대나무 숲에 잔뜩 모여 시끄럽게 떠든다. 늘 정해진 자리에서 잠을 잔다.",
+      "evidence": "일정한 곳에서 잠을 자며 저녁 때가 되면 미루나무 위 또는 대나무 숲에 많은 수가 모여 시끄럽게 운다.",
+      "trivia_source": "위키백과, \"참새\" (ko), 2026-09 확인",
+      "url": "https://ko.wikipedia.org/wiki/참새"
+    },
+    {
+      "species": "직박구리",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "직박구리는 해 뜨는 시각에 맞춰 울기 시작한다. 연평균 일출 11분 전이라는 기록이 있다. 그러고는 잠자던 나무에서 무리 지어 출근하듯 날아 나간다.",
+      "evidence": "ヒヨドリが鳴き始める時間は日の出の時間とほぼ一致… 年平均で日の出の約11分前に鳴き始める (京都大学). fly off in groups in the morning from their roosting trees as if commuting (Orbis Pictus).",
+      "trivia_source": "京都大学 環境安全保健機構, \"8月の野鳥 ヒヨドリ\", 2026-09 확인",
+      "url": "https://eco.kyoto-u.ac.jp/?p=9151"
+    },
+    {
+      "species": "직박구리",
+      "moment": "day",
+      "time_tied": false,
+      "content": "여름엔 벌레를, 가을·겨울엔 열매와 씨앗을 먹는다. 꽃 피는 철이면 동백과 벚꽃 속에 부리를 깊이 넣어 꿀을 빨다가 노란 꽃가루를 뒤집어쓴 채 나온다.",
+      "evidence": "In summer, brown-eared bulbuls primarily feed on insects, while they mostly take fruits and seeds in the fall and winter… they also feed on the nectar from Camellia flowers, becoming dusted with yellow pollen in the process.",
+      "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Brown-eared_bulbul"
+    },
+    {
+      "species": "직박구리",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해 지기 직전, 직박구리의 식사가 하루 두 번째 절정을 맞는다. 긴 밤을 앞두고 배를 채우는 시간이다. 가을부터 겨울까지는 혼자가 아니라 무리로 다닌다.",
+      "evidence": "摂食行動は日の出直後と日没前にピークを迎える傾向がある (矢原徹一). ヒヨドリは春から夏は単独で、秋から冬は群れで生活 (京都大学).",
+      "trivia_source": "矢原徹一(九州大 명예교수), \"ヒヨドリ観察ガイド\", 2026-01; 京都大学 eco.kyoto-u.ac.jp, 2026-09 확인",
+      "url": "https://tet-yahara.hatenablog.com/entry/2026/01/31/081028",
+      "note": "생태학자 개인 블로그 관찰. 교체 가능한 출처 있으면 교체."
+    },
+    {
+      "species": "큰부리까마귀",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "도쿄의 큰부리까마귀는 밤 잠자리를 떠나자마자 이른 아침 거리로 나가, 도시가 깨기 전에 음식점 앞 찌꺼기를 뒤진다. 해 뜨고 두 시간이면 끝난다.",
+      "evidence": "They roosted in Ueno Park, and moved to the streets in early morning to scavenge food scraps from restaurants… until two hours after sunrise.",
+      "trivia_source": "Morishita et al., \"Movements of Crows in Urban Areas, Based on PHS Tracking\", Global Environmental Research 7(2), 2003, 2026-09 확인",
+      "url": "https://airies.wikiplus.net/attach.php/6a6f75726e616c5f30372d32656e67/save/0/0/07_2-09.pdf"
+    },
+    {
+      "species": "큰부리까마귀",
+      "moment": "day",
+      "time_tied": true,
+      "content": "낮에는 짝끼리 흩어져 저마다의 영역을 지킨다. 밤이 돼야 다시 큰 무리로 모인다.",
+      "evidence": "During the day pairs may be involved in defending their territory but at night they may roost in large groups.",
+      "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Large-billed_crow"
+    },
+    {
+      "species": "큰부리까마귀",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘이면 큰 무리가 줄지어 공동 잠자리로 날아든다. 한 곳에 수천 마리가 함께 밤을 보내기도 한다.",
+      "evidence": "Gregarious at roosts with many thousands at some roost sites. Large flocks may be seen at dusk arriving at major roost sites.",
+      "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Large-billed_crow"
+    },
+    {
+      "species": "박새",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "새벽, 수컷이 짝이 잠든 둥지 구멍 바로 옆에서 힘껏 노래한다. 암컷이 나오면 짝짓기를 하고, 노래는 잦아든다.",
+      "evidence": "Males sing vigorously at dawn in the vicinity of their females' nest hole just before and during egg laying. After the female has emerged from the nest box, the pair often copulates, and the male's song activity drops.",
+      "trivia_source": "Gorissen & Eens, \"Interactive Communication Between Male and Female Great Tits During the Dawn Chorus\", The Auk 121(1), 2004, 2026-09 확인",
+      "url": "https://academic.oup.com/auk/article/121/1/184/5561989",
+      "note": "유럽 박새(Parus major) 연구. 박새(P. cinereus)는 근래 분리된 종."
+    },
+    {
+      "species": "박새",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 잎사귀를 뒤지며 애벌레와 노린재, 딱정벌레를 잡고 있다. 벌레를 발로 붙들고 부리로 뜯고, 딱딱한 씨앗은 나무껍질 틈에 끼워 놓고 두드려 깬다.",
+      "evidence": "They forage mainly by gleaning, capturing insects… They sometimes use their feet to hold insects which are then torn with their beak. They may also wedge hard seeds in a bark crevice before hammering them.",
+      "trivia_source": "Wikipedia, \"Cinereous tit\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Japanese_tit"
+    },
+    {
+      "species": "박새",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "겨울밤이 내리면 나무 구멍이나 새집 속으로 들어가 잔다. 작은 새에게 추운 밤을 구멍 안에서 나는 건 가지 위보다 훨씬 힘을 아끼는 일이다.",
+      "evidence": "Birds gain thermal benefits and save energy spending the night inside a cavity compared to the canopy. The use of cavities for roosting in winter may be critical for small birds inhabiting temperate areas.",
+      "trivia_source": "Amo et al., PLoS ONE 2018 (PMC6145545), 2026-09 확인",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6145545/",
+      "note": "유럽 박새(P. major) 연구 적용."
+    },
+    {
+      "species": "멧비둘기",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "이른 아침, 수컷 멧비둘기의 낮고 독특한 울음이 들린다. 하루 중 주로 이 시간에 운다.",
+      "evidence": "雄のさえずり声はかなり特徴的であり、主に早朝にさえずる。",
+      "trivia_source": "Wikipedia, \"キジバト\" (ja), 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/キジバト"
+    },
+    {
+      "species": "멧비둘기",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 땅 위를 걸으며 씨앗과 낟알을 주워 먹고 있다. 구애할 때 수컷은 날개를 요란하게 치며 솟구쳤다가 꼬리를 활짝 편 채 미끄러져 내려온다.",
+      "evidence": "The species is predominantly granivorous and forages on the ground. In display, the male flaps its wing noisily and shoots up before gliding down with outspread tail.",
+      "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Oriental_turtle_dove"
+    },
+    {
+      "species": "멧비둘기",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "'흐-흐-우-우' 하는 울음은 아침과 저녁에 가장 자주 들린다. 번식철에는 더 부지런히 운다.",
+      "evidence": "朝夕によく鳴き、繁殖期には盛んに鳴きます。",
+      "trivia_source": "野鳥図鑑 yachozukan.com, \"キジバト\", 2026-09 확인",
+      "url": "https://www.yachozukan.com/birds/51"
+    },
+    {
+      "species": "청둥오리",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "새벽, 청둥오리들이 하늘에 떠 있다. 밤새 먹이를 먹던 곳에서 낮 동안 쉴 잔잔한 물로 돌아가는 길이다.",
+      "evidence": "Flight activity was highest at dawn and dusk, when ducks moved between day-roosts and foraging areas.",
+      "trivia_source": "Bengtsson et al., \"Movements, Home-Range Size and Habitat Selection of Mallards during Autumn Migration\", PLOS ONE 2014, 2026-09 확인",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0100764"
+    },
+    {
+      "species": "청둥오리",
+      "moment": "day",
+      "time_tied": true,
+      "content": "낮은 대체로 쉬는 시간이다. 추적한 청둥오리들은 하루의 절반쯤을 바람 잔 물가에서 빈둥거리며 보내고, 먹이는 밤에 나가서 먹었다.",
+      "evidence": "Fourteen of the 16 ducks spent about half of their total time along the coast, which was the typical habitat for resting during the day.",
+      "trivia_source": "Bengtsson et al., PLOS ONE 2014, 2026-09 확인",
+      "url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0100764"
+    },
+    {
+      "species": "청둥오리",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해 진 뒤 30분, 오리들의 이동이 절정에 이른다. 낮의 피난처를 떠나 먹이터로 향하고, 밤새 한자리에서 먹고 구애하고 깃을 다듬다가 해 뜨기 직전에야 돌아온다.",
+      "evidence": "Movements of ducks are typically greatest during crepuscular periods: the half hour before first light and the half hour after dusk. Most ducks spend all night in one spot, feeding, courting, preening… until just before sunrise.",
+      "trivia_source": "Ducks Unlimited, \"Understanding Waterfowl: Night Moves\", 2026-09 확인",
+      "url": "https://www.ducks.org/conservation/waterfowl-research-science/understanding-waterfowl-night-moves"
+    },
+    {
+      "species": "흰뺨검둥오리",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 물 위에 떠 있는 풀씨와 벌레를 부리로 쓸어 담듯 건져 먹고 있다. 깊이 잠수하지는 않는다.",
+      "evidence": "물 속에 있는 먹이를 먹을 때는 깊게 잠수하지 않으며, 주로 물 표면에 떠 있는 먹이를 부리로 쓸어담듯이 먹는다. 풀씨·나무 열매 같은 식물성 먹이와 곤충·무척추동물 같은 동물성 먹이를 혼식한다.",
+      "trivia_source": "위키백과, \"흰뺨검둥오리\" (ko), 2026-09 확인",
+      "url": "https://ko.wikipedia.org/wiki/%ED%9D%B0%EB%BA%A8%EA%B2%80%EB%91%A5%EC%98%A4%EB%A6%AC"
+    },
+    {
+      "species": "흰뺨검둥오리",
+      "moment": "day",
+      "time_tied": true,
+      "content": "한낮에는 저수지 한가운데로 나가 쉬거나 잠을 잔다. 흐린 날에만 낮에도 먹이를 찾는 모습을 볼 수 있다.",
+      "evidence": "낮에는 주로 저수지 한가운데에서 휴식을 취하거나 잠을 자며 … 날씨가 흐린 날에는 낮에도 먹이 활동을 하는 모습이 관찰된다.",
+      "trivia_source": "디지털서산문화대전, \"흰뺨검둥오리\", 2026-09 확인",
+      "url": "https://www.grandculture.net/seosan/toc/GC04100346"
+    },
+    {
+      "species": "흰뺨검둥오리",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해가 질 무렵이면 근처 논과 밭으로 날아가 먹이를 먹기 시작한다. 이 오리의 식사는 대부분 저녁과 밤에 이뤄진다.",
+      "evidence": "해가 질 무렵 주변 논이나 밭으로 이동하여 먹이를 먹으며 (서산문화대전); feeds by dabbling for plant food mainly in the evening or at night (en Wikipedia)",
+      "trivia_source": "디지털서산문화대전, \"흰뺨검둥오리\"; Wikipedia, \"Eastern spot-billed duck\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Eastern_spot-billed_duck"
+    },
+    {
+      "species": "왜가리",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "새벽은 왜가리의 사냥 시간이다. 얕은 물이나 바위 위에 꼼짝 않고 서 있다가, 먹이가 사정거리에 들어오면 S자로 접었던 목을 펴며 내리꽂는다.",
+      "evidence": "The main hunting periods are around dawn and dusk, but it is also active at other times of the day. It may stand motionless in the shallows, or on a rock or sandbank beside the water, waiting for prey to come within striking distance.",
+      "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Grey_heron"
+    },
+    {
+      "species": "왜가리",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 어딘가에서 한 다리로 선 채 오랫동안 꼼짝 않고 있거나, 땅 위를 성큼성큼 걷고 있다. 나무 위에 올라앉기도 한다.",
+      "evidence": "The birds often perch in trees, but spend much time on the ground, striding about or standing still for long periods with an upright stance, often on a single leg.",
+      "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Grey_heron"
+    },
+    {
+      "species": "왜가리",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘은 새벽과 함께 왜가리의 두 번째 사냥 시간이다. 밤이 되면 나무나 절벽에 다른 왜가리들과 모여 잠을 잔다.",
+      "evidence": "The main hunting periods are around dawn and dusk. At night it roosts in trees or on cliffs, where it tends to be gregarious.",
+      "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Grey_heron"
+    },
+    {
+      "species": "중대백로",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "새벽 무렵이 하루 중 가장 부지런한 시간이다. 목을 길게 뻗고 얕은 물을 천천히 걸으며 물고기를 향해 부리를 내리꽂는다. 갯벌에서는 물이 빠지는 때를 따라 움직인다.",
+      "evidence": "It feeds almost entirely during the day, most actively near dawn and dusk; and in tidal environments it feeds according to tide stage, principally on outgoing tides.",
+      "trivia_source": "HeronConservation (IUCN Heron Specialist Group), \"Great Egret\", 2026-09 확인",
+      "url": "https://heronconservation.org/herons-of-the-world/list/great-egret/"
+    },
+    {
+      "species": "중대백로",
+      "moment": "day",
+      "time_tied": true,
+      "content": "낮 시간의 60~90%를 얕은 물을 천천히 걷는 데 쓴다. 먹이가 움직이는 자리 옆에 서서 기다리기도 한다.",
+      "evidence": "It feeds almost entirely during the day. It principally feeds by Walking Slowly, which may occupy 60-90% of its time. It also Stands next to places where prey is active.",
+      "trivia_source": "HeronConservation (IUCN Heron Specialist Group), \"Great Egret\", 2026-09 확인",
+      "url": "https://heronconservation.org/herons-of-the-world/list/great-egret/"
+    },
+    {
+      "species": "중대백로",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘이면 주변 곳곳에서 백로들이 날아와 나무 위 공동 잠자리에 모인다.",
+      "evidence": "At dusk they gather from surrounding areas to form communal roosts. (ADW) / Egrets roost in trees when not feeding and in communal roosts at night. (HeronConservation)",
+      "trivia_source": "Animal Diversity Web, \"Ardea alba\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Ardea_alba/"
+    },
+    {
+      "species": "물닭",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 청둥오리처럼 물구나무를 서거나 바닥까지 잠수해 물풀을 물어 올린 뒤, 수면으로 돌아와 먹고 있다.",
+      "evidence": "In the water it may upend in the fashion of a mallard or dive in search of food. (Wikipedia) / the Coot is a bottom feeder, seizing plant material and returning to the surface to eat it. (BTO)",
+      "trivia_source": "Wikipedia, \"Eurasian coot\" (en); BTO BirdFacts, \"Coot\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_coot"
+    },
+    {
+      "species": "물닭",
+      "moment": "day",
+      "time_tied": true,
+      "content": "낮 시간의 70% 남짓을 먹고 쉬는 데 쓴다. 나머지는 깃을 다듬거나 헤엄치는 시간이다.",
+      "evidence": "food and rest are the activities that dominate throughout the day; feeding 33-36%, resting 34-35%, followed grooming (16%) and swimming (8%) (daytime activity budget study, Oubeira Lake)",
+      "trivia_source": "Ukrainian Journal of Ecology, \"Ecology and diurnal behavior of the Eurasian coot Fulica atra in the Oubeira Lake\", 2026-09 확인",
+      "url": "https://www.ujecology.com/articles/ecology-and-diurnal-behavior-of-the-eurasian-coot-emfulica-atraem-in-the-oubeira-lake-northeastern-algeria-92769.html"
+    },
+    {
+      "species": "물닭",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "밤이 내리면 물 위로 터지는 듯한 트럼펫 소리가 퍼진다. 물닭은 밤에 자주 우는 시끄러운 새고, 경쟁자에게는 긴 다리로 돌진해 걷어찬다.",
+      "evidence": "The Eurasian coot is a noisy bird with a wide repertoire of crackling, explosive, or trumpeting calls, often given at night. The coot attacks by charging its opponent and striking them with its long legs.",
+      "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Eurasian_coot"
+    }
+  ]
+}
