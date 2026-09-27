@@ -42,7 +42,8 @@ export default function BirdCard({ species }: BirdCardProps) {
               src={photo.url}
               alt={species.name_korean}
               priority
-              className="h-[34vh] w-full lg:aspect-square lg:h-auto"
+              fit="contain"
+              className="aspect-[4/3] max-h-[52vh] w-full lg:aspect-square"
             />
           </button>
           <figcaption className="text-right text-[10px] text-gray-400">

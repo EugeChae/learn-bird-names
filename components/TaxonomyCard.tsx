@@ -119,7 +119,8 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
               src={promptPhoto.url}
               alt="분류를 맞혀야 할 새 사진"
               priority
-              className="h-52 w-full sm:h-60"
+              fit="contain"
+              className="aspect-[4/3] max-h-[40vh] w-full"
             />
           </div>
           <figcaption className="text-right text-[10px] text-gray-400">

@@ -82,7 +82,8 @@ export default function QuizCard({ session }: QuizCardProps) {
               src={photo.url}
               alt="맞혀야 할 새 사진"
               priority
-              className="h-[30vh] w-full lg:aspect-square lg:h-auto"
+              fit="contain"
+              className="aspect-[4/3] max-h-[48vh] w-full lg:aspect-square"
             />
           </button>
           <div className="flex items-center justify-between gap-2">

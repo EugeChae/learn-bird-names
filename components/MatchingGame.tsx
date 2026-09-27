@@ -3,6 +3,7 @@
 import { useEffect, useMemo, useState } from "react";
 import type { MatchingPair } from "@/types";
 import BirdPhoto from "@/components/ui/BirdPhoto";
+import PhotoModal from "@/components/PhotoModal";
 
 interface MatchingGameProps {
   pairs: MatchingPair[];
@@ -27,7 +28,12 @@ function shuffle<T>(items: readonly T[]): T[] {
  *
  * pairs 주입형이라 결정론적으로 테스트할 수 있다. 사진 버튼은 정답을 노출하지
  * 않으려고 data-species-id로만 종을 식별한다(화면·접근성 트리에 이름 미노출).
+ *
+ * 레이아웃(2026-09-27 cleor): 사진 열은 정사각 타일, 이름 열은 낮은 버튼이라 두 열의
+ * 높이가 달라 아래 사진과 위 이름 사이를 오르내려야 했다. 이제 두 열의 행 높이를 같게
+ * 고정(ROW)해 n번째 사진과 n번째 이름이 항상 나란히 있고, 사진은 작아진 대신 🔍로 확대한다.
  */
+const ROW = "h-24 lg:h-28";
 export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
   const [matched, setMatched] = useState<Set<string>>(
     () => new Set(pairs.filter((p) => p.wasEasy).map((p) => p.species.id))
@@ -70,17 +76,19 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
     else setSelName(id);
   };
 
+  const [zoomId, setZoomId] = useState<string | null>(null);
+  const zoomPair = pairs.find((p) => p.species.id === zoomId);
+  const zoomPhoto = zoomPair?.species.media[0];
+
   const photoClass = (isMatched: boolean, isSel: boolean) => {
-    const base =
-      "block w-full overflow-hidden rounded-lg border-2 transition disabled:cursor-default";
+    const base = `block ${ROW} w-24 overflow-hidden rounded-lg border-2 transition disabled:cursor-default lg:w-28`;
     if (isMatched) return `${base} border-green-400 opacity-40`;
     if (isSel) return `${base} border-blue-500 ring-2 ring-blue-300`;
     return `${base} border-gray-200 hover:border-gray-400`;
   };
 
   const nameClass = (isMatched: boolean, isSel: boolean) => {
-    const base =
-      "w-full rounded-lg border-2 px-3 py-3 text-base font-medium transition disabled:cursor-default";
+    const base = `flex ${ROW} w-full items-center rounded-lg border-2 px-4 text-lg font-medium transition disabled:cursor-default`;
     if (isMatched)
       return `${base} border-green-400 bg-green-50 text-green-700 opacity-40`;
     if (isSel)
@@ -90,7 +98,7 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4"
+      className="mx-auto flex w-full max-w-md flex-col gap-4 p-4 lg:max-w-lg"
       aria-label="세션 완료 · 짝짓기 복습"
     >
       <h2 className="text-2xl font-bold">짝짓기 복습</h2>
@@ -106,14 +114,15 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
         )}
       </p>
 
+      {/* 두 열의 행 높이가 같아(ROW) n번째 사진과 n번째 이름이 항상 같은 줄에 있다. */}
       <div className="flex gap-3">
-        <ul className="flex flex-1 flex-col gap-2" aria-label="사진">
+        <ul className="flex shrink-0 flex-col gap-2" aria-label="사진">
           {photoOrder.map((p) => {
             const isMatched = matched.has(p.species.id);
             const isSel = selPhoto === p.species.id;
             const photo = p.species.media[0];
             return (
-              <li key={p.species.id}>
+              <li key={p.species.id} className="relative">
                 <button
                   type="button"
                   data-species-id={p.species.id}
@@ -124,23 +133,29 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
                   className={photoClass(isMatched, isSel)}
                 >
                   {photo ? (
-                    <BirdPhoto
-                      src={photo.url}
-                      alt=""
-                      className="aspect-square w-full"
-                    />
+                    <BirdPhoto src={photo.url} alt="" className="h-full w-full" />
                   ) : (
-                    <span className="flex aspect-square w-full items-center justify-center text-xs text-gray-400">
+                    <span className="flex h-full w-full items-center justify-center text-xs text-gray-400">
                       사진 없음
                     </span>
                   )}
                 </button>
+                {photo && !isMatched && (
+                  <button
+                    type="button"
+                    onClick={() => setZoomId(p.species.id)}
+                    aria-label="사진 확대"
+                    className="absolute right-1 top-1 rounded-full bg-black/50 px-1.5 py-0.5 text-xs text-white hover:bg-black/70"
+                  >
+                    🔍
+                  </button>
+                )}
               </li>
             );
           })}
         </ul>
 
-        <ul className="flex flex-1 flex-col gap-2" aria-label="이름">
+        <ul className="flex min-w-0 flex-1 flex-col gap-2" aria-label="이름">
           {nameOrder.map((p) => {
             const isMatched = matched.has(p.species.id);
             const isSel = selName === p.species.id;
@@ -161,6 +176,15 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
           })}
         </ul>
       </div>
+
+      {zoomPhoto && (
+        <PhotoModal
+          src={zoomPhoto.url}
+          alt="새 사진 확대"
+          attribution={zoomPhoto.attribution}
+          onClose={() => setZoomId(null)}
+        />
+      )}
     </section>
   );
 }
