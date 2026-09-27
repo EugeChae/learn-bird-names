@@ -10,6 +10,11 @@ import {
 import ProgressBoard from "@/components/ProgressBoard";
 import ProgressResetModal from "@/components/ProgressResetModal";
 import TopNav from "@/components/TopNav";
+import {
+  getMomentViews,
+  clearBirdOfTheDay,
+  type MomentViews,
+} from "@/lib/birdOfTheDay.store";
 
 /**
  * 진도 대시보드 페이지 (STORY-015).
@@ -19,6 +24,7 @@ import TopNav from "@/components/TopNav";
 export default function ProgressPage() {
   const [summary, setSummary] = useState<ProgressSummary | null>(null);
   const [corrupted, setCorrupted] = useState(false);
+  const [momentViews, setMomentViews] = useState<MomentViews | undefined>();
 
   const load = () => {
     try {
@@ -34,12 +40,15 @@ export default function ProgressPage() {
 
   useEffect(() => {
     load();
+    setMomentViews(getMomentViews());
   }, []);
 
   const handleReset = () => {
     resetAll();
+    clearBirdOfTheDay();
     setCorrupted(false);
     setSummary(getProgressSummary());
+    setMomentViews(getMomentViews());
   };
 
   return (
@@ -47,7 +56,7 @@ export default function ProgressPage() {
       <TopNav containerClass="max-w-md lg:max-w-4xl" />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted && summary ? (
-        <ProgressBoard summary={summary} onReset={handleReset} />
+        <ProgressBoard summary={summary} onReset={handleReset} momentViews={momentViews} />
       ) : (
         !corrupted && (
           <p className="p-8 text-center text-gray-500">진도를 불러오는 중…</p>

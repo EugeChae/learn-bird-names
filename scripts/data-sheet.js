@@ -41,6 +41,9 @@ function buildHtml(species) {
       const confusables = (s.confusable_with ?? [])
         .map((id) => `<span class="c">${esc(byId[id]?.name_korean ?? id)}</span>`)
         .join(" ");
+      const moments = ["dawn", "day", "dusk"]
+        .map((m) => (s.trivia.some((t) => t.moment === m) ? "●" : "○"))
+        .join("");
       const mediaTiers = s.media
         .slice(1)
         .filter((m) => m.difficulty_tier)
@@ -54,7 +57,7 @@ function buildHtml(species) {
         mediaTiers ? `<br><small class="g">사진별: ${esc(mediaTiers)}</small>` : ""
       }</td>
   <td>${confusables || '<span class="g">—</span>'}</td>
-  <td><small>${esc(s.abundance)} · ${esc(s.status.join("/"))}<br>${esc(s.habitat.join(", "))}<br>사진 ${s.media.length}장</small></td>
+  <td><small>${esc(s.abundance)} · ${esc(s.status.join("/"))}<br>${esc(s.habitat.join(", "))}<br>사진 ${s.media.length}장 · 하루 ${moments}</small></td>
 </tr>`;
     })
     .join("");
@@ -78,7 +81,7 @@ input{padding:4px 8px;width:200px}
  &nbsp;<button data-t="0" class="on">전체 ${species.length}</button><button data-t="1">tier 1 · ${counts[1]}</button><button data-t="2">tier 2 · ${counts[2]}</button><button data-t="3">tier 3 · ${counts[3]}</button>
  <input placeholder="이름·과·서식지 검색"> <span id="n"></span>
  <small class="g">· 편집은 public/data/species.json 직접 수정 후 npm run validate-data</small></div>
-<table><thead><tr><th>사진</th><th>종 / 목 · 과</th><th>친숙도 tier</th><th>혼동 상대</th><th>abundance · status · 서식지</th></tr></thead>
+<table><thead><tr><th>사진</th><th>종 / 목 · 과</th><th>친숙도 tier</th><th>혼동 상대</th><th>abundance · status · 서식지 · 하루(새벽·한낮·해질녘)</th></tr></thead>
 <tbody>${rows}</tbody></table>
 <script>
 let tier = 0, query = "";

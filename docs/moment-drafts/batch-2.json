@@ -1,0 +1,480 @@
+{
+  "batch": "2",
+  "note": "STORY-017 AC11 · tier 1 두 번째 12종 + 배치 1 계절 태그 5건의 반대 계절 문장(까치·제비·박새). 규칙은 배치 1과 같다.",
+  "items": [
+    {
+      "species": "꾀꼬리",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "번식철 새벽, 해가 뜨기 전 숲에서 꾀꼬리가 짝을 찾는 맑고 청아한 노래를 부르고 있다. 이 시간 숲의 소리 가운데 가장 크게 들리는 소리 중 하나다.",
+      "evidence": "그 이른 새벽 그날의 대세는 꾀꼬리가 부르는 노랫소리였다. 호호 힛! 호호 힛! / 5월에서 8월 사이 숲속을 거닐면 짝을 찾을 때 내는 아름다운 소리 \"삐요 삐요, 삐요 호삐요~\"와 경계하는 시끄러운 소리 \"꺄~~~\"를 들을 수 있습니다.",
+      "trivia_source": "brunch @twinmom68, \"새벽 5시 소리탐조\", 2026-09 확인; 서울시 중부공원녹지사업소, \"제36호 황금빛 꾀꼬리\", 2026-09 확인",
+      "url": "https://brunch.co.kr/@twinmom68/34",
+      "note": "약한 출처(개인 블로그, 5월 17·24일 새벽 5시 탐조 기록). 짝 찾는 노래 시기(5~8월)는 서울시 공원 안내문(https://parks.seoul.go.kr/program/detailView.do?bIdx=2408)으로 보강.",
+      "seasons": [
+        "spring",
+        "summer"
+      ]
+    },
+    {
+      "species": "꾀꼬리",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 나무 꼭대기 잎 사이를 옮겨 다니며 애벌레와 곤충을 잡아먹고 있다. 봄에는 송충이 같은 애벌레를, 가을에는 나무 열매를 즐겨 먹는다.",
+      "evidence": "It feeds on berries and insects in the canopy. / 봄철에는 곤충의 애벌레와 성충, 특히 송충이 등을 즐겨 먹으며, 가을철에는 식물의 열매를 많이 먹는다.",
+      "trivia_source": "Wikipedia(en), \"Black-naped oriole\", 2026-09 확인; 한국민족문화대백과사전, \"꾀꼬리\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Black-naped_oriole",
+      "note": "먹이 계절성은 https://encykorea.aks.ac.kr/Article/E0011273 인용."
+    },
+    {
+      "species": "꾀꼬리",
+      "moment": "dusk",
+      "time_tied": false,
+      "content": "여름 저녁, 둥지를 떠난 어린 꾀꼬리들이 아침부터 저녁까지 거의 쉬지 않고 짹짹거리고 있다. 부모가 잎 뒤에 숨은 새끼를 찾아 먹이를 물어다 주는 신호다.",
+      "evidence": "They chirp practically non-stop from morning till evening.",
+      "trivia_source": "YC Wee, Bird Ecology Study Group, \"Black-naped Oriole's 50 Different Calls\", 2026-09 확인",
+      "url": "https://besgroup.org/2012/08/03/black-naped-orioles-50-different-calls/",
+      "note": "싱가포르 탐조 단체 블로그. 어린 새(fledgling)에 관한 기술이므로 이소 직후 여름에만 참.",
+      "seasons": [
+        "summer"
+      ]
+    },
+    {
+      "species": "후투티",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "봄 새벽, 수컷 후투티가 '훗훗훗' 하고 낮고 부드러운 소리를 몇 분씩 반복하며 둥지 자리의 영역을 알리고 있다. 이 소리는 멀리까지 퍼져 새를 찾는 가장 쉬운 단서가 된다.",
+      "evidence": "When the breeding season starts, the male utters its insistent song in the early morning, proclaiming the territory of the nest-site. / Listen at dawn in spring for the soft, tripled oop-oop-oop; the song carries far and is usually the easiest way to locate a territorial male.",
+      "trivia_source": "oiseaux-birds.com, \"Hoopoe\", 2026-09 확인; BirdSpot, \"Eurasian Hoopoe: ID, Song, Range\", 2026-09 확인",
+      "url": "https://www.oiseaux-birds.com/card-hoopoe.html",
+      "note": "탐조 정보 사이트 두 곳(중간 등급). 두 번째 인용 https://bird-spot.com/bird/common-hoopoe. 한국 산란기 4~6월(한국민족문화대백과).",
+      "seasons": [
+        "spring",
+        "summer"
+      ]
+    },
+    {
+      "species": "후투티",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 트인 땅 위를 성큼성큼 걷다가 멈춰 서서, 길고 굽은 부리를 땅속 깊이 찔러 넣어 애벌레와 지렁이를 찾고 있다. 혼자 다니며 먹이를 찾는 새다.",
+      "evidence": "a solitary forager which typically feeds on the ground. ... their foraging style is to stride over relatively open ground and periodically pause to probe the ground with the full length of their bill / 먹이로는 주로 곤충류의 유충을 즐겨 먹으며, 그밖에 거미 · 지렁이 등을 먹는다.",
+      "trivia_source": "Wikipedia(en), \"Hoopoe\", 2026-09 확인; 한국민족문화대백과사전, \"후투티\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Hoopoe",
+      "note": "먹이 종류는 https://encykorea.aks.ac.kr/Article/E0065781 인용."
+    },
+    {
+      "species": "후투티",
+      "moment": "dusk",
+      "time_tied": false,
+      "content": "지금쯤 땅 위에서 먹이를 찾거나 모래 목욕을 하고 있다. 볕이 남아 있으면 날개와 꼬리를 땅에 낮게 펼치고 고개를 든 채 일광욕을 하다가, 중간에 날개를 접고 깃을 다듬기도 한다.",
+      "evidence": "hoopoes sunbathe by spreading out their wings and tail low against the ground and tilting their head up; they often fold their wings and preen halfway through. They also enjoy taking dust and sand baths.",
+      "trivia_source": "Wikipedia(en), \"Hoopoe\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Hoopoe"
+    },
+    {
+      "species": "물총새",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "이른 아침은 물총새가 가장 바쁜 시간이다. 물가 가지에 앉아 부리를 아래로 향한 채 물속을 살피다가, 물고기가 보이면 곧장 물속으로 내리꽂힌다.",
+      "evidence": "Activity frequencies were significantly higher in morning than afternoon. / Earlier researchers reported feeding and territorial display of bird are concentrated during the early morning and late afternoon and reduced around midday. / hunts from a perch 1–2 m above the water, on a branch, post or riverbank, bill pointing down as it searches for prey.",
+      "trivia_source": "Sultana & Sarker, \"Patterns of daily activities frequencies of Common Kingfisher (Alcedo atthis) in Nikunja-1, Dhaka\", Int. J. Fauna Biol. Stud. 3(5), 2016, 2026-09 확인; Wikipedia(en), \"Common kingfisher\", 2026-09 확인",
+      "url": "https://www.faunajournal.com/archives/2016/vol3issue5/PartA/3-5-1-137.pdf",
+      "note": "방글라데시 다카 도시 수역 12개월 관찰 논문. 사냥 자세는 https://en.wikipedia.org/wiki/Common_kingfisher."
+    },
+    {
+      "species": "물총새",
+      "moment": "day",
+      "time_tied": true,
+      "content": "한낮에는 물총새의 사냥이 뜸해진다. 지금쯤은 물가 가지에 앉아 쉬거나 깃털을 다듬으며 물속을 살피고, 다음 사냥 때를 기다리고 있다.",
+      "evidence": "Earlier researchers reported feeding and territorial display of bird are concentrated during the early morning and late afternoon and reduced around midday. / Percentage of daily activity frequency was found highest for flying 22.17±3.51 followed by scanning 18.32±1.37, diving 14.63±0.70, local movement 11.51±2.15, resting 9.75±1.94, preening 8.83±1.17",
+      "trivia_source": "Sultana & Sarker, \"Patterns of daily activities frequencies of Common Kingfisher (Alcedo atthis) in Nikunja-1, Dhaka\", Int. J. Fauna Biol. Stud. 3(5), 2016, 2026-09 확인",
+      "url": "https://www.faunajournal.com/archives/2016/vol3issue5/PartA/3-5-1-137.pdf",
+      "note": "논문의 선행연구 종합 문장을 근거로 함. 쉬기·깃 다듬기는 관찰된 행동 목록(resting, preening, scanning)에서 가져옴."
+    },
+    {
+      "species": "물총새",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘은 물총새의 사냥이 다시 잦아지는 시간이다. 하루에 몸무게의 60%쯤을 먹어야 하니 물가를 오가며 물고기를 잡고, 어두워지면 홀로 우거진 덤불 속에서 잠을 잔다.",
+      "evidence": "feeding and territorial display of bird are concentrated during the early morning and late afternoon and reduced around midday / since it must eat around 60% of its body weight each day, it is essential to have control of a suitable stretch of river. ... It is solitary for most of the year, roosting alone in heavy cover.",
+      "trivia_source": "Sultana & Sarker, \"Patterns of daily activities frequencies of Common Kingfisher (Alcedo atthis) in Nikunja-1, Dhaka\", 2016, 2026-09 확인; Wikipedia(en), \"Common kingfisher\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Common_kingfisher",
+      "note": "늦은 오후 활동 증가는 논문(https://www.faunajournal.com/archives/2016/vol3issue5/PartA/3-5-1-137.pdf), 섭식량·잠자리는 Wikipedia."
+    },
+    {
+      "species": "쇠백로",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "이른 아침, 쇠백로가 여러 백로가 함께 밤을 보낸 숲에서 날아올라 줄을 지어 먹이터로 향하고 있다. 이른 아침은 하루 중 먹이를 가장 열심히 잡는 시간이다.",
+      "evidence": "早朝にサギ山から飛び立ち、隊列を組んで採食しに行く / This species feeds during the day, mainly in the early morning and in the late afternoon.",
+      "trivia_source": "Wikipedia(ja), \"コサギ\", 2026-09 확인; oiseaux-birds.com, \"Little Egret\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/コサギ",
+      "note": "아침 섭식 집중은 https://www.oiseaux-birds.com/card-little-egret.html 인용."
+    },
+    {
+      "species": "쇠백로",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 얕은 물에서 노란 발로 바닥의 모래와 진흙을 휘저어 숨은 물고기를 놀라게 한 뒤, 튀어나오는 순간 뾰족한 부리로 낚아채고 있다. 날개를 치켜들고 달리며 먹이를 몰기도 한다.",
+      "evidence": "They stalk their prey in shallow water, often running with raised wings or shuffling their feet to disturb small fish / The bird stirs the sand or mud with one foot, in order to flush some preys, and then, when the prey is detected, it jabs it with its pointed bill.",
+      "trivia_source": "Wikipedia(en), \"Little egret\", 2026-09 확인; oiseaux-birds.com, \"Little Egret\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Little_egret",
+      "note": "발로 휘젓는 동작 상세는 https://www.oiseaux-birds.com/card-little-egret.html 인용."
+    },
+    {
+      "species": "쇠백로",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "늦은 오후는 쇠백로가 다시 부지런히 먹이를 잡는 시간이다. 얕은 물에서 마지막 사냥을 마치면 다른 백로·왜가리들과 함께 밤을 보낼 나무로 모여든다.",
+      "evidence": "This species feeds during the day, mainly in the early morning and in the late afternoon. / Little Egrets gather at roost with other heron's species in mangroves, reedbeds and dead branches over open water.",
+      "trivia_source": "oiseaux-birds.com, \"Little Egret\", 2026-09 확인",
+      "url": "https://www.oiseaux-birds.com/card-little-egret.html",
+      "note": "탐조 정보 사이트(중간 등급). 집단 잠자리 자체는 Wikipedia(ja) 'サギ山' 기술과 일치."
+    },
+    {
+      "species": "원앙",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "원앙은 주로 새벽과 해질녘에 먹이를 먹는다. 지금쯤 물가와 숲 바닥을 돌며 나무 열매와 씨앗, 특히 도토리를 찾고 있을 것이다.",
+      "evidence": "They feed mainly near dawn or dusk, perching in trees or on the ground during the day. They mainly eat plants and seeds, especially beech mast and acorns.",
+      "trivia_source": "Wikipedia(en), \"Mandarin duck\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Mandarin_duck",
+      "note": ""
+    },
+    {
+      "species": "원앙",
+      "moment": "day",
+      "time_tied": true,
+      "content": "한낮의 원앙은 나뭇가지나 땅 위에 앉아 쉰다. 물 위로 늘어진 버드나무 아래처럼 가려진 곳을 좋아하는 겁 많은 새라, 조용히 살펴야 보인다.",
+      "evidence": "They feed mainly near dawn or dusk, perching in trees or on the ground during the day. Mandarin ducks are shy birds, preferring to seek cover under trees such as overhanging willows, and form smaller flocks.",
+      "trivia_source": "Wikipedia(en), \"Mandarin duck\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Mandarin_duck",
+      "note": ""
+    },
+    {
+      "species": "원앙",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해가 기울면 원앙의 식사 시간이다. 도토리를 유난히 좋아해 물가 숲 바닥을 뒤지고, 밤에는 나뭇가지 위에 올라가 잠을 잔다.",
+      "evidence": "They feed mainly near dawn or dusk (Wikipedia en). 水生昆虫なども食べるが、主に植物食で、草木の実、特にドングリを好む。良く木に止まり、木の枝の上をねぐらとする。(あきた森づくり活動サポートセンター)",
+      "trivia_source": "Wikipedia(en), \"Mandarin duck\"; あきた森づくり活動サポートセンター, \"野鳥シリーズ④ オシドリ\", 2026-09 확인",
+      "url": "https://www.forest-akita.jp/data/bird/04-oshidori/oshidori.html",
+      "note": "시각 근거(dusk 먹이)는 https://en.wikipedia.org/wiki/Mandarin_duck, 도토리·나뭇가지 잠자리는 あきた森づくり(일본 지역 기관)"
+    },
+    {
+      "species": "논병아리",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "논병아리는 지금쯤 물 위에 떠 있다가 자맥질을 되풀이하고 있다. 한 번에 평균 15초쯤 잠수해 작은 물고기와 물속 벌레를 잡고, 들어간 자리와 다른 곳에서 불쑥 떠오른다.",
+      "evidence": "巧みに潜水して獲物を捕食する。1回に平均15秒前後（状態により数秒から30秒）潜水し (ja.wikipedia). 潜ると潜った場所とは別の場所に浮上することが多い (あきた森づくり)",
+      "trivia_source": "Wikipedia(ja), \"カイツブリ\"; あきた森づくり活動サポートセンター, \"野鳥シリーズ65 カイツブリ\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/カイツブリ",
+      "note": "새벽 특유 행동 출처를 못 찾아 일반 행동(잠수 채식). 다른 곳에서 떠오른다는 부분은 https://www.forest-akita.jp/data/bird/65-kai/kai.html 요약 내용"
+    },
+    {
+      "species": "논병아리",
+      "moment": "day",
+      "time_tied": false,
+      "content": "맑고 바람 없는 날이면 논병아리는 등을 해 쪽으로 돌린 채 물 위에서 일광욕을 한다. 물고기를 잡으러 잠수도 하지만 수면에 떨어진 벌레도 주워 먹는다.",
+      "evidence": "Sunbathes frequently on clear, windless days, positioning the body with its back to the sun. Mostly dives for food, but also feeds on insects that have fallen onto the water surface.",
+      "trivia_source": "Bird Diversity Initiative(BDI), \"Little Grebe (Tachybaptus ruficollis)\", 2026-09 확인",
+      "url": "https://thebdi.org/2023/05/16/little-grebe-tachybaptus-ruficollis/",
+      "note": "탐조 단체 사이트(중간 등급). 출처가 명시적 시간대를 말하지 않아 time_tied false"
+    },
+    {
+      "species": "논병아리",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해가 지면 논병아리들은 물 위에 모여 무리를 이룬 채 밤을 보낸다. 겨울에는 20~30마리씩 무리를 짓기도 한다.",
+      "evidence": "The Little Grebe frequently roosts in large, communal rafts at night. (BDI) 冬季には20-30羽からなる群れを形成することもある。(ja.wikipedia)",
+      "trivia_source": "Bird Diversity Initiative(BDI), \"Little Grebe (Tachybaptus ruficollis)\"; Wikipedia(ja), \"カイツブリ\", 2026-09 확인",
+      "url": "https://thebdi.org/2023/05/16/little-grebe-tachybaptus-ruficollis/",
+      "note": "야간 집단 휴식은 BDI(탐조 단체, 중간 등급), 겨울 무리 크기는 https://ja.wikipedia.org/wiki/カイツブリ"
+    },
+    {
+      "species": "민물가마우지",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "동틀 무렵 민물가마우지는 잠자리를 떠나 먹이터로 날아간다. 수십에서 백 마리 넘게 줄을 지어 강이나 호수로 향하는 모습이 보인다.",
+      "evidence": "夜明けには採餌のために隊列を成して餌場に向かい (ja.wikipedia). 早朝にはねぐらを飛び立ち、採食場所へ数十羽から100羽以上が隊列を組んで飛んでいきます。(三鷹市)",
+      "trivia_source": "Wikipedia(ja), \"カワウ\"; 三鷹市, \"カワウ（河鵜）ウ科\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/カワウ",
+      "note": "무리 규모는 https://www.city.mitaka.lg.jp/c_service/055/055550.html (일본 지자체)"
+    },
+    {
+      "species": "민물가마우지",
+      "moment": "day",
+      "time_tied": false,
+      "content": "물속에서 물고기를 쫓다 나온 민물가마우지는 날개를 활짝 펴고 깃털을 말린다. 하루의 많은 시간을 잠자리나 먹이터 근처에서 쉬고 깃털을 다듬으며 보낸다.",
+      "evidence": "They flap their wings and shake their bodies when emerging from the water and hold their wings in an outstretched position to dry their feathers. Large proportions of the day are spent resting and preening at roosts or near foraging areas.",
+      "trivia_source": "Animal Diversity Web(University of Michigan), \"Phalacrocorax carbo (great cormorant)\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Phalacrocorax_carbo/",
+      "note": ""
+    },
+    {
+      "species": "민물가마우지",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "저녁이 되면 민물가마우지는 다시 무리를 지어 잠자리로 돌아온다. 밤에는 여러 마리가 한곳에 모여 집단으로 쉬고 잠을 잔다.",
+      "evidence": "夕方になると再び群れでねぐらに戻る。カワウは群れで溜まる場所をいくつか持っており、そこで休息と睡眠をとる。(ja.wikipedia) 夜には集団ねぐらをとる習性があり、たくさんのカワウが集まります。(三鷹市)",
+      "trivia_source": "Wikipedia(ja), \"カワウ\"; 三鷹市, \"カワウ（河鵜）ウ科\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/カワウ",
+      "note": "집단 잠자리는 https://www.city.mitaka.lg.jp/c_service/055/055550.html"
+    },
+    {
+      "species": "곤줄박이",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "곤줄박이는 해 뜨는 시각에 맞춰 새벽 노래를 시작한다. 일출이 빨라지면 노래도 일찍 시작하고, 흐린 날에는 더 늦게, 더 약하게 부른다.",
+      "evidence": "Varied Tits began singing earlier as the sunrise time started earlier; the start time of dawn song was later and the sing strength was lower in the cloudy days than that in sunny days.",
+      "trivia_source": "Zhao, T. et al., \"The primary study of the relationship between environmental factors and dawn song in varied tits\", Proc. ICBBE 2016, 2026-09 확인",
+      "url": "https://dl.acm.org/doi/10.1145/3022702.3022721",
+      "note": "ACM 본문은 403으로 직접 열람 못 함. 제목·저자·연도는 Semantic Scholar/Crossref API로 확인, 초록 문장은 검색 엔진 인용 스니펫으로 확인. 새벽 노래는 번식기 행동(あきた森づくり ヤマガラ: 繁殖期にさえずる)이라 봄으로 한정",
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "species": "곤줄박이",
+      "moment": "day",
+      "time_tied": false,
+      "content": "가을이면 곤줄박이는 때죽나무 열매를 부리로 따서 편평한 가지로 옮겨 먹거나, 나무껍질 틈과 땅속에 숨겨 둔다. 먹이가 귀한 한겨울에 꺼내 먹으려는 저장 습성이다.",
+      "evidence": "エゴノキの実をクチバシで採り、食べやすい横に水平な枝に移動して食べたり、幹の割れ目や朽木、土の中などに埋め込んで貯える習性を観察できる。エサの少ない厳冬期に利用。",
+      "trivia_source": "あきた森づくり活動サポートセンター, \"野鳥シリーズ44 ヤマガラ\", 2026-09 확인",
+      "url": "https://www.forest-akita.jp/data/bird/44-yamagara/yamagara.html",
+      "note": "エゴノキ=때죽나무(Styrax japonicus). 가을 시작은 https://hibi-ki.co.jp/sugisensei015/ (秋頃になると木の実を探しはじめる)",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "곤줄박이",
+      "moment": "dusk",
+      "time_tied": false,
+      "content": "겨울 저녁 무렵 곤줄박이는 박새, 동박새, 쇠딱따구리, 오목눈이와 섞인 무리 속에서 움직이고 있을 것이다. 잎이 진 숲에서는 서로 천적을 알리고 먹이터를 나눈다.",
+      "evidence": "冬になるとシジュウカラやメジロ、コゲラ、エナガなんかの小鳥と一緒に群れをつくるみたいやわ。冬は木の葉が落ちて天敵にみつかりやすくなるから、お互いで知らせ合ったり、エサ場を教え合ったりしてるんやて。(hibi-ki) シジュウカラやメジロ、コゲラ、エナガなどと混群を形成する (あきた森づくり)",
+      "trivia_source": "hibi-ki(響), \"ヤマガラ／冬に備え貯食する鳥\"; あきた森づくり活動サポートセンター, \"野鳥シリーズ44 ヤマガラ\", 2026-09 확인",
+      "url": "https://hibi-ki.co.jp/sugisensei015/",
+      "note": "저녁 특유 행동 출처를 못 찾아 겨울 혼군을 일반 행동으로 씀. hibi-ki는 기업 칼럼(중간 등급), 혼군 구성은 https://www.forest-akita.jp/data/bird/44-yamagara/yamagara.html 로 교차 확인",
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "species": "붉은머리오목눈이",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 덤불이나 갈대밭 속을 여러 마리가 무리지어 휘파람 같은 소리를 내며 질서 있게 옮겨 다니고 있다. 긴 꼬리를 좌우로 흔들며 재빠르게 움직인다.",
+      "evidence": "덤불, 갈대밭, 관목, 잡초가 자라는 지역에서 여러 마리가 무리지어 휘파람 소리를 내며 질서 있게 움직인다. / 꼬리는 체구에 비해 긴 편이고",
+      "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 붉은머리오목눈이\", 2026-09 확인",
+      "url": "https://www.science.go.kr/mps/scienceSubject/bird/view.do?subjectSid=347",
+      "note": "새벽 특유 행동 출처 없음 → 일반 행동"
+    },
+    {
+      "species": "붉은머리오목눈이",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 수십 마리가 무리지어 덤불 사이를 옮겨 다니며 먹이를 찾고 있다. 주로 곤충과 거미를 잡아먹으며, '찌찍, 찌찍' 하고 쉬지 않고 운다.",
+      "evidence": "수십 마리가 무리지어 이동하며 먹이를 구한다. 주로 곤충류와 거미류를 먹이로 한다. '찌찍, 찌찍, 찌찍, 찌찍' 하며 반복적으로 운다.",
+      "trivia_source": "디지털구리문화대전, \"붉은머리오목눈이\", 2026-09 확인",
+      "url": "https://www.grandculture.net/guri/toc/GC06112159",
+      "note": ""
+    },
+    {
+      "species": "붉은머리오목눈이",
+      "moment": "dusk",
+      "time_tied": false,
+      "content": "지금쯤 겨울 큰 무리와 함께 다니고 있다. 겨울 무리는 140마리까지 불어나는데, 이웃 무리와 가까이 스쳐 지나가도 서로 섞이지 않고 제 무리를 유지한다.",
+      "evidence": "Flocks vary in size through the year, being at their smallest during the breeding season and increasing to as many as 140 individual birds in the winter. The ranges of large winter flocks can overlap with that of other flocks and flocks passing close together retain their cohesion.",
+      "trivia_source": "Wikipedia (en), \"Vinous-throated parrotbill\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Vinous-throated_parrotbill",
+      "note": "해질녘 잠자리 집결 자료(Cornell BoW, Lee et al. 2009 Heredity)는 접근 불가(403/유료)라 인용 못 함. 겨울 무리 일반 행동으로 대체",
+      "seasons": [
+        "winter"
+      ]
+    },
+    {
+      "species": "딱새",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "이른 아침에도 자주 운다. 번식기가 아닌 철에는 암수가 따로 각자 세력권을 지키는데, 다른 딱새가 들어오면 '히잇' 하는 높은 소리와 '딱딱' 부딪는 소리로 쫓아낸다.",
+      "evidence": "早朝にも鳴くことが多く / 非繁殖期にはオスメスともに単独生活を送り、縄張りを作って同種を排斥する習性がある / 「ヒッ」や「キッ」という甲高い声と「カッ」という打撃音",
+      "trivia_source": "Wikipedia (ja), \"ジョウビタキ\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/ジョウビタキ",
+      "note": "일본 월동 개체 기준 서술. 한국에서도 비번식기 세력권 행동 동일 종",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "딱새",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 관목 가지에 앉아 꼬리를 까딱까딱 위아래로 흔들며 울고 있다. 가끔 땅에 내려와 뛰어다니며 먹이를 찾지만 오래 머물지 않고 곧 날아오른다.",
+      "evidence": "관목에 앉아 꼬리를 까딱까딱 상하로 흔들며 운다. 지상에 내려와 뛰어다니며 먹이를 찾는 경우도 있으나 대부분 오래 머물지 않고 날아오른다.",
+      "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 딱새\", 2026-09 확인",
+      "url": "https://www.science.go.kr/mps/scienceSubject/bird/view.do?subjectSid=324",
+      "note": ""
+    },
+    {
+      "species": "딱새",
+      "moment": "dusk",
+      "time_tied": false,
+      "content": "지금쯤 혼자 지키는 세력권 안을 한 바퀴 돌고 늘 앉던 가지로 돌아와 있다. 폭 10m 남짓한 자기 구역을 벗어나지 않고, 나무와 땅에서 곤충과 거미를 잡는다.",
+      "evidence": "It has a strong territorial awareness and flies around the territory alone. / it flies around within the territory of about 10m in width, and then comes back to the same branch. / It eats insects and spiders on trees and on the ground.",
+      "trivia_source": "Orbis Pictus (Japan), \"Daurian Redstart (Phoenicurus auroreus)\", 2026-09 확인",
+      "url": "https://orbis-pictus.jp/en/article/jobitaki.php",
+      "note": "일본 월동기(비번식기) 세력권 기준 서술. 중간 등급 출처(일본 도감 사이트)",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "물까치",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 땅에 내려와 떨어진 열매와 씨앗을 줍고 있다. 겨울철에는 먹이 찾기의 절반 넘게 땅 위에서 이루어지고, 주운 열매를 낙엽 밑에 숨겨 두기도 한다.",
+      "evidence": "In the breeding period, they mostly feed in the upper layer of a tree, but feed on the ground in the non-breeding season. ... more than 50% of the feeding was on the ground from December to April ... They chiefly ate fallen fruits or seeds on the ground in winter. They occasionally cached fruits under the fallen leaves on the ground.",
+      "trivia_source": "Japan Bird Research Association, \"Bird Research News Vol.6 No.6: Azure-winged Magpie\", 2026-09 확인",
+      "url": "https://www.bird-research.jp/1_shiryo/seitai/onaga.pdf",
+      "note": "일본 사이타마 연구 기준. 새벽 특유 행동 출처 없음 → 겨울 일반 행동",
+      "seasons": [
+        "winter",
+        "spring"
+      ]
+    },
+    {
+      "species": "물까치",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 가족 무리와 함께 다니고 있다. 적게는 5~10마리, 많게는 30마리 넘게 몰려다니며 곤충·열매·씨앗을 주워 먹고, 일부는 숨겨 둔다.",
+      "evidence": "가족 중심의 무리를 지으며, 적게는 5-10개체에서 많게는 30개체 이상이 집단생활을 한다. / 식성은 잡식이며, 곤충, 과실, 종자 등을 주워먹고 일부는 저장한다.",
+      "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 물까치\"; 위키백과(ko), \"물까치\", 2026-09 확인",
+      "url": "https://www.science.go.kr/mps/scienceSubject/bird/view.do?subjectSid=328",
+      "note": "두 번째 인용문 출처: https://ko.wikipedia.org/wiki/물까치"
+    },
+    {
+      "species": "물까치",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘이면 무리째 잠자리로 모여든다. 겨울에는 빽빽한 대숲이나 침엽수림을, 여름에는 활엽수림을 즐겨 쓰고, 가끔 이웃 무리와 한 잠자리를 나눠 쓰기도 한다.",
+      "evidence": "They also roost in a flock, but more than one flock occasionally roosted together in the same site. They use as a roost site a dense thicket of bamboo, a coniferous wood and a broadleaved deciduous wood. A coniferous wood and a thicket of bamboo were used with higher frequency in winter, but a broad-leaved deciduous wood was preferred in summer.",
+      "trivia_source": "Japan Bird Research Association, \"Bird Research News Vol.6 No.6: Azure-winged Magpie\", 2026-09 확인",
+      "url": "https://www.bird-research.jp/1_shiryo/seitai/onaga.pdf",
+      "note": "일본 연구 기준. 잠자리 집결 = 저녁 행동으로 해석"
+    },
+    {
+      "species": "어치",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "이른 아침부터 숲 바닥을 뒤지며 도토리를 찾는다. 가을이면 참나무 아래를 바쁘게 오가며 도토리를 있는 대로 모아 땅에 묻는다.",
+      "evidence": "Jays feed throughout the day and can be seen scouring the woodland floor for acorns from early morning until the light fades. / In autumn, jays busily forage for acorns underneath oak trees, collecting as many as they can",
+      "trivia_source": "Birdfact, \"What Do Jays Eat? (Eurasian Jay Diet)\", 2026-09 확인",
+      "url": "https://www.birdfact.com/articles/what-do-jays-eat",
+      "note": "영국 탐조 정보 사이트(중간 등급). 유럽 개체군 기준이나 동일 종",
+      "seasons": [
+        "autumn"
+      ]
+    },
+    {
+      "species": "어치",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 양다리를 모아 통통 뛰며 가지에서 가지로, 땅 위로 옮겨 다니고 있다. 가끔 맹금류 소리를 흉내 내어 자기 서식지에 천적이 들어오는지 살핀다.",
+      "evidence": "나뭇가지에서 가지로 옮겨 갈 때나 땅 위에서 걸을 때는 양쪽 다리를 함께 모아 통통 뛰며 걷는다. / 간혹 맹금류의 소리를 흉내 내어 자신의 서식지로 천적이 들어오는 것을 경계하기도 한다.",
+      "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 어치\", 2026-09 확인",
+      "url": "https://www.science.go.kr/mps/scienceSubject/bird/view.do?subjectSid=354",
+      "note": ""
+    },
+    {
+      "species": "어치",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "빛이 사그라들 때까지 숲 바닥에서 도토리를 찾는다. 가을 한철 하루에 100~300개까지 저장하는데, 잘 익은 것은 그 자리에서 까먹고 덜 익은 것은 목에 넣어 옮겨 숨긴다.",
+      "evidence": "Jays feed throughout the day and can be seen scouring the woodland floor for acorns from early morning until the light fades. / 어치는 하루에 100~300여 개까지 도토리를 저장한다. 잘 익은 도토리는 껍질을 까서 그 자리에서 먹고, 덜 익은 것은 목에 넣어 옮겨가 저장한다.",
+      "trivia_source": "Birdfact, \"What Do Jays Eat? (Eurasian Jay Diet)\"; 매일신문, \"다람쥐, 청설모, 어치 도토리 숨기기의 승자는 참나무\", 2026-09 확인",
+      "url": "https://www.birdfact.com/articles/what-do-jays-eat",
+      "note": "두 번째 인용문 출처: https://www.imaeil.com/page/view/2012112807102931713 (신문 기사, 중간 등급). 가을 집중 저장은 Wikipedia(en) 'most intense in the autumn'로 보강",
+      "seasons": [
+        "autumn"
+      ]
+    },
+    {
+      "species": "까치",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 땅 위에서 두 발을 모아 뛰거나 걸으며 아침 먹이를 찾고 있다. 봄 번식기에는 짝과 함께 1~10ha 남짓한 세력권을 지키고, 번식이 끝난 여름부터는 몇 마리씩 작은 무리를 이루기도 한다.",
+      "evidence": "땅에서는 두 발을 모으고 뛰거나 걸으며 먹이를 찾고, 놀라거나 비상시엔 뛰면서 날아오른다. / 번식기에는 세력권을 형성하며, 세력권의 크기는 서식지 조건에 따라 다르며 적게는 1ha~10ha 이내예요. / 번식이 끝난 6~8월에는 소수가 무리를 이루며, 월동기인 12월에 가장 큰 무리를 이루어 먹이활동, 천적방어 등을 하며 겨울을 난다.",
+      "trivia_source": "국립중앙과학관, \"까치\", 2026-09 확인",
+      "url": "https://www.science.go.kr/mps/scienceSubject/bird/view.do?subjectSid=316",
+      "note": "겨울 외 새벽 특유 행동(세력권 새벽 울음 등)은 접근 가능한 1차 출처에서 확인 못 함 → 새벽에도 참인 일반 행동(지상 채식)으로 대체. 국립중앙과학관 자료는 한국 까치(Pica serica) 기준.",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "species": "까치",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘이 되어도 겨울처럼 큰 무리로 모이지 않고, 둥지 근처 나뭇가지에 앉아 밤을 보낸다. 알을 품거나 갓 깬 새끼를 돌보는 봄에는 암수 가운데 하나가 둥지 안에서 잔다.",
+      "evidence": "In the winter, magpies usually roost communally in large flocks. In summer, magpies sleep on perches near their nest. During incubation and initial brooding of the chicks, either the male or female will sleep on the nest at night. Magpies are not usually gregarious in the breeding season. After the breeding season ends, pairs of magpies join together in large wintering flocks of more than 20 or so birds.",
+      "trivia_source": "Birdfact, \"Magpie Nesting (All You Need To Know)\", 2026-09 확인",
+      "url": "https://www.birdfact.com/articles/magpie-nesting",
+      "note": "유럽 까치(Pica pica) 자료, 탐조 정보 사이트(중간 등급). 가을은 겨울 무리로 합류하는 과도기라 '큰 무리로 모이지 않는다'는 표현은 국립중앙과학관(월동기 12월에 가장 큰 무리)으로 보강했으나 늦가을에는 지역에 따라 집단 잠자리가 시작될 수 있음.",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "species": "제비",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "봄에 돌아와 처마 밑에 둥지를 튼 뒤로는, 저녁이 되면 암컷이 둥지 안에서 알을 품은 채 밤을 보낸다. 수컷은 그 근처에 앉아 잔다.",
+      "evidence": "Females spend the night in the nest on the eggs. / Brooding largely ceases by day 15, although female continues to spend night on the nest, with male often roosting nearby.",
+      "trivia_source": "Cornell Birds of the World, \"Barn Swallow — Breeding\", 2026-09 확인",
+      "url": "https://birdsoftheworld.org/bow/species/barswa/cur/breeding",
+      "note": "'수컷은 근처에서 잔다'는 원문에서 육추 후기(brooding 종료 후)에 대한 기술이므로 포란기 전체로 일반화한 것은 약한 확장. 한국 도착(4월 하순)·산란(5월경)은 봄 슬롯에 해당.",
+      "seasons": [
+        "spring"
+      ]
+    },
+    {
+      "species": "박새",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "해 뜨기 20~30분쯤 전에 잠자리에서 나와 하루를 시작한다. 겨울에는 나무 구멍이나 새집 안에서, 여름과 가을에는 나무줄기 옆이나 잎 사이 은신처에서 혼자 잔 뒤다.",
+      "evidence": "The Great Tit is a diurnal bird. It usually rises in the morning shortly before sunrise and retires to roost at sunset. During the winter (November-March), the Great Tit sleeps in a natural cavity in a tree or in a nest-box (never more than one in a cavity). During the summer the bird does not as a rule use a cavity, but selects a sheltered place against a tree-trunk or among the foliage. / During these three winter months, the time of rising is on the average 26 minutes before sunrise.",
+      "trivia_source": "H. N. Kluijver, \"Daily Routines of the Great Tit, Parus m. major L.\" (Ardea 38, 1950), 2026-09 확인",
+      "url": "https://bioone.org/journals/ardea/volume-55/issue-1%E2%80%932/arde.v38.p99/Daily-Routines-of-the-Great-Tit-Parus-m-major-L/10.5253/arde.v38.p99.pdf",
+      "note": "유럽 박새(Parus major, 네덜란드) 자료. 가을은 8~11월에 걸쳐 겨울 잠자리(구멍)로 돌아가는 과도기라 '여름과 가을에는 잎 사이'는 이른 가을 기준.",
+      "seasons": [
+        "summer",
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "박새",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "여름에는 해 지기 한 시간쯤 전에 벌써 잠자리에 들고, 가을이 깊어질수록 해 질 무렵까지 먹이를 찾는다. 봄 번식기에 알을 품는 암컷은 해 지기 한 시간 넘게 전에 둥지 구멍으로 들어가고, 수컷은 더 늦게까지 밖에 있다.",
+      "evidence": "Thus in August, the birds go to their roosting places one hour before sunset, but during the course of the autumn their time of retiring gets gradually later (relative to the time of sunset), so that in November it is only about 5 minutes before sunset. / During the laying period, the female retires to roost on the average 64 minutes before sunset, but during the incubation period, on the average 100 minutes before sunset. / [The male] remains out for longer than the female, who retires very early in this period.",
+      "trivia_source": "H. N. Kluijver, \"Daily Routines of the Great Tit, Parus m. major L.\" (Ardea 38, 1950), 2026-09 확인",
+      "url": "https://bioone.org/journals/ardea/volume-55/issue-1%E2%80%932/arde.v38.p99/Daily-Routines-of-the-Great-Tit-Parus-m-major-L/10.5253/arde.v38.p99.pdf",
+      "note": "유럽 박새(Parus major, 네덜란드) 자료.",
+      "seasons": [
+        "spring",
+        "summer",
+        "autumn"
+      ]
+    }
+  ]
+}

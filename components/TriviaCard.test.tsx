@@ -48,6 +48,15 @@ describe("TriviaCard", () => {
     expect(screen.getByText(label)).toBeInTheDocument();
   });
 
+  it("moment가 있으면 순간 뱃지를, 없으면 표시하지 않는다 (STORY-017)", () => {
+    const { unmount } = render(<TriviaCard trivia={trivia({ type: "ecology", moment: "dusk" })} />);
+    expect(screen.getByText("해질녘")).toBeInTheDocument();
+    unmount();
+    render(<TriviaCard trivia={trivia({ type: "ecology" })} />);
+    expect(screen.queryByText("해질녘")).not.toBeInTheDocument();
+    expect(screen.queryByText("새벽")).not.toBeInTheDocument();
+  });
+
   it("출처는 접혀 있고, 탭하면 전체가 펼쳐진다", async () => {
     const user = userEvent.setup();
     render(<TriviaCard trivia={trivia()} />);
