@@ -68,7 +68,7 @@ export function useTaxonomyProgress(
     nextTaxonomyQuestion(session)
   );
 
-  // 앞으로 나올 문제 2개의 사진(문제 사진 또는 보기 사진)을 순서대로 미리 받아 둔다.
+  // 앞으로 나올 문제 3개의 사진(문제 사진 또는 보기 사진)을 순서대로 미리 받아 둔다.
   // 지금 화면 사진이 다 온 뒤에야 다음 묶음을 요청한다.
   useEffect(() => {
     return preloadGroups(

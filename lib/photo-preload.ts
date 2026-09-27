@@ -24,6 +24,8 @@ export interface PreloadImage {
   onerror: null | (() => void);
   /** 이미 캐시에 있으면 src 대입 직후 true. */
   complete?: boolean;
+  /** 있으면 받은 뒤 미리 디코딩까지 해 둔다(표시 순간의 디코딩 지연 제거). */
+  decode?: () => Promise<void>;
 }
 
 function canPreload(deps: PreloadDeps): boolean {
@@ -53,7 +55,12 @@ function loadGroup(urls: readonly string[], deps: PreloadDeps): Promise<string[]
     const p = new Promise<void>((resolve) => {
       try {
         const img = create();
-        img.onload = () => resolve();
+        const done = () => {
+          // 받은 뒤 디코딩까지 끝내 두면 화면에 올릴 때 지연이 없다. 실패해도 무시.
+          if (typeof img.decode === "function") img.decode().catch(() => {}).finally(resolve);
+          else resolve();
+        };
+        img.onload = done;
         img.onerror = () => resolve();
         img.src = url;
         started.push(url);
@@ -124,12 +131,13 @@ export function resetPreloadCache(): void {
 /**
  * [지금 문제, 다음 문제, 그다음 문제 …] 순서의 사진 URL 묶음.
  * 첫 묶음은 지금 화면이 이미 요청 중인 사진이라, 그것이 끝난 뒤에야 다음 묶음이 나가게 하는 앵커다.
+ * ahead=3: 한국→미국 S3가 장당 0.8~1.2초라, 빨리 답하는 사용자보다 앞서려면 여유가 필요하다.
  */
 export function photoGroupsFrom<Q>(
   questions: readonly Q[],
   current: Q | undefined,
   urlsOf: (q: Q) => (string | undefined)[],
-  ahead = 2
+  ahead = 3
 ): string[][] {
   const idx = current ? questions.indexOf(current) : -1;
   const start = Math.max(idx, 0);

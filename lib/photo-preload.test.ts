@@ -106,6 +106,7 @@ const qs = [
 describe("photoGroupsFrom", () => {
   it("현재 문제부터 ahead개까지 묶음으로", () => {
     expect(photoGroupsFrom(qs, qs[0], (q) => q.urls, 2)).toEqual([["1.jpg"], ["2.jpg", "2b.jpg"], ["3.jpg"]]);
+    expect(photoGroupsFrom(qs, qs[0], (q) => q.urls)).toHaveLength(4); // 기본 3개 앞까지
     expect(photoGroupsFrom(qs, qs[2], (q) => q.urls, 2)).toEqual([["3.jpg"], ["4.jpg"]]);
     expect(photoGroupsFrom(qs, undefined, (q) => q.urls, 1)).toEqual([["1.jpg"], ["2.jpg", "2b.jpg"]]);
   });
