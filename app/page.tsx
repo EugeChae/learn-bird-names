@@ -110,7 +110,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen py-6">
+    <main className="min-h-screen overflow-x-hidden py-6">
       <div className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl">
         <header className="relative text-center">
           <LeafDecor className="pointer-events-none absolute -top-3 left-4 h-12 w-12 -rotate-[28deg] opacity-80 lg:left-24" />

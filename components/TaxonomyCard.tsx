@@ -114,13 +114,14 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
       {question.type === "photo-to-taxon" && promptPhoto && (
         <figure className="mx-auto flex w-full max-w-xs flex-col gap-1">
           {/* 분류 퀴즈는 사진+질문+4보기가 한 화면에 들어와야 하므로 높이를 제한한다. */}
-          <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-soft">
+          <div className="w-full">
             <BirdPhoto
               src={promptPhoto.url}
               alt="분류를 맞혀야 할 새 사진"
               priority
-              fit="contain"
-              className="aspect-[4/3] max-h-[40vh] w-full"
+              fit="natural"
+              capVh={45}
+              className="rounded-2xl border border-gray-200 shadow-soft"
             />
           </div>
           <figcaption className="text-right text-[10px] text-gray-400">

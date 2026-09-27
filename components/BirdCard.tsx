@@ -36,14 +36,15 @@ export default function BirdCard({ species }: BirdCardProps) {
             type="button"
             onClick={() => setPhotoOpen(true)}
             aria-label="새 사진 확대"
-            className="block w-full overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
+            className="block w-full"
           >
             <BirdPhoto
               src={photo.url}
               alt={species.name_korean}
               priority
-              fit="contain"
-              className="aspect-[4/3] max-h-[52vh] w-full lg:aspect-square"
+              fit="natural"
+              capVh={92}
+              className="rounded-2xl border border-gray-200 shadow-soft"
             />
           </button>
           <figcaption className="text-right text-[10px] text-gray-400">

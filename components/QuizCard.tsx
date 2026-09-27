@@ -56,7 +56,7 @@ export default function QuizCard({ session }: QuizCardProps) {
 
   return (
     <section
-      className="mx-auto flex w-full max-w-md flex-col gap-3 p-4 pb-24 lg:max-w-4xl lg:gap-4 lg:pb-4"
+      className="mx-auto flex w-full max-w-md flex-col gap-3 p-4 pb-24 wide:max-w-4xl wide:pb-4 lg:max-w-4xl lg:gap-4 lg:pb-4"
       aria-label="사진 이름 맞히기 퀴즈"
     >
       <header className="flex items-center justify-between text-sm text-gray-600">
@@ -69,21 +69,22 @@ export default function QuizCard({ session }: QuizCardProps) {
       </header>
 
       {/* 데스크톱(lg+)에서 사진 왼쪽 · 문제/보기 오른쪽 2단. 모바일은 세로 1열. */}
-      <div className="flex flex-col gap-4 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
+      <div className="flex flex-col gap-4 wide:grid wide:grid-cols-2 wide:gap-6 wide:items-start lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
       {photo ? (
         <figure className="flex flex-col gap-1">
           <button
             type="button"
             onClick={() => setPhotoOpen(true)}
             aria-label="새 사진 확대"
-            className="block w-full overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
+            className="block w-full"
           >
             <BirdPhoto
               src={photo.url}
               alt="맞혀야 할 새 사진"
               priority
-              fit="contain"
-              className="aspect-[4/3] max-h-[48vh] w-full lg:aspect-square"
+              fit="natural"
+              capVh={92}
+              className="rounded-2xl border border-gray-200 shadow-soft"
             />
           </button>
           <div className="flex items-center justify-between gap-2">

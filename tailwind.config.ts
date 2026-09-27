@@ -8,6 +8,10 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      screens: {
+        // 가로로 누운 창(폰 가로, 낮은 데스크톱 창): 폭이 lg 미만이어도 사진 옆에 답을 놓는다.
+        wide: { raw: "(orientation: landscape) and (min-width: 640px)" },
+      },
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",

@@ -90,7 +90,7 @@ export default function QuizPage() {
     session.questions.length === 0;
 
   return (
-    <main className="min-h-screen py-6">
+    <main className="min-h-screen overflow-x-hidden py-6">
       <TopNav containerClass="max-w-md lg:max-w-4xl" />
       {corrupted && <ProgressResetModal onReset={handleReset} />}
       {!corrupted &&
