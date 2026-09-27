@@ -4,6 +4,7 @@ import { useCallback, useEffect, useState } from "react";
 import type { QuizSession, QuizQuestion, AnswerResult } from "@/types";
 import { nextQuestion, submitAnswer } from "@/services/quiz.service";
 import { updateProgress } from "@/services/progress.service";
+import { preloadGroups, photoGroupsFrom } from "@/lib/photo-preload";
 
 export type QuizStatus = "answering" | "correct" | "revealed";
 
@@ -40,6 +41,18 @@ export function useQuizProgress(session: QuizSession): QuizProgress {
   const [hintText, setHintText] = useState<string | null>(null);
   const [milestone, setMilestone] = useState<number | null>(null);
   const [done, setDone] = useState<boolean>(() => !nextQuestion(session));
+
+  // 앞으로 나올 문제 3개의 사진을 순서대로 미리 받아 둔다 → "다음"을 누르면 즉시 뜬다.
+  // 사진→이름은 문제 사진 1장, 이름→사진은 보기 사진 4장이 한 묶음.
+  // 지금 화면 사진이 다 온 뒤에야 다음 묶음을 요청한다(동시에 보내면 지금 사진이 느려진다).
+  useEffect(() => {
+    const photoChoices = session.options.mode === "name-to-photo";
+    return preloadGroups(
+      photoGroupsFrom(session.questions, question, (q) =>
+        photoChoices ? q.choices.map((c) => c.media[0]?.url) : [q.species.media[0]?.url]
+      )
+    );
+  }, [session, question]);
 
   const select = useCallback(
     (choiceId: string) => {

@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import BirdPhoto from "@/components/ui/BirdPhoto";
 import {
   getFlags,
   unflagPhoto,
@@ -163,11 +164,10 @@ export default function FlagsPage() {
                 key={f.photoUrl}
                 className="flex items-center gap-3 rounded-lg border border-gray-200 p-2"
               >
-                {/* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export; next/image adds no value here */}
-                <img
+                <BirdPhoto
                   src={f.photoUrl}
                   alt={f.nameKorean}
-                  className="h-16 w-16 flex-shrink-0 rounded-md object-cover"
+                  className="h-16 w-16 flex-shrink-0 rounded-md"
                 />
                 <div className="min-w-0 flex-1">
                   <p className="font-semibold text-gray-900">

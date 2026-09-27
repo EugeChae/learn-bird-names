@@ -7,6 +7,7 @@ import PhotoModal from "@/components/PhotoModal";
 import SessionComplete from "@/components/SessionComplete";
 import MilestoneBanner from "@/components/MilestoneBanner";
 import Button from "@/components/ui/Button";
+import BirdPhoto from "@/components/ui/BirdPhoto";
 import MobileActionBar from "@/components/ui/MobileActionBar";
 
 interface PhotoGridQuizCardProps {
@@ -110,11 +111,11 @@ export default function PhotoGridQuizCard({
                 className={tileClass(choice.id)}
               >
                 {photo ? (
-                  /* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export; next/image adds no value here */
-                  <img
+                  <BirdPhoto
                     src={photo.url}
                     alt={`새 사진 ${i + 1}`}
-                    className="aspect-square w-full object-cover"
+                    priority
+                    className="aspect-square w-full"
                   />
                 ) : (
                   <div className="flex aspect-square w-full items-center justify-center bg-gray-100 text-gray-400">

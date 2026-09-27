@@ -5,6 +5,7 @@ import type { Species } from "@/types";
 import PhotoModal from "@/components/PhotoModal";
 import LeafDecor from "@/components/LeafDecor";
 import Chip from "@/components/ui/Chip";
+import BirdPhoto from "@/components/ui/BirdPhoto";
 import { abundanceKo, statusKo } from "@/lib/bird-labels";
 
 interface BirdCardProps {
@@ -35,13 +36,15 @@ export default function BirdCard({ species }: BirdCardProps) {
             type="button"
             onClick={() => setPhotoOpen(true)}
             aria-label="새 사진 확대"
-            className="overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
+            className="block w-full"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export; next/image adds no value here */}
-            <img
+            <BirdPhoto
               src={photo.url}
               alt={species.name_korean}
-              className="h-[34vh] w-full object-cover lg:aspect-square lg:h-auto"
+              priority
+              fit="natural"
+              capVh={92}
+              className="rounded-2xl border border-gray-200 shadow-soft"
             />
           </button>
           <figcaption className="text-right text-[10px] text-gray-400">
