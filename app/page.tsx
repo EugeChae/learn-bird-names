@@ -46,14 +46,15 @@ import BirdMascot from "@/components/BirdMascot";
  */
 /** 개발 전용 미리보기 파라미터. 하나도 없으면 undefined(정상 경로). */
 function devPreview():
-  | { species?: Species; moment?: Moment; date?: Date }
+  | { species?: Species; moment?: Moment; date?: Date; wash?: "moment" }
   | undefined {
   if (typeof window === "undefined") return undefined;
   const q = new URLSearchParams(window.location.search);
   const bird = q.get("bird");
   const moment = q.get("moment");
   const date = q.get("date");
-  if (!bird && !moment && !date) return undefined;
+  const wash = q.get("wash");
+  if (!bird && !moment && !date && !wash) return undefined;
   const species = bird
     ? getById(bird) ?? getAll().find((s) => s.name_korean === bird)
     : undefined;
@@ -62,6 +63,7 @@ function devPreview():
     species,
     moment: moment && isMoment(moment) ? moment : undefined,
     date: parsed && !Number.isNaN(parsed.getTime()) ? parsed : undefined,
+    wash: wash === "moment" ? ("moment" as const) : undefined,
   };
 }
 
@@ -70,6 +72,7 @@ export default function Home() {
   const [trivia, setTrivia] = useState<SpeciesTrivia | undefined>();
   const [invite, setInvite] = useState<string | undefined>();
   const [scopes, setScopes] = useState<ScopeAvailability | null>(null);
+  const [wash, setWash] = useState<{ mode: "photo" | "moment"; moment: Moment }>({ mode: "photo", moment: "day" });
   const [taxo, setTaxo] = useState<
     { unlocked: boolean; correct: number } | undefined
   >();
@@ -80,6 +83,7 @@ export default function Home() {
     const dev = process.env.NODE_ENV !== "production" ? devPreview() : undefined;
     const now = dev?.date ?? new Date();
     const moment = dev?.moment ?? momentOf(now);
+    setWash({ mode: dev?.wash ?? "photo", moment });
     // 오늘 이미 정해진 새가 있으면 그것을 그대로(하루 안에 바뀌지 않는다).
     const today = dev ? undefined : getTodayRecord();
     const chosen =
@@ -110,7 +114,7 @@ export default function Home() {
   }, []);
 
   return (
-    <main className="min-h-screen py-6">
+    <main className="min-h-screen overflow-x-hidden py-6">
       <div className="mx-auto flex w-full max-w-md flex-col gap-5 p-4 lg:max-w-4xl">
         <header className="relative text-center">
           <LeafDecor className="pointer-events-none absolute -top-3 left-4 h-12 w-12 -rotate-[28deg] opacity-80 lg:left-24" />
@@ -129,7 +133,7 @@ export default function Home() {
           /* 데스크톱(lg+): 새 카드 왼쪽 · 트리비아/퀴즈 시작 오른쪽. 모바일 세로 1열. */
           <div className="flex flex-col gap-5 lg:grid lg:grid-cols-2 lg:gap-8 lg:items-start">
             <div className="flex flex-col gap-2">
-              <BirdCard species={species} />
+              <BirdCard species={species} washMode={wash.mode} moment={wash.moment} />
               {invite && (
                 <p className="text-center text-sm text-gray-500" aria-label="계절 안내">
                   {invite}

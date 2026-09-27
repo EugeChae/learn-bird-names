@@ -9,6 +9,16 @@
 // 한 묶음 안(이름→사진의 보기 4장)은 함께 받고, 묶음 사이는 앞 묶음이 다 끝난 뒤 시작한다.
 
 const requested = new Set<string>();
+/** URL → 가로/세로 비율. 미리 받거나 한 번 표시한 사진은 다음부터 상자가 비율을 미리 안다(선택지 A). */
+const ratios = new Map<string, number>();
+
+export function rememberPhotoRatio(url: string, width: number, height: number): void {
+  if (width > 0 && height > 0) ratios.set(url, width / height);
+}
+
+export function knownPhotoRatio(url: string): number | undefined {
+  return ratios.get(url);
+}
 /** 아직 끝나지 않은 요청. 같은 URL을 다시 만나면 새로 요청하지 않고 이 약속을 기다린다
  *  (React StrictMode의 이중 effect나 빠른 재렌더에서 앞 묶음을 건너뛰지 않도록). */
 const inflight = new Map<string, Promise<void>>();
@@ -26,6 +36,8 @@ export interface PreloadImage {
   complete?: boolean;
   /** 있으면 받은 뒤 미리 디코딩까지 해 둔다(표시 순간의 디코딩 지연 제거). */
   decode?: () => Promise<void>;
+  naturalWidth?: number;
+  naturalHeight?: number;
 }
 
 function canPreload(deps: PreloadDeps): boolean {
@@ -33,7 +45,9 @@ function canPreload(deps: PreloadDeps): boolean {
 }
 
 function createDefault(): PreloadImage {
-  return new window.Image() as unknown as PreloadImage;
+  const img = new window.Image();
+  img.crossOrigin = "anonymous"; // 화면의 <img>와 같은 모드로 받아야 캐시를 공유한다
+  return img as unknown as PreloadImage;
 }
 
 /**
@@ -56,6 +70,7 @@ function loadGroup(urls: readonly string[], deps: PreloadDeps): Promise<string[]
       try {
         const img = create();
         const done = () => {
+          if (img.naturalWidth && img.naturalHeight) rememberPhotoRatio(url, img.naturalWidth, img.naturalHeight);
           // 받은 뒤 디코딩까지 끝내 두면 화면에 올릴 때 지연이 없다. 실패해도 무시.
           if (typeof img.decode === "function") img.decode().catch(() => {}).finally(resolve);
           else resolve();
@@ -126,6 +141,7 @@ export function preloadPhotos(
 export function resetPreloadCache(): void {
   requested.clear();
   inflight.clear();
+  ratios.clear();
 }
 
 /**

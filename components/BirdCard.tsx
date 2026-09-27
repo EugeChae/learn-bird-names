@@ -6,17 +6,21 @@ import PhotoModal from "@/components/PhotoModal";
 import LeafDecor from "@/components/LeafDecor";
 import Chip from "@/components/ui/Chip";
 import BirdPhoto from "@/components/ui/BirdPhoto";
+import HabitatWash from "@/components/ui/HabitatWash";
 import { abundanceKo, statusKo } from "@/lib/bird-labels";
 
 interface BirdCardProps {
   species: Species;
+  /** 프로토타입 D 대체안 비교용: 사진색(기본) vs 시간대색 번짐. */
+  washMode?: "photo" | "moment";
+  moment?: "dawn" | "day" | "dusk";
 }
 
 /**
  * 오늘의 새 카드 (STORY-005) — 귀여운 도감 스타일.
  * 대표 사진 + 한국 공식명 + 학명 + 도감 칩(흔함·철새 구분·서식지). 사진 탭 시 확대.
  */
-export default function BirdCard({ species }: BirdCardProps) {
+export default function BirdCard({ species, washMode = "photo", moment }: BirdCardProps) {
   const [photoOpen, setPhotoOpen] = useState(false);
   const photo = species.media[0];
   const abundance = abundanceKo(species.abundance);
@@ -27,6 +31,7 @@ export default function BirdCard({ species }: BirdCardProps) {
       className="relative flex flex-col gap-3"
       aria-label={`${species.name_korean} 카드`}
     >
+      <HabitatWash src={photo?.url} habitat={species.habitat} mode={washMode} moment={moment} />
       {/* 떠다니는 잎사귀 장식 (레퍼런스 모티프) */}
       <LeafDecor className="pointer-events-none absolute -right-3 -top-5 z-10 h-16 w-16 rotate-[18deg]" />
 
@@ -36,14 +41,16 @@ export default function BirdCard({ species }: BirdCardProps) {
             type="button"
             onClick={() => setPhotoOpen(true)}
             aria-label="새 사진 확대"
-            className="block w-full overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
+            className="block w-full"
           >
             <BirdPhoto
               src={photo.url}
               alt={species.name_korean}
               priority
-              fit="contain"
-              className="aspect-[4/3] max-h-[52vh] w-full lg:aspect-square"
+              fit="natural"
+              capVh={92}
+              feather
+              className=""
             />
           </button>
           <figcaption className="text-right text-[10px] text-gray-400">
