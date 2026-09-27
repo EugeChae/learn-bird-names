@@ -46,11 +46,11 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
         <dl className="grid grid-cols-3 gap-3 text-center">
           <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
             <dt className="text-xs text-gray-500">정답</dt>
-            <dd className="text-2xl font-bold text-green-700">{correct}</dd>
+            <dd className="text-2xl font-bold text-leaf-deep">{correct}</dd>
           </div>
           <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
             <dt className="text-xs text-gray-500">오답</dt>
-            <dd className="text-2xl font-bold text-red-600">{incorrect}</dd>
+            <dd className="text-2xl font-bold text-petal">{incorrect}</dd>
           </div>
           <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
             <dt className="text-xs text-gray-500">최고 연속</dt>
@@ -89,9 +89,9 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
 
   const stateClass = (id: string, base: string) => {
     if (resolved && id === question.correctId)
-      return `${base} border-green-500 bg-green-50 text-green-800`;
+      return `${base} border-leaf bg-leaf-soft text-leaf-deep`;
     if (wrongIds.includes(id))
-      return `${base} border-red-400 bg-red-50 text-red-700`;
+      return `${base} border-blush bg-blush-soft text-petal`;
     return `${base} border-gray-300 bg-white text-gray-900 hover:border-gray-500`;
   };
 
@@ -134,7 +134,7 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
 
       <div className="min-h-[2rem]">
         {hintText ? (
-          <p className="rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-800">
+          <p className="rounded-md bg-pollen-soft px-3 py-2 text-sm text-pollen-deep">
             💡 {hintText}
           </p>
         ) : (
@@ -142,7 +142,7 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
             <button
               type="button"
               onClick={hint}
-              className="text-sm font-medium text-amber-700 underline underline-offset-2"
+              className="text-sm font-medium text-pollen-deep underline underline-offset-2"
             >
               힌트 보기 (1회)
             </button>
@@ -191,10 +191,10 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
 
       <div aria-live="polite" className="min-h-[3rem]">
         {status === "correct" && (
-          <p className="font-semibold text-green-700">정답입니다! 🎉</p>
+          <p className="font-semibold text-leaf-deep">정답입니다! 🎉</p>
         )}
         {status === "answering" && wrongIds.length > 0 && (
-          <p className="font-medium text-red-600">틀렸어요. 다시 시도해 보세요.</p>
+          <p className="font-medium text-petal">틀렸어요. 다시 시도해 보세요.</p>
         )}
         {status === "revealed" && (
           <p className="font-medium text-gray-800">

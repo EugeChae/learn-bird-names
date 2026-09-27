@@ -35,11 +35,11 @@ export default function SessionComplete({ session }: { session: QuizSession }) {
       <dl className="grid grid-cols-3 gap-3 text-center">
         <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
           <dt className="text-xs text-gray-500">정답</dt>
-          <dd className="text-2xl font-bold text-green-700">{correct}</dd>
+          <dd className="text-2xl font-bold text-leaf-deep">{correct}</dd>
         </div>
         <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
           <dt className="text-xs text-gray-500">오답</dt>
-          <dd className="text-2xl font-bold text-red-600">{incorrect}</dd>
+          <dd className="text-2xl font-bold text-petal">{incorrect}</dd>
         </div>
         <div className="rounded-2xl border border-gray-200 py-3 shadow-soft">
           <dt className="text-xs text-gray-500">최고 연속</dt>

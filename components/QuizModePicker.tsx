@@ -55,7 +55,7 @@ export default function QuizModePicker({
       )}
 
       {taxonomy?.unlocked && (
-        <p className="text-center text-xs font-medium text-green-700">
+        <p className="text-center text-xs font-medium text-leaf-deep">
           🎉 분류 모드 잠금 해제! 목·과 관계를 퀴즈로 배워 보세요.
         </p>
       )}

@@ -57,7 +57,7 @@ export default function ResetConfirmModal({
           <button
             type="button"
             onClick={onConfirm}
-            className="flex-1 rounded-lg bg-red-600 px-4 py-3 text-base font-semibold text-white hover:bg-red-700"
+            className="flex-1 rounded-lg bg-petal px-4 py-3 text-base font-semibold text-white hover:bg-petal"
           >
             초기화
           </button>

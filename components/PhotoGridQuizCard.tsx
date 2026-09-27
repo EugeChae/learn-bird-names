@@ -51,10 +51,10 @@ export default function PhotoGridQuizCard({
     const base =
       "relative block w-full overflow-hidden rounded-2xl border-4 transition disabled:cursor-not-allowed";
     if (resolved && choiceId === question.correctId) {
-      return `${base} border-green-500`;
+      return `${base} border-leaf`;
     }
     if (wrongIds.includes(choiceId)) {
-      return `${base} border-red-400`;
+      return `${base} border-blush`;
     }
     return `${base} border-transparent hover:border-gray-400`;
   };
@@ -82,7 +82,7 @@ export default function PhotoGridQuizCard({
 
       <div className="min-h-[2rem]">
         {hintText ? (
-          <p className="rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-800">
+          <p className="rounded-md bg-pollen-soft px-3 py-2 text-sm text-pollen-deep">
             💡 {hintText}
           </p>
         ) : (
@@ -90,7 +90,7 @@ export default function PhotoGridQuizCard({
             <button
               type="button"
               onClick={hint}
-              className="text-sm font-medium text-amber-700 underline underline-offset-2"
+              className="text-sm font-medium text-pollen-deep underline underline-offset-2"
             >
               힌트 보기 (1회)
             </button>
@@ -143,10 +143,10 @@ export default function PhotoGridQuizCard({
 
       <div aria-live="polite" className="min-h-[3rem]">
         {status === "correct" && (
-          <p className="font-semibold text-green-700">정답입니다! 🎉</p>
+          <p className="font-semibold text-leaf-deep">정답입니다! 🎉</p>
         )}
         {status === "answering" && wrongIds.length > 0 && (
-          <p className="font-medium text-red-600">틀렸어요. 다시 시도해 보세요.</p>
+          <p className="font-medium text-petal">틀렸어요. 다시 시도해 보세요.</p>
         )}
         {status === "revealed" && (
           <p className="font-medium text-gray-800">

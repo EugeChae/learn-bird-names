@@ -46,10 +46,10 @@ export default function QuizCard({ session }: QuizCardProps) {
     const base =
       "w-full rounded-2xl border px-4 py-3 text-left text-base font-medium transition disabled:cursor-not-allowed";
     if (resolved && choiceId === question.correctId) {
-      return `${base} border-green-500 bg-green-50 text-green-800`;
+      return `${base} border-leaf bg-leaf-soft text-leaf-deep`;
     }
     if (wrongIds.includes(choiceId)) {
-      return `${base} border-red-400 bg-red-50 text-red-700`;
+      return `${base} border-blush bg-blush-soft text-petal`;
     }
     return `${base} border-gray-300 bg-white text-gray-900 hover:border-gray-500`;
   };
@@ -108,7 +108,7 @@ export default function QuizCard({ session }: QuizCardProps) {
       <div className="flex flex-col gap-4">
       <div className="min-h-[2rem]">
         {hintText ? (
-          <p className="rounded-md bg-amber-50 px-3 py-2 text-sm text-amber-800">
+          <p className="rounded-md bg-pollen-soft px-3 py-2 text-sm text-pollen-deep">
             💡 {hintText}
           </p>
         ) : (
@@ -116,7 +116,7 @@ export default function QuizCard({ session }: QuizCardProps) {
             <button
               type="button"
               onClick={hint}
-              className="text-sm font-medium text-amber-700 underline underline-offset-2"
+              className="text-sm font-medium text-pollen-deep underline underline-offset-2"
             >
               힌트 보기 (1회)
             </button>
@@ -142,10 +142,10 @@ export default function QuizCard({ session }: QuizCardProps) {
 
       <div aria-live="polite" className="min-h-[3rem]">
         {status === "correct" && (
-          <p className="font-semibold text-green-700">정답입니다! 🎉</p>
+          <p className="font-semibold text-leaf-deep">정답입니다! 🎉</p>
         )}
         {status === "answering" && wrongIds.length > 0 && (
-          <p className="font-medium text-red-600">틀렸어요. 다시 시도해 보세요.</p>
+          <p className="font-medium text-petal">틀렸어요. 다시 시도해 보세요.</p>
         )}
         {status === "revealed" && (
           <p className="font-medium text-gray-800">

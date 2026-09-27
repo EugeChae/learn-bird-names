@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Jua, Gowun_Dodum } from "next/font/google";
 import "./globals.css";
 import AppFooter from "@/components/AppFooter";
+import PalettePreview from "@/components/PalettePreview";
 
 // 제목: Jua(둥글둥글 정돈된 디스플레이). 본문: Gowun Dodum(부드럽고 예쁜 고딕, 가독성↑).
 // 한글 글리프가 포함된 폰트라 subsets는 latin만 지정해도 된다(자동 포함).
@@ -36,6 +37,7 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://inaturalist-open-data.s3.amazonaws.com" />
       </head>
       <body className="min-h-screen bg-background text-foreground">
+        <PalettePreview />
         {children}
         <AppFooter />
       </body>

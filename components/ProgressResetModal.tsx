@@ -27,7 +27,7 @@ export default function ProgressResetModal({ onReset }: ProgressResetModalProps)
         <button
           type="button"
           onClick={onReset}
-          className="mt-4 w-full rounded-lg bg-green-600 px-4 py-3 text-base font-semibold text-white hover:bg-green-700"
+          className="mt-4 w-full rounded-lg bg-leaf px-4 py-3 text-base font-semibold text-white hover:bg-leaf-deep"
         >
           진도 초기화
         </button>

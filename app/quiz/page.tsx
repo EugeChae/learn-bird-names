@@ -123,7 +123,7 @@ export default function QuizPage() {
             <p className="text-gray-600">이 범위에는 아직 학습할 새가 없어요.</p>
             <Link
               href="/"
-              className="text-sm font-medium text-green-700 underline underline-offset-2"
+              className="text-sm font-medium text-leaf-deep underline underline-offset-2"
             >
               홈으로 돌아가기
             </Link>

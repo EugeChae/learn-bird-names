@@ -16,11 +16,12 @@ const config: Config = {
         background: "var(--background)",
         foreground: "var(--foreground)",
         // 레퍼런스 팔레트(Olga Davydova) — 귀여운 보태니컬 톤. soft=칩·배지 배경용 연한 틴트.
-        leaf: { DEFAULT: "#5d7b3d", soft: "#eaf1e0" },
-        pollen: { DEFAULT: "#e0a80f", soft: "#fbf0cf" },
-        sky: { DEFAULT: "#5b8fc0", soft: "#e7f0f9" },
-        blush: { DEFAULT: "#d76a92", soft: "#fce4ec" },
-        petal: { DEFAULT: "#e4568b" },
+        // 값은 app/globals.css의 CSS 변수(rgb 삼중값)에서 온다 — 팔레트 전환·미리보기 가능.
+        leaf: { DEFAULT: "rgb(var(--leaf) / <alpha-value>)", soft: "rgb(var(--leaf-soft) / <alpha-value>)", deep: "rgb(var(--leaf-deep) / <alpha-value>)" },
+        pollen: { DEFAULT: "rgb(var(--pollen) / <alpha-value>)", soft: "rgb(var(--pollen-soft) / <alpha-value>)", deep: "rgb(var(--pollen-deep) / <alpha-value>)" },
+        sky: { DEFAULT: "rgb(var(--sky) / <alpha-value>)", soft: "rgb(var(--sky-soft) / <alpha-value>)", deep: "rgb(var(--sky-deep) / <alpha-value>)" },
+        blush: { DEFAULT: "rgb(var(--blush) / <alpha-value>)", soft: "rgb(var(--blush-soft) / <alpha-value>)", deep: "rgb(var(--blush-deep) / <alpha-value>)" },
+        petal: { DEFAULT: "rgb(var(--petal) / <alpha-value>)" },
       },
       fontFamily: {
         // layout.tsx의 next/font 변수와 연결. display=제목(Gaegu), body=본문(Gamja Flower).

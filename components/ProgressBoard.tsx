@@ -62,13 +62,13 @@ export default function ProgressBoard({
         <div className="flex items-baseline justify-between">
           <span className="text-sm text-gray-600">학습한 새</span>
           <span className="text-lg font-semibold text-gray-900">
-            <strong className="text-2xl text-green-700">{learned}</strong> /{" "}
+            <strong className="text-2xl text-leaf-deep">{learned}</strong> /{" "}
             {total}
           </span>
         </div>
         <div className="mt-2 h-2 w-full overflow-hidden rounded-full bg-gray-100">
           <div
-            className="h-full rounded-full bg-green-500"
+            className="h-full rounded-full bg-leaf"
             style={{ width: `${pct}%` }}
             role="progressbar"
             aria-valuenow={learned}
@@ -89,7 +89,7 @@ export default function ProgressBoard({
             오답 보기 레벨{" "}
             <span className="text-xs text-gray-400">{LEVEL_LABEL[level.level]}</span>
           </span>
-          <strong className="text-2xl text-green-700">Lv {level.level}</strong>
+          <strong className="text-2xl text-leaf-deep">Lv {level.level}</strong>
         </div>
         <ul className="mt-2 flex flex-col gap-1 text-xs text-gray-600">
           <li>
@@ -141,7 +141,7 @@ export default function ProgressBoard({
                 <span className="font-medium text-gray-900">
                   {w.species.name_korean}
                 </span>
-                <span className="text-sm text-red-600">
+                <span className="text-sm text-petal">
                   오답률 {Math.round(w.missRate * 100)}%
                   <span className="ml-1 text-xs text-gray-400">
                     ({w.incorrect}/{w.attempts})

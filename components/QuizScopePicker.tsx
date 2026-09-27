@@ -76,11 +76,11 @@ function ScopeOption({
   return (
     <Link
       href={href}
-      className="flex items-center justify-between rounded-2xl border border-green-200 bg-green-50 px-4 py-3 text-base font-medium text-green-800 hover:bg-green-100"
+      className="flex items-center justify-between rounded-2xl border border-leaf/30 bg-leaf-soft px-4 py-3 text-base font-medium text-leaf-deep hover:bg-leaf-soft"
     >
       <span>{label}</span>
       <span
-        className={tooFew ? "text-xs text-amber-600" : "text-xs text-green-600"}
+        className={tooFew ? "text-xs text-pollen-deep" : "text-xs text-leaf"}
       >
         {tooFew ? `${count}종 · 5종 미만이라 문제가 적어요` : `${count}종`}
       </span>

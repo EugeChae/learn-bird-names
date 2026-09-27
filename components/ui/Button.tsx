@@ -9,10 +9,10 @@ type Variant = "primary" | "soft" | "outline" | "danger";
 type Size = "sm" | "md" | "lg";
 
 const VARIANT: Record<Variant, string> = {
-  primary: "bg-green-600 text-white shadow-soft hover:bg-green-700",
+  primary: "bg-leaf text-white shadow-soft hover:bg-leaf-deep",
   soft: "bg-leaf-soft text-leaf hover:brightness-95",
   outline:
-    "border-2 border-green-200 bg-white text-green-800 hover:border-green-400 hover:bg-green-50",
+    "border-2 border-leaf/30 bg-white text-leaf-deep hover:border-leaf/60 hover:bg-leaf-soft",
   danger: "border-2 border-blush/40 bg-white text-petal hover:bg-blush-soft",
 };
 

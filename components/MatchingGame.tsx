@@ -82,17 +82,17 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
 
   const photoClass = (isMatched: boolean, isSel: boolean) => {
     const base = `block ${ROW} w-24 overflow-hidden rounded-lg border-2 transition disabled:cursor-default lg:w-28`;
-    if (isMatched) return `${base} border-green-400 opacity-40`;
-    if (isSel) return `${base} border-blue-500 ring-2 ring-blue-300`;
+    if (isMatched) return `${base} border-leaf/60 opacity-40`;
+    if (isSel) return `${base} border-sky ring-2 ring-sky/40`;
     return `${base} border-gray-200 hover:border-gray-400`;
   };
 
   const nameClass = (isMatched: boolean, isSel: boolean) => {
     const base = `flex ${ROW} w-full items-center rounded-lg border-2 px-4 text-lg font-medium transition disabled:cursor-default`;
     if (isMatched)
-      return `${base} border-green-400 bg-green-50 text-green-700 opacity-40`;
+      return `${base} border-leaf/60 bg-leaf-soft text-leaf-deep opacity-40`;
     if (isSel)
-      return `${base} border-blue-500 bg-blue-50 text-blue-800 ring-2 ring-blue-300`;
+      return `${base} border-sky bg-sky-soft text-sky-deep ring-2 ring-sky/40`;
     return `${base} border-gray-300 bg-white text-gray-900 hover:border-gray-500`;
   };
 
@@ -108,7 +108,7 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
       <p className="text-sm text-gray-600" aria-live="polite">
         {matched.size} / {total} 짝
         {feedback === "mismatch" && (
-          <span className="ml-2 font-medium text-red-600">
+          <span className="ml-2 font-medium text-petal">
             짝이 아니에요. 다시 골라보세요.
           </span>
         )}

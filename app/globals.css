@@ -14,6 +14,56 @@
   --foreground: #2b2724;
 }
 
+/* ─── 팔레트 토큰 (rgb 삼중값 — Tailwind 투명도 수정자 호환) ───────────────────
+ * DESIGN.md §3 "새 아침"(P3, 2026-09-27 cleor 결정). 원색 4칩 + petal + soft/deep 파생.
+ * soft = 칩 15% + 종이, deep = 칩을 32% 어둡게. 개발 미리보기 ?palette=p1|p2 (구 후보, 프로덕션 무시).
+ */
+:root {
+  --leaf: 122 154 90;
+  --pollen: 240 178 70;
+  --sky: 111 163 207;
+  --blush: 232 131 111;
+  --petal: 217 98 77;
+  --leaf-soft: 233 234 218;
+  --pollen-soft: 251 237 215;
+  --sky-soft: 232 235 236;
+  --blush-soft: 250 230 222;
+  --leaf-deep: 83 105 61;
+  --pollen-deep: 163 121 48;
+  --sky-deep: 75 111 141;
+  --blush-deep: 158 89 75;
+}
+:root[data-palette="p1"] {
+  --leaf: 93 123 61;
+  --pollen: 224 168 15;
+  --sky: 91 143 192;
+  --blush: 215 106 146;
+  --petal: 228 86 139;
+  --leaf-soft: 234 241 224;
+  --pollen-soft: 251 240 207;
+  --sky-soft: 231 240 249;
+  --blush-soft: 252 228 236;
+  --leaf-deep: 63 84 41;
+  --pollen-deep: 152 114 10;
+  --sky-deep: 62 97 131;
+  --blush-deep: 146 72 99;
+}
+:root[data-palette="p2"] {
+  --leaf: 95 128 71;
+  --pollen: 230 151 90;
+  --sky: 94 147 191;
+  --blush: 207 139 134;
+  --petal: 201 106 99;
+  --leaf-soft: 229 230 216;
+  --pollen-soft: 250 233 218;
+  --sky-soft: 229 233 234;
+  --blush-soft: 246 232 225;
+  --leaf-deep: 65 87 48;
+  --pollen-deep: 156 103 61;
+  --sky-deep: 64 100 130;
+  --blush-deep: 141 95 91;
+}
+
 body {
   color: var(--foreground);
   background: var(--background);

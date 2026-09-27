@@ -152,7 +152,7 @@ export default function FlagsPage() {
             <button
               type="button"
               onClick={handleClear}
-              className="ml-auto rounded-md border border-red-300 px-3 py-1.5 text-sm font-medium text-red-600 hover:bg-red-50"
+              className="ml-auto rounded-md border border-blush/50 px-3 py-1.5 text-sm font-medium text-petal hover:bg-blush-soft"
             >
               전체 비우기
             </button>
@@ -183,7 +183,7 @@ export default function FlagsPage() {
                   type="button"
                   onClick={() => handleRemove(f.photoUrl)}
                   aria-label={`${f.nameKorean} 변경요청 제거`}
-                  className="flex-shrink-0 rounded-md px-2 py-1 text-sm text-gray-400 hover:bg-gray-100 hover:text-red-600"
+                  className="flex-shrink-0 rounded-md px-2 py-1 text-sm text-gray-400 hover:bg-gray-100 hover:text-petal"
                 >
                   제거
                 </button>
@@ -227,7 +227,7 @@ export default function FlagsPage() {
               <button
                 type="button"
                 onClick={handleClearReports}
-                className="ml-auto rounded-md border border-red-300 px-3 py-1.5 text-sm font-medium text-red-600 hover:bg-red-50"
+                className="ml-auto rounded-md border border-blush/50 px-3 py-1.5 text-sm font-medium text-petal hover:bg-blush-soft"
               >
                 신고 전체 비우기
               </button>
@@ -261,7 +261,7 @@ export default function FlagsPage() {
                     type="button"
                     onClick={() => handleRemoveReport(r.id)}
                     aria-label={`${r.nameKorean || "종 미지정"} 신고 제거`}
-                    className="flex-shrink-0 rounded-md px-2 py-1 text-sm text-gray-400 hover:bg-gray-100 hover:text-red-600"
+                    className="flex-shrink-0 rounded-md px-2 py-1 text-sm text-gray-400 hover:bg-gray-100 hover:text-petal"
                   >
                     제거
                   </button>
