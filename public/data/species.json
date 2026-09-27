@@ -37,6 +37,30 @@
         "content": "2018년 DNA 분석 결과 유라시아까치(Pica pica)에서 별도 종(Pica serica)으로 분리되었다. 한반도 전역에 흔한 텃새로, 예로부터 길조로 여겨져 왔다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Oriental magpie\" (en), 2026-08 확인"
+      },
+      {
+        "content": "해 뜨기 30분쯤 전, 어스름 속에서 까치들이 겨울 공동 잠자리를 빠져나와 저마다 자기 영역으로 흩어진다.",
+        "type": "ecology",
+        "trivia_source": "Milchev, \"Dynamics of the departure of Magpies Pica pica at a communal roost site in Sofia\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "winter"
+        ]
+      },
+      {
+        "content": "지금쯤 벌레, 낟알, 음식 찌꺼기, 도토리까지 가리지 않고 찾아다니며, 남는 먹이는 여기저기 숨겨 둔다. 숨긴 자리를 계절이 바뀌어도 기억하는 새다. 거울 속 자기 모습을 알아보는 몇 안 되는 동물이기도 하다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian magpie\" (en), 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "겨울 저녁이면 까치들이 무리 지어 빽빽한 나무숲의 공동 잠자리로 날아든다. 찌르레기, 지빠귀, 비둘기, 갈까마귀 옆에서 함께 자기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian magpie\" (en), 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "winter"
+        ]
       }
     ]
   },
@@ -86,6 +110,28 @@
         "content": "북반구 전역에서 번식하고 겨울에는 아프리카·아라비아·인도 등 남쪽으로 이동하는 장거리 철새로, 한국에는 여름철새로 찾아온다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Barn swallow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "번식철 아침, 전깃줄 위나 둥지 근처 하늘에서 제비의 재잘거리는 노래가 들려온다. 하루 중 아침에 가장 잘 부른다.",
+        "type": "ecology",
+        "trivia_source": "Cornell Birds of the World, \"Barn Swallow — Sounds and Vocal Behavior\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 물이나 들판 위를 낮게 스치며 날벌레를 낚아채고 있다. 잡은 먹이는 대부분 공중에서 그대로 삼킨다. 날씨가 궂으면 땅에 내려앉아 먹기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Audubon Guide to North American Birds, \"Barn Swallow\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "번식이 끝난 6~10월, 해가 지면 평지의 배밭이나 갈대밭으로 수천, 때로는 수만 마리가 모여들어 함께 잠을 잔다.",
+        "type": "ecology",
+        "trivia_source": "위키백과, \"제비\" (ko), 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "summer",
+          "autumn"
+        ]
       }
     ]
   },
@@ -130,6 +176,24 @@
         "content": "주로 씨앗과 곡물을 먹지만 번식기에는 곤충 같은 무척추동물도 잡아먹는다. 나무 구멍이나 건물 틈에 둥지를 틀고 한 배에 5~6개의 알을 낳는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian tree sparrow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 참새 떼가 시끄럽게 지저귀며 아침 먹이터에 내려앉고 있다.",
+        "type": "ecology",
+        "trivia_source": "Bird Ecology Study Group (Singapore), \"Eurasian Tree Sparrows feeding in the rain\", 2011, 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 모래나 물에서 목욕하고 있을지 모른다. 부리로 물을 찍어 몸에 바르고 물구나무까지 서 가며 진드기, 먼지, 비듬을 털어 낸다.",
+        "type": "ecology",
+        "trivia_source": "국립중앙과학관 과학학습콘텐츠, \"참새\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "저녁이 되면 참새들이 미루나무 위나 대나무 숲에 잔뜩 모여 시끄럽게 떠든다. 늘 정해진 자리에서 잠을 잔다.",
+        "type": "ecology",
+        "trivia_source": "위키백과, \"참새\" (ko), 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -179,6 +243,24 @@
         "content": "예전에는 겨울에 남쪽으로 이동하는 성향이 강했으나, 농경 환경 변화로 점점 더 북쪽에서 겨울을 나는 개체가 늘고 있다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-08 확인"
+      },
+      {
+        "content": "직박구리는 해 뜨는 시각에 맞춰 울기 시작한다. 연평균 일출 11분 전이라는 기록이 있다. 그러고는 잠자던 나무에서 무리 지어 출근하듯 날아 나간다.",
+        "type": "ecology",
+        "trivia_source": "京都大学 環境安全保健機構, \"8月の野鳥 ヒヨドリ\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "여름엔 벌레를, 가을·겨울엔 열매와 씨앗을 먹는다. 꽃 피는 철이면 동백과 벚꽃 속에 부리를 깊이 넣어 꿀을 빨다가 노란 꽃가루를 뒤집어쓴 채 나온다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Brown-eared bulbul\" (en), 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해 지기 직전, 직박구리의 식사가 하루 두 번째 절정을 맞는다. 긴 밤을 앞두고 배를 채우는 시간이다. 가을부터 겨울까지는 혼자가 아니라 무리로 다닌다.",
+        "type": "ecology",
+        "trivia_source": "矢原徹一(九州大 명예교수), \"ヒヨドリ観察ガイド\", 2026-01; 京都大学 eco.kyoto-u.ac.jp, 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -224,6 +306,24 @@
         "content": "먹이가 매우 다양해 살아있든 죽었든 먹을 만한 것은 거의 다 시도한다. 일본에서는 쓰레기봉투를 찢거나 둥지 재료로 철사 옷걸이를 물어가는 것으로 알려져 있다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-08 확인"
+      },
+      {
+        "content": "도쿄의 큰부리까마귀는 밤 잠자리를 떠나자마자 이른 아침 거리로 나가, 도시가 깨기 전에 음식점 앞 찌꺼기를 뒤진다. 해 뜨고 두 시간이면 끝난다.",
+        "type": "ecology",
+        "trivia_source": "Morishita et al., \"Movements of Crows in Urban Areas, Based on PHS Tracking\", Global Environmental Research 7(2), 2003, 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "낮에는 짝끼리 흩어져 저마다의 영역을 지킨다. 밤이 돼야 다시 큰 무리로 모인다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘이면 큰 무리가 줄지어 공동 잠자리로 날아든다. 한 곳에 수천 마리가 함께 밤을 보내기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -273,6 +373,30 @@
         "content": "박새(Parus cinereus)의 울음소리는 '주위를 살펴라' '가까이 오라' 같은 뜻을 담고, 소리를 배열하는 순서에 사람 언어에 견줄 만한 '문법'이 있다는 연구로 유명하다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
+      },
+      {
+        "content": "새벽, 수컷이 짝이 잠든 둥지 구멍 바로 옆에서 힘껏 노래한다. 암컷이 나오면 짝짓기를 하고, 노래는 잦아든다.",
+        "type": "ecology",
+        "trivia_source": "Gorissen & Eens, \"Interactive Communication Between Male and Female Great Tits During the Dawn Chorus\", The Auk 121(1), 2004, 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "spring"
+        ]
+      },
+      {
+        "content": "지금쯤 잎사귀를 뒤지며 애벌레와 노린재, 딱정벌레를 잡고 있다. 벌레를 발로 붙들고 부리로 뜯고, 딱딱한 씨앗은 나무껍질 틈에 끼워 놓고 두드려 깬다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Cinereous tit\" (en), 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "겨울밤이 내리면 나무 구멍이나 새집 속으로 들어가 잔다. 작은 새에게 추운 밤을 구멍 안에서 나는 건 가지 위보다 훨씬 힘을 아끼는 일이다.",
+        "type": "ecology",
+        "trivia_source": "Amo et al., PLoS ONE 2018 (PMC6145545), 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "winter"
+        ]
       }
     ]
   },
@@ -323,6 +447,24 @@
         "content": "고위도 지역 개체는 겨울에 남쪽으로 이동하고, 열대에 가까운 지역 개체는 이동하지 않고 정주한다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-08 확인"
+      },
+      {
+        "content": "이른 아침, 수컷 멧비둘기의 낮고 독특한 울음이 들린다. 하루 중 주로 이 시간에 운다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"キジバト\" (ja), 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 땅 위를 걸으며 씨앗과 낟알을 주워 먹고 있다. 구애할 때 수컷은 날개를 요란하게 치며 솟구쳤다가 꼬리를 활짝 편 채 미끄러져 내려온다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Oriental turtle dove\" (en), 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "'흐-흐-우-우' 하는 울음은 아침과 저녁에 가장 자주 들린다. 번식철에는 더 부지런히 운다.",
+        "type": "ecology",
+        "trivia_source": "野鳥図鑑 yachozukan.com, \"キジバト\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -373,6 +515,24 @@
         "content": "집오리 품종 대부분이 이 청둥오리에서 유래했다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Mallard\" (en), 2026-08 확인"
+      },
+      {
+        "content": "새벽, 청둥오리들이 하늘에 떠 있다. 밤새 먹이를 먹던 곳에서 낮 동안 쉴 잔잔한 물로 돌아가는 길이다.",
+        "type": "ecology",
+        "trivia_source": "Bengtsson et al., \"Movements, Home-Range Size and Habitat Selection of Mallards during Autumn Migration\", PLOS ONE 2014, 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "낮은 대체로 쉬는 시간이다. 추적한 청둥오리들은 하루의 절반쯤을 바람 잔 물가에서 빈둥거리며 보내고, 먹이는 밤에 나가서 먹었다.",
+        "type": "ecology",
+        "trivia_source": "Bengtsson et al., PLOS ONE 2014, 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해 진 뒤 30분, 오리들의 이동이 절정에 이른다. 낮의 피난처를 떠나 먹이터로 향하고, 밤새 한자리에서 먹고 구애하고 깃을 다듬다가 해 뜨기 직전에야 돌아온다.",
+        "type": "ecology",
+        "trivia_source": "Ducks Unlimited, \"Understanding Waterfowl: Night Moves\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -422,6 +582,24 @@
         "content": "동아시아·동남아시아에서 번식하며, 일본과 러시아 극동 개체군은 20세기 초 이후 번식 범위를 북쪽으로 500km 넘게 넓혔다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eastern spot-billed duck\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 물 위에 떠 있는 풀씨와 벌레를 부리로 쓸어 담듯 건져 먹고 있다. 깊이 잠수하지는 않는다.",
+        "type": "ecology",
+        "trivia_source": "위키백과, \"흰뺨검둥오리\" (ko), 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "한낮에는 저수지 한가운데로 나가 쉬거나 잠을 잔다. 흐린 날에만 낮에도 먹이를 찾는 모습을 볼 수 있다.",
+        "type": "ecology",
+        "trivia_source": "디지털서산문화대전, \"흰뺨검둥오리\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해가 질 무렵이면 근처 논과 밭으로 날아가 먹이를 먹기 시작한다. 이 오리의 식사는 대부분 저녁과 밤에 이뤄진다.",
+        "type": "ecology",
+        "trivia_source": "디지털서산문화대전, \"흰뺨검둥오리\"; Wikipedia, \"Eastern spot-billed duck\" (en), 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -468,6 +646,24 @@
         "content": "습지 가까운 높은 나무 위에 여러 쌍이 모여 집단 번식지(heronry)를 이룬다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-08 확인"
+      },
+      {
+        "content": "새벽은 왜가리의 사냥 시간이다. 얕은 물이나 바위 위에 꼼짝 않고 서 있다가, 먹이가 사정거리에 들어오면 S자로 접었던 목을 펴며 내리꽂는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 어딘가에서 한 다리로 선 채 오랫동안 꼼짝 않고 있거나, 땅 위를 성큼성큼 걷고 있다. 나무 위에 올라앉기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘은 새벽과 함께 왜가리의 두 번째 사냥 시간이다. 밤이 되면 나무나 절벽에 다른 왜가리들과 모여 잠을 잔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Grey heron\" (en), 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -519,6 +715,24 @@
         "content": "19세기 말 모자 장식용 번식깃(aigrette)을 얻으려 대량으로 희생되었고, 이 사건이 계기가 되어 미국 오듀본협회의 상징이 되었다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Great egret\" (en), 2026-08 확인"
+      },
+      {
+        "content": "새벽 무렵이 하루 중 가장 부지런한 시간이다. 목을 길게 뻗고 얕은 물을 천천히 걸으며 물고기를 향해 부리를 내리꽂는다. 갯벌에서는 물이 빠지는 때를 따라 움직인다.",
+        "type": "ecology",
+        "trivia_source": "HeronConservation (IUCN Heron Specialist Group), \"Great Egret\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "낮 시간의 60~90%를 얕은 물을 천천히 걷는 데 쓴다. 먹이가 움직이는 자리 옆에 서서 기다리기도 한다.",
+        "type": "ecology",
+        "trivia_source": "HeronConservation (IUCN Heron Specialist Group), \"Great Egret\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘이면 주변 곳곳에서 백로들이 날아와 나무 위 공동 잠자리에 모인다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web, \"Ardea alba\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -568,6 +782,24 @@
         "content": "번식기에는 매우 공격적이고 텃세가 강해, 긴 다리로 상대에게 돌진해 발길질로 싸운다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 청둥오리처럼 물구나무를 서거나 바닥까지 잠수해 물풀을 물어 올린 뒤, 수면으로 돌아와 먹고 있다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian coot\" (en); BTO BirdFacts, \"Coot\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "낮 시간의 70% 남짓을 먹고 쉬는 데 쓴다. 나머지는 깃을 다듬거나 헤엄치는 시간이다.",
+        "type": "ecology",
+        "trivia_source": "Ukrainian Journal of Ecology, \"Ecology and diurnal behavior of the Eurasian coot Fulica atra in the Oubeira Lake\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "밤이 내리면 물 위로 터지는 듯한 트럼펫 소리가 퍼진다. 물닭은 밤에 자주 우는 시끄러운 새고, 경쟁자에게는 긴 다리로 돌진해 걷어찬다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
