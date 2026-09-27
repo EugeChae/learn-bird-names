@@ -1,0 +1,349 @@
+{
+  "batch": "3",
+  "note": "STORY-017 AC11 · tier 1 마지막 10종. 규칙은 배치 1과 같다.",
+  "items": [
+    {
+      "species": "오색딱다구리",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "동이 튼 직후, 오색딱다구리는 마른 나무를 두드려 북소리 같은 드러밍을 울린다. 이웃 수컷이 답하듯 드러밍을 되돌려 보내기도 한다. 한겨울부터 새끼가 둥지를 떠날 때까지 이어지는 영역 선언이다.",
+      "evidence": "Often, soon after dawn the drumming of woodpeckers answering each other can be quite evocative. / Both sexes drum, although the male does so much more often, mostly from mid-January until the young are fledged.",
+      "trivia_source": "wildechoes.org, \"Great Spotted Woodpecker (Dendrocopos major)\" + Wikipedia(en), \"Great spotted woodpecker\", 2026-09 확인",
+      "url": "https://www.wildechoes.org/species/woodpeckers/great-spotted-woodpecker",
+      "note": "시간 근거는 탐조 녹음가 사이트(중간 등급), 계절 근거는 Wikipedia(en). 보조 URL: https://en.wikipedia.org/wiki/Great_spotted_woodpecker",
+      "seasons": [
+        "winter",
+        "spring"
+      ]
+    },
+    {
+      "species": "오색딱다구리",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 오색딱다구리는 혼자서 나무 밑동부터 꼭대기까지 오르내리며 먹이를 찾고 있다. 껍질을 쪼아 10cm 깊이 구멍을 내고 혀로 애벌레를 끄집어내거나, 단단한 열매와 솔방울은 '모루' 삼은 틈에 끼워 놓고 두드려 깬다.",
+      "evidence": "The great spotted woodpecker feeds at all levels of a tree, usually alone, but sometimes as a pair. ... larvae are extracted by chiselling holes up to 10 cm (3.9 in) deep and trapping the soft insect with the tongue. ... an 'anvil' on which to hammer hard items, particularly pine, spruce, and larch cones, but also fruit, nuts, and hard-bodied insects.",
+      "trivia_source": "Wikipedia(en), \"Great spotted woodpecker\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Great_spotted_woodpecker",
+      "note": ""
+    },
+    {
+      "species": "오색딱다구리",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해가 지면 오색딱다구리는 나무 구멍으로 들어가 밤을 보낸다. 다른 딱다구리가 파 놓은 옛 둥지 구멍을 쓰기도 하고, 직접 새 잠자리 구멍을 파거나 인공 새집을 쓰기도 한다.",
+      "evidence": "Great spotted woodpeckers roost at night, and sometimes during the day, in old nest cavities, excavated by other woodpeckers, or occasionally in a new roosting hole or an artificial site such as a nest box.",
+      "trivia_source": "Wikipedia(en), \"Great spotted woodpecker\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Great_spotted_woodpecker",
+      "note": ""
+    },
+    {
+      "species": "황조롱이",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 황조롱이는 들판 위 10~20m 높이에서 바람을 안고 제자리 날갯짓을 하며 땅을 살피고 있다. 먹이가 보이면 짧고 가파르게 내리꽂힌다. 낮에 활동하는 새라 해가 떠야 사냥이 시작된다.",
+      "evidence": "When hunting, the common kestrel characteristically hovers about 10–20 m (35–65 ft) above the ground, searching for prey ... Once prey is sighted, the bird makes a short, steep dive toward the target. / It is a diurnal animal of the lowlands.",
+      "trivia_source": "Wikipedia(en), \"Common kestrel\", 2026-09 확인",
+      "url": "https://en.wikipedia.org/wiki/Common_kestrel",
+      "note": "새벽 특유 행동 출처 없음. 주행성이라는 근거만 있어 일반 사냥 행동으로 씀."
+    },
+    {
+      "species": "황조롱이",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 황조롱이는 들쥐가 땅 위로 나오는 시간에 맞춰 사냥에 나서고 있다. 들쥐의 활동은 두 시간쯤마다 고비를 이루는데, 황조롱이는 그 고비에 맞춰 비행 사냥을 몰아서 한다. 하루에 들쥐 4~8마리치가 필요하다.",
+      "evidence": "Trapping results demonstrated a fine-grained daily pattern of common vole trap entries, with peaks at intervals of ca. 2 h ... It is suggested that the kestrels adjusted their flight-hunting sessions to times of high 'expected' yield. / The common kestrel requires the equivalent of 4–8 voles a day, depending on energy expenditure.",
+      "trivia_source": "Rijnsdorp, Daan & Dijkstra, \"Hunting in the kestrel, Falco tinnunculus, and the adaptive significance of daily habits\", Oecologia 1981 (Europe PMC 초록) + Wikipedia(en), \"Common kestrel\", 2026-09 확인",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:28309060&resultType=core&format=json",
+      "note": "네덜란드 야외 연구(학술). 4~8마리 수치는 Wikipedia(en) https://en.wikipedia.org/wiki/Common_kestrel"
+    },
+    {
+      "species": "황조롱이",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘은 황조롱이의 식사 시간이다. 낮에 잡아 숨겨 둔 들쥐를 어두워지기 직전에 되찾아 와서 먹는다. 사냥은 먹이가 잘 잡히는 낮에 하고, 먹는 것은 밤을 앞두고 몰아서 하는 셈이다.",
+      "evidence": "Meal frequencies culminated shortly before nightfall except in incubating females. The difference between the daily distributions of hunting and eating was due to some of the prey being cached in daytime and retrieved around dusk.",
+      "trivia_source": "Rijnsdorp, Daan & Dijkstra, \"Hunting in the kestrel, Falco tinnunculus, and the adaptive significance of daily habits\", Oecologia 1981 (Europe PMC 초록), 2026-09 확인",
+      "url": "https://www.ebi.ac.uk/europepmc/webservices/rest/search?query=EXT_ID:28309060&resultType=core&format=json",
+      "note": "학술 논문 초록. 포란 중인 암컷은 예외라고 출처가 밝힘."
+    },
+    {
+      "species": "꿩",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "이른 아침은 꿩이 먹이를 찾는 시간이다. 땅바닥을 헤치며 풀씨와 낟알을 쪼고 있다. 봄이면 수컷이 '꿩-꿩' 하고 목청껏 울어 영역을 알리는 소리도 이 무렵 들린다.",
+      "evidence": "They usually forage in the early morning and evening. / In agricultural areas, males may be heard crowing at dusk, dawn, and during the mating season.",
+      "trivia_source": "Animal Diversity Web, \"Phasianus colchicus (common pheasant)\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Phasianus_colchicus/",
+      "note": "먹이 찾기는 연중 참이라 seasons 미기재. 수컷 울음의 '봄이면' 조건은 문장 안에 명시함."
+    },
+    {
+      "species": "꿩",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 꿩은 마른 흙에 몸을 비비며 모래 목욕을 하고 있을지 모른다. 부리로 흙을 긁어 올리고 발로 헤치고 날개를 털어 깃털 속으로 흙먼지를 넣는다. 그렇게 묵은 각질과 기름기를 털어 낸다.",
+      "evidence": "Common pheasants use dust bathing, involving sweeping sand and dirt particles into their plumage by bill-raking, ground scratching, or wing shaking.",
+      "trivia_source": "Animal Diversity Web, \"Phasianus colchicus (common pheasant)\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Phasianus_colchicus/",
+      "note": ""
+    },
+    {
+      "species": "꿩",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "저녁은 꿩이 하루 두 번째로 먹이를 찾는 시간이다. 땅을 헤치며 배를 채운 뒤, 어두워지면 바람을 피할 수 있는 나무 위로 올라가 밤을 보낸다.",
+      "evidence": "They usually forage in the early morning and evening. / They roost in sheltered trees at night.",
+      "trivia_source": "Animal Diversity Web, \"Phasianus colchicus (common pheasant)\" + Wikipedia(en), \"Common pheasant\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Phasianus_colchicus/",
+      "note": "나무 위 잠자리 근거는 Wikipedia(en) https://en.wikipedia.org/wiki/Common_pheasant. ADW는 땅에서도 잔다고 함."
+    },
+    {
+      "species": "찌르레기",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "동트기 직전, 찌르레기 떼가 밤을 보낸 나무에서 일제히 날아오른다. 여름과 가을에는 수백 수천 마리가 한 잠자리에 모이는데, 그 무리가 새벽에 흩어져 먹이터로 향한다.",
+      "evidence": "夜明け５分前，ムクドリの大群が，一斉に群れをなして飛び立ちました。 / 「夜間は大きな群れになり、樹上を塒（ねぐら）にする」",
+      "trivia_source": "일본과학협회 과학실험데이터베이스, \"加古川名物，ムクドリの大群と塒（ねぐら）入り\" + Wikipedia(ja), \"ムクドリ\", 2026-09 확인",
+      "url": "https://proto-ex.com/data/933.html",
+      "note": "약한 출처(일본 지역 관찰 기록, 여름~가을 관찰). 집단 잠자리 자체는 Wikipedia(ja) https://ja.wikipedia.org/wiki/ムクドリ",
+      "seasons": [
+        "summer",
+        "autumn"
+      ]
+    },
+    {
+      "species": "찌르레기",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 찌르레기는 잔디밭이나 밭을 무리 지어 성큼성큼 걸으며 땅속 벌레를 찾고 있다. 나뭇가지에 앉아 잘 익은 열매를 쪼기도 한다.",
+      "evidence": "They forage in flocks, striding across lawns and fields to probe the ground for food. / 「地面に降りて歩いて虫などを探すこともあれば、木の枝に留まって熟した実をついばむ様子も観察される」",
+      "trivia_source": "Wildlife of Japan(wildwatch-japan.com), \"White-cheeked Starling\" + Wikipedia(ja), \"ムクドリ\", 2026-09 확인",
+      "url": "https://wildwatch-japan.com/white-cheeked-starling/",
+      "note": "열매 근거는 Wikipedia(ja) https://ja.wikipedia.org/wiki/ムクドリ"
+    },
+    {
+      "species": "찌르레기",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해가 지고 나면 찌르레기 떼가 잠자리 나무로 돌아온다. 무리는 큰 소리로 떠들며 밤을 보낼 나무 위로 모여드는데, 도심 가로수에 수천 마리가 모이기도 한다.",
+      "evidence": "「塒に帰ってくる時間は殆どの時期で日没直後であった」 「夜間は大きな群れになり、樹上を塒（ねぐら）にする」 / In summer and autumn, huge communal roosts form in roadside trees of big cities.",
+      "trivia_source": "Wikipedia(ja), \"ムクドリ\" + Wildlife of Japan(wildwatch-japan.com), \"White-cheeked Starling\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/ムクドリ",
+      "note": "번식기(봄)에는 쌍이 따로 자므로 spring 제외. 도심 대규모 잠자리는 일본 관찰(https://wildwatch-japan.com/white-cheeked-starling/).",
+      "seasons": [
+        "summer",
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "오목눈이",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "지금쯤 무리를 지어 서로 지저귀며 숲 사이를 옮겨 다니고 있다. 잎 끝의 진딧물을 정지비행으로 낚아채기도 하고, 가지에 매달려 씨앗을 먹기도 한다.",
+      "evidence": "地鳴きで仲間を確認しながら、群れで雑木林の中を動き回る。／特にアブラムシを好み、葉先にいるアブラムシを停空飛行しながら捕食したり、枝にぶら下がって種子を食べたりすることもある。",
+      "trivia_source": "Wikipedia(ja), \"エナガ\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/エナガ",
+      "note": "새벽 특유 행동 출처 없음 → 사계절 일반 채식 행동. ja Wikipedia는 叶内拓哉·安部直哉(2015), 高木清和(2000), 世界文化生物大図鑑(2004)을 인용"
+    },
+    {
+      "species": "오목눈이",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 대여섯에서 서른 마리쯤 되는 무리가 먹이를 찾아 근처를 돌아다니고 있다. 부드럽게 보글거리는 연락 소리를 주고받으며 이 나무에서 저 나무로 옮겨 가고, 사람이 곁에 있어도 거의 신경 쓰지 않는다.",
+      "evidence": "The winter is the time that Long-tailed Tits are at their most obvious. They form loose flocks ranging from five to 30 birds (even up to 50!) that rove the local area looking for feeding opportunities. / Their soft, bubbly contact calls fill the air and you find yourself surrounded by these great little birds, hanging off the branches above your head or flitting past your face as they move from tree to tree, seemingly oblivious to your presence.",
+      "trivia_source": "Bird Watching Magazine(UK), \"Long-tailed Tit\", 2026-09 확인",
+      "url": "https://www.birdwatching.co.uk/features/species/long-tailed-tit/",
+      "note": "탐조 잡지(중간 등급). 비번식기 무리 행동이라 가을·겨울로 한정",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "오목눈이",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘이 다가오면 무리가 부쩍 바빠져 잠자리에 들기 전 먹이를 서둘러 채운다. 그러고는 빽빽한 덤불이나 나무를 골라 한 가지에 나란히 앉아 작은 몸을 서로 붙이고 잔다.",
+      "evidence": "the group of Long-tailed Tits get very busy as dusk approaches, feeding up before selecting a nice thick shrub or tree to roost in. ／ 非繁殖期にはねぐらとなる木の枝に並列し、小さなからだを寄せ合って集団で眠る習性がある。",
+      "trivia_source": "Bird Watching Magazine(UK), \"Long-tailed Tit\"; Wikipedia(ja), \"エナガ\", 2026-09 확인",
+      "url": "https://www.birdwatching.co.uk/features/species/long-tailed-tit/",
+      "note": "두 출처 결합. 잠자리 밀착 잠은 비번식기 행동(ja Wikipedia, 中川(2010) 인용) → 가을·겨울. ja Wikipedia URL: https://ja.wikipedia.org/wiki/エナガ",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "알락할미새",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "지금쯤 밤을 함께 보낸 잠자리를 막 떠나고 있다. 해 뜰 무렵을 전후해 한 마리 두 마리 날아올라, 낮 동안 먹이를 찾을 곳으로 흩어져 간다.",
+      "evidence": "ねぐらで夜を過ごした鳥たちは、早朝、日の出に前後してねぐらを飛び立っていきます。",
+      "trivia_source": "平塚市博物館, \"集団のねぐら 2\", 2026-09 확인",
+      "url": "https://www.hirahaku.jp/hakubutsukan_archive/seibutsu/00000059/104.html",
+      "note": "일본 지역 박물관 아카이브. 집단 잠자리는 '夏の終わりから冬'(같은 아카이브 103쪽) 행동이나 한국에서는 여름철새이므로 가을로만 한정",
+      "seasons": [
+        "autumn"
+      ]
+    },
+    {
+      "species": "알락할미새",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 높은 곳에 잠시 앉아 먹이 잡기 좋은 자리를 살핀 뒤, 물가나 밭으로 내려와 걸어 다니며 물속과 바위 그늘, 흙 속의 곤충과 거미, 지렁이를 잡아먹고 있다. 걷는 내내 꼬리를 위아래로 까딱인다.",
+      "evidence": "一旦高いところに留まって採食に適した場所を探し、水辺や畑などに降りて歩きながら水中や岩陰、土中などに潜む昆虫類やクモ、ミミズなどを主に捕えて食べる。／尾羽を上下に振る姿が特徴的である。",
+      "trivia_source": "Wikipedia(ja), \"ハクセキレイ\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/ハクセキレイ",
+      "note": "한낮 특유 행동 출처 없음 → 일반 채식 행동"
+    },
+    {
+      "species": "알락할미새",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해 지기 30분쯤 전, 몇 마리에서 수십 마리씩 무리를 지어 날아올라 잠자리로 향한다. 다리 밑이나 건물 지붕, 불빛 가까운 가로수에 수백 마리가 모여 함께 밤을 보낸다.",
+      "evidence": "日没30分くらい前には数羽から数十羽の群れで飛び立ってねぐらに向かいます。／ハクセキレイは、夏の終わりから冬にかけて、橋桁、建物の屋根、街路樹などをねぐらに使います。橋桁のねぐらは個体数が多く、相模川の馬入橋のねぐらは約2500羽が集まっています。",
+      "trivia_source": "平塚市博物館, \"集団のねぐら 1·2\", 2026-09 확인",
+      "url": "https://www.hirahaku.jp/hakubutsukan_archive/seibutsu/00000059/104.html",
+      "note": "103쪽(https://www.hirahaku.jp/hakubutsukan_archive/seibutsu/00000059/103.html)과 104쪽 결합. '불빛 가까운 가로수'는 ja Wikipedia \"秋から冬の間は、照明近くの街路樹に大群の集団ねぐらを作ることがある\" 근거. 여름철새이므로 가을만",
+      "seasons": [
+        "autumn"
+      ]
+    },
+    {
+      "species": "동박새",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "번식철 동박새는 주로 아침과 저녁에 노래한다. 지금쯤 수컷이 해 뜰 무렵부터 20~40분 동안 길고 복잡한 가락으로 지저귀며, 이따금 다른 새의 소리를 흉내 내기도 한다.",
+      "evidence": "繁殖期を通して主に朝夕さえずるが，抱卵期までは昼にも頻繁にさえずる（宮下 1970）．／During breeding season, males sing primary song 20-40 minutes at sunrise and sporadically through out the day.",
+      "trivia_source": "バードリサーチ(Bird Research), \"メジロ Zosterops japonicus 生態図鑑\"; Riverbanks Zoo(PACT), \"Biological Profile Japanese White-eye\", 2026-09 확인",
+      "url": "https://www.bird-research.jp/1/seitai/11_5_japonicus.pdf",
+      "note": "두 출처 결합. 20~40분·흉내 내기는 Riverbanks Zoo 사육 프로필(https://www.riverbanks.org/subsite/pact/whiteeyes.pdf, 중간 등급)과 Bird Research('他種の鳴き真似を交え'). 일본 번식기 3~8월 기준",
+      "seasons": [
+        "spring",
+        "summer"
+      ]
+    },
+    {
+      "species": "동박새",
+      "moment": "day",
+      "time_tied": false,
+      "content": "지금쯤 꽃꿀과 열매, 곤충 같은 먹이를 두루 찾아 먹고 있다. 혀끝이 붓처럼 갈라져 꿀을 빨기에 알맞고, 새끼를 기를 때는 벌레를 더 많이 잡는다.",
+      "evidence": "花蜜，果実，昆虫などの節足動物，樹液など，さまざまなものを採食する．舌先が筆状になっており，花蜜食への適応と考えられる．ヒナへは主に節足動物を給餌するが／식성은 잡식이지만 꽃꿀이나 열매를 좋아하며, 새끼를 기를 때는 벌레도 포식한다.",
+      "trivia_source": "バードリサーチ(Bird Research), \"メジロ Zosterops japonicus 生態図鑑\"; Wikipedia(ko), \"동박새\", 2026-09 확인",
+      "url": "https://www.bird-research.jp/1/seitai/11_5_japonicus.pdf",
+      "note": "한낮 특유 행동 출처 없음 → 사계절 일반 채식 행동. ko Wikipedia URL: https://ko.wikipedia.org/wiki/동박새"
+    },
+    {
+      "species": "동박새",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘이면 형제나 가족끼리 한 가지에 바짝 붙어 잠자리에 든다. 서로 밀듯이 빽빽하게 늘어앉는 이 습성에서 일본어 '메지로오시(目白押し)'라는 말이 나왔다. 잘 때는 머리를 등 깃털에 묻고 한 다리로 서기도 한다.",
+      "evidence": "Sibling and family groups roost tightly together. Sleeps with head tucked in back feathers, often on one leg.／メジロにはお互いに押し合うように、ぴったりと枝に並ぶ習性がある。このことから、込み合っていることや物事が多くあることを意味する「目白押し」という慣用句がある。",
+      "trivia_source": "Riverbanks Zoo(PACT), \"Biological Profile Japanese White-eye\"; Wikipedia(ja), \"メジロ\", 2026-09 확인",
+      "url": "https://www.riverbanks.org/subsite/pact/whiteeyes.pdf",
+      "note": "두 출처 결합. Riverbanks는 동물원 사육 프로필(중간 등급). ja Wikipedia URL: https://ja.wikipedia.org/wiki/メジロ (ひと目でわかる野鳥(2010) 인용). 잠자리 밀착은 사계절 기술이라 seasons 생략"
+    },
+    {
+      "species": "괭이갈매기",
+      "moment": "dawn",
+      "time_tied": false,
+      "content": "괭이갈매기는 지금쯤 바닷가나 갯벌 언저리에서 물고기·갑각류·갯지렁이, 사람이 버린 음식 찌꺼기까지 가리지 않고 먹이를 찾고 있다. 다른 바닷새가 잡은 먹이를 가로채기도 한다.",
+      "evidence": "먹이는 물고기, 갑각류, 갯지렁이, 음식 찌꺼기 등 / It also steals food from other seabirds.",
+      "trivia_source": "국립중앙과학관, \"괭이갈매기\", 2026-09 확인",
+      "url": "https://www.science.go.kr/mps/scienceSubject/bird/view.do?subjectSid=229",
+      "note": "새벽 특유 행동 자료 없음 → 일반 먹이 행동. 두 번째 인용은 Wikipedia(en) \"Black-tailed gull\" https://en.wikipedia.org/wiki/Black-tailed_gull"
+    },
+    {
+      "species": "괭이갈매기",
+      "moment": "day",
+      "time_tied": false,
+      "content": "괭이갈매기는 지금쯤 배 꽁무니를 따라 날고 있을지 모른다. 어선이나 유람선 뒤를 하루 종일 따라붙으며 배에서 버려지는 생선 부스러기나 관광객이 내미는 과자를 받아먹는다.",
+      "evidence": "울릉도 유람선이나 죽도 도선 등 출항하는 선박 뒤를 하루 종일 따라 붙으며 관광객들이 내미는 생우깡 등 먹이를 받아 먹는 모습 / The species often follows ships and commercial fishing fleets.",
+      "trivia_source": "경북일보, \"울릉도·독도의 텃주대감 '괭이갈매기'\", 2026-09 확인",
+      "url": "https://www.kyongbuk.co.kr/news/articleView.html?idxno=624853",
+      "note": "지역 언론(중간 등급). 어선 추종은 Wikipedia(en) \"Black-tailed gull\" https://en.wikipedia.org/wiki/Black-tailed_gull 로 보강"
+    },
+    {
+      "species": "괭이갈매기",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "번식철 괭이갈매기는 낮 동안 번식지 섬에서 지내다가, 기온이 떨어지는 해질녘이면 바다 위로 나가 물 위에서 밤을 보내는 일이 많다. 바닷새라 찬 공기보다 바닷물 쪽이 더 따뜻하게 느껴지기 때문이다.",
+      "evidence": "ウミネコは海鳥なので海水の方が温かく感じるため、昼間は蕪島で過ごし気温が下がる夕方になると海の上で過ごすことが多い",
+      "trivia_source": "八戸経済新聞, \"八戸の蕪島に今年もウミネコ飛来 北国に春を伝える\", 2026-09 확인",
+      "url": "https://hachinohe.keizai.biz/headline/1553/",
+      "note": "일본 가부시마(蕪島) 번식지 관찰을 전한 지역 언론(중간 등급). 번식지 체류기(2~8월) 행동이라 봄·여름으로 한정. 한국 번식지 직접 자료 아님",
+      "seasons": [
+        "spring",
+        "summer"
+      ]
+    },
+    {
+      "species": "집비둘기",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "집비둘기는 이른 아침에 가장 부지런히 먹이를 먹는다. 지금쯤 광장이나 공원 바닥에 무리 지어 내려앉아 씨앗과 떨어진 부스러기를 쪼고 있다.",
+      "evidence": "Rock doves feed in the early morning and in the mid-afternoon on the open ground. / Pigeons feed on the ground in flocks or individually.",
+      "trivia_source": "Animal Diversity Web (Univ. of Michigan), \"Columba livia\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Columba_livia/",
+      "note": "두 번째 인용은 Wikipedia(en) \"Rock dove\" https://en.wikipedia.org/wiki/Rock_dove"
+    },
+    {
+      "species": "집비둘기",
+      "moment": "day",
+      "time_tied": true,
+      "content": "한낮 더위가 심하면 집비둘기는 그늘로 몸을 피했다가, 오후 중반이 되면 다시 열린 땅으로 내려와 무리 지어 먹이를 쫀다. 볕이 좋으면 여럿이 나란히 앉아 일광욕도 한다.",
+      "evidence": "Pigeons are most often seen during daylight, seeking cover at night and in during the heat of the day. / Rock doves feed in the early morning and in the mid-afternoon on the open ground. / They flock while roosting, sunning, and feeding, but no play has been observed.",
+      "trivia_source": "Animal Diversity Web (Univ. of Michigan), \"Columba livia\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Columba_livia/",
+      "note": ""
+    },
+    {
+      "species": "집비둘기",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해가 기울면 집비둘기는 밤을 보낼 자리로 돌아간다. 원래 절벽 바위턱에서 자던 새라, 도시에서는 건물 처마와 난간, 다리 밑 틈새가 절벽 노릇을 한다.",
+      "evidence": "Pigeons are most often seen during daylight, seeking cover at night and in during the heat of the day. / Cliffs and rock ledges are used for roosting and breeding in the wild. / Human structures provide an excellent imitation of cliff structures, making rock doves very common around human habitation.",
+      "trivia_source": "Animal Diversity Web (Univ. of Michigan), \"Columba livia\", 2026-09 확인",
+      "url": "https://animaldiversity.org/accounts/Columba_livia/",
+      "note": "절벽·건물 인용은 Wikipedia(en) \"Rock dove\" https://en.wikipedia.org/wiki/Rock_dove"
+    },
+    {
+      "species": "까마귀",
+      "moment": "dawn",
+      "time_tied": true,
+      "content": "까마귀는 동트기 30분쯤 전에 집단 잠자리를 떠나 먹이터로 흩어진다. 지금쯤 이미 논밭이나 강가 풀밭을 걸어 다니며 아침 먹이를 찾고 있다.",
+      "evidence": "夜明けより約30分前にねぐらを飛び立ち、採食しに出かけます / 田畑や草地で地面を歩き、立ち止まってついばむ姿を見かけます",
+      "trivia_source": "エドバンコーポレーション 鳥害タイムズ, \"カラスの習性と生態を知ろう カラスの一日に密着！\", 2026-09 확인",
+      "url": "https://www.advan-group.co.jp/times/karasu_syuusei_seitai/",
+      "note": "약한 출처(조류 피해 대책 업체 블로그). 까마귀·큰부리까마귀를 통칭한 서술. 땅 위 걷기 인용은 野鳥情報.com https://yacho-joho.com/hashibosogarasu-japan-guide/ (개인 사이트, 약한 출처). 집단 잠자리는 비번식기 행동(ja.wikipedia \"ハシボソガラス\": 非繁殖期には夜間決まった林に集団でねぐらをとる)이라 가을·겨울로 한정",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    },
+    {
+      "species": "까마귀",
+      "moment": "day",
+      "time_tied": false,
+      "content": "까마귀는 지금쯤 논밭이나 강가를 두 발로 번갈아 걸으며 땅에서 먹이를 찾고 있다. 큰부리까마귀보다 땅 위를 걷는 시간이 길어 땅속 먹이도 파먹고, 호두 같은 딱딱한 먹이는 찻길에 놓아 차바퀴로 깨기도 한다.",
+      "evidence": "ハシブトガラスと違って地面をウォーキング（交互に脚を出して歩く）する時間が長いため、地面採食（土食い）もする。 / 知能は高く、信号停車中の車のタイヤの前にクルミや貝などを置いて割るのも本種である。",
+      "trivia_source": "Wikipedia(ja), \"ハシボソガラス\", 2026-09 확인",
+      "url": "https://ja.wikipedia.org/wiki/ハシボソガラス",
+      "note": "한낮 특유 행동 자료 없음 → 일반 먹이 행동"
+    },
+    {
+      "species": "까마귀",
+      "moment": "dusk",
+      "time_tied": true,
+      "content": "해질녘 까마귀는 잠자리로 모여든다. 보통 해 지기 두 시간쯤 전부터 근처 건물 옥상이나 전선에 먼저 무리로 모였다가, 해가 진 뒤에야 숲속 집단 잠자리로 들어간다. 큰부리까마귀와 같은 잠자리를 쓰기도 한다.",
+      "evidence": "本調査地ではハシボソガラス Corvus corone とハシブトガラス C. macrorhynchos は同一のねぐらを利用しており…日入 2時間前から日入30分後まで，5分刻みでねぐら域に到着したものの数と方向…を記録した。…日中の活動域よりねぐら域への帰塒の行程中に形成されることのある帰塒前集合 / カラスが塒へ向かうのは通常日没前約2時間前が多い…塒近くのビルや電線にもたくさんのカラスが集まる。これらを「就塒前集合」と呼ぶ。",
+      "trivia_source": "中村純夫, \"カラスの季節ねぐら －就塒行動の季節変化－\", Strix 23: 65-74 (日本野鳥の会, 2005), 2026-09 확인",
+      "url": "https://mobile.wbsj.org/nature/public/strix/23/strix23_06.pdf",
+      "note": "학술지(오사카 3년 조사; 까마귀·큰부리까마귀 합산). '해 지기 두 시간 전'·'옥상·전선 집합'·'해 진 뒤 잠자리 입장' 문구는 NPO法人札幌カラス研究会 http://wispy-aso-1858.littlestar.jp/column.html 와 エドバン 鳥害タイムズ https://www.advan-group.co.jp/times/karasu_syuusei_seitai/ (약한 출처)에서 보강. 집단 잠자리 개체수는 겨울에 많음(松山市 \"カラスについて解説\")이라 가을·겨울로 한정; 비번식 개체는 연중 집단 잠자리 이용",
+      "seasons": [
+        "autumn",
+        "winter"
+      ]
+    }
+  ]
+}
