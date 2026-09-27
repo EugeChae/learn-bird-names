@@ -129,10 +129,11 @@
       "species": "큰부리까마귀",
       "moment": "dawn",
       "time_tied": true,
-      "content": "도쿄의 큰부리까마귀는 밤 잠자리를 떠나자마자 이른 아침 거리로 나가, 도시가 깨기 전에 음식점 앞 찌꺼기를 뒤진다. 해 뜨고 두 시간이면 끝난다.",
+      "content": "도시의 큰부리까마귀는 밤 잠자리를 떠나자마자 이른 아침 거리로 나가, 도시가 깨기 전에 음식점 앞 찌꺼기를 뒤진다. 해 뜨고 두 시간이면 끝난다.",
       "evidence": "They roosted in Ueno Park, and moved to the streets in early morning to scavenge food scraps from restaurants… until two hours after sunrise.",
       "trivia_source": "Morishita et al., \"Movements of Crows in Urban Areas, Based on PHS Tracking\", Global Environmental Research 7(2), 2003, 2026-09 확인",
-      "url": "https://airies.wikiplus.net/attach.php/6a6f75726e616c5f30372d32656e67/save/0/0/07_2-09.pdf"
+      "url": "https://airies.wikiplus.net/attach.php/6a6f75726e616c5f30372d32656e67/save/0/0/07_2-09.pdf",
+      "note": "도쿄 우에노 공원 관찰 자료를 도시 일반으로 서술."
     },
     {
       "species": "큰부리까마귀",
@@ -344,7 +345,7 @@
       "species": "물닭",
       "moment": "dusk",
       "time_tied": true,
-      "content": "밤이 내리면 물 위로 터지는 듯한 트럼펫 소리가 퍼진다. 물닭은 밤에 자주 우는 시끄러운 새고, 경쟁자에게는 긴 다리로 돌진해 걷어찬다.",
+      "content": "어두워지면 물 위로 터지는 듯한 트럼펫 소리가 퍼진다. 물닭은 밤에 자주 우는 시끄러운 새고, 경쟁자에게는 긴 다리로 돌진해 걷어찬다.",
       "evidence": "The Eurasian coot is a noisy bird with a wide repertoire of crackling, explosive, or trumpeting calls, often given at night. The coot attacks by charging its opponent and striking them with its long legs.",
       "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-09 확인",
       "url": "https://en.wikipedia.org/wiki/Eurasian_coot"

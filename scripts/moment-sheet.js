@@ -10,7 +10,8 @@
 //     "seasons": ["winter"] } ] }   ← seasons: 그 계절에만 참인 문장(겨울 잠자리 등). 없으면 사계절.
 //
 // 원칙: 사실·출처는 그대로, 동사 시제만 현재. 시각 근거(time_tied)가 없으면 "지금쯤"으로만 쓴다.
-// apply는 같은 (species, moment)가 이미 있으면 내용을 교체하고, 없으면 추가한다.
+// apply는 같은 (species, moment, seasons)가 이미 있으면 내용을 교체하고, 없으면 추가한다.
+// seasons가 다르면 다른 문장이다(겨울 잠자리 문장과 봄~가을 문장은 공존).
 
 const fs = require("fs");
 const path = require("path");
@@ -75,6 +76,11 @@ ${blocks}
 </body></html>`;
 }
 
+function sameSeasons(a, b) {
+  const norm = (x) => (Array.isArray(x) && x.length ? [...x].sort().join(",") : "");
+  return norm(a) === norm(b);
+}
+
 function apply(drafts, speciesList) {
   const byName = Object.fromEntries(speciesList.map((s) => [s.name_korean, s]));
   let added = 0, replaced = 0, skipped = 0;
@@ -86,7 +92,7 @@ function apply(drafts, speciesList) {
     if (!d.content || !d.trivia_source) throw new Error(`${d.species}/${d.moment}: content·trivia_source 필수`);
     const entry = { content: d.content.trim(), type: "ecology", trivia_source: d.trivia_source.trim(), moment: d.moment };
     if (Array.isArray(d.seasons) && d.seasons.length > 0) entry.seasons = [...d.seasons];
-    const idx = s.trivia.findIndex((t) => t.moment === d.moment);
+    const idx = s.trivia.findIndex((t) => t.moment === d.moment && sameSeasons(t.seasons, entry.seasons));
     if (idx >= 0) { s.trivia[idx] = entry; replaced++; } else { s.trivia.push(entry); added++; }
   }
   return { added, replaced, skipped };
@@ -120,4 +126,4 @@ function main() {
 }
 
 if (require.main === module) main();
-module.exports = { buildSheet, apply };
+module.exports = { buildSheet, apply, sameSeasons };

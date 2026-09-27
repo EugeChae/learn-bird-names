@@ -39,12 +39,14 @@
         "trivia_source": "Wikipedia, \"Oriental magpie\" (en), 2026-08 확인"
       },
       {
-        "content": "해 뜨기 30분쯤 전, 어스름 속에서 까치들이 겨울 공동 잠자리를 빠져나와 저마다 자기 영역으로 흩어진다.",
+        "content": "지금쯤 땅 위에서 두 발을 모아 뛰거나 걸으며 아침 먹이를 찾고 있다. 봄 번식기에는 짝과 함께 1~10ha 남짓한 세력권을 지키고, 번식이 끝난 여름부터는 몇 마리씩 작은 무리를 이루기도 한다.",
         "type": "ecology",
-        "trivia_source": "Milchev, \"Dynamics of the departure of Magpies Pica pica at a communal roost site in Sofia\", 2026-09 확인",
+        "trivia_source": "국립중앙과학관, \"까치\", 2026-09 확인",
         "moment": "dawn",
         "seasons": [
-          "winter"
+          "spring",
+          "summer",
+          "autumn"
         ]
       },
       {
@@ -52,6 +54,26 @@
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian magpie\" (en), 2026-09 확인",
         "moment": "day"
+      },
+      {
+        "content": "해질녘이 되어도 겨울처럼 큰 무리로 모이지 않고, 둥지 근처 나뭇가지에 앉아 밤을 보낸다. 알을 품거나 갓 깬 새끼를 돌보는 봄에는 암수 가운데 하나가 둥지 안에서 잔다.",
+        "type": "ecology",
+        "trivia_source": "Birdfact, \"Magpie Nesting (All You Need To Know)\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "content": "해 뜨기 30분쯤 전, 어스름 속에서 까치들이 겨울 공동 잠자리를 빠져나와 저마다 자기 영역으로 흩어진다.",
+        "type": "ecology",
+        "trivia_source": "Milchev, \"Dynamics of the departure of Magpies Pica pica at a communal roost site in Sofia\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "winter"
+        ]
       },
       {
         "content": "겨울 저녁이면 까치들이 무리 지어 빽빽한 나무숲의 공동 잠자리로 날아든다. 찌르레기, 지빠귀, 비둘기, 갈까마귀 옆에서 함께 자기도 한다.",
@@ -122,6 +144,15 @@
         "type": "ecology",
         "trivia_source": "Audubon Guide to North American Birds, \"Barn Swallow\", 2026-09 확인",
         "moment": "day"
+      },
+      {
+        "content": "봄에 돌아와 처마 밑에 둥지를 튼 뒤로는, 저녁이 되면 암컷이 둥지 안에서 알을 품은 채 밤을 보낸다. 수컷은 그 근처에 앉아 잔다.",
+        "type": "ecology",
+        "trivia_source": "Cornell Birds of the World, \"Barn Swallow — Breeding\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "spring"
+        ]
       },
       {
         "content": "번식이 끝난 6~10월, 해가 지면 평지의 배밭이나 갈대밭으로 수천, 때로는 수만 마리가 모여들어 함께 잠을 잔다.",
@@ -308,7 +339,7 @@
         "trivia_source": "Wikipedia, \"Large-billed crow\" (en), 2026-08 확인"
       },
       {
-        "content": "도쿄의 큰부리까마귀는 밤 잠자리를 떠나자마자 이른 아침 거리로 나가, 도시가 깨기 전에 음식점 앞 찌꺼기를 뒤진다. 해 뜨고 두 시간이면 끝난다.",
+        "content": "도시의 큰부리까마귀는 밤 잠자리를 떠나자마자 이른 아침 거리로 나가, 도시가 깨기 전에 음식점 앞 찌꺼기를 뒤진다. 해 뜨고 두 시간이면 끝난다.",
         "type": "ecology",
         "trivia_source": "Morishita et al., \"Movements of Crows in Urban Areas, Based on PHS Tracking\", Global Environmental Research 7(2), 2003, 2026-09 확인",
         "moment": "dawn"
@@ -375,12 +406,14 @@
         "trivia_source": "Wikipedia, \"Japanese tit / Cinereous tit\" (en), 2026-08 확인"
       },
       {
-        "content": "새벽, 수컷이 짝이 잠든 둥지 구멍 바로 옆에서 힘껏 노래한다. 암컷이 나오면 짝짓기를 하고, 노래는 잦아든다.",
+        "content": "해 뜨기 20~30분쯤 전에 잠자리에서 나와 하루를 시작한다. 겨울에는 나무 구멍이나 새집 안에서, 여름과 가을에는 나무줄기 옆이나 잎 사이 은신처에서 혼자 잔 뒤다.",
         "type": "ecology",
-        "trivia_source": "Gorissen & Eens, \"Interactive Communication Between Male and Female Great Tits During the Dawn Chorus\", The Auk 121(1), 2004, 2026-09 확인",
+        "trivia_source": "H. N. Kluijver, \"Daily Routines of the Great Tit, Parus m. major L.\" (Ardea 38, 1950), 2026-09 확인",
         "moment": "dawn",
         "seasons": [
-          "spring"
+          "summer",
+          "autumn",
+          "winter"
         ]
       },
       {
@@ -388,6 +421,26 @@
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Cinereous tit\" (en), 2026-09 확인",
         "moment": "day"
+      },
+      {
+        "content": "여름에는 해 지기 한 시간쯤 전에 벌써 잠자리에 들고, 가을이 깊어질수록 해 질 무렵까지 먹이를 찾는다. 봄 번식기에 알을 품는 암컷은 해 지기 한 시간 넘게 전에 둥지 구멍으로 들어가고, 수컷은 더 늦게까지 밖에 있다.",
+        "type": "ecology",
+        "trivia_source": "H. N. Kluijver, \"Daily Routines of the Great Tit, Parus m. major L.\" (Ardea 38, 1950), 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "spring",
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "content": "새벽, 수컷이 짝이 잠든 둥지 구멍 바로 옆에서 힘껏 노래한다. 암컷이 나오면 짝짓기를 하고, 노래는 잦아든다.",
+        "type": "ecology",
+        "trivia_source": "Gorissen & Eens, \"Interactive Communication Between Male and Female Great Tits During the Dawn Chorus\", The Auk 121(1), 2004, 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "spring"
+        ]
       },
       {
         "content": "겨울밤이 내리면 나무 구멍이나 새집 속으로 들어가 잔다. 작은 새에게 추운 밤을 구멍 안에서 나는 건 가지 위보다 훨씬 힘을 아끼는 일이다.",
@@ -796,7 +849,7 @@
         "moment": "day"
       },
       {
-        "content": "밤이 내리면 물 위로 터지는 듯한 트럼펫 소리가 퍼진다. 물닭은 밤에 자주 우는 시끄러운 새고, 경쟁자에게는 긴 다리로 돌진해 걷어찬다.",
+        "content": "어두워지면 물 위로 터지는 듯한 트럼펫 소리가 퍼진다. 물닭은 밤에 자주 우는 시끄러운 새고, 경쟁자에게는 긴 다리로 돌진해 걷어찬다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian coot\" (en), 2026-09 확인",
         "moment": "dusk"
@@ -846,6 +899,31 @@
         "content": "한국·동시베리아·중국 북동부 등지에서 번식하는 여름철새로, 겨울에는 태국·미얀마 등 동남아시아 열대 지역에서 지낸다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Black-naped oriole\" (en), 2026-08 확인"
+      },
+      {
+        "content": "번식철 새벽, 해가 뜨기 전 숲에서 꾀꼬리가 짝을 찾는 맑고 청아한 노래를 부르고 있다. 이 시간 숲의 소리 가운데 가장 크게 들리는 소리 중 하나다.",
+        "type": "ecology",
+        "trivia_source": "brunch @twinmom68, \"새벽 5시 소리탐조\", 2026-09 확인; 서울시 중부공원녹지사업소, \"제36호 황금빛 꾀꼬리\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "spring",
+          "summer"
+        ]
+      },
+      {
+        "content": "지금쯤 나무 꼭대기 잎 사이를 옮겨 다니며 애벌레와 곤충을 잡아먹고 있다. 봄에는 송충이 같은 애벌레를, 가을에는 나무 열매를 즐겨 먹는다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Black-naped oriole\", 2026-09 확인; 한국민족문화대백과사전, \"꾀꼬리\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "여름 저녁, 둥지를 떠난 어린 꾀꼬리들이 아침부터 저녁까지 거의 쉬지 않고 짹짹거리고 있다. 부모가 잎 뒤에 숨은 새끼를 찾아 먹이를 물어다 주는 신호다.",
+        "type": "ecology",
+        "trivia_source": "YC Wee, Bird Ecology Study Group, \"Black-naped Oriole's 50 Different Calls\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "summer"
+        ]
       }
     ]
   },
@@ -984,6 +1062,28 @@
         "content": "북부 개체군은 이동성으로, 유럽에서 번식한 무리는 겨울을 나기 위해 사하라 이남 사헬 지대까지 이동한다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Eurasian hoopoe\" (en), 2026-08 확인"
+      },
+      {
+        "content": "봄 새벽, 수컷 후투티가 '훗훗훗' 하고 낮고 부드러운 소리를 몇 분씩 반복하며 둥지 자리의 영역을 알리고 있다. 이 소리는 멀리까지 퍼져 새를 찾는 가장 쉬운 단서가 된다.",
+        "type": "ecology",
+        "trivia_source": "oiseaux-birds.com, \"Hoopoe\", 2026-09 확인; BirdSpot, \"Eurasian Hoopoe: ID, Song, Range\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "spring",
+          "summer"
+        ]
+      },
+      {
+        "content": "지금쯤 트인 땅 위를 성큼성큼 걷다가 멈춰 서서, 길고 굽은 부리를 땅속 깊이 찔러 넣어 애벌레와 지렁이를 찾고 있다. 혼자 다니며 먹이를 찾는 새다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Hoopoe\", 2026-09 확인; 한국민족문화대백과사전, \"후투티\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "지금쯤 땅 위에서 먹이를 찾거나 모래 목욕을 하고 있다. 볕이 남아 있으면 날개와 꼬리를 땅에 낮게 펼치고 고개를 든 채 일광욕을 하다가, 중간에 날개를 접고 깃을 다듬기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Hoopoe\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1030,6 +1130,24 @@
         "content": "겨울에 오래 얼어붙는 지역의 개체군은 번식 후 이동해야 하며, 번식지와 월동지 사이를 최대 3,000km까지 이동하기도 한다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Common kingfisher\" (en), 2026-08 확인"
+      },
+      {
+        "content": "이른 아침은 물총새가 가장 바쁜 시간이다. 물가 가지에 앉아 부리를 아래로 향한 채 물속을 살피다가, 물고기가 보이면 곧장 물속으로 내리꽂힌다.",
+        "type": "ecology",
+        "trivia_source": "Sultana & Sarker, \"Patterns of daily activities frequencies of Common Kingfisher (Alcedo atthis) in Nikunja-1, Dhaka\", Int. J. Fauna Biol. Stud. 3(5), 2016, 2026-09 확인; Wikipedia(en), \"Common kingfisher\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "한낮에는 물총새의 사냥이 뜸해진다. 지금쯤은 물가 가지에 앉아 쉬거나 깃털을 다듬으며 물속을 살피고, 다음 사냥 때를 기다리고 있다.",
+        "type": "ecology",
+        "trivia_source": "Sultana & Sarker, \"Patterns of daily activities frequencies of Common Kingfisher (Alcedo atthis) in Nikunja-1, Dhaka\", Int. J. Fauna Biol. Stud. 3(5), 2016, 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘은 물총새의 사냥이 다시 잦아지는 시간이다. 하루에 몸무게의 60%쯤을 먹어야 하니 물가를 오가며 물고기를 잡고, 어두워지면 홀로 우거진 덤불 속에서 잠을 잔다.",
+        "type": "ecology",
+        "trivia_source": "Sultana & Sarker, \"Patterns of daily activities frequencies of Common Kingfisher (Alcedo atthis) in Nikunja-1, Dhaka\", 2016, 2026-09 확인; Wikipedia(en), \"Common kingfisher\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1081,6 +1199,24 @@
         "content": "나무·관목·갈대밭·대나무 숲 등에 다른 섭금류와 함께 집단으로 번식하며, 3~5개의 알을 암수가 함께 21~25일간 품는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Little egret\" (en), 2026-08 확인"
+      },
+      {
+        "content": "이른 아침, 쇠백로가 여러 백로가 함께 밤을 보낸 숲에서 날아올라 줄을 지어 먹이터로 향하고 있다. 이른 아침은 하루 중 먹이를 가장 열심히 잡는 시간이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"コサギ\", 2026-09 확인; oiseaux-birds.com, \"Little Egret\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 얕은 물에서 노란 발로 바닥의 모래와 진흙을 휘저어 숨은 물고기를 놀라게 한 뒤, 튀어나오는 순간 뾰족한 부리로 낚아채고 있다. 날개를 치켜들고 달리며 먹이를 몰기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Little egret\", 2026-09 확인; oiseaux-birds.com, \"Little Egret\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "늦은 오후는 쇠백로가 다시 부지런히 먹이를 잡는 시간이다. 얕은 물에서 마지막 사냥을 마치면 다른 백로·왜가리들과 함께 밤을 보낼 나무로 모여든다.",
+        "type": "ecology",
+        "trivia_source": "oiseaux-birds.com, \"Little Egret\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1222,6 +1358,24 @@
         "content": "너도밤나무 열매나 도토리, 씨앗을 즐겨 먹으며 나무 구멍에 둥지를 틀어 4~5월에 9~12개의 알을 낳는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Mandarin duck\" (en), 2026-08 확인"
+      },
+      {
+        "content": "원앙은 주로 새벽과 해질녘에 먹이를 먹는다. 지금쯤 물가와 숲 바닥을 돌며 나무 열매와 씨앗, 특히 도토리를 찾고 있을 것이다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Mandarin duck\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "한낮의 원앙은 나뭇가지나 땅 위에 앉아 쉰다. 물 위로 늘어진 버드나무 아래처럼 가려진 곳을 좋아하는 겁 많은 새라, 조용히 살펴야 보인다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Mandarin duck\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해가 기울면 원앙의 식사 시간이다. 도토리를 유난히 좋아해 물가 숲 바닥을 뒤지고, 밤에는 나뭇가지 위에 올라가 잠을 잔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Mandarin duck\"; あきた森づくり活動サポートセンター, \"野鳥シリーズ④ オシドリ\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1268,6 +1422,24 @@
         "content": "물속으로 잠수해 물고기와 물속 무척추동물을 사냥하며, 물가 식물로 물에 뜨는 둥지를 만들어 보통 4~7개의 알을 낳는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Little grebe\" (en), 2026-08 확인"
+      },
+      {
+        "content": "논병아리는 지금쯤 물 위에 떠 있다가 자맥질을 되풀이하고 있다. 한 번에 평균 15초쯤 잠수해 작은 물고기와 물속 벌레를 잡고, 들어간 자리와 다른 곳에서 불쑥 떠오른다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"カイツブリ\"; あきた森づくり活動サポートセンター, \"野鳥シリーズ65 カイツブリ\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "맑고 바람 없는 날이면 논병아리는 등을 해 쪽으로 돌린 채 물 위에서 일광욕을 한다. 물고기를 잡으러 잠수도 하지만 수면에 떨어진 벌레도 주워 먹는다.",
+        "type": "ecology",
+        "trivia_source": "Bird Diversity Initiative(BDI), \"Little Grebe (Tachybaptus ruficollis)\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해가 지면 논병아리들은 물 위에 모여 무리를 이룬 채 밤을 보낸다. 겨울에는 20~30마리씩 무리를 짓기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Bird Diversity Initiative(BDI), \"Little Grebe (Tachybaptus ruficollis)\"; Wikipedia(ja), \"カイツブリ\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1314,6 +1486,24 @@
         "content": "깃털이 물에 잘 젖는 탓에 잠수 후 날개를 활짝 펴 말리는 습성이 있으며, 나무나 절벽 등에 무리 지어 둥지를 틀고 3~5개의 알을 낳는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Great cormorant\" (en), 2026-08 확인"
+      },
+      {
+        "content": "동틀 무렵 민물가마우지는 잠자리를 떠나 먹이터로 날아간다. 수십에서 백 마리 넘게 줄을 지어 강이나 호수로 향하는 모습이 보인다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"カワウ\"; 三鷹市, \"カワウ（河鵜）ウ科\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "물속에서 물고기를 쫓다 나온 민물가마우지는 날개를 활짝 펴고 깃털을 말린다. 하루의 많은 시간을 잠자리나 먹이터 근처에서 쉬고 깃털을 다듬으며 보낸다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web(University of Michigan), \"Phalacrocorax carbo (great cormorant)\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "저녁이 되면 민물가마우지는 다시 무리를 지어 잠자리로 돌아온다. 밤에는 여러 마리가 한곳에 모여 집단으로 쉬고 잠을 잔다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"カワウ\"; 三鷹市, \"カワウ（河鵜）ウ科\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1360,6 +1550,34 @@
         "content": "일본에서는 이 새를 훈련시켜 작은 신사 모형에서 동전을 넣고 종을 울린 뒤 문을 열어 운세 쪽지(오미쿠지)를 뽑아 오게 하는 공연에 이용해 왔다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Varied tit\" (en), 2026-08 확인"
+      },
+      {
+        "content": "곤줄박이는 해 뜨는 시각에 맞춰 새벽 노래를 시작한다. 일출이 빨라지면 노래도 일찍 시작하고, 흐린 날에는 더 늦게, 더 약하게 부른다.",
+        "type": "ecology",
+        "trivia_source": "Zhao, T. et al., \"The primary study of the relationship between environmental factors and dawn song in varied tits\", Proc. ICBBE 2016, 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "spring"
+        ]
+      },
+      {
+        "content": "가을이면 곤줄박이는 때죽나무 열매를 부리로 따서 편평한 가지로 옮겨 먹거나, 나무껍질 틈과 땅속에 숨겨 둔다. 먹이가 귀한 한겨울에 꺼내 먹으려는 저장 습성이다.",
+        "type": "ecology",
+        "trivia_source": "あきた森づくり活動サポートセンター, \"野鳥シリーズ44 ヤマガラ\", 2026-09 확인",
+        "moment": "day",
+        "seasons": [
+          "autumn",
+          "winter"
+        ]
+      },
+      {
+        "content": "겨울 저녁 무렵 곤줄박이는 박새, 동박새, 쇠딱따구리, 오목눈이와 섞인 무리 속에서 움직이고 있을 것이다. 잎이 진 숲에서는 서로 천적을 알리고 먹이터를 나눈다.",
+        "type": "ecology",
+        "trivia_source": "hibi-ki(響), \"ヤマガラ／冬に備え貯食する鳥\"; あきた森づくり活動サポートセンター, \"野鳥シリーズ44 ヤマガラ\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "winter"
+        ]
       }
     ]
   },
@@ -1409,6 +1627,27 @@
         "content": "매우 사회성이 강해 무리를 짓는데, 겨울 무리는 최대 140마리에 이르고 번식기에 무리 규모가 가장 작아진다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Vinous-throated parrotbill\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 덤불이나 갈대밭 속을 여러 마리가 무리지어 휘파람 같은 소리를 내며 질서 있게 옮겨 다니고 있다. 긴 꼬리를 좌우로 흔들며 재빠르게 움직인다.",
+        "type": "ecology",
+        "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 붉은머리오목눈이\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 수십 마리가 무리지어 덤불 사이를 옮겨 다니며 먹이를 찾고 있다. 주로 곤충과 거미를 잡아먹으며, '찌찍, 찌찍' 하고 쉬지 않고 운다.",
+        "type": "ecology",
+        "trivia_source": "디지털구리문화대전, \"붉은머리오목눈이\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "지금쯤 겨울 큰 무리와 함께 다니고 있다. 겨울 무리는 140마리까지 불어나는데, 이웃 무리와 가까이 스쳐 지나가도 서로 섞이지 않고 제 무리를 유지한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia (en), \"Vinous-throated parrotbill\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "winter"
+        ]
       }
     ]
   },
@@ -1455,6 +1694,32 @@
         "content": "만주·러시아 남동부·몽골 북동부·중국 중부·한국에서 번식하며, 기준 아종은 한국·일본·중국 남동 해안·타이완에서 겨울을 난다.",
         "type": "seasonal",
         "trivia_source": "Wikipedia, \"Daurian redstart\" (en), 2026-08 확인"
+      },
+      {
+        "content": "이른 아침에도 자주 운다. 번식기가 아닌 철에는 암수가 따로 각자 세력권을 지키는데, 다른 딱새가 들어오면 '히잇' 하는 높은 소리와 '딱딱' 부딪는 소리로 쫓아낸다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia (ja), \"ジョウビタキ\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "autumn",
+          "winter"
+        ]
+      },
+      {
+        "content": "지금쯤 관목 가지에 앉아 꼬리를 까딱까딱 위아래로 흔들며 울고 있다. 가끔 땅에 내려와 뛰어다니며 먹이를 찾지만 오래 머물지 않고 곧 날아오른다.",
+        "type": "ecology",
+        "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 딱새\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "지금쯤 혼자 지키는 세력권 안을 한 바퀴 돌고 늘 앉던 가지로 돌아와 있다. 폭 10m 남짓한 자기 구역을 벗어나지 않고, 나무와 땅에서 곤충과 거미를 잡는다.",
+        "type": "ecology",
+        "trivia_source": "Orbis Pictus (Japan), \"Daurian Redstart (Phoenicurus auroreus)\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "autumn",
+          "winter"
+        ]
       }
     ]
   },
@@ -1501,6 +1766,28 @@
         "content": "가족 단위로 먹이를 찾다가 최대 70마리의 무리를 이루며, 주로 도토리와 잣을 먹고 무척추동물·열매 등도 먹는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Azure-winged magpie\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 땅에 내려와 떨어진 열매와 씨앗을 줍고 있다. 겨울철에는 먹이 찾기의 절반 넘게 땅 위에서 이루어지고, 주운 열매를 낙엽 밑에 숨겨 두기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Japan Bird Research Association, \"Bird Research News Vol.6 No.6: Azure-winged Magpie\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "winter",
+          "spring"
+        ]
+      },
+      {
+        "content": "지금쯤 가족 무리와 함께 다니고 있다. 적게는 5~10마리, 많게는 30마리 넘게 몰려다니며 곤충·열매·씨앗을 주워 먹고, 일부는 숨겨 둔다.",
+        "type": "ecology",
+        "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 물까치\"; 위키백과(ko), \"물까치\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘이면 무리째 잠자리로 모여든다. 겨울에는 빽빽한 대숲이나 침엽수림을, 여름에는 활엽수림을 즐겨 쓰고, 가끔 이웃 무리와 한 잠자리를 나눠 쓰기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Japan Bird Research Association, \"Bird Research News Vol.6 No.6: Azure-winged Magpie\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1546,6 +1833,30 @@
         "content": "참나무가 섞인 혼합림을 특히 좋아하며 텃새로 이동하지 않고, 한배에 알을 3~6개 낳는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Eurasian jay\" (en), 2026-08 확인"
+      },
+      {
+        "content": "이른 아침부터 숲 바닥을 뒤지며 도토리를 찾는다. 가을이면 참나무 아래를 바쁘게 오가며 도토리를 있는 대로 모아 땅에 묻는다.",
+        "type": "ecology",
+        "trivia_source": "Birdfact, \"What Do Jays Eat? (Eurasian Jay Diet)\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "autumn"
+        ]
+      },
+      {
+        "content": "지금쯤 양다리를 모아 통통 뛰며 가지에서 가지로, 땅 위로 옮겨 다니고 있다. 가끔 맹금류 소리를 흉내 내어 자기 서식지에 천적이 들어오는지 살핀다.",
+        "type": "ecology",
+        "trivia_source": "국립중앙과학관, \"과학학습콘텐츠 - 어치\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "빛이 사그라들 때까지 숲 바닥에서 도토리를 찾는다. 가을 한철 하루에 100~300개까지 저장하는데, 잘 익은 것은 그 자리에서 까먹고 덜 익은 것은 목에 넣어 옮겨 숨긴다.",
+        "type": "ecology",
+        "trivia_source": "Birdfact, \"What Do Jays Eat? (Eurasian Jay Diet)\"; 매일신문, \"다람쥐, 청설모, 어치 도토리 숨기기의 승자는 참나무\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "autumn"
+        ]
       }
     ]
   },
@@ -1595,6 +1906,28 @@
         "content": "대체로 일 년 내내 머무는 텃새로, 암수가 함께 나무에 둥지 구멍을 파고 한배에 흰 알을 4~6개 낳는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Great spotted woodpecker\" (en), 2026-08 확인"
+      },
+      {
+        "content": "동이 튼 직후, 오색딱다구리는 마른 나무를 두드려 북소리 같은 드러밍을 울린다. 이웃 수컷이 답하듯 드러밍을 되돌려 보내기도 한다. 한겨울부터 새끼가 둥지를 떠날 때까지 이어지는 영역 선언이다.",
+        "type": "ecology",
+        "trivia_source": "wildechoes.org, \"Great Spotted Woodpecker (Dendrocopos major)\" + Wikipedia(en), \"Great spotted woodpecker\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "winter",
+          "spring"
+        ]
+      },
+      {
+        "content": "지금쯤 오색딱다구리는 혼자서 나무 밑동부터 꼭대기까지 오르내리며 먹이를 찾고 있다. 껍질을 쪼아 10cm 깊이 구멍을 내고 혀로 애벌레를 끄집어내거나, 단단한 열매와 솔방울은 '모루' 삼은 틈에 끼워 놓고 두드려 깬다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Great spotted woodpecker\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해가 지면 오색딱다구리는 나무 구멍으로 들어가 밤을 보낸다. 다른 딱다구리가 파 놓은 옛 둥지 구멍을 쓰기도 하고, 직접 새 잠자리 구멍을 파거나 인공 새집을 쓰기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Great spotted woodpecker\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1644,6 +1977,24 @@
         "content": "들쥐·뒤쥐·생쥐 같은 작은 포유류가 먹이의 4분의 3 이상을 차지하며, 밭·황무지·습지 같은 트인 환경에서 사냥한다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Common kestrel\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 황조롱이는 들판 위 10~20m 높이에서 바람을 안고 제자리 날갯짓을 하며 땅을 살피고 있다. 먹이가 보이면 짧고 가파르게 내리꽂힌다. 낮에 활동하는 새라 해가 떠야 사냥이 시작된다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(en), \"Common kestrel\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 황조롱이는 들쥐가 땅 위로 나오는 시간에 맞춰 사냥에 나서고 있다. 들쥐의 활동은 두 시간쯤마다 고비를 이루는데, 황조롱이는 그 고비에 맞춰 비행 사냥을 몰아서 한다. 하루에 들쥐 4~8마리치가 필요하다.",
+        "type": "ecology",
+        "trivia_source": "Rijnsdorp, Daan & Dijkstra, \"Hunting in the kestrel, Falco tinnunculus, and the adaptive significance of daily habits\", Oecologia 1981 (Europe PMC 초록) + Wikipedia(en), \"Common kestrel\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘은 황조롱이의 식사 시간이다. 낮에 잡아 숨겨 둔 들쥐를 어두워지기 직전에 되찾아 와서 먹는다. 사냥은 먹이가 잘 잡히는 낮에 하고, 먹는 것은 밤을 앞두고 몰아서 하는 셈이다.",
+        "type": "ecology",
+        "trivia_source": "Rijnsdorp, Daan & Dijkstra, \"Hunting in the kestrel, Falco tinnunculus, and the adaptive significance of daily habits\", Oecologia 1981 (Europe PMC 초록), 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1686,6 +2037,24 @@
         "content": "숲·농경지·덤불·물가 풀밭에 살며 씨앗·열매·곤충·지렁이 등을 두루 먹는 잡식성이다. 원산지는 흑해·카스피해에서 만주·한국·중국에 이르는 지역으로, 유럽·북미에는 사람이 들여왔다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Common pheasant\" (en), 2026-08 확인"
+      },
+      {
+        "content": "이른 아침은 꿩이 먹이를 찾는 시간이다. 땅바닥을 헤치며 풀씨와 낟알을 쪼고 있다. 봄이면 수컷이 '꿩-꿩' 하고 목청껏 울어 영역을 알리는 소리도 이 무렵 들린다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web, \"Phasianus colchicus (common pheasant)\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 꿩은 마른 흙에 몸을 비비며 모래 목욕을 하고 있을지 모른다. 부리로 흙을 긁어 올리고 발로 헤치고 날개를 털어 깃털 속으로 흙먼지를 넣는다. 그렇게 묵은 각질과 기름기를 털어 낸다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web, \"Phasianus colchicus (common pheasant)\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "저녁은 꿩이 하루 두 번째로 먹이를 찾는 시간이다. 땅을 헤치며 배를 채운 뒤, 어두워지면 바람을 피할 수 있는 나무 위로 올라가 밤을 보낸다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web, \"Phasianus colchicus (common pheasant)\" + Wikipedia(en), \"Common pheasant\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -1727,6 +2096,33 @@
         "content": "숲·농경지에서 도시 공원까지 폭넓게 살며 열매와 곤충을 먹는다. 중국 동북부·한국·일본·시베리아 남동부에서 번식하고 나무 구멍이나 건물 틈, 새집에 둥지를 튼다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"White-cheeked starling\" (en), 2026-08 확인"
+      },
+      {
+        "content": "동트기 직전, 찌르레기 떼가 밤을 보낸 나무에서 일제히 날아오른다. 여름과 가을에는 수백 수천 마리가 한 잠자리에 모이는데, 그 무리가 새벽에 흩어져 먹이터로 향한다.",
+        "type": "ecology",
+        "trivia_source": "일본과학협회 과학실험데이터베이스, \"加古川名物，ムクドリの大群と塒（ねぐら）入り\" + Wikipedia(ja), \"ムクドリ\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "summer",
+          "autumn"
+        ]
+      },
+      {
+        "content": "지금쯤 찌르레기는 잔디밭이나 밭을 무리 지어 성큼성큼 걸으며 땅속 벌레를 찾고 있다. 나뭇가지에 앉아 잘 익은 열매를 쪼기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wildlife of Japan(wildwatch-japan.com), \"White-cheeked Starling\" + Wikipedia(ja), \"ムクドリ\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해가 지고 나면 찌르레기 떼가 잠자리 나무로 돌아온다. 무리는 큰 소리로 떠들며 밤을 보낼 나무 위로 모여드는데, 도심 가로수에 수천 마리가 모이기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"ムクドリ\" + Wildlife of Japan(wildwatch-japan.com), \"White-cheeked Starling\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "summer",
+          "autumn",
+          "winter"
+        ]
       }
     ]
   },
@@ -1768,6 +2164,32 @@
         "content": "번식기 외에는 6~17마리의 가족 무리를 지어 다니며 추운 밤엔 서로 몸을 붙여 체온을 나눈다. 거미줄·이끼·깃털을 6,000점 넘게 엮어 신축성 있는 둥지를 짓는다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Long-tailed tit\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 무리를 지어 서로 지저귀며 숲 사이를 옮겨 다니고 있다. 잎 끝의 진딧물을 정지비행으로 낚아채기도 하고, 가지에 매달려 씨앗을 먹기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"エナガ\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "지금쯤 대여섯에서 서른 마리쯤 되는 무리가 먹이를 찾아 근처를 돌아다니고 있다. 부드럽게 보글거리는 연락 소리를 주고받으며 이 나무에서 저 나무로 옮겨 가고, 사람이 곁에 있어도 거의 신경 쓰지 않는다.",
+        "type": "ecology",
+        "trivia_source": "Bird Watching Magazine(UK), \"Long-tailed Tit\", 2026-09 확인",
+        "moment": "day",
+        "seasons": [
+          "autumn",
+          "winter"
+        ]
+      },
+      {
+        "content": "해질녘이 다가오면 무리가 부쩍 바빠져 잠자리에 들기 전 먹이를 서둘러 채운다. 그러고는 빽빽한 덤불이나 나무를 골라 한 가지에 나란히 앉아 작은 몸을 서로 붙이고 잔다.",
+        "type": "ecology",
+        "trivia_source": "Bird Watching Magazine(UK), \"Long-tailed Tit\"; Wikipedia(ja), \"エナガ\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "autumn",
+          "winter"
+        ]
       }
     ]
   },
@@ -1814,6 +2236,30 @@
         "content": "물가와 사람 사는 곳 주변의 트인 맨땅을 좋아하며 주차장 같은 도시 환경에도 잘 적응한다. 곤충 등 작은 무척추동물을 먹고, 꼬리를 까딱이는 행동은 포식자에게 보내는 경계 신호로 추정된다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"White wagtail\" (en), 2026-08 확인"
+      },
+      {
+        "content": "지금쯤 밤을 함께 보낸 잠자리를 막 떠나고 있다. 해 뜰 무렵을 전후해 한 마리 두 마리 날아올라, 낮 동안 먹이를 찾을 곳으로 흩어져 간다.",
+        "type": "ecology",
+        "trivia_source": "平塚市博物館, \"集団のねぐら 2\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "autumn"
+        ]
+      },
+      {
+        "content": "지금쯤 높은 곳에 잠시 앉아 먹이 잡기 좋은 자리를 살핀 뒤, 물가나 밭으로 내려와 걸어 다니며 물속과 바위 그늘, 흙 속의 곤충과 거미, 지렁이를 잡아먹고 있다. 걷는 내내 꼬리를 위아래로 까딱인다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"ハクセキレイ\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해 지기 30분쯤 전, 몇 마리에서 수십 마리씩 무리를 지어 날아올라 잠자리로 향한다. 다리 밑이나 건물 지붕, 불빛 가까운 가로수에 수백 마리가 모여 함께 밤을 보낸다.",
+        "type": "ecology",
+        "trivia_source": "平塚市博物館, \"集団のねぐら 1·2\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "autumn"
+        ]
       }
     ]
   },
@@ -2147,6 +2593,28 @@
         "content": "숲과 정원에 살며 꽃꿀·곤충·열매를 두루 먹어 꽃가루받이와 씨앗 퍼뜨리기를 돕는다. 매우 사교적이어서 다른 종과도 무리를 이루고 서로 깃을 다듬어 준다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Warbling white-eye\" (en), 2026-08 확인"
+      },
+      {
+        "content": "번식철 동박새는 주로 아침과 저녁에 노래한다. 지금쯤 수컷이 해 뜰 무렵부터 20~40분 동안 길고 복잡한 가락으로 지저귀며, 이따금 다른 새의 소리를 흉내 내기도 한다.",
+        "type": "ecology",
+        "trivia_source": "バードリサーチ(Bird Research), \"メジロ Zosterops japonicus 生態図鑑\"; Riverbanks Zoo(PACT), \"Biological Profile Japanese White-eye\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "spring",
+          "summer"
+        ]
+      },
+      {
+        "content": "지금쯤 꽃꿀과 열매, 곤충 같은 먹이를 두루 찾아 먹고 있다. 혀끝이 붓처럼 갈라져 꿀을 빨기에 알맞고, 새끼를 기를 때는 벌레를 더 많이 잡는다.",
+        "type": "ecology",
+        "trivia_source": "バードリサーチ(Bird Research), \"メジロ Zosterops japonicus 生態図鑑\"; Wikipedia(ko), \"동박새\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘이면 형제나 가족끼리 한 가지에 바짝 붙어 잠자리에 든다. 서로 밀듯이 빽빽하게 늘어앉는다. 잘 때는 머리를 등 깃털에 묻고 한 다리로 서기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Riverbanks Zoo(PACT), \"Biological Profile Japanese White-eye\"; Wikipedia(ja), \"メジロ\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -2319,6 +2787,28 @@
         "content": "동아시아 해안(한국·일본·중국)에 사는 텃새로 작은 물고기·연체동물·갑각류와 찌꺼기를 먹고 배를 따라다닌다. 고양이 울음 같은 소리를 내 일본명 '바다고양이(우미네코)', 한국명도 '괭이(고양이)'에서 왔다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Black-tailed gull\" (en), 2026-08 확인"
+      },
+      {
+        "content": "괭이갈매기는 지금쯤 바닷가나 갯벌 언저리에서 물고기·갑각류·갯지렁이, 사람이 버린 음식 찌꺼기까지 가리지 않고 먹이를 찾고 있다. 다른 바닷새가 잡은 먹이를 가로채기도 한다.",
+        "type": "ecology",
+        "trivia_source": "국립중앙과학관, \"괭이갈매기\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "괭이갈매기는 지금쯤 배 꽁무니를 따라 날고 있을지 모른다. 어선이나 유람선 뒤를 하루 종일 따라붙으며 배에서 버려지는 생선 부스러기나 관광객이 내미는 과자를 받아먹는다.",
+        "type": "ecology",
+        "trivia_source": "경북일보, \"울릉도·독도의 텃주대감 '괭이갈매기'\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "번식철 괭이갈매기는 낮 동안 번식지 섬에서 지내다가, 기온이 떨어지는 해질녘이면 바다 위로 나가 물 위에서 밤을 보내는 일이 많다.",
+        "type": "ecology",
+        "trivia_source": "八戸経済新聞, \"八戸の蕪島に今年もウミネコ飛来 北国に春を伝える\", 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "spring",
+          "summer"
+        ]
       }
     ]
   },
@@ -3412,6 +3902,24 @@
         "content": "야생에서는 절벽과 바위 턱에 둥지를 트는 습성이 도시의 건물 난간·다리로 옮겨왔다. 암수 모두 모이주머니에서 '피죤 밀크'를 만들어 새끼를 먹이기 때문에 계절에 관계없이 연중 번식할 수 있다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Rock dove\" (en), 2026-09 확인"
+      },
+      {
+        "content": "집비둘기는 이른 아침에 가장 부지런히 먹이를 먹는다. 지금쯤 광장이나 공원 바닥에 무리 지어 내려앉아 씨앗과 떨어진 부스러기를 쪼고 있다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web (Univ. of Michigan), \"Columba livia\", 2026-09 확인",
+        "moment": "dawn"
+      },
+      {
+        "content": "한낮 더위가 심하면 집비둘기는 그늘로 몸을 피했다가, 오후 중반이 되면 다시 열린 땅으로 내려와 무리 지어 먹이를 쫀다. 볕이 좋으면 여럿이 나란히 앉아 일광욕도 한다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web (Univ. of Michigan), \"Columba livia\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해가 기울면 집비둘기는 밤을 보낼 자리로 돌아간다. 원래 절벽 바위턱에서 자던 새라, 도시에서는 건물 처마와 난간, 다리 밑 틈새가 절벽 노릇을 한다.",
+        "type": "ecology",
+        "trivia_source": "Animal Diversity Web (Univ. of Michigan), \"Columba livia\", 2026-09 확인",
+        "moment": "dusk"
       }
     ]
   },
@@ -3459,6 +3967,32 @@
         "content": "굵고 거친 '크라' 소리를 3~4번 연달아 내며, 울 때마다 어깨를 올리고 머리를 숙이는 동작을 한다. 30까지의 수를 구별하고 사람과 까마귀의 얼굴을 알아보는 등 지능이 매우 높다.",
         "type": "ecology",
         "trivia_source": "Wikipedia, \"Carrion crow\" (en), 2026-09 확인"
+      },
+      {
+        "content": "까마귀는 동트기 전에 집단 잠자리를 떠나 먹이터로 흩어진다. 지금쯤 이미 논밭이나 강가 풀밭을 걸어 다니며 아침 먹이를 찾고 있다.",
+        "type": "ecology",
+        "trivia_source": "エドバンコーポレーション 鳥害タイムズ, \"カラスの習性と生態を知ろう カラスの一日に密着！\", 2026-09 확인",
+        "moment": "dawn",
+        "seasons": [
+          "autumn",
+          "winter"
+        ]
+      },
+      {
+        "content": "까마귀는 지금쯤 논밭이나 강가를 두 발로 번갈아 걸으며 땅에서 먹이를 찾고 있다. 큰부리까마귀보다 땅 위를 걷는 시간이 길어 땅속 먹이도 파먹고, 호두 같은 딱딱한 먹이는 찻길에 놓아 차바퀴로 깨기도 한다.",
+        "type": "ecology",
+        "trivia_source": "Wikipedia(ja), \"ハシボソガラス\", 2026-09 확인",
+        "moment": "day"
+      },
+      {
+        "content": "해질녘 까마귀는 잠자리로 모여든다. 보통 해 지기 두 시간쯤 전부터 근처 건물 옥상이나 전선에 먼저 무리로 모였다가, 해가 진 뒤에야 숲속 집단 잠자리로 들어간다. 큰부리까마귀와 같은 잠자리를 쓰기도 한다.",
+        "type": "ecology",
+        "trivia_source": "中村純夫, \"カラスの季節ねぐら －就塒行動の季節変化－\", Strix 23: 65-74 (日本野鳥の会, 2005), 2026-09 확인",
+        "moment": "dusk",
+        "seasons": [
+          "autumn",
+          "winter"
+        ]
       }
     ]
   },
