@@ -8,7 +8,7 @@ import type {
   DifficultyTier,
   LearnerLevel,
 } from "@/types";
-import { seasonOf, isInSeason } from "@/lib/season";
+import { seasonOf, isInSeason, type Season } from "@/lib/season";
 import type { Moment } from "@/lib/moment";
 
 // ─── Filters ──────────────────────────────────────────────────────────────────
@@ -183,16 +183,21 @@ export function getBirdOfTheDay(
  * 홈에 올릴 트리비아. 해당 순간(moment) 문장이 있으면 그것, 없으면 생태(ecology) 중 하나,
  * 그것도 없으면 아무 트리비아. 식별(identification)은 도감 문장이라 홈에는 올리지 않는다
  * (다른 게 전혀 없을 때만 마지막 폴백). rng는 같은 날 같은 문장을 위해 날짜 시드로.
+ * 순간 문장에 seasons가 있으면 그 계절에만 쓴다(겨울 잠자리 이야기를 여름에 하지 않는다).
+ * season을 안 주면 계절 제한이 없는 문장만 쓴다.
  */
 export function pickMomentTrivia(
   species: Species,
   moment: Moment,
-  rng: () => number = Math.random
+  rng: () => number = Math.random,
+  season?: Season
 ): SpeciesTrivia | undefined {
   const items = species.trivia;
   if (items.length === 0) return undefined;
   const pick = (list: SpeciesTrivia[]) => list[Math.floor(rng() * list.length)];
-  const exact = items.filter((t) => t.moment === moment);
+  const inSeason = (t: SpeciesTrivia) =>
+    !t.seasons || t.seasons.length === 0 || (season !== undefined && t.seasons.includes(season));
+  const exact = items.filter((t) => t.moment === moment && inSeason(t));
   if (exact.length > 0) return pick(exact);
   const ecology = items.filter((t) => t.type === "ecology" && !t.moment);
   if (ecology.length > 0) return pick(ecology);

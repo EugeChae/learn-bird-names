@@ -1,4 +1,6 @@
-import type { Species, Status } from "@/types";
+import type { Season, Species, Status } from "@/types";
+
+export type { Season };
 
 // ─── 계절 (STORY-017 · 오늘 만날 새) ───────────────────────────────────────────
 //
@@ -6,8 +8,6 @@ import type { Species, Status } from "@/types";
 // 오늘의 새가 될 수 없다(정직성). 계절은 status 코드로만 판단한다 — 월별 도래 시기
 // 데이터는 아직 없어서 4계절 단위가 한계다(다음 데이터 감사 과제).
 // 상수를 코드에 박지 않고 여기 한 곳에 둔다.
-
-export type Season = "spring" | "summer" | "autumn" | "winter";
 
 /** 계절별로 한국에 있는 것으로 보는 status 코드. */
 export const SEASON_STATUS: Record<Season, readonly Status[]> = {

@@ -10,7 +10,10 @@
       "evidence": "Departure from the roost site started at an average 31 min before sunrise, continued for 23 min, and ended about 8 min before sunrise (Sofia, Sept 2007–Apr 2008).",
       "trivia_source": "Milchev, \"Dynamics of the departure of Magpies Pica pica at a communal roost site in Sofia\", 2026-09 확인",
       "url": "https://www.researchgate.net/publication/266150973_Dynamics_of_the_departure_of_Magpies_Pica_pica_at_a_communal_roost_site_in_Sofia_W_Bulgaria",
-      "note": "유라시아까치(Pica pica) 연구. 까치(P. serica)는 2018년 분리된 종으로 잠자리 습성이 같다고 보고 적용."
+      "note": "유라시아까치(Pica pica) 연구. 까치(P. serica)는 2018년 분리된 종으로 잠자리 습성이 같다고 보고 적용.",
+      "seasons": [
+        "winter"
+      ]
     },
     {
       "species": "까치",
@@ -30,7 +33,10 @@
       "evidence": "In winter, magpies mostly gather in groups in the evening and roost together. They may also roost alongside other bird species, such as starlings, thrushes, pigeons and western jackdaws.",
       "trivia_source": "Wikipedia, \"Eurasian magpie\" (en), 2026-09 확인",
       "url": "https://en.wikipedia.org/wiki/Eurasian_magpie",
-      "note": "유라시아까치 자료 적용."
+      "note": "유라시아까치 자료 적용.",
+      "seasons": [
+        "winter"
+      ]
     },
     {
       "species": "제비",
@@ -57,7 +63,11 @@
       "content": "번식이 끝난 6~10월, 해가 지면 평지의 배밭이나 갈대밭으로 수천, 때로는 수만 마리가 모여들어 함께 잠을 잔다.",
       "evidence": "번식이 끝난 6-10월 사이에는 평지의 배밭이나 갈밭을 잠자리로 하며, 해가 진 후 수천 또는 수만 마리가 무리를 지어 모여든다.",
       "trivia_source": "위키백과, \"제비\" (ko), 2026-09 확인",
-      "url": "https://ko.wikipedia.org/wiki/제비"
+      "url": "https://ko.wikipedia.org/wiki/제비",
+      "seasons": [
+        "summer",
+        "autumn"
+      ]
     },
     {
       "species": "참새",
@@ -150,7 +160,10 @@
       "evidence": "Males sing vigorously at dawn in the vicinity of their females' nest hole just before and during egg laying. After the female has emerged from the nest box, the pair often copulates, and the male's song activity drops.",
       "trivia_source": "Gorissen & Eens, \"Interactive Communication Between Male and Female Great Tits During the Dawn Chorus\", The Auk 121(1), 2004, 2026-09 확인",
       "url": "https://academic.oup.com/auk/article/121/1/184/5561989",
-      "note": "유럽 박새(Parus major) 연구. 박새(P. cinereus)는 근래 분리된 종."
+      "note": "유럽 박새(Parus major) 연구. 박새(P. cinereus)는 근래 분리된 종.",
+      "seasons": [
+        "spring"
+      ]
     },
     {
       "species": "박새",
@@ -169,7 +182,10 @@
       "evidence": "Birds gain thermal benefits and save energy spending the night inside a cavity compared to the canopy. The use of cavities for roosting in winter may be critical for small birds inhabiting temperate areas.",
       "trivia_source": "Amo et al., PLoS ONE 2018 (PMC6145545), 2026-09 확인",
       "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6145545/",
-      "note": "유럽 박새(P. major) 연구 적용."
+      "note": "유럽 박새(P. major) 연구 적용.",
+      "seasons": [
+        "winter"
+      ]
     },
     {
       "species": "멧비둘기",

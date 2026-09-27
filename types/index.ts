@@ -33,6 +33,9 @@ export type TriviaMoment = "dawn" | "day" | "dusk";
 // 새의 하루(STORY-017): 이 문장이 새벽/한낮/해질녘 중 어느 순간의 생활인가.
 // 사실·출처는 그대로, 동사 시제만 현재. 시각 근거가 없는 사실은 "지금쯤"으로만 쓴다.
 
+export type Season = "spring" | "summer" | "autumn" | "winter";
+// 봄 3~5월 / 여름 6~8월 / 가을 9~11월 / 겨울 12~2월. 계산은 lib/season.ts.
+
 export interface SpeciesMedia {
   url: string;
   sex: MediaSex;
@@ -56,6 +59,12 @@ export interface SpeciesTrivia {
   trivia_source: string;
   /** 있으면 홈 "오늘 만날 새"가 사용자 시계에 맞춰 고른다. 없으면 생태 트리비아로 폴백. */
   moment?: TriviaMoment;
+  /**
+   * 이 문장이 참인 계절(moment 문장 전용). 없으면 사계절.
+   * 예: 까치의 겨울 공동 잠자리는 겨울에만 — 여름 새벽에 "잠자리를 빠져나온다"고 쓰면 거짓이다.
+   * 계절 밖이면 그 순간 문장은 건너뛰고 생태 트리비아로 폴백한다.
+   */
+  seasons?: Season[];
 }
 
 export interface Species {

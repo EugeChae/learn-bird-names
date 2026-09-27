@@ -6,7 +6,8 @@
 // drafts.json 형식:
 // { "batch": "1", "items": [
 //   { "species": "까치", "moment": "dawn", "content": "지금쯤 …", "trivia_source": "Wikipedia, …, 2026-09 확인",
-//     "url": "https://…", "evidence": "원문 근거(영문)", "time_tied": true, "approved": true, "note": "" } ] }
+//     "url": "https://…", "evidence": "원문 근거(영문)", "time_tied": true, "approved": true, "note": "",
+//     "seasons": ["winter"] } ] }   ← seasons: 그 계절에만 참인 문장(겨울 잠자리 등). 없으면 사계절.
 //
 // 원칙: 사실·출처는 그대로, 동사 시제만 현재. 시각 근거(time_tied)가 없으면 "지금쯤"으로만 쓴다.
 // apply는 같은 (species, moment)가 이미 있으면 내용을 교체하고, 없으면 추가한다.
@@ -19,6 +20,7 @@ const DATA_PATH = path.join(__dirname, "..", "public", "data", "species.json");
 const OUT_DIR = path.join(__dirname, "..", "out");
 const MOMENT_KO = { dawn: "새벽", day: "한낮", dusk: "해질녘" };
 const MOMENTS = ["dawn", "day", "dusk"];
+const SEASON_KO = { spring: "봄", summer: "여름", autumn: "가을", winter: "겨울" };
 
 function esc(v) {
   return String(v ?? "").replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/"/g, "&quot;");
@@ -41,7 +43,7 @@ function buildSheet(drafts, species) {
         const d = drafts.items.find((x) => x.species === name && x.moment === m);
         if (!d) return `<tr><td class="m">${MOMENT_KO[m]}</td><td colspan="3" class="g">초안 없음</td></tr>`;
         return `<tr class="${d.approved === false ? "rej" : ""}">
-  <td class="m">${MOMENT_KO[m]}${d.time_tied ? "" : '<br><small class="g">시각 근거 없음 → 지금쯤</small>'}</td>
+  <td class="m">${MOMENT_KO[m]}${d.time_tied ? "" : '<br><small class="g">시각 근거 없음 → 지금쯤</small>'}${Array.isArray(d.seasons) && d.seasons.length ? `<br><small class="season">${d.seasons.map((x) => SEASON_KO[x] ?? x).join("·")}에만</small>` : ""}</td>
   <td class="ko">${esc(d.content)}${d.note ? `<br><small class="note">메모: ${esc(d.note)}</small>` : ""}</td>
   <td><small>${esc(d.evidence)}</small></td>
   <td><small>${esc(d.trivia_source)}${d.url ? `<br><a href="${esc(d.url)}" target="_blank" rel="noopener">원문</a>` : ""}</small></td>
@@ -64,7 +66,7 @@ h2{margin:0 0 8px;font-size:20px}.row{display:flex;gap:12px;align-items:flex-sta
 img{width:160px;height:120px;object-fit:cover;border-radius:8px;background:#eee;flex:none}
 table{border-collapse:collapse;width:100%}td,th{border-bottom:1px solid #eee;padding:6px 8px;vertical-align:top;text-align:left}
 .m{white-space:nowrap;font-weight:600;color:#9a6700}.ko{font-size:16px;line-height:1.5}.g{color:#888;font-weight:400}
-.note{color:#b35c00}.rej{opacity:.45;text-decoration:line-through}a{color:#0969da}
+.note{color:#b35c00}.season{color:#0a7;font-weight:600}.rej{opacity:.45;text-decoration:line-through}a{color:#0969da}
 .bar{position:sticky;top:0;background:#fafafa;padding:8px 0;border-bottom:2px solid #ccc}
 </style></head><body>
 <div class="bar"><b>새의 하루 초안 · 배치 ${esc(drafts.batch)}</b> · ${names.length}종 ${total}문장 · 시각 근거 있음 ${tied}/${total}
@@ -83,6 +85,7 @@ function apply(drafts, speciesList) {
     if (!MOMENTS.includes(d.moment)) throw new Error(`${d.species}: moment 무효 ${d.moment}`);
     if (!d.content || !d.trivia_source) throw new Error(`${d.species}/${d.moment}: content·trivia_source 필수`);
     const entry = { content: d.content.trim(), type: "ecology", trivia_source: d.trivia_source.trim(), moment: d.moment };
+    if (Array.isArray(d.seasons) && d.seasons.length > 0) entry.seasons = [...d.seasons];
     const idx = s.trivia.findIndex((t) => t.moment === d.moment);
     if (idx >= 0) { s.trivia[idx] = entry; replaced++; } else { s.trivia.push(entry); added++; }
   }

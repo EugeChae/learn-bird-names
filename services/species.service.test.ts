@@ -409,4 +409,22 @@ describe("pickMomentTrivia", () => {
     expect(pickMomentTrivia(sp2, "day", () => 0)?.content).toBe("id");
     expect(pickMomentTrivia(makeSpecies({ trivia: [] }), "day")).toBeUndefined();
   });
+
+  it("seasons가 있는 순간 문장은 그 계절에만, 계절 밖이면 생태 폴백", () => {
+    const sp = makeSpecies({
+      trivia: [t({ content: "eco" }), t({ content: "겨울 잠자리", moment: "dawn", seasons: ["winter"] })],
+    });
+    expect(pickMomentTrivia(sp, "dawn", () => 0, "winter")?.content).toBe("겨울 잠자리");
+    expect(pickMomentTrivia(sp, "dawn", () => 0, "summer")?.content).toBe("eco");
+    // 계절을 안 주면 계절 제한 문장은 쓰지 않는다(거짓 문장 방지).
+    expect(pickMomentTrivia(sp, "dawn", () => 0)?.content).toBe("eco");
+  });
+
+  it("같은 순간에 사계절 문장과 계절 문장이 함께 있으면 둘 다 후보(계절 안일 때)", () => {
+    const sp = makeSpecies({
+      trivia: [t({ content: "늘", moment: "dusk" }), t({ content: "겨울만", moment: "dusk", seasons: ["winter"] })],
+    });
+    expect(pickMomentTrivia(sp, "dusk", () => 0.99, "winter")?.content).toBe("겨울만");
+    expect(pickMomentTrivia(sp, "dusk", () => 0.99, "summer")?.content).toBe("늘");
+  });
 });

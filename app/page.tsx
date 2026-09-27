@@ -64,7 +64,7 @@ export default function Home() {
     if (chosen) {
       if (!today) recordBirdOfTheDay(chosen.id);
       const rng = seededRng(hashSeed(localDateKey(now) + moment));
-      setTrivia(pickMomentTrivia(chosen, moment, rng));
+      setTrivia(pickMomentTrivia(chosen, moment, rng, seasonOf(now)));
       setInvite(statusInvite(primaryStatusFor(chosen, seasonOf(now))));
       countMomentView(moment);
     } else {

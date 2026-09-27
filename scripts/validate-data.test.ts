@@ -126,6 +126,20 @@ describe("validate-data · validateSpecies", () => {
     expect(validateSpecies([bad]).some((e) => e.includes("trivia[0].moment"))).toBe(true);
   });
 
+  it("trivia.seasons: moment 문장에만, 1~3개, 허용 계절만", () => {
+    const base = { content: "c", type: "ecology", trivia_source: "s" };
+    const ok = sp({ trivia: [{ ...base, moment: "dawn", seasons: ["winter"] }] });
+    expect(validateSpecies([ok])).toEqual([]);
+    const noMoment = sp({ trivia: [{ ...base, seasons: ["winter"] }] });
+    expect(validateSpecies([noMoment]).some((e) => e.includes("seasons 는 moment"))).toBe(true);
+    const empty = sp({ trivia: [{ ...base, moment: "dawn", seasons: [] }] });
+    expect(validateSpecies([empty]).some((e) => e.includes("1~3개"))).toBe(true);
+    const all4 = sp({ trivia: [{ ...base, moment: "dawn", seasons: ["spring", "summer", "autumn", "winter"] }] });
+    expect(validateSpecies([all4]).some((e) => e.includes("1~3개"))).toBe(true);
+    const badName = sp({ trivia: [{ ...base, moment: "dawn", seasons: ["monsoon"] }] });
+    expect(validateSpecies([badName]).some((e) => e.includes("무효 계절"))).toBe(true);
+  });
+
   it("배열이 아니면 오류를 반환한다", () => {
     expect(validateSpecies({} as unknown as unknown[]).length).toBeGreaterThan(0);
   });

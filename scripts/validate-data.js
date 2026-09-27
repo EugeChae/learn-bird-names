@@ -19,6 +19,7 @@ const ABUNDANCE_CODES = ["ab", "c", "uc", "sc", "r"];
 const STATUS_CODES = ["Res", "SV", "WV", "PM", "Vag", "Probably extinct"];
 const DIFFICULTY_TIERS = [1, 2, 3];
 const TRIVIA_MOMENTS = ["dawn", "day", "dusk"];
+const SEASONS = ["spring", "summer", "autumn", "winter"];
 
 /**
  * 종 배열을 검증하고 사람이 읽을 오류 메시지 배열을 반환한다(빈 배열 = 통과).
@@ -106,6 +107,20 @@ function validateSpecies(speciesList) {
       const moment = t && t.moment;
       if (moment !== undefined && !TRIVIA_MOMENTS.includes(moment)) {
         errors.push(`[${label}] trivia[${ti}].moment 가 무효합니다: ${JSON.stringify(moment)}`);
+      }
+      const seasons = t && t.seasons;
+      if (seasons !== undefined) {
+        if (moment === undefined) {
+          errors.push(`[${label}] trivia[${ti}].seasons 는 moment 문장에만 씁니다.`);
+        } else if (!Array.isArray(seasons) || seasons.length === 0 || seasons.length > 3) {
+          errors.push(`[${label}] trivia[${ti}].seasons 는 1~3개 계절 배열이어야 합니다(사계절이면 필드를 빼세요).`);
+        } else {
+          seasons.forEach((sn) => {
+            if (!SEASONS.includes(sn)) {
+              errors.push(`[${label}] trivia[${ti}].seasons 에 무효 계절: ${JSON.stringify(sn)}`);
+            }
+          });
+        }
       }
     });
   });
