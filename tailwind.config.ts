@@ -28,6 +28,11 @@ const config: Config = {
         soft: "0 6px 22px -12px rgba(74, 103, 65, 0.28)",
       },
       keyframes: {
+        // 사진 자리표시자(BirdPhoto): 사진이 오는 중이라는 신호. 눈에 띄되 산만하지 않게.
+        "photo-pulse": {
+          "0%, 100%": { opacity: "1" },
+          "50%": { opacity: "0.55" },
+        },
         // 마일스톤 배너 등장(STORY-012): 살짝 커졌다 제자리 — 텍스트 우선, 과하지 않게.
         "milestone-pop": {
           "0%": { opacity: "0", transform: "scale(0.85)" },
@@ -36,6 +41,7 @@ const config: Config = {
         },
       },
       animation: {
+        "photo-pulse": "photo-pulse 1.4s ease-in-out infinite",
         "milestone-pop": "milestone-pop 0.4s ease-out",
       },
     },

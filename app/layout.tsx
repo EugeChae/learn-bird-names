@@ -30,6 +30,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko" className={`${heading.variable} ${body.variable}`}>
+      <head>
+        {/* 새 사진 호스트에 미리 접속해 둔다(DNS·TLS 선행). 사진 자체는 각 화면이 요청. */}
+        <link rel="preconnect" href="https://inaturalist-open-data.s3.amazonaws.com" />
+        <link rel="dns-prefetch" href="https://inaturalist-open-data.s3.amazonaws.com" />
+      </head>
       <body className="min-h-screen bg-background text-foreground">
         {children}
         <AppFooter />

@@ -2,6 +2,7 @@
 
 import { useEffect, useMemo, useState } from "react";
 import type { MatchingPair } from "@/types";
+import BirdPhoto from "@/components/ui/BirdPhoto";
 
 interface MatchingGameProps {
   pairs: MatchingPair[];
@@ -123,11 +124,10 @@ export default function MatchingGame({ pairs, onComplete }: MatchingGameProps) {
                   className={photoClass(isMatched, isSel)}
                 >
                   {photo ? (
-                    // eslint-disable-next-line @next/next/no-img-element -- unoptimized static export
-                    <img
+                    <BirdPhoto
                       src={photo.url}
                       alt=""
-                      className="aspect-square w-full object-cover"
+                      className="aspect-square w-full"
                     />
                   ) : (
                     <span className="flex aspect-square w-full items-center justify-center text-xs text-gray-400">

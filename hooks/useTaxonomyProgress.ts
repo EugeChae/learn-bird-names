@@ -7,6 +7,7 @@ import {
   submitTaxonomyAnswer,
 } from "@/services/taxonomy.service";
 import { orderKo, familyKo } from "@/lib/taxonomy-labels";
+import { preloadPhotos, upcomingPhotoUrls } from "@/lib/photo-preload";
 
 export type TaxonomyStatus = "answering" | "correct" | "revealed";
 
@@ -66,6 +67,18 @@ export function useTaxonomyProgress(
   const [question, setQuestion] = useState<TaxonomyQuestion | undefined>(() =>
     nextTaxonomyQuestion(session)
   );
+
+  // 다음 한 문제의 사진(문제 사진 또는 보기 사진)을 지금 받아 둔다 → "다음"을 누르면 즉시 뜬다.
+  useEffect(() => {
+    preloadPhotos(
+      upcomingPhotoUrls(
+        session.questions,
+        question,
+        (q) => [q.promptSpecies?.media[0]?.url, ...q.choices.map((c) => c.species?.media[0]?.url)],
+        1
+      )
+    );
+  }, [session, question]);
   const [status, setStatus] = useState<TaxonomyStatus>("answering");
   const [wrongIds, setWrongIds] = useState<string[]>([]);
   const [hintText, setHintText] = useState<string | null>(null);

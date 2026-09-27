@@ -8,6 +8,7 @@ import SessionComplete from "@/components/SessionComplete";
 import MilestoneBanner from "@/components/MilestoneBanner";
 import FlagPhotoButton from "@/components/FlagPhotoButton";
 import Button from "@/components/ui/Button";
+import BirdPhoto from "@/components/ui/BirdPhoto";
 import MobileActionBar from "@/components/ui/MobileActionBar";
 
 interface QuizCardProps {
@@ -75,13 +76,13 @@ export default function QuizCard({ session }: QuizCardProps) {
             type="button"
             onClick={() => setPhotoOpen(true)}
             aria-label="새 사진 확대"
-            className="overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
+            className="block w-full overflow-hidden rounded-2xl border border-gray-200 shadow-soft"
           >
-            {/* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export; next/image adds no value here */}
-            <img
+            <BirdPhoto
               src={photo.url}
               alt="맞혀야 할 새 사진"
-              className="h-[30vh] w-full object-cover lg:aspect-square lg:h-auto"
+              priority
+              className="h-[30vh] w-full lg:aspect-square lg:h-auto"
             />
           </button>
           <div className="flex items-center justify-between gap-2">

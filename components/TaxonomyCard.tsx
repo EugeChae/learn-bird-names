@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import type { TaxonomySession, TaxonomyChoice } from "@/types";
+import BirdPhoto from "@/components/ui/BirdPhoto";
 import { useTaxonomyProgress } from "@/hooks/useTaxonomyProgress";
 import { familyKo } from "@/lib/taxonomy-labels";
 import MilestoneBanner from "@/components/MilestoneBanner";
@@ -114,11 +115,11 @@ export default function TaxonomyCard({ session }: { session: TaxonomySession }) 
         <figure className="mx-auto flex w-full max-w-xs flex-col gap-1">
           {/* 분류 퀴즈는 사진+질문+4보기가 한 화면에 들어와야 하므로 높이를 제한한다. */}
           <div className="overflow-hidden rounded-2xl border border-gray-200 shadow-soft">
-            {/* eslint-disable-next-line @next/next/no-img-element -- unoptimized static export */}
-            <img
+            <BirdPhoto
               src={promptPhoto.url}
               alt="분류를 맞혀야 할 새 사진"
-              className="h-52 w-full object-cover sm:h-60"
+              priority
+              className="h-52 w-full sm:h-60"
             />
           </div>
           <figcaption className="text-right text-[10px] text-gray-400">
@@ -241,11 +242,11 @@ function SpeciesChoiceButton({
       className={className}
     >
       {photo ? (
-        // eslint-disable-next-line @next/next/no-img-element -- unoptimized static export
-        <img
+        <BirdPhoto
           src={photo.url}
           alt={choice.label}
-          className="aspect-square w-full rounded-md object-cover"
+          priority
+          className="aspect-square w-full rounded-md"
         />
       ) : (
         <span className="flex aspect-square w-full items-center justify-center rounded-md bg-gray-100 text-xs text-gray-400">
