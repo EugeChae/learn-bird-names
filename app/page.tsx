@@ -4,6 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import type { Species, SpeciesTrivia } from "@/types";
 import {
+  getAll,
   getById,
   getBirdOfTheDay,
   pickMomentTrivia,
@@ -17,7 +18,7 @@ import {
   countMomentView,
   localDateKey,
 } from "@/lib/birdOfTheDay.store";
-import { momentOf } from "@/lib/moment";
+import { isMoment, momentOf, type Moment } from "@/lib/moment";
 import { seasonOf, primaryStatusFor } from "@/lib/season";
 import { statusInvite } from "@/lib/bird-labels";
 import {
@@ -43,6 +44,27 @@ import BirdMascot from "@/components/BirdMascot";
  * 정적 export hydration 불일치를 피하려고 클라이언트에서만 고른다.
  * 집중 학습(STORY-016) 범위별 가용 종 수도 클라이언트에서 계산한다(진도=localStorage).
  */
+/** 개발 전용 미리보기 파라미터. 하나도 없으면 undefined(정상 경로). */
+function devPreview():
+  | { species?: Species; moment?: Moment; date?: Date }
+  | undefined {
+  if (typeof window === "undefined") return undefined;
+  const q = new URLSearchParams(window.location.search);
+  const bird = q.get("bird");
+  const moment = q.get("moment");
+  const date = q.get("date");
+  if (!bird && !moment && !date) return undefined;
+  const species = bird
+    ? getById(bird) ?? getAll().find((s) => s.name_korean === bird)
+    : undefined;
+  const parsed = date ? new Date(`${date}T12:00:00`) : undefined;
+  return {
+    species,
+    moment: moment && isMoment(moment) ? moment : undefined,
+    date: parsed && !Number.isNaN(parsed.getTime()) ? parsed : undefined,
+  };
+}
+
 export default function Home() {
   const [species, setSpecies] = useState<Species | undefined>();
   const [trivia, setTrivia] = useState<SpeciesTrivia | undefined>();
@@ -53,20 +75,24 @@ export default function Home() {
   >();
 
   useEffect(() => {
-    const now = new Date();
-    const moment = momentOf(now);
+    // 개발 전용 미리보기: ?bird=까치&moment=dawn&date=2026-01-15 로 카드를 강제한다.
+    // 프로덕션 빌드에서는 무시되고, 강제 시 오늘의 새 기록·열람 계측을 건드리지 않는다.
+    const dev = process.env.NODE_ENV !== "production" ? devPreview() : undefined;
+    const now = dev?.date ?? new Date();
+    const moment = dev?.moment ?? momentOf(now);
     // 오늘 이미 정해진 새가 있으면 그것을 그대로(하루 안에 바뀌지 않는다).
-    const today = getTodayRecord();
+    const today = dev ? undefined : getTodayRecord();
     const chosen =
+      dev?.species ??
       (today && getById(today.speciesId)) ??
-      getBirdOfTheDay(now, { recentIds: getRecentSpeciesIds() });
+      getBirdOfTheDay(now, { recentIds: dev ? [] : getRecentSpeciesIds() });
     setSpecies(chosen);
     if (chosen) {
-      if (!today) recordBirdOfTheDay(chosen.id);
+      if (!today && !dev) recordBirdOfTheDay(chosen.id);
       const rng = seededRng(hashSeed(localDateKey(now) + moment));
       setTrivia(pickMomentTrivia(chosen, moment, rng, seasonOf(now)));
       setInvite(statusInvite(primaryStatusFor(chosen, seasonOf(now))));
-      countMomentView(moment);
+      if (!dev) countMomentView(moment);
     } else {
       setTrivia(undefined);
       setInvite(undefined);

@@ -2,7 +2,8 @@ import { describe, expect, it } from "vitest";
 // eslint-disable-next-line @typescript-eslint/no-require-imports
 const { apply, sameSeasons } = require("./moment-sheet.js");
 
-const sp = (trivia: unknown[]) => [{ name_korean: "까치", trivia }];
+type T = { content: string; type: string; trivia_source: string; moment?: string; seasons?: string[] };
+const sp = (trivia: T[]) => [{ name_korean: "까치", trivia }];
 const draft = (over: Record<string, unknown>) => ({
   species: "까치", moment: "dawn", content: "c", trivia_source: "s", ...over,
 });
@@ -13,8 +14,8 @@ describe("moment-sheet apply", () => {
     expect(apply({ items: [draft({ content: "겨울", seasons: ["winter"] })] }, list)).toEqual({ added: 1, replaced: 0, skipped: 0 });
     expect(apply({ items: [draft({ content: "봄~가을", seasons: ["spring", "summer", "autumn"] })] }, list)).toEqual({ added: 1, replaced: 0, skipped: 0 });
     expect(apply({ items: [draft({ content: "겨울2", seasons: ["winter"] })] }, list)).toEqual({ added: 0, replaced: 1, skipped: 0 });
-    const dawn = list[0].trivia.filter((t: { moment?: string }) => t.moment === "dawn");
-    expect(dawn.map((t: { content: string }) => t.content)).toEqual(["겨울2", "봄~가을"]);
+    const dawn = list[0].trivia.filter((t) => t.moment === "dawn");
+    expect(dawn.map((t) => t.content)).toEqual(["겨울2", "봄~가을"]);
   });
 
   it("seasons 없는 문장은 사계절 문장끼리만 교체", () => {
